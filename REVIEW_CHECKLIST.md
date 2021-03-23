@@ -24,8 +24,8 @@ When reviewing, keep in mind that we follow [Ansible Code of Conduct](https://do
 - [ ] FQCNs is used for `extends_documentation_fragment:`, unless the author is referring to doc_fragments from ansible-core
 
 **Tests (if applicable and technically possible to implement):** 
-- [ ] the pull request has [integration tests](https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html)
-- [ ] the pull request has [unit tests](https://docs.ansible.com/ansible/latest/dev_guide/testing_units.html)
+- [ ] the pull request has [integration tests](https://docs.ansible.com/ansible/devel/dev_guide/testing_integration.html)
+- [ ] the pull request has [unit tests](https://docs.ansible.com/ansible/devel/dev_guide/testing_units.html)
 - [ ] all changes are covered
 - [ ] integration tests also cover `check_mode` (if it is supported)
 - [ ] integration tests check an actual state of the system, not only what the module reports (for example, if the module change a file, check that the file was actually changed by using the `ansible.builtin.stat` module)
