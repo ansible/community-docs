@@ -9,7 +9,7 @@ When reviewing, keep in mind that we follow [Ansible Code of Conduct](https://do
 - When suggesting mandatory changes, do it as politely as possible providing documentation references
 - If your suggestion is optional or a matter of personal preferences, please say it explicitly
 - When asking for adding tests or for complex code refactoring, say that the author is welcome to ask for clarifications and help if they need
-- If somebody suggests a good idea, say about it or put a thumbs up
+- If somebody suggests a good idea, mention it or put a thumbs up
 - After merging, thank the author and reviewers for their time and effort
 
 **Standards and documentation**
@@ -28,7 +28,7 @@ When reviewing, keep in mind that we follow [Ansible Code of Conduct](https://do
 - [ ] the pull request has [unit tests](https://docs.ansible.com/ansible/devel/dev_guide/testing_units.html)
 - [ ] all changes are covered
 - [ ] integration tests also cover `check_mode` (if it is supported)
-- [ ] integration tests check an actual state of the system, not only what the module reports (for example, if the module change a file, check that the file was actually changed by using the `ansible.builtin.stat` module)
+- [ ] integration tests check an actual state of the system, not only what the module reports (for example, if the module changes a file, check that the file was actually changed by using the `ansible.builtin.stat` module)
 
 **Other**
 - [ ] the pull request does not contain merge commits (see GitHub warnings at the bottom of the pull request) - in this case, ask the author to rebase the pull request branch
