@@ -107,8 +107,10 @@ git checkout -b name_of_my_branch
 
 13. We recommend you start with writing integration tests if applicable.
 
-Note: If there are any difficulties with writing the tests or you are not sure if the case can be covered, feel free to skip this step.
+Note: If there are any difficulties with writing / running the tests or you are not sure if the case can be covered, feel free to skip this step.
 If needed, other contributors can help you with it later.
+
+Note: Some collections do not have integration tests.
 
 All integration tests are stored in `tests/integration/targets` subdirectories.
 Go to the subdirectory containing the name of module you are going to change.
@@ -131,6 +133,16 @@ For example, if the tests files you changed are stored in `tests/integration/tar
 ansible-test integration test_mysql_user --docker -vvv
 ```
 
+In the examples above, the default test image will be automatically download and used to create and run a test container.
+Use the default test image for platform independent integration tests such as those for cloud modules.
+
+If you need to run the tests against a specific distribution, see the [list of supported container images](https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html#container-images). In this case, the command can look like:
+```bash
+ansible-test integration name_of_test_subdirectory --docker centos8 -vvv
+```
+
+Note: If you are not sure whether you should use the default image for testing or a specific one, skip the entire step - the community will help you later.
+
 If the tests do not want to run, first, check you complete step 3 of this guide.
 
 If the tests ran successfully, there are usually two possible outcomes:
@@ -152,6 +164,7 @@ Optionally, you can use the `--max-line-length=160` command-line argument.
 ```bash
 ansible-test sanity path/to/changed_file.py --docker
 ```
+
 If they failed, look at the output carefully - it is usually very informative and helps to identify a problem line quickly.
 Sanity failings usually relate to wrong code and documentation formatting.
 
@@ -164,6 +177,8 @@ For example, if the tests files you changed are stored in `tests/integration/tar
 ```bash
 ansible-test integration test_mysql_user --docker -vvv
 ```
+
+If you need to run the tests against a specific distribution, see step 13.
 
 There are two possible outcomes:
 a) They have failed. Look at the output of the command.
