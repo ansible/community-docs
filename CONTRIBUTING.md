@@ -133,7 +133,7 @@ For example, if the tests files you changed are stored in `tests/integration/tar
 ansible-test integration test_mysql_user --docker -vvv
 ```
 
-In the examples above, the default test image will be automatically download and used to create and run a test container.
+In the examples above, the default test image will be automatically downloaded and used to create and run a test container.
 Use the default test image for platform independent integration tests such as those for cloud modules.
 
 If you need to run the tests against a specific distribution, see the [list of supported container images](https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html#container-images). In this case, the command can look like:
