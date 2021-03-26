@@ -11,7 +11,7 @@ There you can find feature ideas to implement, reports about bugs to solve, or s
 Also somebody may already have started discussing or working on implementing the same or a similar idea,
 so you can cooperate to create a better solution together.
 
-Many collections use `easy_fix` or a similarly named label to indicate issues that are a good starting point for beginners (you might also look [at the newbie pinboard](https://github.com/ansible/community/issues/437) if you don't know which collection to start with). Also `help_wanted` or similarly named labels often indicate that this is a feature that is deemed (potentially) useful, but none of the maintainers want to invest time to actually implement it.
+Many collections use `easy_fix` or a similarly named label to indicate issues that are a good starting point for beginners (you might also look [at the newbie pinboard](https://github.com/ansible/community/issues/437) if you do not know which collection to start with). Also `help_wanted` or similarly named labels often indicate that this is a feature that is deemed (potentially) useful, but none of the maintainers want to invest time to actually implement it.
 
 ## Open pull requests
 
