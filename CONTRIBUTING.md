@@ -130,20 +130,22 @@ When fixing a bug, write a task which reproduces the bug from the issue.
 
 Put the reported case in the tests, then run integration tests with the following command:
 ```bash
-ansible-test integration name_of_test_subdirectory --docker -vvv
+ansible-test integration name_of_test_subdirectory --docker -v
 ```
 
 For example, if the tests files you changed are stored in `tests/integration/targets/test_mysql_user/`, the command will be:
 ```bash
-ansible-test integration test_mysql_user --docker -vvv
+ansible-test integration test_mysql_user --docker -v
 ```
+
+You can use the `-vv` or `-vvv` argument, if you need more detailed output.
 
 In the examples above, the default test image will be automatically downloaded and used to create and run a test container.
 Use the default test image for platform independent integration tests such as those for cloud modules.
 
 If you need to run the tests against a specific distribution, see the [list of supported container images](https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html#container-images). In this case, the command can look like:
 ```bash
-ansible-test integration name_of_test_subdirectory --docker centos8 -vvv
+ansible-test integration name_of_test_subdirectory --docker centos8 -v
 ```
 
 Note: If you are not sure whether you should use the default image for testing or a specific one, skip the entire step - the community will help you later.
@@ -176,13 +178,15 @@ Sanity failings usually relate to wrong code and documentation formatting.
 
 17. Run integration tests:
 ```bash
-ansible-test integration name_of_test_subdirectory --docker -vvv
+ansible-test integration name_of_test_subdirectory --docker -v
 ```
 
 For example, if the tests files you changed are stored in `tests/integration/targets/test_mysql_user/`, the command will be:
 ```bash
-ansible-test integration test_mysql_user --docker -vvv
+ansible-test integration test_mysql_user --docker -v
 ```
+
+You can use the `-vv` or `-vvv` argument, if you need more detailed output.
 
 If you need to run the tests against a specific distribution, see step 13.
 
