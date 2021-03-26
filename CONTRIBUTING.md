@@ -48,6 +48,7 @@ cd ansible && source hacking/env-setup
 pip install -r requirements.txt
 cd ~
 ```
+
 4. Create the following directories in your home directory:
 ```bash
 mkdir -p ~/ansible_collections/NAMESPACE/COLLECTION_NAME
