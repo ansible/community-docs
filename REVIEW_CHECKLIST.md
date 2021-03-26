@@ -33,4 +33,4 @@ When reviewing, keep in mind that we follow [Ansible Code of Conduct](https://do
 
 **Other**
 - [ ] the pull request does not contain merge commits (see GitHub warnings at the bottom of the pull request) - in this case, ask the author to rebase the pull request branch
-- [ ] if the pull request contains breaking changes, ask the author and the collection maintainers if it is really needed and there is no way not to introduce them
+- [ ] if the pull request contains breaking changes, ask the author and the collection maintainers if it is really needed and there is no way not to introduce them. If breaking changes are in there, they must only appear in the next major release (and **not** in a minor or patch release - the only exception are breaking changes caused by security fixes that are absolutely necessary to fix the security issue)
