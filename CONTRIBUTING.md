@@ -95,6 +95,7 @@ git remote -v
 ```bash
 git remote add upstream https://github.com/ansible-collections/COLLECTION_REPO.git
 ```
+This is the repository where you forked from.
 
 11. Update your local default branch. Assuming that it is `main`:
 ```bash
