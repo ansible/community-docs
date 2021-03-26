@@ -35,6 +35,8 @@ We assume that you use Linux as a work environment (you can use a virtual machin
 
 1. If possible, make sure that you have installed and started `docker`. While you can also run tests without docker, this makes it a lot easier since you do not have to install the precise requirements, and tests are running properly isolated and in the exact same environments as in CI. You often can also use `podman` with the `docker` executable shim, so if you have that you probably do not need to install `docker`.
 
+If Ansible or ansible-base / ansible-core is already installed on your system, you can skip steps 2 and 3.
+
 2. Clone the [ansible-core](https://github.com/ansible/ansible) repository:
 ```bash
 git clone https://github.com/ansible/ansible.git
