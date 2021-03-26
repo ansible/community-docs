@@ -76,7 +76,6 @@ If you prefer to use the SSH protocol:
 git clone git@github.com:YOURACC/COLLECTION_REPO.git ~/ansible_collections/NAMESPACE/COLLECTION_NAME
 ```
 
-
 7. Go to your new cloned repository.
 ```bash
 cd ~/ansible_collections/NAMESPACE/COLLECTION_NAME
