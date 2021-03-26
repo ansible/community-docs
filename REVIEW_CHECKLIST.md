@@ -14,6 +14,8 @@ When reviewing, keep in mind that we follow [Ansible Code of Conduct](https://do
 
 **Standards and documentation**
 - [ ] if the pull request is not a documentation fix, it must include a [changelog fragment](https://docs.ansible.com/ansible/devel/community/development_process.html#creating-a-changelog-fragment) - please check the format carefully
+      * The only exception are new modules and plugins (that are not jinja2 filter and test plugins).
+      * For jinja2 filter and test plugins, check out the special syntax for changelog fragments: https://github.com/ansible-community/antsibull-changelog/blob/main/docs/changelogs.rst#adding-new-roles-playbooks-test-and-filter-plugins
 - [ ] if new files are added with the pull request, they follow the [licensing rules](https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst#licensing)
 - [ ] the changes follow the [Ansible documentation standards](https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_documenting.html) and the [style guide](https://docs.ansible.com/ansible/devel/dev_guide/style_guide/index.html#style-guide)
 - [ ] the changes follow the [development conventions](https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_best_practices.html)
