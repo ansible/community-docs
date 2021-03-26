@@ -20,7 +20,8 @@ When reviewing, keep in mind that we follow [Ansible Code of Conduct](https://do
 - [ ] if a new plugin is added, it is one of the [allowed plugin types](https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst#modules-plugins)
 - [ ] documentation, examples, and return sections use FQCNs for `M(..)` when referring to modules
 - [ ] modules and plugins from ansible-core use `ansible.builtin.` as a FQCN prefix when mentioned
-- [ ] when a new option, module, plugin, or return value is added, the corresponding documentation or return sections use `version_added:` containing the *collection* version for which they were added
+- [ ] when a new option, module, plugin, or return value is added, the corresponding documentation or return sections use `version_added:` containing the *collection* version which they will be first released in.
+      * This usually is the next minor release, sometimes the next major release (example: if 2.7.5 is the current release, the next minor release will be 2.8.0, and the next major release will be 3.0.0)
 - [ ] FQCNs is used for `extends_documentation_fragment:`, unless the author is referring to doc_fragments from ansible-core
 
 **Tests (if applicable and technically possible to implement):** 
