@@ -165,7 +165,7 @@ Optionally, you can use the `--max-line-length=160` command-line argument.
 
 16. Run sanity tests:
 ```bash
-ansible-test sanity path/to/changed_file.py --docker
+ansible-test sanity path/to/changed_file.py --docker -v
 ```
 
 If they failed, look at the output carefully - it is usually very informative and helps to identify a problem line quickly.
