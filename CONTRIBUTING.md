@@ -210,8 +210,8 @@ to create a pull request. Sometimes GitHub does not do it and you should click t
 Then choose `compare across forks` under the `Compare changes` title.
 Choose your repository and the new branch you pushed in the right drop-down list.
 Confirm. Fill out the pull request template with all information you want to mention.
-Put "Fixes + link to the issue" in the pull request's description.
-Put "[WIP] + short description" in the pull request's title. It's often a good idea to mention the name of the module/plugin you are modifying at the beginning of the description.
+Put `Fixes + link to the issue` in the pull request's description.
+Put `[WIP] + short description` in the pull request's title. It's often a good idea to mention the name of the module/plugin you are modifying at the beginning of the description.
 Click `Create pull request`.
 
 22. Add a [changelog fragment](https://docs.ansible.com/ansible/devel/community/development_process.html#changelogs) to the `changelog/fragments` directory. It will be published in release notes, so users will know about the fix.
