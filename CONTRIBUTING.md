@@ -144,6 +144,7 @@ ansible-test integration name_of_test_subdirectory --docker centos8 -vvv
 ```
 
 Note: If you are not sure whether you should use the default image for testing or a specific one, skip the entire step - the community will help you later.
+You can also try to use the collection repository's CI to figure out which containers are used.
 
 If the tests do not want to run, first, check you complete step 3 of this guide.
 
