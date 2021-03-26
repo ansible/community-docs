@@ -159,7 +159,7 @@ b) The bug has appeared and the tests has failed as expected showing the reporte
 ```bash
 flake8 path/to/changed_file.py
 ```
-It is worth installing and running `flake8` against the changed file(s) first.
+It is worth installing (`pip install flake8`, or install the corresponding package on your operating system) and running `flake8` against the changed file(s) first.
 It shows unused imports, which is not shown by sanity tests (see the next step), as well as other common issues.
 Optionally, you can use the `--max-line-length=160` command-line argument.
 
