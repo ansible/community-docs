@@ -24,7 +24,7 @@ When reviewing, keep in mind that we follow [Ansible Code of Conduct](https://do
 - [ ] modules and plugins from ansible-core use `ansible.builtin.` as a FQCN prefix when mentioned
 - [ ] when a new option, module, plugin, or return value is added, the corresponding documentation or return sections use `version_added:` containing the *collection* version which they will be first released in
       * this usually is the next minor release, sometimes the next major release (example: if 2.7.5 is the current release, the next minor release will be 2.8.0, and the next major release will be 3.0.0)
-- [ ] FQCNs is used for `extends_documentation_fragment:`, unless the author is referring to doc_fragments from ansible-core
+- [ ] FQCNs are used for `extends_documentation_fragment:`, unless the author is referring to doc_fragments from ansible-core
 
 **Tests (if applicable and technically possible to implement):** 
 - [ ] the pull request has [integration tests](https://docs.ansible.com/ansible/devel/dev_guide/testing_integration.html)
