@@ -4,6 +4,8 @@ We follow [Ansible Code of Conduct](https://docs.ansible.com/ansible/latest/comm
 
 If you find any inconsistencies or places in this document which can be improved, please raise an issue or pull request to fix it.
 
+If you are a committer, also refer to the [Ansible committer guidelines](https://docs.ansible.com/ansible/devel/community/committer_guidelines.html).
+
 ## Issue tracker
 
 Whether you are looking for an opportunity to contribute or you found a bug and already know how to solve it, please go to the collection's issue tracker first.
