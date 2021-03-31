@@ -18,6 +18,8 @@ The collections have:
 
 # Put things that are common for all the collections here (small and big, with stable branches and w/o, etc.)
 
+# Look into REVIEW_CHECKLIST.md also and the collection requirements
+
 
 # References to (when the docs are added):
 
