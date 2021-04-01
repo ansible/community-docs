@@ -16,6 +16,8 @@ The collections have:
 * CI pipelines up and running (can be implemented by using GitHub Actions, Azure Pipelines, ZUUL)
 * all CI tests running against a commit that releases the collection; if they do not pass, the collection will NOT be released
 
+.. contents:: Topics
+
 .. _versioning_and_deprecation:
 
 Versioning and deprecation
@@ -32,11 +34,10 @@ Versioning and deprecation
 * Make sure that if a deprecation is added in a collection version that is included in 3.x.x, the removal itself will only happen in a collection version included in 5.0.0 or later.
 * Make sure that the policy of releasing, versioning and deprecation is announced to contributors and users in some way. For an example of how to do this, see `the announcement in community.general <https://github.com/ansible-collections/community.general/issues/582>`_. You could also do this in the README.
 
-
 .. _changelogs:
 
 Changelogs
-----------
+==========
 
 Collections are required to include a changelog. To give a consistent feel for changelogs across collections and ensure changelogs exist for collections included in the ``ansible`` package we suggest using `antsibull-changelog <https://github.com/ansible-community/antsibull-changelog>`_ to maintain and generate this.
 
@@ -45,11 +46,28 @@ Before releasing, check:
 * all merged pull requests since the last release (except ones related to documentation and new modules/plugins), have `changelog fragments <https://docs.ansible.com/ansible/devel/community/development_process.html#creating-a-changelog-fragment>`_
 * all the fragments follow the `changelog entry format <https://docs.ansible.com/ansible/devel/community/development_process.html#changelog-fragment-entry-format>`_
 
+Release guidelines
+==================
 
-# References to (when the docs are added):
+There are several approaches how to release.
 
-# 1. releasing without branches
+If you are not aware of what approach should be used, ask in the ``#ansible-community`` IRC channel.
 
-# 2. releasing with stable branches
+Releasing without release branches
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# 3. ...
+Use releasing without release branches when:
+
+  * there have not been major releases of the collection before
+  * there have not been breaking changes introduced since the ``1.0.0`` release of the collection
+
+To peform a release this way, refer to the `Releasing without release branches <releasing_collections_without_release_branches.rst>`_ manual.
+
+When there is a need to introduce breaking changes, you can switch to the next approach.
+
+Releasing with release branches
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Use releasing with release branches when breaking changes have been introduced.
+
+To peform a release this way, refer to the `Releasing with release branches <releasing_collections_without_release_branches.rst>`_ manual.
