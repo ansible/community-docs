@@ -40,7 +40,7 @@ Changelogs
 
 Collections are required to include a changelog. To give a consistent feel for changelogs across collections and ensure changelogs exist for collections included in the ``ansible`` package we suggest using `antsibull-changelog <https://github.com/ansible-community/antsibull-changelog>`_ to maintain and generate this.
 
-Before releasing check:
+Before releasing, check:
 
 * all merged pull requests since the last release (except ones related to documentation and new modules/plugins), have `changelog fragments <https://docs.ansible.com/ansible/devel/community/development_process.html#creating-a-changelog-fragment>`_
 * all the fragments follow the `changelog entry format <https://docs.ansible.com/ansible/devel/community/development_process.html#changelog-fragment-entry-format>`_
