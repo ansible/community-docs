@@ -16,9 +16,8 @@ If you are a committer, also refer to the [Ansible committer guidelines](https:/
 
 **Standards and documentation**
 - [ ] if the pull request is not a documentation fix, it must include a [changelog fragment](https://docs.ansible.com/ansible/devel/community/development_process.html#creating-a-changelog-fragment) - please check the format carefully
-
-      * the only exception are new modules and plugins (that are not jinja2 filter and test plugins).
-      * for jinja2 filter and test plugins, check out the [special syntax for changelog fragments](https://github.com/ansible-community/antsibull-changelog/blob/main/docs/changelogs.rst#adding-new-roles-playbooks-test-and-filter-plugins)
+    * the only exception are new modules and plugins (that are not jinja2 filter and test plugins).
+    * for jinja2 filter and test plugins, check out the [special syntax for changelog fragments](https://github.com/ansible-community/antsibull-changelog/blob/main/docs/changelogs.rst#adding-new-roles-playbooks-test-and-filter-plugins)
 - [ ] if new files are added with the pull request, they follow the [licensing rules](https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst#licensing)
 - [ ] the changes follow the [Ansible documentation standards](https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_documenting.html) and the [style guide](https://docs.ansible.com/ansible/devel/dev_guide/style_guide/index.html#style-guide)
 - [ ] the changes follow the [development conventions](https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_best_practices.html)
@@ -27,8 +26,7 @@ If you are a committer, also refer to the [Ansible committer guidelines](https:/
 - [ ] examples always use FQCN (both for modules/plugins from collection, and `ansible.builtin` for modules/plugins in ansible-core)
 - [ ] modules and plugins from ansible-core use `ansible.builtin.` as a FQCN prefix when mentioned
 - [ ] when a new option, module, plugin, or return value is added, the corresponding documentation or return sections use `version_added:` containing the *collection* version which they will be first released in
-
-      * this usually is the next minor release, sometimes the next major release (example: if 2.7.5 is the current release, the next minor release will be 2.8.0, and the next major release will be 3.0.0)
+    * this usually is the next minor release, sometimes the next major release (example: if 2.7.5 is the current release, the next minor release will be 2.8.0, and the next major release will be 3.0.0)
 - [ ] FQCNs are used for `extends_documentation_fragment:`, unless the author is referring to doc_fragments from ansible-core
 
 **Tests (if applicable and technically possible to implement)** 
