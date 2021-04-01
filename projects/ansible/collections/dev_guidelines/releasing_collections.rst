@@ -51,7 +51,7 @@ Release guidelines
 
 There are several approaches how to release.
 
-If you are not aware of what approach should be used, ask in the ``#ansible-community`` IRC channel.
+If you are not aware of which approach should be used, ask in the ``#ansible-community`` IRC channel.
 
 Releasing without release branches
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
