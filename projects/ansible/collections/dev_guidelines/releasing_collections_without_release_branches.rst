@@ -14,18 +14,18 @@ Since no release branches are used, the manual does not distinguish between rele
 
 3. Announce your intention to release the collection in a corresponding pinned release issue / community pinboard of the collection and in the ``#ansible-community`` IRC channel.
 
-4. Be sure you are in a default branch in your local fork:
+4. Be sure you are in a default branch in your local fork (we use ``main`` in the following examples):
 
 .. code:: bash
 
     git status
-    git checkout DEFAULT_BRANCH     # if needed
+    git checkout main     # if needed
 
 5. Update your local fork:
 
 .. code:: bash
 
-   git pull --rebase upstream DEFAULT_BRANCH
+   git pull --rebase upstream main
 
 6. Checkout a new release branch from the default branch:
 
@@ -73,8 +73,8 @@ For example:
 
 .. code:: bash
 
-   git checkout DEFAULT_BRANCH
-   git pull --rebase upstream DEFAULT_BRANCH
+   git checkout main
+   git pull --rebase upstream main
 
 15. Add an annotated tag to the release commit with the collection version. Pushing this tag to the ``upstream`` repository will make Zuul publish the collection on `Ansible Galaxy <https://galaxy.ansible.com/>`_.
 
