@@ -31,7 +31,7 @@ Versioning and deprecation
   * You can fix bugs in **patch** releases but not add new features or deprecate things.
   * You can add new features and deprecate things in **minor** releases, but not remove things or change behavior of existing features.
   * You can only remove things or make breaking changes in **major** releases.
-* Make sure that if a deprecation is added in a collection version that is included in 3.x.x, the removal itself will only happen in a collection version included in 5.0.0 or later.
+* Make sure that if a deprecation is added in a collection version that is included in 3.x.y, the removal itself will only happen in a collection version included in 5.0.0 or later.
 * Make sure that the policy of releasing, versioning and deprecation is announced to contributors and users in some way. For an example of how to do this, see `the announcement in community.general <https://github.com/ansible-collections/community.general/issues/582>`_. You could also do this in the README.
 
 .. _changelogs:
