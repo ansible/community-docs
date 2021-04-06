@@ -56,7 +56,7 @@ For example:
 
 9. If the content was recently moved from another collection, be sure you have all related changelog fragments in the ``changelogs/fragments`` directory. If not, copy them previously.
 
-10. Run ``antsibull-changelog release`` (should previously be installed with ``pip install antsibull-changelog``).
+10. Run ``antsibull-changelog release --reload-plugins`` (should previously be installed with ``pip install antsibull-changelog``).
 
 11. Verify that the ``CHANGELOG.rst`` looks as expected.
 
