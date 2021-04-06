@@ -75,6 +75,6 @@ In this approach, releases for the current major version are made from the ``mai
 Releasing with release branches
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use releasing with release branches when breaking changes have been introduced.
+Use releasing with release branches when breaking changes have been introduced. This approach is usually only used by the large community collections, ``community.general`` and ``community.network``.
 
 To peform a release this way, refer to the `Releasing with release branches <releasing_collections_without_release_branches.rst>`_ manual.
