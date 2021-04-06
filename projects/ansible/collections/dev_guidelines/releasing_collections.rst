@@ -67,6 +67,11 @@ To peform a release this way, refer to the `Releasing without release branches <
 
 When there is a need to introduce breaking changes, you can switch to the next approach.
 
+Hybrid approach
+~~~~~~~~~~~~~~~
+
+In this approach, releases for the current major version are made from the ``main`` branch, while new releases for older major versions are made from release branches for these versions.
+
 Releasing with release branches
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
