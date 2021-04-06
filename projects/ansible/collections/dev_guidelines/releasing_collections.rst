@@ -44,6 +44,8 @@ Collections are required to include a changelog. To give a consistent feel for c
 Before releasing, check:
 
 * all merged pull requests since the last release (except ones related to documentation and new modules/plugins), have `changelog fragments <https://docs.ansible.com/ansible/devel/community/development_process.html#creating-a-changelog-fragment>`_
+
+  * new module and plugin (except jinja2 test and filter plugins) pull requests do **not** need a changelog fragment, they are auto-detected by the changelog generator by their ``version_added`` value
 * all the fragments follow the `changelog entry format <https://docs.ansible.com/ansible/devel/community/development_process.html#changelog-fragment-entry-format>`_
 
 Release guidelines
