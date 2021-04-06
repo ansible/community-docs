@@ -51,7 +51,7 @@ For example:
    release_summary: |-
      This is the minor release of the ``community.mysql`` collection.
      This changelog contains all changes to the modules and plugins in this collection
-     that have been made after the release of ``community.mysql`` 1.2.0.
+     that have been made after the previous release.
 
 
 9. If the content was recently moved from another collection, be sure you have all related changelog fragments in the ``changelogs/fragments`` directory. If not, copy them previously.
