@@ -10,7 +10,7 @@ Since no release branches are used, the manual does not distinguish between rele
 
 1. First, examine the collection if there are merged changes to release.
 
-2. According to the changes made, choose an appropriate release version number. Keep in mind that the collections must follow the `semantic versioning <https://semver.org/>`_ rules. Refer to the `Releasing without release branches <releasing_collections_without_release_branches.rst>`_ for details.
+2. According to the changes made, choose an appropriate release version number. Keep in mind that the collections must follow the `semantic versioning <https://semver.org/>`_ rules. Refer to the `Releasing collections <releasing_collections.rst>`_ guide for details.
 
 3. Announce your intention to release the collection in a corresponding pinned release issue / community pinboard of the collection and in the ``#ansible-community`` IRC channel.
 
