@@ -9,9 +9,9 @@ The collections under the `ansible-collections organization <https://github.com/
 
 The collections have:
 
-* publicly available policy of releasing, versioning and deprecation (for example, written in its README or in a dedicated pinned issue).
+* publicly available policy of releasing, versioning and deprecation (for example, written in its README or in a dedicated pinned issue)
 * a pinned issue when its release managers inform the community about planned / completed releases (can be combined with the release policy issue mentioned above)
-* changelog; for details, refer to the :ref:`changelogs` section.
+* changelog; for details, refer to the :ref:`changelogs` section
 * releases of the collection tagged in the collection's repository
 * CI pipelines up and running (can be implemented by using GitHub Actions, Azure Pipelines, Zuul)
 * all CI tests running against a commit that releases the collection; if they do not pass, the collection will NOT be released
