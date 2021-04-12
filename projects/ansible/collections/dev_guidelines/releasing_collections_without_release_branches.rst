@@ -42,7 +42,7 @@ Since no release branches are used, the manual does not distinguish between rele
    release_summary: |-
      Write some text here that should appear as the release summary for this version.
      The format is reStructuredText (but not a list as for regular changelog fragments).
-     This text will be verbatimly inserted into the changelog.
+     This text will be inserted into the changelog.
 
 For example:
 
