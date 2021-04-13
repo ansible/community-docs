@@ -88,6 +88,8 @@ For example:
 
 17. Wait until the new version is published on the collection's `Ansible Galaxy <https://galaxy.ansible.com/>`_ page (it will appear in a list of tarballs available to download).
 
-18. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
+18. Add a GitHub release for the new tag. Title should be the version and content ``See https://github.com/ansible-collections/community.xxx/blob/main/CHANGELOG.rst for all changes``.
 
-19. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel. Additionally, you can announce it using GitHub's Releases system.
+19. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
+
+20. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel.

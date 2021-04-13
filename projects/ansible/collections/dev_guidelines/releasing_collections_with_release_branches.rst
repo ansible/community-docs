@@ -112,11 +112,13 @@ Add to git and commit.
 
 19. Wait until the new version is published on the collection's `Ansible Galaxy <https://galaxy.ansible.com/>`_ page (it will appear in a list of tarballs available to download).
 
-20. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
+20. Add a GitHub release for the new tag. Title should be the version and content ``See https://github.com/ansible-collections/community.xxx/blob/stable-X/CHANGELOG.rst for all changes``.
 
-21. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel. Additionally, you can announce it using GitHub's Releases system.
+21. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
 
-22. In the stable-X branch, update the version in galaxy.yml to the next **expected** version, for example, ``X.1.0``. Add, commit and push to the **upstream** repository.
+22. Announce that the release has been made in the pinned release issue / community pinboard of the collection and in the ``#ansible-community`` IRC channel.
+
+23. In the stable-X branch, update the version in galaxy.yml to the next **expected** version, for example, ``X.1.0``. Add, commit and push to the **upstream** repository.
 
 
 Releasing minor versions
@@ -159,7 +161,7 @@ The new version is assumed to be ``X.Y.0``. All changes that should go into it a
 
 9. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
 
-10. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel. Additionally, you can announce it using GitHub's Releases system.
+10. Announce that the release has been made in the pinned release issue / community pinboard of the collection and in the ``#ansible-community`` IRC channel. Additionally, you can announce it using GitHub's Releases system.
 
 11. In the stable-X branch, update the version in galaxy.yml to the next **expected** version, for example, if you has released ``X.1.0``, the next expected version could be ``X.2.0``. Add, commit and push to the **upstream** repository.
 
@@ -237,7 +239,7 @@ Add to git and commit.
 
 11. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
 
-12. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel. Additionally, you can announce it using GitHub's Releases system.
+12. Announce that the release has been made in the pinned release issue / community pinboard of the collection and in the ``#ansible-community`` IRC channel.
 
 No more minor versions are expected
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -277,4 +279,4 @@ No more minor versions are expected
 
 9. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
 
-10. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel. Additionally, you can announce it using GitHub's Releases system.
+10. Announce that the release has been made in the pinned release issue / community pinboard of the collection and in the ``#ansible-community`` IRC channel.
