@@ -155,13 +155,13 @@ The new version is assumed to be ``X.Y.0``. All changes that should go into it a
 
 7. Wait until the new version is published on the collection's `Ansible Galaxy <https://galaxy.ansible.com/>`_ page (it will appear in a list of tarballs available to download).
 
-8. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
+8. Add a GitHub release for the new tag. Title should be the version and content ``See https://github.com/ansible-collections/community.xxx/blob/stable-X/CHANGELOG.rst for all changes``.
 
-9. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel. Additionally, you can announce it using GitHub's Releases system.
+9. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
 
-10. In the stable-X branch, update the version in galaxy.yml to the next **expected** version, for example, if you has released ``X.1.0``, the next expected version could be ``X.2.0``. Add, commit and push to the **upstream** repository.
+10. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel. Additionally, you can announce it using GitHub's Releases system.
 
-11. Add a GitHub release for the new tag. Title should be the version and content ``See https://github.com/ansible-collections/community.xxx/blob/stable-X/CHANGELOG.rst for all changes``.
+11. In the stable-X branch, update the version in galaxy.yml to the next **expected** version, for example, if you has released ``X.1.0``, the next expected version could be ``X.2.0``. Add, commit and push to the **upstream** repository.
 
 12. Checkout to the ``main`` branch.
 
@@ -227,9 +227,7 @@ Add to git and commit.
 
 9. Wait until the new version is published on the collection's `Ansible Galaxy <https://galaxy.ansible.com/>`_ page (it will appear in a list of tarballs available to download).
 
-10. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
-
-11. Add a GitHub release for the new tag. Title should be the version and content ``See https://github.com/ansible-collections/community.xxx/blob/stable-X/CHANGELOG.rst for all changes``.
+10. Add a GitHub release for the new tag. Title should be the version and content ``See https://github.com/ansible-collections/community.xxx/blob/stable-X/CHANGELOG.rst for all changes``.
 
 .. note::
 
@@ -237,5 +235,46 @@ Add to git and commit.
   This is intended, since the next minor release ``X.(Y+1).0`` already contains the changes for ``X.Y.Z`` as well
   (since these were cherry-picked from ``stable-X``).
 
+11. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
+
+12. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel. Additionally, you can announce it using GitHub's Releases system.
+
 No more minor versions are expected
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. In the ``stable-X`` branch, make sure that ``galaxy.yml`` contains the correct version number ``X.Y.Z``. If not, update it!
+
+2. In the ``stable-X`` branch, add a changelog fragment ``changelogs/fragments/X.Y.Z.yml`` with content:
+
+.. code:: yaml
+
+  release_summary: |-
+    Write some text here that should appear as the release summary for this version.
+    The format is reStructuredText (but not a list as for regular changelog fragments).
+    This text will be inserted into the changelog.
+
+3. In the ``stable-X`` branch, run:
+
+.. code:: bash
+
+   antsibull-changelog release
+
+4. In the ``stable-X`` branch, verify that ``CHANGELOG.rst`` looks as expected.
+
+5. In the ``stable-X`` branch, add, commit, and push changes to ``CHANGELOG.rst`` and ``changelogs/changelog.yaml``, and potentially deleted/archived fragments to the **upstream** repository (NOT to the origin).
+
+6. In the ``stable-X`` branch, add an annotated tag to the last commit with the collection version ``X.Y.Z``. Pushing this tag to the ``upstream`` repository will make Zuul publish the collection on `Ansible Galaxy <https://galaxy.ansible.com/>`_.
+
+.. code:: bash
+
+   git tag -n    # see current tags and their comments
+   git tag -a NEW_VERSION -m "comment here"    # the comment can be, for example, "community.foo: 2.1.1"
+   git push upstream NEW_VERSION
+
+7. Wait until the new version is published on the collection's `Ansible Galaxy <https://galaxy.ansible.com/>`_ page (it will appear in a list of tarballs available to download).
+
+8. Add a GitHub release for the new tag. Title should be the version and content ``See https://github.com/ansible-collections/community.xxx/blob/stable-X/CHANGELOG.rst for all changes``.
+
+9. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
+
+10. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel. Additionally, you can announce it using GitHub's Releases system.
