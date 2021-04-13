@@ -185,10 +185,57 @@ ii. If the next version will be a new major version, create a pull request where
 Releasing patch versions
 ========================
 
+The new version is assumed to be ``X.Y.Z``, and the previous patch version is assumed to be ``X.Y.z`` with ``z < Z`` (probably ``z`` is ``0``, as patch releases should be uncommon).
 
 More minor versions are expected
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+1. Checkout the ``X.Y.z`` tag.
+
+2. Update ``galaxy.yml`` so that the version is ``X.Y.Z``. Add and commit.
+
+3. Cherry-pick all changes from ``stable-X`` that were added after ``X.Y.z`` and should go into ``X.Y.Z``.
+
+4. Add a changelog fragment ``changelogs/fragments/X.Y.Z.yml`` with content:
+
+.. code:: yaml
+
+  release_summary: |-
+    Write some text here that should appear as the release summary for this version.
+    The format is reStructuredText (but not a list as for regular changelog fragments).
+    This text will be inserted into the changelog.
+
+Add to git and commit.
+
+5.Run:
+
+.. code:: bash
+
+   antsibull-changelog release
+
+6. Verify that ``CHANGELOG.rst`` looks as expected.
+
+7. Add and commit changes to ``CHANGELOG.rst`` and ``changelogs/changelog.yaml``, and potentially deleted/archived fragments.
+
+8. Add an annotated tag to the last commit with the collection version ``X.Y.Z``. Pushing this tag to the ``upstream`` repository will make Zuul publish the collection on `Ansible Galaxy <https://galaxy.ansible.com/>`_.
+
+.. code:: bash
+
+   git tag -n    # see current tags and their comments
+   git tag -a NEW_VERSION -m "comment here"    # the comment can be, for example, "community.foo: 2.1.1"
+   git push upstream NEW_VERSION
+
+9. Wait until the new version is published on the collection's `Ansible Galaxy <https://galaxy.ansible.com/>`_ page (it will appear in a list of tarballs available to download).
+
+10. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
+
+11. Add a GitHub release for the new tag. Title should be the version and content ``See https://github.com/ansible-collections/community.xxx/blob/stable-X/CHANGELOG.rst for all changes``.
+
+.. note::
+
+  The data for this release is only contained in a tag, and not in a branch (in particular not in ``stable-X``).
+  This is intended, since the next minor release ``X.(Y+1).0`` already contains the changes for ``X.Y.Z`` as well
+  (since these were cherry-picked from ``stable-X``).
 
 No more minor versions are expected
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
