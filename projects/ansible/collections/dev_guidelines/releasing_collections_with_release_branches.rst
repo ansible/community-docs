@@ -49,7 +49,6 @@ The new version is assumed to be ``X.0.0``.
 .. code:: bash
 
     git checkout -b update_repo
-    git push upstream stable-X
 
 6. Update the version in ``galaxy.yml`` in the branch to the next **expected** version (for example, ``X.1.0``).
 
