@@ -25,7 +25,7 @@ Standards and documentation
 
   * the only exception are new modules and plugins (that are not jinja2 filter and test plugins)
   * for jinja2 filter and test plugins, check out the `special syntax for changelog fragments <https://github.com/ansible-community/antsibull-changelog/blob/main/docs/changelogs.rst#adding-new-roles-playbooks-test-and-filter-plugins>`_
-* [ ] if new files are added with the pull request, they follow the [licensing rules](https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst#licensing)
+* [ ] if new files are added with the pull request, they follow the `licensing rules <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst#licensing>`_
 * [ ] the changes follow the `Ansible documentation standards <https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_documenting.html>`_ and the `Style guide <https://docs.ansible.com/ansible/devel/dev_guide/style_guide/index.html#style-guide>`_
 * [ ] the changes follow the `Development conventions <https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_best_practices.html>`_
 * [ ] if a new plugin is added, it is one of the `allowed plugin types <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst#modules-plugins>`_
