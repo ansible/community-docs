@@ -89,7 +89,7 @@ If needed, other contributors can help you with it later.
 Note: Some collections do not have integration tests.
 
 All integration tests are stored in ``tests/integration/targets`` subdirectories.
-Go to the subdirectory containing the name of module you are going to change.
+Go to the subdirectory containing the name of the module you are going to change.
 For example, if you are fixing the ``mysql_user`` module in the ``community.mysql`` collection,
 its tests are in ``tests/integration/targets/test_mysql_user/tasks``.
 
