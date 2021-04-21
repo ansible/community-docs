@@ -126,7 +126,7 @@ Note: If you are not sure whether you should use the default image for testing o
 You can also try to use the collection repository's CI to figure out which containers are used.
 
 If the tests ran successfully, there are usually two possible outcomes:
-a) If the bug has not appeared and the tests have passed successfully, ask the reporter to provide more details. The bug can be not a bug actually or can relate to a particular software version used or specifics of local environment configuration.
+a) If the bug has not appeared and the tests have passed successfully, ask the reporter to provide more details. The bug can be not a bug actually or can relate to a particular software version used or specifics of the local environment configuration.
 
 b) The bug has appeared and the tests has failed as expected showing the reported symptoms.
 
