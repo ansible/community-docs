@@ -39,4 +39,4 @@ If you are going to implement the feature yourself, say it in the issue explicit
 Create your first pull request
 ==============================
 
-How to quickly create your first patch and submit a pull request, refer to the `Quick-start guide <create_pr_quick_start_guide.rst>`_
+To learn how to quickly create your first patch and submit a pull request, refer to the `Quick-start guide <create_pr_quick_start_guide.rst>`_
