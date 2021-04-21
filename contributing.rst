@@ -33,7 +33,7 @@ Looking for an idea to implement
 First, see the paragraphs above.
 
 If you came up with a new feature, it is always worth creating an issue
-before starting to write code to discuss the idea with the community first.
+to discuss the idea with the community first, before writing code.
 If you are going to implement the feature yourself, say it in the issue explicitly to avoid working in parallel with somebody else.
 
 Create your first pull request
