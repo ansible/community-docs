@@ -2,7 +2,7 @@
 Quick-start development guide
 *****************************
 
-This quide describes all steps needed to create your first patch and submit a pull request.
+This guide describes all steps needed to create your first patch and submit a pull request.
 
 We assume that you use Linux as a work environment (you can use a virtual machine as well) and have ``git`` installed.
 
