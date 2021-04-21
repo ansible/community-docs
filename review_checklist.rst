@@ -30,7 +30,7 @@ Standards and documentation
 * [ ] the changes follow the `Development conventions <https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_best_practices.html>`_
 * [ ] if a new plugin is added, it is one of the `allowed plugin types <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst#modules-plugins>`_
 * [ ] documentation, examples, and return sections use FQCNs for the ``M(..)`` `format macros <https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_documenting.html#linking-and-other-format-macros-within-module-documentation>`_ when referring to modules
-* [ ] modules and plugins from ansible-core use ``ansible.builtin.`` as a FQCN prefix when mentioned
+* [ ] modules and plugins from ansible-core use ``ansible.builtin.`` as an FQCN prefix when mentioned
 * [ ] when a new option, module, plugin, or return value is added, the corresponding documentation or return sections use ``version_added:`` containing the *collection* version which they will be first released in
 
   * this usually is the next minor release, sometimes the next major release (example: if 2.7.5 is the current release, the next minor release will be 2.8.0, and the next major release will be 3.0.0)
