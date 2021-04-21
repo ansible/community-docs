@@ -2,7 +2,7 @@
 Contributing
 ************
 
-We follow `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_ in all our contributions and interactions within this repository.
+We follow the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_ in all our contributions and interactions within this repository.
 
 If you find any inconsistencies or places in this document which can be improved, please raise an issue or pull request to fix it.
 
