@@ -192,7 +192,7 @@ b) They have passed. Remember they failed originally? Our congratulations! You h
 20. Go to ``Pull requests`` tab and create a pull request.
 
 GitHub is tracking your fork, so it should see the new branch in it and automatically offer
-to create a pull request. Sometimes GitHub does not do it and you should click the ``New pull request`` button yourself.
+to create a pull request. Sometimes GitHub does not do it, and you should click the ``New pull request`` button yourself.
 Then choose ``compare across forks`` under the ``Compare changes`` title.
 Choose your repository and the new branch you pushed in the right drop-down list. Confirm.
 
