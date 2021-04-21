@@ -126,9 +126,9 @@ Note: If you are not sure whether you should use the default image for testing o
 You can also try to use the collection repository's CI to figure out which containers are used.
 
 If the tests ran successfully, there are usually two possible outcomes:
-a) If the bug has not appeared and the tests have passed successfully, ask the reporter to provide more details. The bug can be not a bug actually or can relate to a particular software version used or specifics of the local environment configuration.
 
-b) The bug has appeared and the tests has failed as expected showing the reported symptoms.
+  a) If the bug has not appeared and the tests have passed successfully, ask the reporter to provide more details. The bug can be not a bug actually or can relate to a particular software version used or specifics of the local environment configuration.
+  b) The bug has appeared and the tests has failed as expected showing the reported symptoms.
 
 13. Fix the bug.
 
@@ -168,11 +168,9 @@ You can use the ``-vv`` or ``-vvv`` argument, if you need more detailed output.
 If you need to run the tests against a specific distribution, see step 12.
 
 There are two possible outcomes:
-a) They have failed. Look at the output of the command.
-Fix the problem place in the code and run again.
-Repeat the cycle until the tests pass.
 
-b) They have passed. Remember they failed originally? Our congratulations! You have fixed the bug.
+  a) They have failed. Look at the output of the command. Fix the problem place in the code and run again. Repeat the cycle until the tests pass.
+  b) They have passed. Remember they failed originally? Our congratulations! You have fixed the bug.
 
 17. Commit your changes with an informative but short commit message:
 
