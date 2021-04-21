@@ -4,6 +4,11 @@ Quick-start development guide
 
 This guide describes all steps needed to create your first patch and submit a pull request.
 
+.. contents:: Topics
+
+Prepare your environment
+========================
+
 We assume that you use Linux as a work environment (you can use a virtual machine as well) and have ``git`` installed.
 
 1. If possible, make sure that you have installed and started ``docker``. While you can also run tests without docker, this makes it a lot easier since you do not have to install the precise requirements, and tests are running properly isolated and in the exact same environments as in CI. You often can also use ``podman`` with the ``docker`` executable shim, so if you have that you probably do not need to install ``docker``.
@@ -81,6 +86,9 @@ This is the repository where you forked from.
 
   git checkout -b name_of_my_branch
 
+Change the code
+===============
+
 12. We recommend you start with writing integration tests if applicable.
 
 Note: If there are any difficulties with writing / running the tests or you are not sure if the case can be covered, feel free to skip this step.
@@ -132,6 +140,9 @@ If the tests ran successfully, there are usually two possible outcomes:
 
 13. Fix the bug.
 
+Test your changes
+=================
+
 14. Run ``flake8`` against a changed file:
 
 .. code:: bash
@@ -171,6 +182,9 @@ There are two possible outcomes:
 
   a) They have failed. Look at the output of the command. Fix the problem place in the code and run again. Repeat the cycle until the tests pass.
   b) They have passed. Remember they failed originally? Our congratulations! You have fixed the bug.
+
+Submit a pull request
+=====================
 
 17. Commit your changes with an informative but short commit message:
 
