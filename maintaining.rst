@@ -18,30 +18,41 @@ Describe how
 Communication
 =============
 
-(Maybe it's worth putting this section content
-to contributing.rst and a reference to it here?
-Because it's relevant for all contributors, not only for maintainers)
+We follow the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_
+in all interactions within the project.
 
-Describe importance of being informed
+Be informed
+-----------
 
-Describe importance of communication in general (ref to CoC)
+Good communication is vital for prosperity of the project.
 
-Ways:
+Moreover, collection maintainers should be informed about important changes that impact all or many
+of the collections (for example, CI related) and act correspondingly to keep them up to date.
 
-  * Highly recommended:
+It is highly recommended to subscribe to the "Changes impacting collection contributors and maintainers" `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and the `Bullhorn newsletter <https://github.com/ansible/community/issues/546>`_.
 
-    - changes impacting collection contributors and maintainers issue
-    - Bullhorn newsletter:
+Communication channels
+----------------------
 
-      + subscription
-      +  use the issue (ref here) to announce important changes / releases of the collection
-    - contributor summits
-    - community pinboards
-    - IRC channels (#ansible-community, #ansible-devel, and dedicated ones if exist)
-  * Optional:
+Collection contributors and maintainers communicate by:
 
-    - weekly community IRC meetings
-    - mailing lists
+  * the "Changes impacting collection contributors and maintainers" `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_
+  * the Bullhorn newsletter:
+
+    + use the link in this `issue <https://github.com/ansible/community/issues/546>`_ to subscribe to the newsletter
+    + if you have something important to announce (for example, releases made recently), put a comment in the issue
+  * IRC channels such as ``#ansible-community``, ``#ansible-devel``, and specific ones
+  * Mailing lists
+  * Collection pinboards, issues, and GitHub discussions in corresponding repositories
+  * quarterly contributor summits
+  * Ansible fests and local meetups
+
+For more information about available IRC channels and mailing lists, refer to the `Ansible community documentation <https://docs.ansible.com/ansible/devel/community/communication.html>`_.
+
+Weekly community IRC meetings
+-----------------------------
+
+The important project-scale decisions are made by the community and the streeting committee at weekly IRC meetings in the ``#ansible-community`` IRC channel. If you want to see what is on the agenda, refer to issues in the `community-topics repository <https://github.com/ansible-community/community-topics>`_. If you want to submit a topic, create an issue there.
 
 Committing
 ==========
