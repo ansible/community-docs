@@ -46,36 +46,43 @@ Ways:
 Committing
 ==========
 
-Maintainers merge pull requests following the `Review checklist <review_checklist.rst>`_ and
-the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
+Maintainers review and merge pull requests following
+the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_,
+`Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
 
-There can be two kinds of maintainers: collection-scope maintainers and module-scope maintainers.
+There can be two kinds of maintainers: :ref:`_collection-maintainers` and :ref:`_module-maintainers`.
 
-Collection-scope maintainers
-----------------------------
+.. _collection-maintainers:
+
+Collection maintainers
+----------------------
 
 Collection-scope maintainers are contributors who have the ``write`` or higher access level in a collection.
 
 They have the commit right and can merge pull requests among other permissions.
 
-If applicable, the collection-scope maintainers expand a pull of module-scope maintainers.
+If applicable, the collection maintainers expand a pull of module maintainers.
 
-Module-scope maintainers
-------------------------
+.. _module-maintainers:
 
-This kind of maintainers exists in collections that have the `collection bot <https://github.com/ansible-community/collection_bot>`_,
+Module maintainers
+------------------
+
+Module-scope maintainers exist in collections that have the `collection bot <https://github.com/ansible-community/collection_bot>`_,
 for example `community.general <https://github.com/ansible-collections/community.general>`_
 and `community.network <https://github.com/ansible-collections/community.network>`_.
 
-Module-scope maintainers are contributors who are listed in ``.github/BOTMETA.yml``.
+Being a module maintainer is the stage prior to becoming a collection maintainer.
 
-The scope can be a file (for example, a module or plugin), directory, or repository.
+Module maintainers are contributors who are listed in ``.github/BOTMETA.yml``.
 
-Because in most cases the scope is a module or group of modules, we call these contributors module-scope maintainers.
+The scope can be any file (for example, a module or plugin), directory, or repository.
 
-The collection bot notifies module-scope maintainers when issues / pull requests related to files they maintain are created.
+Because in most cases the scope is a module or group of modules, we call these contributors module maintainers.
 
-Module-scope maintainers have the indirect commit right implemented through
+The collection bot notifies module maintainers when issues / pull requests related to files they maintain are created.
+
+Module maintainers have the indirect commit right implemented through
 the `collection bot <https://github.com/ansible-community/collection_bot>`_.
 When two module maintainers comment with the keywords ``shipit``, ``LGTM``, or ``+1`` a pull request
 which changes a module they maintain, the collection bot will merge the pull request automatically.
@@ -83,37 +90,11 @@ which changes a module they maintain, the collection bot will merge the pull req
 For more information about the collection bot and its interface,
 refer to the `Collection bot overview <https://github.com/ansible-community/collection_bot/blob/main/ISSUE_HELP.md>`_.
 
-When a collection-scope maintainer considers a contribution to a file significant enough
+When a collection maintainer considers a contribution to a file significant enough
 (it can be, for example, fixing a complex bug, adding a feature, providing regular reviews, and so on),
-they can offer the author to become a maintainer, in other words to add their GitHub login to ``.github/BOTMETA.yml``.
+they can offer the author to become a module maintainer, in other words to add their GitHub login to ``.github/BOTMETA.yml``.
 
-The wording of the offer can be::
-
-  Thank you @... for the contribution!
-
-  Would you like to be added to a corresponding team in `.github/BOTMETA.yml` as a maintainer of the module?
-
-  We have a bot in this collection which is tracking the issues/pull requests including for keywords
-  such as `shipit`; the full list is [here](https://github.com/ansible-community/collection_bot/blob/main/ISSUE_HELP.md).
-
-  If your GitHub login is listed in `.github/BOTMETA.yml` as a maintainer of a module and
-  you'll put `shipit`, `LGTM`, or `+1` in a pull request that touches the module, the bot will count your `shipit`.
-  If another maintainer also puts `shipit` (so we need two), the pull request will be merged by the bot automatically.
-  So being a maintainer in `github/BOTMETA.yml` is the indirect commit privilege.
-
-  The bot also notifies module maintainers when related issues and pull requests are created.
-
-  Module-scope maintainers who are active and provide regular significant contributions (reviews and code contributions)
-  in a collection scope can be granted the `write` access to the repository.
-  In other words, they become collection-scope maintainers and can merge others' pull requests, release the collection, and so on.
-
-  We have the [review checklist](https://github.com/ansible/community-docs/blob/main/review_checklist.rst) and
-  the [contributing guidelines](https://github.com/ansible/community-docs/blob/main/contributing.rst)
-  to help maintainers on their journey.
-
-  What do you think?
-
-  Thank you!
+Module maintainers, as well as collection ones, act in accordance to the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_, the `Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
 
 Backporting
 ===========
@@ -122,7 +103,6 @@ Explain, add a ref after writing a guide
 
 Nuances in c.g. / c.n
 
-=========
 Releasing
 =========
 
