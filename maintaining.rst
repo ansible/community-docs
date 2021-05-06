@@ -7,9 +7,13 @@ Maintaining collections
 What is the collection maintenance
 ==================================
 
-A collection is an Open Source project.
+A community of any collection can be logically divided into three major groups:
 
-If a community of any Open Source project can be logically divided into three groups: core members, contributors, and users, the collection maintainers are the core members of the collection.
+  1. Maintainers (collection owners).
+  2. Contributors.
+  3. Users.
+
+Maintainers are people who are responsible for collection maintenance.
 
 The collection maintenance consists of the regular activities listed in this document.
 
@@ -28,11 +32,12 @@ How to become a maintainer
 ==========================
 
 [DRAFT] Describe how, basically:
-1. Contribute
-2. Communicate
-3. Stay persistent
-4. Learn
-5. Submit an application (maybe an issue under https://github.com/ansible/community ?)
+
+  1. Contribute
+  2. Communicate
+  3. Stay persistent
+  4. Learn
+  5. Submit an application (maybe an issue under https://github.com/ansible/community ?)
 
 Communication
 =============
@@ -144,11 +149,12 @@ Collection maintainers release all supported stable versions of the collections 
 provided that there have been enough changes to release.
 
 Generally, releasing in the collections consists of:
-1. Planning and announcement.
-2. Generating a changelog.
-3. Creating a release git tag and pushing it.
-4. Automatic publishing the release tarball on `Ansible Galaxy <https://galaxy.ansible.com/>`_ by Zuul.
-5. Final announcement.
+
+  1. Planning and announcement.
+  2. Generating a changelog.
+  3. Creating a release git tag and pushing it.
+  4. Automatic publishing the release tarball on `Ansible Galaxy <https://galaxy.ansible.com/>`_ by Zuul.
+  5. Final announcement.
 
 For more information about the process, refer to the `Releasing guidelines <releasing.rst>`_.
 
