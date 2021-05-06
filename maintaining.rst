@@ -4,22 +4,40 @@ Maintaining collections
 
 .. contents:: Topics
 
-What is maintenance and what it includes?
+What is the collection maintenance
+==================================
 
-  * point 1 (ref to the paragraph)
-  * point 2 (ref to the paragraph)
-  * point 3 (ref to the paragraph)
+A collection is an Open Source project.
+
+If a community of any Open Source project can be logically divided into three groups: core members, contributors, and users, the collection maintainers are the core members of the collection.
+
+The collection maintenance consists of the regular activities listed in this document.
+
+Maintainers can divide the activities between each other, for example, someone can be a release manager and someone can be responsible for the collection documentation.
+
+Besides that, collection maintainers are watching that their collections adhear the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_.
+
+Who is a collection maintainer
+==============================
+
+A collection maintainer is a contributor trusted by the community who made significant and regular contributions to the project and showed themselves as a specialist in the related area and is able to manage the collection performing the tasks listed in this document.
+
+A collection maintainer has extended permissions in the collection scope. For details, refer to :ref:`_collection-maintainers`.
 
 How to become a maintainer
 ==========================
 
-Describe how
+[DRAFT] Describe how, basically:
+1. Contribute
+2. Communicate
+3. Stay persistent
+4. Learn
+5. Submit an application (maybe an issue under https://github.com/ansible/community ?)
 
 Communication
 =============
 
-We follow the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_
-in all interactions within the project.
+We follow the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_ in all interactions within the project.
 
 Be informed
 -----------
@@ -52,7 +70,9 @@ For more information about available IRC channels and mailing lists, refer to th
 Weekly community IRC meetings
 -----------------------------
 
-The important project-scale decisions are made by the community and the streeting committee at weekly IRC meetings in the ``#ansible-community`` IRC channel. If you want to see what is on the agenda, refer to issues in the `community-topics repository <https://github.com/ansible-community/community-topics>`_. If you want to submit a topic, create an issue there.
+The important project-scale decisions are made by the community and the streeting committee at weekly IRC meetings in the ``#ansible-community`` IRC channel. See the `meeting schedule <>https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_.
+
+If you want to see what is on the agenda, refer to issues in the `community-topics repository <https://github.com/ansible-community/community-topics>`_. If you want to submit a topic, create an issue there.
 
 Committing
 ==========
@@ -110,46 +130,66 @@ Module maintainers, as well as collection ones, act in accordance to the `Ansibl
 Backporting
 ===========
 
-Explain, add a ref after writing a guide
+Collection maintainers backport merged pull requests to stable branches
+following the `semantic versioning <https://semver.org/>`_ and release policies of the collections.
 
-Nuances in c.g. / c.n
+For more information about the process, refer to the `Backporting guidelines <https://docs.ansible.com/ansible/devel/community/development_process.html#backporting-merged-prs-in-ansible-core>`_.
+
+Backporting can be implemented automatically using GitHub bots (for example, with the `Patchback app <https://github.com/apps/patchback>`_) and labeling like it is done in `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
 
 Releasing
 =========
 
-(ref to releasing guidelines when merged)
+Collection maintainers release all supported stable versions of the collections regularly,
+provided that there have been enough changes to release.
+
+Generally, releasing in the collections consists of:
+1. Planning and announcement.
+2. Generating a changelog.
+3. Creating a release git tag and pushing it.
+4. Automatic publishing the release tarball on `Ansible Galaxy <https://galaxy.ansible.com/>`_ by Zuul.
+5. Final announcement.
+
+For more information about the process, refer to the `Releasing guidelines <releasing.rst>`_.
 
 Expanding contributors pool
 ===========================
 
-Ways to expand a contributors pool:
-
+[Draft] Ways to expand a contributors pool:
   * Looking for potential maintainer among current active contributors
   * Announcements
-  * ...
+  * Training
+
+Documentation
+=============
+
+Maintainers look after the collection documentation.
+
+In particular, they are watching that documents of the collection scope, like ``README.md``, are relevant and timely updated and that modules / plugins documentation adhears the `Ansible documentation format <https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_documenting.html>`_ and the `Style guide <https://docs.ansible.com/ansible/devel/dev_guide/style_guide/index.html#style-guide>`_.
 
 Reviewing
 =========
 
-What:
-
-  * issues
+[Draft] What:
+  * issues (including bug report analysis, proposal analysis)
 
     - review issues yourself first (use the review guide) as they can request
       breaking changes, non-idempotent modules, etc
     - ask if the author wants to implement / solve the issue themselves
     - point to the quick start guide offering the author / other contributors
       to implement / solve the issue
-  * PRs
+  * PRs (proposal analysis)
 
     - first review quickly patches yourself if they don't contain breaking changes, etc.
     - first response is important, mention maintainers / authors / people
       who already contributed to the code
 
+They can accept or reject the proposed features / code changes
+
 Solving
 =======
 
-What:
+[Draft] What:
 
   * issues (contributing guidelines when merged)
   * abandoned PRs (ask their author about difficulties, offer help, etc.)
