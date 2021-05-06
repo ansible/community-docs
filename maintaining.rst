@@ -20,7 +20,7 @@ Besides that, collection maintainers are watching that their collections adhear 
 Who is a collection maintainer
 ==============================
 
-A collection maintainer is a contributor trusted by the community who made significant and regular contributions to the project and showed themselves as a specialist in the related area and is able to manage the collection performing the tasks listed in this document.
+A collection maintainer is a contributor trusted by the community who makes significant and regular contributions to the project and showed themselves as a specialist in the related area and is able to manage the collection performing the tasks listed in this document.
 
 A collection maintainer has extended permissions in the collection scope. For details, refer to :ref:`_collection-maintainers`.
 
