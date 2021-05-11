@@ -4,40 +4,75 @@ Maintaining collections
 
 .. contents:: Topics
 
+Collection maintainership
+=========================
+
 What is the collection maintenance
-==================================
+----------------------------------
 
-A community of any collection can be logically divided into three major groups:
+Ansible collections community can be logically divided into four major groups:
 
-  1. Maintainers (collection owners).
-  2. Contributors.
-  3. Users.
+  1. Steering committee members (make desicions in scope of all the collections included in Ansible package and related areas).
+  2. Maintainers (collection owners).
+  3. Contributors.
+  4. Users.
 
 Maintainers are people who are responsible for collection maintenance.
 
-The collection maintenance consists of the regular activities listed in this document.
+The collection maintenance consists of the regular activities listed in these guidelines.
 
-Maintainers can divide the activities between each other, for example, someone can be a release manager and someone can be responsible for the collection documentation.
-
-Besides that, collection maintainers are watching that their collections adhear the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_.
+In particular, collection maintainers do:
+  - :ref:`Review <Reviewing>` and :ref:`commit <Commiting>` changes made by other contributors.
+  - :ref:`Backport <Backporting>` changes to stable branches.
+  - Address issues discovered to appropriate contributors.
+  - :ref:`Release <Releasing>` collections.
+  - Watch that collections adhear the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_.
+  - Keep tracking changes announced in ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and timely update a collection in accordance with them.
 
 Who is a collection maintainer
-==============================
+------------------------------
 
-A collection maintainer is a contributor trusted by the community who makes significant and regular contributions to the project and showed themselves as a specialist in the related area and is able to manage the collection performing the tasks listed in this document.
+A collection maintainer is a contributor trusted by the community who makes significant and regular contributions to the project and showed themselves as a specialist in the related area.
 
-A collection maintainer has extended permissions in the collection scope. For details, refer to :ref:`_collection-maintainers`.
+Collection maintainers has :ref:`extended permissions <Collection maintainers>` in the collection scope.
+
+Collection maintainers satisfy the :ref:`requirements <Requirements for maintainers>`.
+
+Requirements for maintainers
+----------------------------
+
+Maintainers (including candidates) have:
+
+  - Acted in accordance with `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_.
+  - History of multiple contribution to a collection.
+  - Exellent technical judgement in collection-related areas.
+  - Responsiveness to mentions in issues and pull requests.
+  - Responsiveness to issues and pull requests assigned to them.
+  - Read these guidelines and the linked documents.
+  - Subscribed to:
+
+    + a collection repository (the ``Watch`` button => ``All activity``),
+    + the ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_,
+    + the `Bullhorn newsletter <https://github.com/ansible/community/issues/546>`_.
+  - Knowledge and intention to manage a collection performing the tasks listed in these guidelines. Maintainers can divided responsibilities between each other.
 
 How to become a maintainer
-==========================
+--------------------------
 
-[DRAFT] Describe how, basically:
+[DRAFT] May either self-nominate, be nominated by another maintainer...
+
+[TODO] Reference to the path here (should be created first).
+
+[DRAFT] The path is basically:
 
   1. Contribute
   2. Communicate
   3. Stay persistent
   4. Learn
   5. Submit an application (maybe an issue under https://github.com/ansible/community ?)
+  6. Become a maintainer
+  7. Participate in Ansible community IRC meetings discussing topics listed in.. Do not hesitate to share your thoughts - any opinions are much appreciated.
+  8. Become a steering committee member.
 
 Communication
 =============
@@ -49,10 +84,9 @@ Be informed
 
 Good communication is vital for prosperity of the project.
 
-Moreover, collection maintainers should be informed about important changes that impact all or many
-of the collections (for example, CI related) and act correspondingly to keep them up to date.
+Moreover, collection maintainers must be informed about important changes that impact all or many of the collections (for example, CI related) and act correspondingly to keep them up to date.
 
-It is highly recommended to subscribe to the "Changes impacting collection contributors and maintainers" `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and the `Bullhorn newsletter <https://github.com/ansible/community/issues/546>`_.
+It is required for collection maintainers to be subscribed to the ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and the `Bullhorn newsletter <https://github.com/ansible/community/issues/546>`_.
 
 Communication channels
 ----------------------
@@ -65,8 +99,8 @@ Collection contributors and maintainers communicate by:
     + use the link in this `issue <https://github.com/ansible/community/issues/546>`_ to subscribe to the newsletter
     + if you have something important to announce (for example, releases made recently), put a comment in the issue
   * IRC channels such as ``#ansible-community``, ``#ansible-devel``, and specific ones
-  * Mailing lists
-  * Collection pinboards, issues, and GitHub discussions in corresponding repositories
+  * mailing lists
+  * collection pinboards, issues, and GitHub discussions in corresponding repositories
   * quarterly contributor summits
   * Ansible fests and local meetups
 
@@ -86,9 +120,7 @@ Maintainers review and merge pull requests following
 the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_,
 `Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
 
-There can be two kinds of maintainers: :ref:`_collection-maintainers` and :ref:`_module-maintainers`.
-
-.. _collection-maintainers:
+There can be two kinds of maintainers: :ref:`collection maintainers <Collection maintainers>` and :ref:`module maintainers <Module maintainers>`.
 
 Collection maintainers
 ----------------------
@@ -98,8 +130,6 @@ Collection-scope maintainers are contributors who have the ``write`` or higher a
 They have the commit right and can merge pull requests among other permissions.
 
 If applicable, the collection maintainers expand a pull of module maintainers.
-
-.. _module-maintainers:
 
 Module maintainers
 ------------------
