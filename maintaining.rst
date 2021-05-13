@@ -195,6 +195,7 @@ Expanding contributors pool
   * Looking for potential maintainer among current active contributors
   * Announcements
   * Training
+  * CONTRIBUTORS file, labeling, etc.
 
 Documentation
 =============
