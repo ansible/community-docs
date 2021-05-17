@@ -13,7 +13,7 @@ What is the collection maintenance
 Ansible collections community can be logically divided into four major groups:
 
   1. Steering committee members (make desicions in scope of all the collections included in Ansible package and related areas).
-  2. Maintainers (collection owners).
+  2. Maintainers.
   3. Contributors.
   4. Users.
 
@@ -21,13 +21,14 @@ Maintainers are people who are responsible for collection maintenance.
 
 The collection maintenance consists of the regular activities listed in these guidelines.
 
-In particular, collection maintainers do:
-  - :ref:`Review <Reviewing>` and :ref:`commit <Commiting>` changes made by other contributors.
-  - :ref:`Backport <Backporting>` changes to stable branches.
-  - Address issues discovered to appropriate contributors.
-  - :ref:`Release <Releasing>` collections.
-  - Watch that collections adhear the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_.
-  - Keep tracking changes announced in ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and timely update a collection in accordance with them.
+In particular, collection maintainers:
+
+  - :ref:`review <Reviewing>` and :ref:`commit <Commiting>` changes made by other contributors,
+  - :ref:`backport <Backporting>` changes to stable branches,
+  - address issues discovered to appropriate contributors,
+  - :ref:`release <Releasing>` collections,
+  - watch that collections adhear the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_,
+  - keep tracking changes announced in ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and timely update a collection in accordance with them.
 
 Who is a collection maintainer
 ------------------------------
@@ -41,9 +42,10 @@ Collection maintainers satisfy the :ref:`requirements <Requirements for maintain
 Requirements for maintainers
 ----------------------------
 
+Maintainers act in accordance with `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_.
+
 Maintainers (including candidates) have:
 
-  - Acted in accordance with `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_.
   - History of multiple contribution to a collection.
   - Exellent technical judgement in collection-related areas.
   - Responsiveness to mentions in issues and pull requests.
@@ -59,20 +61,9 @@ Maintainers (including candidates) have:
 How to become a maintainer
 --------------------------
 
-[DRAFT] May either self-nominate, be nominated by another maintainer...
+A person who is interested in becoming a maintainer and satisfies the :ref:`requirements <Requirements for maintainers>` may either self-nominate or be nominated by another maintainer.
 
-[TODO] Reference to the path here (should be created first).
-
-[DRAFT] The path is basically:
-
-  1. Contribute
-  2. Communicate
-  3. Stay persistent
-  4. Learn
-  5. Submit an application (maybe an issue under https://github.com/ansible/community ?)
-  6. Become a maintainer
-  7. Participate in Ansible community IRC meetings discussing topics listed in.. Do not hesitate to share your thoughts - any opinions are much appreciated.
-  8. Become a steering committee member.
+To nominate a candidate, create and issue under the `ansible/community <https://github.com/ansible/community>`_ repository.
 
 Communication
 =============
@@ -91,14 +82,14 @@ It is required for collection maintainers to be subscribed to the ``Changes impa
 Communication channels
 ----------------------
 
-Collection contributors and maintainers communicate by:
+Collection contributors and maintainers communicate through:
 
-  * the "Changes impacting collection contributors and maintainers" `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_
+  * the ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_
   * the Bullhorn newsletter:
 
     + use the link in this `issue <https://github.com/ansible/community/issues/546>`_ to subscribe to the newsletter
     + if you have something important to announce (for example, releases made recently), put a comment in the issue
-  * IRC channels such as ``#ansible-community``, ``#ansible-devel``, and specific ones
+  * IRC channels such as ``#ansible-community``, ``#ansible-devel``, and dedicated ones
   * mailing lists
   * collection pinboards, issues, and GitHub discussions in corresponding repositories
   * quarterly contributor summits
@@ -111,13 +102,12 @@ Weekly community IRC meetings
 
 The important project-scale decisions are made by the community and the streeting committee at weekly IRC meetings in the ``#ansible-community`` IRC channel. See the `meeting schedule <>https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_.
 
-If you want to see what is on the agenda, refer to issues in the `community-topics repository <https://github.com/ansible-community/community-topics>`_. If you want to submit a topic, create an issue there.
+If you want to see what is on the agenda, refer to the issues in the `community-topics repository <https://github.com/ansible-community/community-topics>`_. If you want to submit a topic, create an issue in the repository.
 
 Committing
 ==========
 
-Maintainers review and merge pull requests following
-the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_,
+Maintainers review and merge pull requests following the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_,
 `Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
 
 There can be two kinds of maintainers: :ref:`collection maintainers <Collection maintainers>` and :ref:`module maintainers <Module maintainers>`.
@@ -144,12 +134,11 @@ Module maintainers are contributors who are listed in ``.github/BOTMETA.yml``.
 
 The scope can be any file (for example, a module or plugin), directory, or repository.
 
-Because in most cases the scope is a module or group of modules, we call these contributors module maintainers.
+Because in most cases the scope is a module or group of modules, we call these contributors as module maintainers.
 
 The collection bot notifies module maintainers when issues / pull requests related to files they maintain are created.
 
-Module maintainers have the indirect commit right implemented through
-the `collection bot <https://github.com/ansible-community/collection_bot>`_.
+Module maintainers have the indirect commit right implemented through the `collection bot <https://github.com/ansible-community/collection_bot>`_.
 When two module maintainers comment with the keywords ``shipit``, ``LGTM``, or ``+1`` a pull request
 which changes a module they maintain, the collection bot will merge the pull request automatically.
 
@@ -158,7 +147,7 @@ refer to the `Collection bot overview <https://github.com/ansible-community/coll
 
 When a collection maintainer considers a contribution to a file significant enough
 (it can be, for example, fixing a complex bug, adding a feature, providing regular reviews, and so on),
-they can offer the author to become a module maintainer, in other words to add their GitHub login to ``.github/BOTMETA.yml``.
+they can offer the author to become a module maintainer, in other words, to add their GitHub login to ``.github/BOTMETA.yml``.
 
 Module maintainers, as well as collection ones, act in accordance to the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_, the `Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
 
@@ -170,13 +159,13 @@ following the `semantic versioning <https://semver.org/>`_ and release policies 
 
 For more information about the process, refer to the `Backporting guidelines <https://docs.ansible.com/ansible/devel/community/development_process.html#backporting-merged-prs-in-ansible-core>`_.
 
-Backporting can be implemented automatically using GitHub bots (for example, with the `Patchback app <https://github.com/apps/patchback>`_) and labeling like it is done in `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
+For convenience, backporting can be implemented automatically using GitHub bots (for example, with the `Patchback app <https://github.com/apps/patchback>`_) and labeling like it is done in `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
 
 Releasing
 =========
 
 Collection maintainers release all supported stable versions of the collections regularly,
-provided that there have been enough changes to release.
+provided that there have been enough changes merged to release.
 
 Generally, releasing in the collections consists of:
 
@@ -191,11 +180,22 @@ For more information about the process, refer to the `Releasing guidelines <rele
 Expanding contributors pool
 ===========================
 
-[Draft] Ways to expand a contributors pool:
+Maintainers are interested in increasing a number of active long-term contributors for a collection they maintain.
+
+[Draft, rephrase] Recommendation / ways:
+
+  * Newcomer oriented. Give them first positive experience. It will make  it easy for them to keep coming back.
+  * Make people feel welcome. Welcome new people in ``README``.
+  * Labeling (``easy_fix``, ``documentation``). When people have easy wins, they will feel incentivized to do more.
+  * Leaving non-critical easy fixes to newcomers. Instead of you fixing some easy bugs, mentor a person who’d like to contribute.
+  * Be responsive. Respond as quickly as possible.
+  * Provide all relevant doc links.
+  * Adopt a zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_. How people can complain?
+  * ``README`` contains links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`_.
+  * Creating and maintaining ``CONTRIBUTORS`` file listing all the contributors including issue reporters. Having a link from ``README`` to this file.
   * Looking for potential maintainer among current active contributors
   * Announcements
   * Training
-  * CONTRIBUTORS file, labeling, etc.
 
 Documentation
 =============
