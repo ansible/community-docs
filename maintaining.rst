@@ -12,7 +12,7 @@ What is the collection maintenance
 
 Ansible collections community can be logically divided into four major groups:
 
-  1. Steering committee members (make desicions in scope of all the collections included in Ansible package and related areas).
+  1. Steering committee members (make decisions in scope of all the collections included in Ansible package and related areas).
   2. Maintainers.
   3. Contributors.
   4. Users.
@@ -23,7 +23,7 @@ The collection maintenance consists of the regular activities listed in these gu
 
 In particular, collection maintainers:
 
-  - :ref:`review <Reviewing>` and :ref:`commit <Commiting>` changes made by other contributors,
+  - :ref:`review <Reviewing>` and :ref:`commit <Committing>` changes made by other contributors,
   - :ref:`backport <Backporting>` changes to stable branches,
   - address issues discovered to appropriate contributors,
   - :ref:`release <Releasing>` collections,
@@ -47,7 +47,7 @@ Maintainers act in accordance with `Ansible Code of Conduct <https://docs.ansibl
 Maintainers (including candidates) have:
 
   - History of multiple contribution to a collection.
-  - Exellent technical judgement in collection-related areas.
+  - Excellent technical judgement in collection-related areas.
   - Responsiveness to mentions in issues and pull requests.
   - Responsiveness to issues and pull requests assigned to them.
   - Read these guidelines and the linked documents.
@@ -177,25 +177,60 @@ Generally, releasing in the collections consists of:
 
 For more information about the process, refer to the `Releasing guidelines <releasing.rst>`_.
 
-Expanding contributors pool
-===========================
+Expanding community
+===================
+
+Increasing a number of active contributors and maintainers
+----------------------------------------------------------
 
 Maintainers are interested in increasing a number of active long-term contributors for a collection they maintain.
 
-[Draft, rephrase] Recommendation / ways:
+Contributors are reviewers, issue or pull request authors, testers, maintainer, and all other people who help develop the project.
 
-  * Newcomer oriented. Give them first positive experience. It will make  it easy for them to keep coming back.
-  * Make people feel welcome. Welcome new people in ``README``.
-  * Labeling (``easy_fix``, ``documentation``). When people have easy wins, they will feel incentivized to do more.
-  * Leaving non-critical easy fixes to newcomers. Instead of you fixing some easy bugs, mentor a person who’d like to contribute.
-  * Be responsive. Respond as quickly as possible.
-  * Provide all relevant doc links.
-  * Adopt a zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_. How people can complain?
-  * ``README`` contains links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`_.
-  * Creating and maintaining ``CONTRIBUTORS`` file listing all the contributors including issue reporters. Having a link from ``README`` to this file.
-  * Looking for potential maintainer among current active contributors
-  * Announcements
-  * Training
+Every regular contributor once was a newcomer. Make the first experience as positive as possible to make the new people coming back.
+
+Have good development documentation. Get feedback from new contributors if there were thing they struggled with when working on their proposals and improve the documentation correspondingly.
+
+Create the ``CONTRIBUTING`` file in your repository. In there, add a link to the `Quick-start guide <create_pr_quick_start_guide.rst>` as well as to other guidelines describing things specific to your collection.
+
+Make contributors feel welcome. Greet and thank contributors impersonally in ``README`` and individually in their proposals.
+Thank all participants after merging or closing a proposal.
+
+Be responsive. Respond as quickly as possible. Even if you cannot review a proposal right now, greet and thank the author.
+
+Add and keep updated the ``CONTRIBUTORS`` file listing all the contributors including issue reporters and refer to it from your ``README``.
+
+Do not fix trivial non-critical bugs yourself. Instead, mentor a person who would like to contribute.
+Mark issues with labels like ``easy_fix``, ``help_wanted``, and ``documentation``.
+They will let newcomers know where they can find easy wins.
+
+When reviewing an issue, if applicable, ask the author whether they want to fix the issue themselves providing the link to the `Quick-start guide <create_pr_quick_start_guide.rst>`.
+
+Adopt a zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/commun    ity/code_of_conduct.html>`_. Add information to ``README`` how people can complain.
+
+Announce that the project needs new contributors and maintainers through available communication channels.
+
+Promote active contributors satisfying :ref:`requirements <Requirements for maintainers>` to maintainers. Revise contributors activity regularly.
+
+Create the ``MAINTAINERS`` file and keep it updated.
+
+Checklist
+---------
+
+In addition to the paragraph above, here is a checklist:
+
+  * Give newcomers first positive experience.
+  * Have good documentation containing sections for newbies. 
+  * Make people feel welcome impersonally and individually.
+  * Use labels to show easy wins.
+  * Leave non-critical easy fixes to newcomers. Mentor them.
+  * Be quickly responsive.
+  * Zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/commun    ity/code_of_conduct.html>`_.
+  * Put information how people can complain in your ``README`` and ``CONTRIBUTING`` file.
+  * Links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`, and other documentation in ``README``.
+  * Add and keep updated the ``CONTRIBUTORS`` and ``MAINTAINERS`` files.
+  * Look for new maintainers among active contributors.
+  * Announce.
 
 Documentation
 =============
