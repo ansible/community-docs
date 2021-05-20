@@ -2,6 +2,12 @@
 Maintaining collections
 ***********************
 
+Thank you for being / your interest to become a community collection maintainer.
+
+This guide offers an overview of maintenance-related tasks, criteria for becoming a maintainer along with recommendations how to build healthy and active community around your collection.
+
+The Ansible community hopes that you will find that maintaining a collection is as rewarding for you as having the collection content is for the wider community.
+
 .. contents:: Topics
 
 Collection maintainership
@@ -111,6 +117,8 @@ Maintainers review and merge pull requests following the `Ansible Code of Conduc
 `Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
 
 There can be two kinds of maintainers: :ref:`collection maintainers <Collection maintainers>` and :ref:`module maintainers <Module maintainers>`.
+
+For the both kinds it is worth keeping in mind that “with great power comes great responsibility”.
 
 Collection maintainers
 ----------------------
