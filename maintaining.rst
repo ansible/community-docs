@@ -113,8 +113,7 @@ If you want to see what is on the agenda, refer to the issues in the `community-
 Committing
 ==========
 
-Maintainers review and merge pull requests following the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_,
-`Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
+Maintainers review and merge pull requests following the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_, `Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html#general-rules>`_.
 
 There can be two kinds of maintainers: :ref:`collection maintainers <Collection maintainers>` and :ref:`module maintainers <Module maintainers>`.
 
