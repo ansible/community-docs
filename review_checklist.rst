@@ -9,14 +9,25 @@ If you are a committer, also refer to the `Ansible committer guidelines <https:/
 General tips
 ============
 
-* Try to create a culture of collaboration when reviewing.
-* Welcome the author and thank them for the pull request.
-* When suggesting changes, try to use questions, not statements.
-* When suggesting mandatory changes, do it as politely as possible providing documentation references.
-* If your suggestion is optional or a matter of personal preferences, please say it explicitly.
-* When asking for adding tests or for complex code refactoring, say that the author is welcome to ask for clarifications and help if they need.
-* If somebody suggests a good idea, mention it or put a thumbs up.
-* After merging, thank the author and reviewers for their time and effort.
+When reviewing, first, try to figure out that the suggested changes (including made through feature requests):
+
+  - do NOT unnecessarily break backwards compatibility,
+  - do NOT bring more harm than value,
+  - do NOT introduce not idempotent solutions,
+  - do NOT duplicate already existing features (inside or outside the collection),
+  - do NOT violate the `Ansible development conventions <https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_best_practices.html#following-ansible-conventions>`_.
+
+Social aspects:
+
+  - Try to create a culture of collaboration when reviewing.
+  - Welcome the author and thank them for the issue or pull request.
+  - If there is a non-crucial easy-fix bug reported, politely ask the author to fix it themselves providing a link to the `Quick-start guide <create_pr_quick_start_guide.rst>`_.
+  - When suggesting changes, try to use questions, not statements.
+  - When suggesting mandatory changes, do it as politely as possible providing documentation references.
+  - If your suggestion is optional or a matter of personal preferences, please say it explicitly.
+  - When asking for adding tests or for complex code refactoring, say that the author is welcome to ask for clarifications and help if they need.
+  - If somebody suggests a good idea, mention it or put a thumbs up.
+  - After merging, thank the author and reviewers for their time and effort.
 
 Standards and documentation
 ===========================
