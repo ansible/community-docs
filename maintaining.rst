@@ -249,26 +249,6 @@ In particular, they are watching that documents of the collection scope, like ``
 Reviewing
 =========
 
-[Draft] What:
-  * issues (including bug report analysis, proposal analysis)
+Maintainers can accept or reject proposed changes.
 
-    - review issues yourself first (use the review guide) as they can request
-      breaking changes, non-idempotent modules, etc
-    - ask if the author wants to implement / solve the issue themselves
-    - point to the quick start guide offering the author / other contributors
-      to implement / solve the issue
-  * PRs (proposal analysis)
-
-    - first review quickly patches yourself if they don't contain breaking changes, etc.
-    - first response is important, mention maintainers / authors / people
-      who already contributed to the code
-
-They can accept or reject the proposed features / code changes
-
-Solving
-=======
-
-[Draft] What:
-
-  * issues (contributing guidelines when merged)
-  * abandoned PRs (ask their author about difficulties, offer help, etc.)
+Maintainers review code proposals as well as reported issues following the `review checklist <review_checklist.rst>`_ in applicable parts and the recommendations mentioned in the :ref:`Expanding community <Expanding community>` paragraph.
