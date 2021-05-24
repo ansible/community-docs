@@ -29,12 +29,14 @@ The collection maintenance consists of the regular activities listed in these gu
 
 In particular, collection maintainers:
 
+  - keep README, development guidelines, and other general collection :ref:`documentation<Documentation>` relevant,
   - :ref:`review<Reviewing>` and :ref:`commit<Committing>` changes made by other contributors,
   - :ref:`backport<Backporting>` changes to stable branches,
   - address issues discovered to appropriate contributors,
   - :ref:`release<Releasing>` collections,
   - watch that collections adhear the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_,
-  - keep tracking changes announced in ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and timely update a collection in accordance with them.
+  - keep tracking changes announced in ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and timely update a collection in accordance with them,
+  - increase a number of active contributors and maintainers by :ref:`building healthy community<Expanding community>` around collections.
 
 Who is a collection maintainer
 ------------------------------
@@ -212,7 +214,7 @@ Contributors are reviewers, issue or pull request authors, testers, maintainer, 
 
 Every regular contributor once was a newcomer. Make the first experience as positive as possible to make the new people coming back.
 
-Have good development documentation. Get feedback from new contributors if there were thing they struggled with when working on their proposals and improve the documentation correspondingly.
+Good development documentation makes contributors life much easier. Get feedback from new contributors if there were things they struggled with when working on their proposals and improve the documentation correspondingly.
 
 Create the ``CONTRIBUTING`` file in your repository. In there, add a link to the `Quick-start guide <create_pr_quick_start_guide.rst>` as well as to other guidelines describing things specific to your collection.
 
@@ -229,7 +231,7 @@ They will let newcomers know where they can find easy wins.
 
 When reviewing an issue, if applicable, ask the author whether they want to fix the issue themselves providing the link to the `Quick-start guide <create_pr_quick_start_guide.rst>`.
 
-Adopt a zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/commun    ity/code_of_conduct.html>`_. Add information to ``README`` how people can complain.
+Adopt a zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_. Add information to ``README`` how people can complain.
 
 Announce that the project needs new contributors and maintainers through available communication channels.
 
@@ -245,12 +247,12 @@ Checklist
 In addition to the paragraph above, here is a checklist:
 
   * Give newcomers first positive experience.
-  * Have good documentation containing sections for newbies. 
+  * Have good documentation containing sections / guidelines for newbies. 
   * Make people feel welcome impersonally and individually.
   * Use labels to show easy wins.
   * Leave non-critical easy fixes to newcomers. Mentor them.
   * Be quickly responsive.
-  * Zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/commun    ity/code_of_conduct.html>`_.
+  * Zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_.
   * Put information how people can complain in your ``README`` and ``CONTRIBUTING`` file.
   * Links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`, and other documentation in ``README``.
   * Add and keep updated the ``CONTRIBUTORS`` and ``MAINTAINERS`` files.
