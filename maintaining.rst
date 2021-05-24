@@ -8,7 +8,7 @@ This guide offers an overview of maintenance-related tasks, criteria for becomin
 
 The Ansible community hopes that you will find that maintaining a collection is as rewarding for you as having the collection content is for the wider community.
 
-.. contents:: Topics
+.. contents:: Topics:
 
 Collection maintainership
 =========================
