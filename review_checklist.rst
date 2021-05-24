@@ -27,7 +27,7 @@ When users report bugs, the first thing that is needed is to verify the behaviou
 * [ ] The user does not expect an unexpected behavior. The related documentation is clear.
 * [ ] There is a minimal reproducer. If not, ask the reporter to reduce the complexity to help pinpoint the issue.
 * [ ] The issue is not a consequence of wrong-configured environment.
-* [ ] If it looks a real bug, does the behaviour still exist in the most recent release or the development branch?
+* [ ] If it looks like a real bug, does the behaviour still exist in the most recent release or the development branch?
 * [ ] You reproduced the bug.
 * [ ] If you do not have a suitable infrastructure, other contributors have reproduced the bug.
 
