@@ -29,10 +29,10 @@ The collection maintenance consists of the regular activities listed in these gu
 
 In particular, collection maintainers:
 
-  - :ref:`review <Reviewing>` and :ref:`commit <Committing>` changes made by other contributors,
-  - :ref:`backport <Backporting>` changes to stable branches,
+  - :ref:`review<Reviewing>` and :ref:`commit<Committing>` changes made by other contributors,
+  - :ref:`backport<Backporting>` changes to stable branches,
   - address issues discovered to appropriate contributors,
-  - :ref:`release <Releasing>` collections,
+  - :ref:`release<Releasing>` collections,
   - watch that collections adhear the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_,
   - keep tracking changes announced in ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and timely update a collection in accordance with them.
 
@@ -41,9 +41,9 @@ Who is a collection maintainer
 
 A collection maintainer is a contributor trusted by the community who makes significant and regular contributions to the project and showed themselves as a specialist in the related area.
 
-Collection maintainers has :ref:`extended permissions <Collection maintainers>` in the collection scope.
+Collection maintainers has :ref:`extended permissions<Collection maintainers>` in the collection scope.
 
-Collection maintainers satisfy the :ref:`requirements <Requirements for maintainers>`.
+Collection maintainers satisfy the :ref:`requirements<Requirements for maintainers>`.
 
 Requirements for maintainers
 ----------------------------
@@ -67,7 +67,7 @@ Maintainers (including candidates) have:
 How to become a maintainer
 --------------------------
 
-A person who is interested in becoming a maintainer and satisfies the :ref:`requirements <Requirements for maintainers>` may either self-nominate or be nominated by another maintainer.
+A person who is interested in becoming a maintainer and satisfies the :ref:`requirements<Requirements for maintainers>` may either self-nominate or be nominated by another maintainer.
 
 To nominate a candidate, create and issue under the `ansible/community <https://github.com/ansible/community>`_ repository.
 
@@ -115,7 +115,7 @@ Committing
 
 Maintainers review and merge pull requests following the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_, `Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html#general-rules>`_.
 
-There can be two kinds of maintainers: :ref:`collection maintainers <Collection maintainers>` and :ref:`module maintainers <Module maintainers>`.
+There can be two kinds of maintainers: :ref:`collection maintainers<Collection maintainers>` and :ref:`module maintainers<Module maintainers>`.
 
 For the both kinds it is worth keeping in mind that “with great power comes great responsibility”.
 
@@ -217,7 +217,7 @@ Adopt a zero-tolerance policy towards behavior violating `Ansible Code of Conduc
 
 Announce that the project needs new contributors and maintainers through available communication channels.
 
-Promote active contributors satisfying :ref:`requirements <Requirements for maintainers>` to maintainers. Revise contributors activity regularly.
+Promote active contributors satisfying :ref:`requirements<Requirements for maintainers>` to maintainers. Revise contributors activity regularly.
 
 Create the ``MAINTAINERS`` file and keep it updated.
 
@@ -251,4 +251,4 @@ Reviewing
 
 Maintainers can accept or reject proposed changes.
 
-Maintainers review code proposals as well as reported issues following the `review checklist <review_checklist.rst>`_ in applicable parts and the recommendations mentioned in the :ref:`Expanding community <Expanding community>` paragraph.
+Maintainers review code proposals as well as reported issues following the `review checklist <review_checklist.rst>`_ in applicable parts and the recommendations mentioned in the :ref:`Expanding community<Expanding community>` paragraph.
