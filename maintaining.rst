@@ -45,6 +45,8 @@ Collection maintainers has :ref:`extended permissions<Collection maintainers>` i
 
 Collection maintainers satisfy the :ref:`requirements<Requirements for maintainers>`.
 
+.. _Requirements for maintainers:
+
 Requirements for maintainers
 ----------------------------
 
@@ -70,6 +72,8 @@ How to become a maintainer
 A person who is interested in becoming a maintainer and satisfies the :ref:`requirements<Requirements for maintainers>` may either self-nominate or be nominated by another maintainer.
 
 To nominate a candidate, create and issue under the `ansible/community <https://github.com/ansible/community>`_ repository.
+
+.. _Communication:
 
 Communication
 =============
@@ -110,6 +114,8 @@ The important project-scale decisions are made by the community and the streetin
 
 If you want to see what is on the agenda, refer to the issues in the `community-topics repository <https://github.com/ansible-community/community-topics>`_. If you want to submit a topic, create an issue in the repository.
 
+.. _Committing:
+
 Committing
 ==========
 
@@ -119,6 +125,8 @@ There can be two kinds of maintainers: :ref:`collection maintainers<Collection m
 
 For the both kinds it is worth keeping in mind that “with great power comes great responsibility”.
 
+.. _Collection maintainers:
+
 Collection maintainers
 ----------------------
 
@@ -127,6 +135,8 @@ Collection-scope maintainers are contributors who have the ``write`` or higher a
 They have the commit right and can merge pull requests among other permissions.
 
 If applicable, the collection maintainers expand a pull of module maintainers.
+
+.. _Module maintainers:
 
 Module maintainers
 ------------------
@@ -158,6 +168,8 @@ they can offer the author to become a module maintainer, in other words, to add 
 
 Module maintainers, as well as collection ones, act in accordance to the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_, the `Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
 
+.. _Backporting:
+
 Backporting
 ===========
 
@@ -167,6 +179,8 @@ following the `semantic versioning <https://semver.org/>`_ and release policies 
 For more information about the process, refer to the `Backporting guidelines <https://docs.ansible.com/ansible/devel/community/development_process.html#backporting-merged-prs-in-ansible-core>`_.
 
 For convenience, backporting can be implemented automatically using GitHub bots (for example, with the `Patchback app <https://github.com/apps/patchback>`_) and labeling like it is done in `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
+
+.. _Releasing:
 
 Releasing
 =========
@@ -183,6 +197,8 @@ Generally, releasing in the collections consists of:
   5. Final announcement.
 
 For more information about the process, refer to the `Releasing guidelines <releasing.rst>`_.
+
+.. _Expanding community:
 
 Expanding community
 ===================
@@ -221,6 +237,8 @@ Promote active contributors satisfying :ref:`requirements<Requirements for maint
 
 Create the ``MAINTAINERS`` file and keep it updated.
 
+.. _Checklist:
+
 Checklist
 ---------
 
@@ -245,6 +263,8 @@ Documentation
 Maintainers look after the collection documentation.
 
 In particular, they are watching that documents of the collection scope, like ``README.md``, are relevant and timely updated and that modules / plugins documentation adhears the `Ansible documentation format <https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_documenting.html>`_ and the `Style guide <https://docs.ansible.com/ansible/devel/dev_guide/style_guide/index.html#style-guide>`_.
+
+.. _Reviewing:
 
 Reviewing
 =========
