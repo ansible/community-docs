@@ -210,7 +210,7 @@ Increasing a number of active contributors and maintainers
 
 Maintainers are interested in increasing a number of active long-term contributors for a collection they maintain.
 
-Contributors are reviewers, issue or pull request authors, testers, maintainer, and all other people who help develop the project.
+Contributors are reviewers, issue or pull request authors, testers, maintainers, and all other people who help develop the project.
 
 Every regular contributor once was a newcomer. Make the first experience as positive as possible to make the new people coming back.
 
