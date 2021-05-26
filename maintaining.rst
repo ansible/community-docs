@@ -43,7 +43,7 @@ Who is a collection maintainer
 
 A collection maintainer is a contributor trusted by the community who makes significant and regular contributions to the project and showed themselves as a specialist in the related area.
 
-Collection maintainers has :ref:`extended permissions<Collection maintainers>` in the collection scope.
+Collection maintainers have :ref:`extended permissions<Collection maintainers>` in the collection scope.
 
 Collection maintainers satisfy the :ref:`requirements<Requirements for maintainers>`.
 
