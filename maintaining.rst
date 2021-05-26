@@ -212,7 +212,7 @@ Maintainers are interested in increasing a number of active long-term contributo
 
 Contributors are reviewers, issue or pull request authors, testers, maintainers, and all other people who help develop the project.
 
-Every regular contributor once was a newcomer. Make the first experience as positive as possible to make the new people coming back.
+Every regular contributor once was a newcomer. Make the first experience as positive as possible to encourage the new people coming back.
 
 Good development documentation makes contributors life much easier. Get feedback from new contributors if there were things they struggled with when working on their proposals and improve the documentation correspondingly.
 
