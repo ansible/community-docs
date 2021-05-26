@@ -226,7 +226,7 @@ Be responsive. Respond as quickly as possible. Even if you cannot review a propo
 If your collection is not huge, add and keep updated the ``CONTRIBUTORS`` file listing all the contributors including issue reporters and refer to it from your ``README``. You can ask contributors to do it themselves or add a note about this to the development documentation of the collection.
 
 Do not fix trivial non-critical bugs yourself. Instead, mentor a person who would like to contribute.
-Mark issues with labels like ``easy_fix``, ``waiting_on_contributor``, and ``documentation``.
+Mark issues with labels like ``easy_fix``, ``waiting_on_contributor``, ``help_wanted``, and ``documentation``.
 They will let newcomers know where they can find easy wins.
 
 When reviewing an issue, if applicable, ask the author whether they want to fix the issue themselves providing the link to the `Quick-start guide <create_pr_quick_start_guide.rst>`.
