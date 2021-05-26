@@ -56,7 +56,7 @@ Maintainers act in accordance with `Ansible Code of Conduct <https://docs.ansibl
 
 Maintainers (including candidates) have:
 
-  - History of multiple contribution to a collection.
+  - History of multiple contributions to a collection.
   - Excellent technical judgement in collection-related areas.
   - Responsiveness to mentions in issues and pull requests.
   - Responsiveness to issues and pull requests assigned to them.
