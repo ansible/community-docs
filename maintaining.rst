@@ -157,7 +157,7 @@ Because in most cases the scope is a module or group of modules, we call these c
 The collection bot notifies module maintainers when issues / pull requests related to files they maintain are created.
 
 Module maintainers have indirect commit rights implemented through the `collection bot <https://github.com/ansible-community/collection_bot>`_.
-When two module maintainers comment with the keywords ``shipit``, ``LGTM``, or ``+1`` a pull request
+When two module maintainers comment with the keywords ``shipit``, ``LGTM``, or ``+1`` on a pull request
 which changes a module they maintain, the collection bot will merge the pull request automatically.
 
 For more information about the collection bot and its interface,
