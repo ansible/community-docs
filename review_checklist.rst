@@ -4,19 +4,6 @@ Review Checklist
 
 When reviewing, keep in mind that we follow the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_ in all our contributions and interactions within this repository.
 
-If you are a committer, also refer to the `Ansible committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
-
-General tips
-============
-
-When reviewing, first, try to figure out that the suggested changes (including made through feature requests):
-
-  - do NOT unnecessarily break backwards compatibility,
-  - do NOT bring more harm than value,
-  - do NOT introduce not idempotent solutions,
-  - do NOT duplicate already existing features (inside or outside the collection),
-  - do NOT violate the `Ansible development conventions <https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_best_practices.html#following-ansible-conventions>`_.
-
 Social aspects:
 
   - Try to create a culture of collaboration when reviewing.
@@ -28,6 +15,32 @@ Social aspects:
   - When asking for adding tests or for complex code refactoring, say that the author is welcome to ask for clarifications and help if they need.
   - If somebody suggests a good idea, mention it or put a thumbs up.
   - After merging, thank the author and reviewers for their time and effort.
+
+If you are a committer, also refer to the `Ansible committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
+
+Reviewing bug reports
+=====================
+
+When users report bugs, the first thing that is needed is to verify the behaviour.
+
+* [ ] Verify if the user made an obvious mistake in the example code. We often see user errors reported as bugs.
+* [ ] The user does not expect an unexpected behavior. The related documentation is clear.
+* [ ] There is a minimal reproducer. If not, ask the reporter to reduce the complexity to help pinpoint the issue.
+* [ ] The issue is not a consequence of wrong-configured environment.
+* [ ] If it looks like a real bug, does the behaviour still exist in the most recent release or the development branch?
+* [ ] You reproduced the bug.
+* [ ] If you do not have a suitable infrastructure, other contributors have reproduced the bug.
+
+What the suggested changes MUST NOT do
+======================================
+
+When reviewing, first, try to figure out that the suggested changes (including made through feature requests):
+
+* [ ] Do NOT unnecessarily break backwards compatibility.
+* [ ] Do NOT bring more harm than value.
+* [ ] Do NOT introduce not idempotent solutions.
+* [ ] Do NOT duplicate already existing features (inside or outside the collection).
+* [ ] Do NOT violate the `Ansible development conventions <https://docs.ansible.com/ansible/devel/dev_guide/developing_modules_best_practices.html#following-ansible-conventions>`_.
 
 Standards and documentation
 ===========================
@@ -50,11 +63,11 @@ Standards and documentation
 Tests (if applicable and technically possible to implement)
 ===========================================================
 
-* [ ] The pull request has `integration tests <https://docs.ansible.com/ansible/devel/dev_guide/testing_integration.html>`_.
-* [ ] The pull request has `unit tests <https://docs.ansible.com/ansible/devel/dev_guide/testing_units.html>`_.
-* [ ] All changes are covered.
-* [ ] Integration tests also cover ``check_mode`` (if it is supported).
+* [ ] The pull request has `integration tests <https://docs.ansible.com/ansible/devel/dev_guide/testing_integration.html>`_ and / or `unit tests <https://docs.ansible.com/ansible/devel/dev_guide/testing_units.html>`_.
+* [ ] All changes are covered (for example, a bug case or a new option separately and in sensible combinations with other options).
+* [ ] Integration tests cover ``check_mode`` (if it is supported).
 * [ ] Integration tests check an actual state of the system, not only what the module reports (for example, if the module changes a file, check that the file was actually changed by using the ``ansible.builtin.stat`` module).
+* [ ] Integration tests check return values (if applicable).
 
 Merge commits and breaking changes
 ==================================
