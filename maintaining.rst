@@ -34,7 +34,7 @@ In particular, collection maintainers:
   - :ref:`backport<Backporting>` changes to stable branches,
   - address issues discovered to appropriate contributors,
   - :ref:`release<Releasing>` collections,
-  - watch that collections adhear the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_,
+  - watch that collections adhere the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_,
   - keep tracking changes announced in ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and timely update a collection in accordance with them,
   - increase a number of active contributors and maintainers by :ref:`building healthy community<Expanding community>` around collections.
 
