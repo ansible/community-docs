@@ -166,7 +166,7 @@ refer to the `Collection bot overview <https://github.com/ansible-community/coll
 
 When a collection maintainer considers a contribution to a file significant enough
 (it can be, for example, fixing a complex bug, adding a feature, providing regular reviews, and so on),
-they can offer the author to become a module maintainer, in other words, to add their GitHub login to ``.github/BOTMETA.yml``.
+they can offer the author to become a module maintainer, in other words, to add their GitHub account to ``.github/BOTMETA.yml``.
 
 Module maintainers, as well as collection ones, act in accordance to the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_, the `Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
 
