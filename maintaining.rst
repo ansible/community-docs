@@ -63,7 +63,7 @@ Maintainers (including candidates) have:
   - Read these guidelines and the linked documents.
   - Subscribed to:
 
-    + a collection repository (the ``Watch`` button → ``All activity``),
+    + the collection repository (the ``Watch`` button → ``All activity``),
     + the ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_,
     + the `Bullhorn newsletter <https://github.com/ansible/community/issues/546>`_.
   - Knowledge and intention to manage a collection performing the tasks listed in these guidelines. Maintainers can divide responsibilities between each other.
