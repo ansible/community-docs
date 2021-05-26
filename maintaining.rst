@@ -96,7 +96,6 @@ Communication channels
 
 Collection contributors and maintainers communicate through:
 
-  * the ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_
   * the Bullhorn newsletter:
 
     + use the link in this `issue <https://github.com/ansible/community/issues/546>`_ to subscribe to the newsletter
