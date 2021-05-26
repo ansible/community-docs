@@ -215,7 +215,7 @@ Every regular contributor once was a newcomer. Make the first experience as posi
 
 Good development documentation makes contributors life much easier. Get feedback from new contributors if there were things they struggled with when working on their proposals and improve the documentation correspondingly.
 
-Create the ``CONTRIBUTING`` file in your repository. In there, add a link to the `Quick-start guide <create_pr_quick_start_guide.rst>` as well as to other guidelines describing things specific to your collection.
+Create the ``CONTRIBUTING`` file in your repository. In there, add a link to the `Quick-start guide <create_pr_quick_start_guide.rst>`_ as well as to other guidelines describing things specific to your collection.
 
 Make contributors feel welcome. Greet and thank contributors impersonally in ``README`` and individually in their proposals.
 Thank all participants after merging or closing a proposal.
