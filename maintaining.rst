@@ -73,7 +73,7 @@ How to become a maintainer
 
 A person who is interested in becoming a maintainer and satisfies the :ref:`requirements<Requirements for maintainers>` may either self-nominate or be nominated by another maintainer.
 
-To nominate a candidate, please create a GitHub issue in the relevant collection repository repository.
+To nominate a candidate, please create a GitHub issue in the relevant collection repository. If there is no response, the repository is not actively maintained, or the current maintainers do not have permissions to add the candidate, please create the issue under `ansible/community <https://github.com/ansible/community>`_ repository.
 
 .. _Communication:
 
