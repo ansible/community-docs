@@ -101,7 +101,7 @@ Collection contributors and maintainers communicate through:
     + use the link in this `issue <https://github.com/ansible/community/issues/546>`_ to subscribe to the newsletter
     + if you have something important to announce (for example, releases made recently), put a comment in the issue
   * IRC channels such as ``#ansible-community``, ``#ansible-devel``, and dedicated ones
-  * mailing lists
+  * mailing lists such as `ansible-announce <https://groups.google.com/d/forum/ansible-announce>`_ and `ansible-devel <https://groups.google.com/d/forum/ansible-devel>`_
   * collection pinboards, issues, and GitHub discussions in corresponding repositories
   * quarterly contributor summits
   * Ansible fests and local meetups
