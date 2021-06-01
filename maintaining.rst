@@ -194,7 +194,7 @@ Generally, releasing in the collections consists of:
   1. Planning and announcement.
   2. Generating a changelog.
   3. Creating a release git tag and pushing it.
-  4. Automatic publishing the release tarball on `Ansible Galaxy <https://galaxy.ansible.com/>`_ by Zuul.
+  4. Automatic publishing the release tarball on `Ansible Galaxy <https://galaxy.ansible.com/>`_ by `Zuul <https://dashboard.zuul.ansible.com/t/ansible/builds?pipeline=release>`_.
   5. Final announcement.
 
 For more information about the process, refer to the `Releasing guidelines <releasing.rst>`_.
