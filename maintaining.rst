@@ -238,6 +238,8 @@ Promote active contributors satisfying :ref:`requirements<Requirements for maint
 
 Create the ``MAINTAINERS`` file and keep it updated.
 
+Create a pinned issue which announces that the collection needs new maintainers and contributors providing links to the collection's CONTRIBUTING file and other documentation describing how to contribute to and maintain the collection (for example, it could contain a link to these guidelines).
+
 If your collection is a part of Ansible (is shipped with Ansible package), highlight that fact at the top of the collection's README.
 
 .. _Checklist:
@@ -258,6 +260,7 @@ In addition to the paragraph above, here is a checklist:
   * Links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`, and other documentation in ``README``.
   * Add and keep updated the ``CONTRIBUTORS`` and ``MAINTAINERS`` files.
   * If the collection is a part of Ansible, mention it in README.
+  * Create a pinned issue that the collection needs new maintainers and contributors.
   * Look for new maintainers among active contributors.
   * Announce.
 
