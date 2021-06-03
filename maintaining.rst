@@ -238,6 +238,8 @@ Promote active contributors satisfying :ref:`requirements<Requirements for maint
 
 Create the ``MAINTAINERS`` file and keep it updated.
 
+If your collection is a part of Ansible (is shipped with Ansible package), highlight that fact at the top of the collection's README.
+
 .. _Checklist:
 
 Checklist
@@ -255,6 +257,7 @@ In addition to the paragraph above, here is a checklist:
   * Put information how people can complain in your ``README`` and ``CONTRIBUTING`` file.
   * Links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`, and other documentation in ``README``.
   * Add and keep updated the ``CONTRIBUTORS`` and ``MAINTAINERS`` files.
+  * If the collection is a part of Ansible, mention it in README.
   * Look for new maintainers among active contributors.
   * Announce.
 
@@ -273,3 +276,8 @@ Reviewing
 Maintainers can accept or reject proposed changes.
 
 Maintainers review code proposals as well as reported issues following the `review checklist <review_checklist.rst>`_ in applicable parts and the recommendations mentioned in the :ref:`Expanding community<Expanding community>` paragraph.
+
+Inclusion in Ansible
+====================
+
+If a collection is not included in Ansible (not shipped with Ansible package), maintainers can submit the collection for inclusion by creating a discussion under `ansible-collections/ansible-inclusion repository <https://github.com/ansible-collections/ansible-inclusion>`_. For more information, refer to the `repository's README <https://github.com/ansible-collections/ansible-inclusion/blob/main/README.md>`_.
