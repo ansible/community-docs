@@ -230,7 +230,7 @@ They will let newcomers know where they can find easy wins.
 
 When reviewing an issue, if applicable, ask the author whether they want to fix the issue themselves providing the link to the `Quick-start guide <create_pr_quick_start_guide.rst>`_.
 
-Adopt a zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_. Add information to ``README`` how people can complain referring to the `policy-violations Code of Conduct section<https://docs.ansible.com/ansible/latest/community/code_of_conduct.html#policy-violations>`_.
+Adopt a zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_. Add information to ``README`` how people can complain referring to the `"Policy violations" Code of Conduct section <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html#policy-violations>`_.
 
 Announce that the project needs new contributors and maintainers through available communication channels.
 
