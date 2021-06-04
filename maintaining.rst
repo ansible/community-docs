@@ -259,7 +259,7 @@ In addition to the paragraph above, here is a checklist:
   * Put information how people can complain in your ``README`` and ``CONTRIBUTING`` file.
   * Links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`, and other documentation in ``README``.
   * Add and keep updated the ``CONTRIBUTORS`` and ``MAINTAINERS`` files.
-  * If the collection is a part of Ansible, mention it in README.
+  * If the collection is a part of Ansible, mention it in ``README``.
   * Create a pinned issue that the collection needs new maintainers and contributors.
   * Look for new maintainers among active contributors.
   * Announce.
