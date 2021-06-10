@@ -36,7 +36,8 @@ In particular, collection maintainers:
   - :ref:`release<Releasing>` collections,
   - watch that collections adhere the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_,
   - keep tracking changes announced in ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and timely update a collection in accordance with them,
-  - increase a number of active contributors and maintainers by :ref:`building healthy community<Expanding community>` around collections.
+  - increase a number of active contributors and maintainers by :ref:`building healthy community<Expanding community>` around collections,
+  - revise this document regularly for updates and sharing their experience through changing it.
 
 Who is a collection maintainer
 ------------------------------
@@ -212,6 +213,11 @@ For more information about the process, refer to the `Releasing guidelines <rele
 
 Expanding community
 ===================
+
+.. note::
+
+  If you discover good ways how to expand a community or make it more robust, please share them with other maintainers through changing this document.
+
 
 Increasing a number of active contributors and maintainers
 ----------------------------------------------------------
