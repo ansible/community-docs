@@ -103,10 +103,19 @@ Collection contributors and maintainers communicate through:
   * IRC channels such as ``#ansible-community``, ``#ansible-devel``, and dedicated ones
   * mailing lists such as `ansible-announce <https://groups.google.com/d/forum/ansible-announce>`_ and `ansible-devel <https://groups.google.com/d/forum/ansible-devel>`_
   * collection pinboards, issues, and GitHub discussions in corresponding repositories
-  * quarterly contributor summits
+  * quarterly Contributor Summits
   * Ansible fests and local meetups
 
 For more information about available IRC channels and mailing lists, refer to the `Ansible community documentation <https://docs.ansible.com/ansible/devel/community/communication.html>`_.
+
+Contributor Summits
+-------------------
+
+Because our project is a community of individuals collaborating on making the world better through developing automation software, the social aspect is vital for the project's prosperity as for any community.
+
+The quarterly Ansible Contributor Summit is a global event that provides our contributors a great opportunity to meet each other, communicate, share ideas, and see that there are other real persons behind the messages on IRC or GitHub. In other words, it gives a sense of community.
+
+To make the community more robust, keep tracking the `Bullhorn newsletter <https://github.com/ansible/community/issues/546>`_ for information when the next contributor summit will happen, invite contributors you know, and take part in the event together.
 
 Weekly community IRC meetings
 -----------------------------
@@ -236,6 +245,8 @@ Announce that the project needs new contributors and maintainers through availab
 
 Promote active contributors satisfying :ref:`requirements<Requirements for maintainers>` to maintainers. Revise contributors activity regularly.
 
+If your collection found new maintainers, announce that fact in the `Bullhorn newsletter <https://github.com/ansible/community/issues/546>`_ and during the next Contributor Summit congratulating and thanking them for the work done. You can mention all the people promoted since the previous summit. Remember to invite the other maintainers to the Summit in advance.
+
 Create the ``MAINTAINERS`` file and keep it updated.
 
 Create a pinned issue which announces that the collection needs new maintainers and contributors providing links to the collection's CONTRIBUTING file and other documentation describing how to contribute to and maintain the collection (for example, it could contain a link to these guidelines).
@@ -262,7 +273,8 @@ In addition to the paragraph above, here is a checklist:
   * If the collection is a part of Ansible, mention it in ``README``.
   * Create a pinned issue that the collection needs new maintainers and contributors.
   * Look for new maintainers among active contributors.
-  * Announce.
+  * Announce that your collection needs maintainers.
+  * Take part and congratulate new maintainers in Contributor Summits.
 
 Documentation
 =============
