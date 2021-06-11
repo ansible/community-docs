@@ -4,6 +4,8 @@ Quick-start development guide
 
 This guide describes all steps needed to test another author's pull request (hereinafter ``PR``).
 
+It can be useful, for example, for reviewers and issue authors when they want to check if a PR fixes the reported bug.
+
 .. contents:: Topics
 
 Prepare your environment
@@ -62,30 +64,7 @@ Refer to the `Ansible documentation <https://docs.ansible.com/ansible/devel/refe
 
 9. Run your playbook again this time using the changed PR.
 
-10. Run sanity tests:
-
-.. code:: bash
-
-  ansible-test sanity path/to/changed_file.py --docker -v
-
-If they failed, look at the output carefully - it is usually very informative and helps to identify a problem line quickly.
-Sanity failings usually relate to wrong code and documentation formatting.
-
-11. Run integration tests:
-
-.. code:: bash
-
-  ansible-test integration name_of_test_subdirectory --docker -v
-
-For example, if the tests files you changed are stored in ``tests/integration/targets/test_mysql_user/``, the command will be:
-
-.. code:: bash
-
-  ansible-test integration test_mysql_user --docker -v
-
-You can use the ``-vv`` or ``-vvv`` argument, if you need more detailed output.
-
 Give Feedback
 =============
 
-12. You can now give feedback on Pull Request or the linked issue(s).
+12. You can now give feedback on the pull request or the linked issue(s).
