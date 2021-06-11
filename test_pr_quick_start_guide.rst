@@ -53,7 +53,7 @@ If the collection is ``ansible.posix``, it will be:
 
   git checkout pr_branch
 
-Test the pull request
+Test the Pull Request
 =====================
 
 8. Include `~/ansible-collections` in COLLECTIONS_PATHS.
