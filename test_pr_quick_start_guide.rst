@@ -4,7 +4,7 @@ Quick-start development guide
 
 This guide describes all steps needed to test another author's pull request (hereinafter ``PR``).
 
-It can be useful, for example, for reviewers and issue authors when they want to check if a PR fixes the reported bug.
+It can be useful, particularly, for reviewers and issue authors when they want to check if a PR fixes the reported bug.
 
 .. contents:: Topics
 
