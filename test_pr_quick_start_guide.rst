@@ -2,7 +2,7 @@
 Quick-start development guide
 *****************************
 
-This guide describes all steps needed to test another author's pull request.
+This guide describes all steps needed to test another author's pull request (hereinafter ``PR``).
 
 .. contents:: Topics
 
@@ -47,18 +47,18 @@ If the collection is ``ansible.posix``, it will be:
 
   cd ~/ansible_collections/NAMESPACE/COLLECTION_NAME
 
-7. Checkout to the PR branch (it can be retrieved from PR page):
+7. Checkout to the PR branch (it can be retrieved from the PR's page):
 
 .. code:: bash
 
   git checkout pr_branch
 
-Test the PR
-=================
+Test the pull request
+=====================
 
 8. Include `~/ansible-collections` in COLLECTIONS_PATHS.
 
-More info how to add that can be found in https://docs.ansible.com/ansible/latest/reference_appendices/config.html#collections-paths.
+Refer to the `Ansible documentation <https://docs.ansible.com/ansible/devel/reference_appendices/config.html#collections-paths>`_ for details.
 
 9. Run your playbook again this time using the changed PR.
 
