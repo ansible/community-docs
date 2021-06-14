@@ -67,4 +67,4 @@ Refer to the `Ansible documentation <https://docs.ansible.com/ansible/devel/refe
 Give Feedback
 =============
 
-12. You can now give feedback on the pull request or the linked issue(s).
+10. You can now give feedback on the pull request or the linked issue(s).
