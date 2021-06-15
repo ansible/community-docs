@@ -46,7 +46,7 @@ If the collection is ``ansible.posix``, it will be:
 
   cd ~/ansible_collections/NAMESPACE/COLLECTION_NAME
 
-5. Checkout to the PR branch (it can be retrieved from the PR's page):
+5. Checkout the PR branch (it can be retrieved from the PR's page):
 
 .. code:: bash
 
@@ -59,7 +59,7 @@ Test the Pull Request
 
 Refer to the `Ansible documentation <https://docs.ansible.com/ansible/devel/reference_appendices/config.html#collections-paths>`_ for details.
 
-7. Run your playbook again this time using the changed PR.
+7. Run your playbook again this time using the PR branch.
 
 Give Feedback
 =============
