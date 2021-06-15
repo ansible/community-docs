@@ -14,9 +14,9 @@ Prepare your environment
 We assume that you use Linux as a work environment (you can use a virtual machine as well) and have ``git`` installed.
 
 
-2. `Install <https://docs.ansible.com/ansible/devel/installation_guide/intro_installation.html>`_ Ansible or ansible-core.
+1. `Install <https://docs.ansible.com/ansible/devel/installation_guide/intro_installation.html>`_ Ansible or ansible-core.
 
-3. Create the following directories in your home directory:
+2. Create the following directories in your home directory:
 
 .. code:: bash
 
@@ -34,19 +34,19 @@ If the collection is ``ansible.posix``, it will be:
 
   mkdir -p ~/ansible_collections/ansible/posix
 
-4. Clone the forked repository from the author profile to the created path:
+3. Clone the forked repository from the author profile to the created path:
 
 .. code:: bash
 
   git clone https://github.com/AUTHOR_ACC/COLLECTION_REPO.git ~/ansible_collections/NAMESPACE/COLLECTION_NAME
 
-5. Go to the cloned repository.
+4. Go to the cloned repository.
 
 .. code:: bash
 
   cd ~/ansible_collections/NAMESPACE/COLLECTION_NAME
 
-6. Checkout to the PR branch (it can be retrieved from the PR's page):
+5. Checkout to the PR branch (it can be retrieved from the PR's page):
 
 .. code:: bash
 
@@ -55,13 +55,13 @@ If the collection is ``ansible.posix``, it will be:
 Test the Pull Request
 =====================
 
-7. Include `~/ansible-collections` in `COLLECTIONS_PATHS`.
+6. Include `~/ansible-collections` in `COLLECTIONS_PATHS`.
 
 Refer to the `Ansible documentation <https://docs.ansible.com/ansible/devel/reference_appendices/config.html#collections-paths>`_ for details.
 
-8. Run your playbook again this time using the changed PR.
+7. Run your playbook again this time using the changed PR.
 
 Give Feedback
 =============
 
-9. You can now give feedback on the pull request or the linked issue(s).
+8. You can now give feedback on the pull request or the linked issue(s).
