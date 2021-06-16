@@ -27,6 +27,13 @@ And it is always worth saying that good reviews are often more valuable than pul
 
 Also, consider taking up a valuable, reviewed, but abandoned pull request which you could politely ask the original authors to complete yourself.
 
+Discussions
+===========
+
+For open questions, broad suggestions, and other comments that will not typically fit in the scope of an issue or pull request, GitHub discussions are available. Check if this feature is enabled in the repository (if enabled, there is the ``Discussions`` button next to the ``Pull requests`` button).
+
+That section provides a place to have a more open and informal conversation about any and all things related to the collection, included but not limited to future development plans, functionality explanations and feature proposals that are not yet fleshed out enough for an issue of their own.
+
 Looking for an idea to implement
 ================================
 
