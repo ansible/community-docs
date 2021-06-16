@@ -66,7 +66,7 @@ Maintainers (including candidates) have:
 
     + the collection repository they maintain (the ``Watch`` button → ``All activity``),
     + the `"Changes impacting collection contributors and maintainers" GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_,
-    + the `Bullhorn newsletter <https://github.com/ansible/community/issues/546>`_.
+    + the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
   - Knowledge and intention to manage a collection performing the tasks listed in these guidelines. Maintainers can divide responsibilities between each other.
 
 How to become a maintainer
@@ -90,7 +90,7 @@ Good communication is vital for prosperity of the project.
 
 Moreover, collection maintainers must be informed about important changes that impact all or many of the collections (for example, CI related) and act correspondingly to keep them up to date.
 
-It is required for collection maintainers to be subscribed to the `"Changes impacting collection contributors and maintainers" GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and the `Bullhorn newsletter <https://github.com/ansible/community/issues/546>`_.
+It is required for collection maintainers to be subscribed to the `"Changes impacting collection contributors and maintainers" GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
 
 Communication channels
 ----------------------
@@ -116,7 +116,7 @@ Because our project is a community of individuals collaborating on making the wo
 
 The quarterly Ansible Contributor Summit is a global event that provides our contributors a great opportunity to meet each other, communicate, share ideas, and see that there are other real persons behind the messages on IRC or GitHub. In other words, it gives a sense of community.
 
-To make the community more robust, keep tracking the `Bullhorn newsletter <https://github.com/ansible/community/issues/546>`_ for information when the next contributor summit will happen, invite contributors you know, and take part in the event together.
+To make the community more robust, keep tracking the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_ for information when the next contributor summit will happen, invite contributors you know, and take part in the event together.
 
 Weekly community IRC meetings
 -----------------------------
@@ -251,7 +251,7 @@ Announce that the project needs new contributors and maintainers through availab
 
 Promote active contributors satisfying :ref:`requirements<Requirements for maintainers>` to maintainers. Revise contributors activity regularly.
 
-If your collection found new maintainers, announce that fact in the `Bullhorn newsletter <https://github.com/ansible/community/issues/546>`_ and during the next Contributor Summit congratulating and thanking them for the work done. You can mention all the people promoted since the previous summit. Remember to invite the other maintainers to the Summit in advance.
+If your collection found new maintainers, announce that fact in the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_ and during the next Contributor Summit congratulating and thanking them for the work done. You can mention all the people promoted since the previous summit. Remember to invite the other maintainers to the Summit in advance.
 
 Create the ``MAINTAINERS`` file and keep it updated.
 
