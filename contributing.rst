@@ -11,7 +11,7 @@ If you are a committer, also refer to the `Ansible committer guidelines <https:/
 Issue tracker
 =============
 
-Whether you are looking for an opportunity to contribute or you found a bug and already know how to solve it, please go to the collection's issue tracker first.
+Whether you are looking for an opportunity to contribute or you found a bug and already know how to solve it, please go to the collection's issue tracker first (the ``Issues`` tab).
 There you can find feature ideas to implement, reports about bugs to solve, or submit an issue to discuss your idea before implementing it which can help choose a right direction at the beginning of your work and potentially save a lot of time and effort.
 Also somebody may already have started discussing or working on implementing the same or a similar idea,
 so you can cooperate to create a better solution together.
@@ -21,11 +21,18 @@ Many collections use ``easyfix`` or a similarly named label to indicate issues t
 Open pull requests
 ==================
 
-Look through the currently open pull requests in the collection repository.
+Look through the currently open pull requests in the collection repository (the ``Pull requests`` tab).
 You can help by reviewing them. Reviews help move pull requests to merge state. Some good pull requests cannot be merged only due to a lack of reviews. For more information how to provide a good review, refer to the `review checklist <review_checklist.rst>`_.
 And it is always worth saying that good reviews are often more valuable than pull requests themselves.
 
 Also, consider taking up a valuable, reviewed, but abandoned pull request which you could politely ask the original authors to complete yourself.
+
+Discussions
+===========
+
+For open questions, broad suggestions, and other comments that will not typically fit in the scope of an issue or pull request, GitHub discussions are available. Check if this feature is enabled in the repository (if enabled, there is the ``Discussions`` tab next to the ``Pull requests`` tab).
+
+That section provides a place to have a more open and informal conversation about any and all things related to the collection, included but not limited to future development plans, functionality explanations and feature proposals that are not yet fleshed out enough for an issue of their own.
 
 Looking for an idea to implement
 ================================
