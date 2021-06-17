@@ -75,7 +75,7 @@ Examples:
 
   - Organizing a meetup.
   - Writing a blogpost about benefits of the project comparing with other similar projects.
-  - Making a presentation on another IT community's event showing how the project can be used by that community to efficiently solve its issues.
+  - Making a presentation on another IT community's event showing how the project can be used by that community to solve their issues.
   - Suggesting ideas on how the process of decision making can be improved.
 
 In a broader sense, contribution to a community includes the activities mentioned in all the other types of contribution when they imply good interaction between participants or good impact on the community health and growth.
