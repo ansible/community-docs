@@ -92,4 +92,4 @@ Examples:
 Other kinds of contribution
 ---------------------------
 
-...
+Any other kinds of active social or material support are considered contributions to the project.
