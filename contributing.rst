@@ -22,7 +22,7 @@ Open pull requests
 ==================
 
 Look through the currently open pull requests in the collection repository (the ``Pull requests`` tab).
-You can help by reviewing them. Reviews help move pull requests to merge state. Some good pull requests cannot be merged only due to a lack of reviews. For more information how to provide a good review, refer to the `review checklist <review_checklist.rst>`_.
+You can help by reviewing them. Reviews help move pull requests to merge state. Some good pull requests cannot be merged only due to a lack of reviews. For more information how to provide a good review, refer to the `review checklist <review_checklist.rst>`_. Also if you want to test a pull request, refer to the `test PR locally guide <test_pr_locally_guide.rst>`.
 And it is always worth saying that good reviews are often more valuable than pull requests themselves.
 
 Also, consider taking up a valuable, reviewed, but abandoned pull request which you could politely ask the original authors to complete yourself.
