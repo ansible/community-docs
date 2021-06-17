@@ -40,7 +40,7 @@ Contribution to software itself (its codebase) insludes:
   - Improving stability of an existing codebase through improving a testing codebase and infrastructure.
   - Maintenance (for example, backporting and releasing).
 
-Examples of contributions which do not require programming skills in scope of the Ansible project can be reviewing proposals, testing pull requests locally, adding integration tests, bug reports, feature requests, providing user experience to programmers in issues and pull requests.
+Examples of codebase contributions which do not require programming skills in scope of the Ansible project can be reviewing proposals, testing pull requests locally, adding integration tests, bug reports, feature requests, providing user experience to programmers in issues and pull requests.
 
 .. _Contribution to dev exp:
 
