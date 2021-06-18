@@ -29,7 +29,7 @@ Contributions can be one of the following types:
 Contribution to a codebase
 --------------------------
 
-Contribution to software itself (its codebase) insludes:
+Contribution to software itself (its codebase) includes:
 
   - Proposing new features.
   - Reporting bugs.
