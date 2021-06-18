@@ -83,7 +83,7 @@ In a broader sense, contribution to a community includes the activities mentione
 Examples:
 
   - If you write a guide which significantly reduces a threshold of the first patch, it can lead to increase of a number of code contributors, which is definitely a contribution to the community.
-  - Active participation in IRC / mail / other discussions.
+  - Active participation in IRC / mailing lists / other discussions.
   - Leading a blog or a website dedicated to the project.
   - Proposing and discussing ideas in the community meetings, voting on proposals.
 
