@@ -74,7 +74,7 @@ In a narrow sense, contribution to a community includes:
 Examples:
 
   - Organizing a meetup.
-  - Writing a blog post about benefits of the project comparing to other similar projects.
+  - Writing a blog post about benefits and possible drawbacks of the project comparing to other similar projects.
   - Making a presentation on another IT community's event showing how the project can be used by that community to solve their issues.
   - Suggesting ideas on how the process of decision making can be improved.
 
