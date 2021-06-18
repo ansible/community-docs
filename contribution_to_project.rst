@@ -11,7 +11,7 @@ What is a contribution to an Open Source project
 
 A contribution to an Open Source project is any good given by an individual or a company to the project including increasing its functionality, improvements of the codebase, code developer experience, user experience, increasing the project's popularity and community, providing infrastructure, and any other kinds of active social or material support.
 
-Most the types of contribution to an Open Source project do not require programming skills.
+Most types of contribution to an Open Source project do not require programming skills.
 
 Classification of contributions
 ===============================
