@@ -2,24 +2,71 @@
 Contributor path
 ****************
 
-General explanation here.
+..
+
+  "There is no favorable wind for the sailor who doesn’t know where to go."
+
+  -- Seneca
+
+This guide describes a contributor path in scope of the Ansible project from the early beginning, through all the stages, to becoming a leader shaping the project's future and the future of automation in the IT world in general.
+
+This path is not a policy but rather a suite of recommendations based on experience of successful contributors.
+
+The goal of the path, first of all, is to make your activity more determined and efficient through understanding of what you can achieve and how. You can use this path as a roadmap for your long-term participation.
+
+Any contribution to the project, even a small one, is very welcome and valuable. When you contribute regularly, your proficiency and judgement in the related area are increasing fast and, along with this, the importance of your presence in the project.
+
+Regular contribution makes you a member of the community and leads to respect of other community members. Do you respect people who give good to others? Do you respect people who help you as a user whose feature request was implemented or who help you as a programmer to finish your pull request?
+
+Be persistent and act gradually. Great result is just a product of time and effort. Let's go then!
+
+.. note::
+
+   If you have any questions, feel free to reach out to the community in the ``#ansible-community`` `Libera.Chat <https://libera.chat/>`_ IRC channel. If you have ideas on how this document can be improved, please, share them through creating an issue or a pull request.
 
 .. contents::
 
-1. Area of interests
+What is a contribution to an Open Source project
+================================================
 
-2. Newcomer: first contribution
+First, we should understand what a contribution to an Open Source project is.
 
-3. Communicate
+The contribution to an Open Source project is any good given by an individual or a company to the project including increasing its functionality, improvements of the codebase, code developer experience, user experience, increasing the project's popularity and community, providing infrastructure, and any other kinds of active social or material support.
 
-4. Contribute
+Note that, according to the classification given in the `Contribution to an Open Source project guide <contribution_to_project.rst>`_, most types of contribution to an Open Source project do not require programming skills.
 
-5. Stay persistent
+Determine areas of your interests
+=================================
 
-6. Learn
+Learn
+=====
 
-7. Become a maintainer: submit an application
+First contribution
+==================
 
-8. Participate in weekly Ansible community meetings, put your thoughts in ansible-community/community-topics
+Continue to contribute
+======================
 
-9. Become a steering committee member
+Communicate
+===========
+
+Remember to mention the CoC.
+
+Share your ideas.
+
+Participate in IRC discussions and the weekly community meetings.
+
+Stay persistent
+===============
+
+Learn
+=====
+
+Get extended permissions
+========================
+
+Become a maintainer
+===================
+
+Become a steering committee member
+==================================
