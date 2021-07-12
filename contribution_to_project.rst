@@ -14,15 +14,15 @@ A contribution to an Open Source project is any good given by an individual or a
 
 Most types of contribution to an Open Source project do not require programming skills.
 
-Classification of contributions
-===============================
+Finding the right contribution type for you
+===========================================
 
-Contributions can be one of the following types:
+You can contribute to the project different ways:
 
-  - :ref:`Contributing to the codebase<Contribution to codebase>`.
-  - :ref:`Contributing to the code developer experience<Contribution to dev exp>`.
-  - :ref:`Contributing to the user experience<Contribution to user exp>`.
-  - :ref:`Contributing to the community<Contribution to community>`.
+  - :ref:`Contributing to the codebase<Contributing to codebase>`.
+  - :ref:`Contributing to the code developer experience<Contributing to dev exp>`.
+  - :ref:`Contributing to the user experience<Contributing to user exp>`.
+  - :ref:`Contributing to the community<Contributing to community>`.
   - :ref:`Other kinds of contributions<Other kinds of contributions>`.
 
 .. _Contributing to codebase:
