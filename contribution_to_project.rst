@@ -19,16 +19,16 @@ Classification of contributions
 
 Contributions can be one of the following types:
 
-  - :ref:`Contribution to a codebase<Contribution to codebase>`.
-  - :ref:`Contribution to code developer experience<Contribution to dev exp>`.
-  - :ref:`Contribution to user experience<Contribution to user exp>`.
-  - :ref:`Contribution to a community<Contribution to community>`.
+  - :ref:`Contributing to the codebase<Contribution to codebase>`.
+  - :ref:`Contributing to the code developer experience<Contribution to dev exp>`.
+  - :ref:`Contributing to the user experience<Contribution to user exp>`.
+  - :ref:`Contributing to the community<Contribution to community>`.
   - :ref:`Other kinds of contributions<Other kinds of contributions>`.
 
-.. _Contribution to codebase:
+.. _Contributing to codebase:
 
-Contribution to a codebase
---------------------------
+Contributing to the codebase
+----------------------------
 
 Contribution to software itself (its codebase) includes:
 
@@ -43,16 +43,16 @@ Contribution to software itself (its codebase) includes:
 
 You can contribute to a codebase even if you do not have programming skills. For example, you can review proposals, test pull requests locally, add integration tests, file bug reports, create feature requests, or provide feedback to programmers in issues and pull requests.
 
-.. _Contribution to dev exp:
+.. _Contributing to dev exp:
 
-Contribution to code developer experience
+Contributing to the code developer experience
 -----------------------------------------
 
 Contribution to code developer experience includes sharing experience through improving code development documentation, writing development guidelines, mentoring and training code contributors.
 
-.. _Contribution to user exp:
+.. _Contributing to user exp:
 
-Contribution to user experience
+Contributing to the user experience
 -------------------------------
 
 Contribution to user experience includes sharing experience about how to use software more efficiently through improving user documentation, writing manuals and books, making videos, courses, and so on.
@@ -62,9 +62,9 @@ Examples:
   - Clarification and updating user documentation.
   - Making a presentation for a local meetup covering not well-known but useful usage aspects.
 
-.. _Contribution to community:
+.. _Contributing to community:
 
-Contribution to a community
+Contributing to the community
 -----------------------------
 
 In a narrow sense, contribution to a community includes:
