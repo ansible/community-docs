@@ -65,7 +65,7 @@ Contribution to user experience includes sharing experience about how to use sof
 
 Examples:
 
-  - `Clarification and updating user documentation. <https://docs.ansible.com/ansible/latest/community/documentation_contributions.html>`_
+  - `Clarification and updating user documentation <https://docs.ansible.com/ansible/latest/community/documentation_contributions.html>`_.
   - Making a presentation for a local `meetup <https://www.meetup.com/topics/ansible/>`_ covering not well-known but useful usage aspects.
 
 .. _Contributing to community:
