@@ -7,23 +7,20 @@ This document describes many different ways you can contribute to the Open Sourc
 .. contents::
    :local:
 
-What is a contribution to an Open Source project
-================================================
-
-A contribution to an Open Source project is any good given by an individual or a company to the project, including increasing its functionality, improvements to the codebase, code developer experience, user experience, increasing the project's popularity and community, providing infrastructure, and any other kinds of active social or material support.
-
-Most types of contribution to an Open Source project do not require programming skills.
-
 Finding the right contribution type for you
-===========================================
+-------------------------------------------
 
-You can contribute to the project different ways:
+A contribution to an Open Source project is any good given by an individual or a company to the project.
+
+There are some ideas on how you can contribute:
 
   - :ref:`Contributing to the codebase<Contributing to codebase>`.
   - :ref:`Contributing to the code developer experience<Contributing to dev exp>`.
   - :ref:`Contributing to the user experience<Contributing to user exp>`.
   - :ref:`Contributing to the community<Contributing to community>`.
   - :ref:`Other kinds of contributions<Other kinds of contributions>`.
+
+Most types of contribution to an Open Source project do not require programming skills.
 
 .. _Contributing to codebase:
 
