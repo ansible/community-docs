@@ -36,7 +36,7 @@ Contribution to software itself (its codebase) includes:
   - Reporting bugs.
   - Participating in design and implementation of new components.
   - Bug fixes.
-  - Code reviewing.
+  - Reviewing code.
   - Code refactoring.
   - Improving stability of an existing codebase through improving a testing codebase and infrastructure.
   - Maintenance (for example, backporting and releasing).
