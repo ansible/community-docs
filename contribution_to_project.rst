@@ -2,7 +2,7 @@
 Contributing to Ansible
 ***********************
 
-This document describes ways how you can contribute to the Open Source projects of the Ansible ecosystem.
+This document describes many different ways you can contribute to the Open Source projects of the Ansible ecosystem.
 
 .. contents:: Topics
 
