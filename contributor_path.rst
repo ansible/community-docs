@@ -42,6 +42,8 @@ Determine areas of your interests
 
 There are some ideas about how you can contribute to the project listed in the `Contribution guide <contribution_to_project.rst>`.
 
+(Your current experience or experience you would like to gain.)
+
 Learn
 =====
 
