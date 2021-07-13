@@ -31,24 +31,38 @@ What is a contribution to an Open Source project
 
 First, we should understand what a contribution to an Open Source project is.
 
-The contribution to an Open Source project is any good given by an individual or a company to the project including increasing its functionality, improvements of the codebase, code developer experience, user experience, increasing the project's popularity and community, providing infrastructure, and any other kinds of active social or material support.
+The contribution to an Open Source project is any good given by an individual or a company to the project including increasing its functionality, improvements to the codebase, code developer experience, user experience, increasing the project's popularity and community, providing infrastructure, and any other kinds of active social or material support.
 
-Note that, according to the classification given in the `Contribution to an Open Source project guide <contribution_to_project.rst>`_, most types of contribution to an Open Source project do not require programming skills.
+Note that, according to the classification given in the `Contribution to an Open Source project guide <contribution_to_project.rst>`_, most types of contribution do not require programming skills.
 
 Determine areas of your interests
 =================================
 
+[NOT FINISHED]
+
+There are some ideas about how you can contribute to the project listed in the `Contribution guide <contribution_to_project.rst>`.
+
 Learn
 =====
+
+[NOT FINISHED]
+
+(Depends on the area of interest determined on the previous step.)
 
 First contribution
 ==================
 
+[NOT FINISHED]
+
 Continue to contribute
 ======================
 
+[NOT FINISHED]
+
 Communicate
 ===========
+
+[NOT FINISHED]
 
 Remember to mention the CoC.
 
@@ -59,14 +73,62 @@ Participate in IRC discussions and the weekly community meetings.
 Stay persistent
 ===============
 
-Learn
-=====
+[NOT FINISHED]
+
+Learn more, teach others
+========================
+
+[NOT FINISHED]
 
 Get extended permissions
 ========================
 
+[NOT FINISHED]
+
+Become a file maintainer
+------------------------
+
+[NOT FINISHED]
+
+.. note::
+
+  This is applicable only for collection that have the `collection bot <https://github.com/ansible-community/collection_bot>`_ running there like `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
+
+Get the supershipit permission
+------------------------------
+
+[NOT FINISHED]
+
+.. note::
+
+  This is applicable only for collection that have the `collection bot <https://github.com/ansible-community/collection_bot>`_ running there like `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
+
+Get the triage access
+---------------------
+
+[NOT FINISHED]
+
+Get the write access
+--------------------
+
+[NOT FINISHED]
+
+For information about permission levels, refer to the `GitHub official documentation <https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization>`_.
+
 Become a maintainer
 ===================
 
+[NOT FINISHED]
+
+(i.e. collection owner)
+
+For more information about collection maintenance, refer to the `Maintainer guidelines <maintaining.rst>`_.
+
 Become a steering committee member
 ==================================
+
+[NOT FINISHED]
+
+(you do NOT need to be a programmer to reach this status)
+
+FIXME: add a link to dedicated doc page when it exists.
