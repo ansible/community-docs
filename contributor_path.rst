@@ -38,72 +38,133 @@ Note that, according to the classification given in the `Contribution to an Open
 Determine areas of your interests
 =================================
 
-[NOT FINISHED]
-
+First, determine areas that are interesting to you taking into consideration your current experience and experience you'd like to gain.
 There are some ideas about how you can contribute to the project listed in the `Contribution guide <contribution_to_project.rst>`.
 
-(Your current experience or experience you would like to gain.)
+Determine the project
+=====================
+
+The Ansible ecosystem consists of the following projects:
+
+  - `Ansible Core <https://docs.ansible.com/ansible-core/devel/index.html>`_
+  - `Collections <https://docs.ansible.com/ansible/latest/user_guide/collections_using.html>`_
+  - `AWX <https://github.com/ansible/awx>`_
+  - `Galaxy <https://galaxy.ansible.com/>`_
+  - `Lint <https://ansible-lint.readthedocs.io/en/latest/>`_
+  - `Molecule <https://molecule.readthedocs.io/en/latest/>`_
 
 Learn
 =====
 
-[NOT FINISHED]
+The required skillset depends on the area of interest and the project chosen previously.
 
-(Depends on the area of interest determined on the previous step.)
+Some of the `ways <contribution_to_project.rst>`_ to contribute do not require technical skills and some of them imply that you will invest time in learning.
+
+Knowledge required for programming
+----------------------------------
+
+The area that requires technical knowledge the most is programming. Let's sort out what an Ansible programmer should learn.
+
+Fundamentals
+~~~~~~~~~~~~
+
+If you'd like to code Ansible, it would be good to understand at least *basics* of the following tools:
+
+  - `Python programming language <https://docs.python.org/3/tutorial/>`_.
+  - `Git <https://git-scm.com/docs/gittutorial>`_.
+  - `GitHub collaborative development model through forks and pull requests <https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models>`_.
+
+Project-specific guidelines
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+
+  You don't have to read the documentation mentioned below from cover to cover and memorize everything. It would be good to have general understanding of the workflow and know what the documentation consists of to find information you need later when needed.
+
+If you feel confident with the fundamentals above, you should also be familiar with the guidelines specific to the project you chose.
+
+For example, for Ansible Core it is `Ansible development guidelines <https://docs.ansible.com/ansible/latest/dev_guide/index.html>`_.
+
+If you'd like to develop a collection, in addition to it, you should be also familiar with the `Ansible collection development guidelines <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections.html>`_ and development documentation for a particular collection (references can usually be found in the ``README`` or ``CONTRIBUTING`` files in the `collection's repository <https://github.com/ansible-collections/>`_).
 
 First contribution
 ==================
 
-[NOT FINISHED]
+Do you first contribution.
+
+Again, you can find some ideas how you can contribute in the `Contribution guide <contribution_to_project.rst>` and the ``README`` / ``CONTRIBUTING`` files of `corresponding repositories <https://github.com/ansible-collections/>`_.
+
+If the contribution you'd like to give implies technical skills, there can be also quick-start guides which can help.
+
+For example, for collections, you can use the `Quick-start development guide <create_pr_quick_start_guide.rst>`_ to learn how to set up everything you need quickly, test your changes, and submit a pull request.
+
+To make your first experience as smooth as possible, read the repository documentation carefully, then ask the repository maintainers for guidance if you have any questions.
 
 Continue to contribute
 ======================
 
-[NOT FINISHED]
+As was said, when you contribute regularly, your proficiency and judgement in the related area are increasing fast and, along with this, the importance of your presence in the project.
 
 Communicate
 ===========
 
-[NOT FINISHED]
+Join the channels
+-----------------
 
-Remember to mention the CoC.
+Interact and share your ideas with other folks from the community following `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_.
 
-Share your ideas.
+You can find available communication channels in the `Communication guide <https://docs.ansible.com/ansible/devel/community/communication.html>`_.
 
-Participate in IRC discussions and the weekly community meetings.
+The most interactive one is on IRC where many Ansible projects and working groups have dedicated `channels <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`.
 
-Stay persistent
-===============
+Weekly community IRC meetings
+-----------------------------
 
-[NOT FINISHED]
+The important project-scale decisions are made by the community and the Steering Committee at weekly IRC meetings in the ``#ansible-community`` IRC channel. See the `meeting schedule <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_.
 
-Learn more, teach others
-========================
+If you want to see what is on the agenda, refer to the issues in the `community-topics repository <https://github.com/ansible-community/community-topics>`_. If you want to submit a topic, create an issue in the repository.
 
-[NOT FINISHED]
+The Bullhorn newsletter
+-----------------------
+
+Subscribe to `The Bullhorn newsletter <https://docs.ansible.com/ansible/devel/community/communication.html#the-bullhorn>`_ which is released biweekly and contains brief news important for the Ansible developer community.
+
+Contributor summit
+------------------
+
+Take part and meet other contributors in the global quarterly `Ansible Contributor Summit <https://github.com/ansible/community/wiki/Contributor-Summit>`_ virtually or in-person.
+
+Teach others
+============
+
+Share your experience with other contributors through `improving documentation <https://docs.ansible.com/ansible/latest/community/documentation_contributions.html>`_ on the doc site and in repositories, answering question from them on IRC, giving advice in issues and pull requests, and discussing the `community meeting topics <https://github.com/ansible-community/community-topics>`_.
 
 Get extended permissions
 ========================
 
-[NOT FINISHED]
+If you are a code contributor, you can get extended permissions in the repository and become a maintainer.
+
+For more information about collection maintenance, refer to the `Maintainer guidelines <maintaining.rst>`_.
 
 Become a file maintainer
 ------------------------
 
-[NOT FINISHED]
-
 .. note::
 
   This is applicable only for collection that have the `collection bot <https://github.com/ansible-community/collection_bot>`_ running there like `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
+
+Being a file maintainer is the stage prior to becoming a collection maintainer.
+
+For more information about the file-scope maintenance, refer to the `"Module maintainers" <https://github.com/ansible/community-docs/blob/main/maintaining.rst#module-maintainers>`_ section of the `Maintainer guidelines <maintaining.rst>`_.
 
 Get the supershipit permission
 ------------------------------
 
-[NOT FINISHED]
-
 .. note::
 
   This is applicable only for collection that have the `collection bot <https://github.com/ansible-community/collection_bot>`_ running there like `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
+
+[NOT FINISHED]
 
 Get the triage access
 ---------------------
