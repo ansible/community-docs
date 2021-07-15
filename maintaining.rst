@@ -224,6 +224,8 @@ Increasing a number of active contributors and maintainers
 
 Maintainers are interested in increasing a number of active long-term contributors for a collection they maintain.
 
+Put a note in your ``README`` that the project is actively accepting new contributors.
+
 Contributors are reviewers, issue or pull request authors, testers, maintainers, and all other people who help develop the project.
 
 Every regular contributor was once a newcomer. Make the first experience as positive as possible to encourage the new people coming back.
@@ -244,6 +246,8 @@ Mark issues with labels like ``easyfix``, ``waiting_on_contributor``, and ``docs
 They will let newcomers know where they can find easy wins.
 
 When reviewing an issue, if applicable, ask the author whether they want to fix the issue themselves providing the link to the `Quick-start guide <create_pr_quick_start_guide.rst>`_.
+
+Conduct pull request days regularly. You could plan PR days, for example, in the last Friday of every month when you and other maintainers go through all open issues and pull requests focusing on old ones, asking people if you can help, and so on. If there are pull requests that look abandoned (for example, there is no response on your help offers since the previous PR day), announce that anyone else interested can complete the pull request.
 
 Adopt a zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_. Add information to ``README`` how people can complain referring to the `"Policy violations" Code of Conduct section <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html#policy-violations>`_.
 
@@ -272,6 +276,7 @@ In addition to the paragraph above, here is a checklist:
   * Use labels to show easy wins.
   * Leave non-critical easy fixes to newcomers. Mentor them.
   * Be quickly responsive.
+  * Conduct PR days regularly.
   * Zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_.
   * Put information how people can complain in your ``README`` and ``CONTRIBUTING`` file.
   * Links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`, and other documentation in ``README``.
