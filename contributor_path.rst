@@ -180,7 +180,7 @@ Get the ``triage`` access to the repository that allows contributors manage issu
 Get the write access
 --------------------
 
-Get the ``write`` access to the repository also known as ``commit``.
+Get the ``write`` access to the repository also known as ``commit``. In other words, become a committer.
 
 This access level allows contributors to merge pull requests to the development branch as well as perform all the other activities listed in the `Maintainer guidelines <maintaining.rst>`_.
 
