@@ -53,6 +53,8 @@ The Ansible ecosystem consists of the following projects:
   - `Lint <https://ansible-lint.readthedocs.io/en/latest/>`_
   - `Molecule <https://molecule.readthedocs.io/en/latest/>`_
 
+You can contribute to any of them.
+
 Learn
 =====
 
@@ -79,7 +81,7 @@ Project-specific guidelines
 
 .. note::
 
-  You don't have to read the documentation mentioned below from cover to cover and memorize everything. It would be good to have general understanding of the workflow and know what the documentation consists of to find information you need later when needed.
+  You don't have to read the documentation mentioned below from cover to cover and memorize everything. It would be good to have general understanding of the workflow and what the documentation consists of to find information you need later when needed.
 
 If you feel confident with the fundamentals above, you should also be familiar with the guidelines specific to the project you chose.
 
@@ -100,6 +102,8 @@ For example, for collections, you can use the `Quick-start development guide <cr
 
 To make your first experience as smooth as possible, read the repository documentation carefully, then ask the repository maintainers for guidance if you have any questions.
 
+Also to look for issues labeled with the ``easyfix``, ``good_first_issue``, and ``docs`` labels can help find good issues to start with.
+
 Continue to contribute
 ======================
 
@@ -115,12 +119,12 @@ Interact and share your ideas with other folks from the community following `Ans
 
 You can find available communication channels in the `Communication guide <https://docs.ansible.com/ansible/devel/community/communication.html>`_.
 
-The most interactive one is on IRC where many Ansible projects and working groups have dedicated `channels <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`.
+The most interactive one is on Libera.Chat IRC where many Ansible projects and working groups have dedicated `channels <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`.
 
 Weekly community IRC meetings
 -----------------------------
 
-The important project-scale decisions are made by the community and the Steering Committee at weekly IRC meetings in the ``#ansible-community`` IRC channel. See the `meeting schedule <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_.
+The important project-scale decisions are made by the community and the Steering Committee at weekly IRC meetings in the ``#ansible-community`` Libera.Chat IRC channel. See the `meeting schedule <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_.
 
 If you want to see what is on the agenda, refer to the issues in the `community-topics repository <https://github.com/ansible-community/community-topics>`_. If you want to submit a topic, create an issue in the repository.
 
@@ -139,21 +143,23 @@ Teach others
 
 Share your experience with other contributors through `improving documentation <https://docs.ansible.com/ansible/latest/community/documentation_contributions.html>`_ on the doc site and in repositories, answering question from them on IRC, giving advice in issues and pull requests, and discussing the `community meeting topics <https://github.com/ansible-community/community-topics>`_.
 
-Get extended permissions
-========================
+Become a maintainer
+===================
 
 If you are a code contributor, you can get extended permissions in the repository and become a maintainer.
 
-For more information about collection maintenance, refer to the `Maintainer guidelines <maintaining.rst>`_.
+For more information about the collection maintenance, requirements, and nomination process, refer to the `Maintainer guidelines <maintaining.rst>`_.
 
 Become a file maintainer
 ------------------------
 
 .. note::
 
-  This is applicable only for collection that have the `collection bot <https://github.com/ansible-community/collection_bot>`_ running there like `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
+  This is applicable only for collections that have the `collection bot <https://github.com/ansible-community/collection_bot>`_ running there like `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
 
 Being a file maintainer is the stage prior to becoming a collection maintainer.
+
+The file is usually a module or plugin. File maintainers have indirect commit rights implemented through the `collection bot <https://github.com/ansible-community/collection_bot>`_.
 
 For more information about the file-scope maintenance, refer to the `"Module maintainers" <https://github.com/ansible/community-docs/blob/main/maintaining.rst#module-maintainers>`_ section of the `Maintainer guidelines <maintaining.rst>`_.
 
@@ -162,36 +168,45 @@ Get the supershipit permission
 
 .. note::
 
-  This is applicable only for collection that have the `collection bot <https://github.com/ansible-community/collection_bot>`_ running there like `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
+  This is applicable only for collections that have the `collection bot <https://github.com/ansible-community/collection_bot>`_ running there like `community.general <https://github.com/ansible-collections/community.general>`_ and `community.network <https://github.com/ansible-collections/community.network>`_.
 
-[NOT FINISHED]
+This is similar to being a file maintainer but the scope where a maintainer has the indirect commit is the whole repository.
 
 Get the triage access
 ---------------------
 
-[NOT FINISHED]
+Get the ``triage`` access to the repository that allows contributors manage issues and pull requests.
 
 Get the write access
 --------------------
 
-[NOT FINISHED]
+Get the ``write`` access to the repository also known as ``commit``.
+
+This access level allows contributors to merge pull requests to the development branch as well as perform all the other activities listed in the `Maintainer guidelines <maintaining.rst>`_.
 
 For information about permission levels, refer to the `GitHub official documentation <https://docs.github.com/en/organizations/managing-access-to-your-organizations-repositories/repository-permission-levels-for-an-organization>`_.
-
-Become a maintainer
-===================
-
-[NOT FINISHED]
-
-(i.e. collection owner)
-
-For more information about collection maintenance, refer to the `Maintainer guidelines <maintaining.rst>`_.
 
 Become a steering committee member
 ==================================
 
-[NOT FINISHED]
+.. note::
 
-(you do NOT need to be a programmer to reach this status)
+  You do NOT have to be a programmer to become a steering committee member.
 
-FIXME: add a link to dedicated doc page when it exists.
+The steering committee member status reflects the highest level of trust which allows contributors to lead the project through making very important `decisions <https://github.com/ansible-community/community-topics/issues>`_ of the Ansible project scope.
+
+The committee members are the community leaders who, as was said, shape the project's future and the future of automation in the IT world in general.
+
+For more information about the steering committee, its mission, responsibilities, members, agenda, and meeting schedule, refer to the `Steering committee declaration <https://hackmd.io/nAHJNmBbSYm90KZM1RPK6w>`_.
+
+To reach the status, as the current committee members did before getting it, along with the things mentioned in this document before:
+
+  - Become a regular attendee in the `community meetings <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_.
+  - Track the `community topics <https://github.com/ansible-community/community-topics/issues>`_.
+  - Try to think out and give a good judgement on the topics in comments and during the meetings.
+  - Vote on the topics. Even if only members votes are counted to make final decisions, your voice is very important and appreciated for the committee.
+  - Feel free to propose your topics.
+
+Good judgement and regularity is all that you need.
+
+If you have any questions, feel free to reach out to the current members directly in the ``ansible-community`` `Libera.Chat IRC channel <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`_.
