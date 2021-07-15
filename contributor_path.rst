@@ -16,7 +16,7 @@ The goal of the path, first of all, is to make your activity more determined and
 
 Any contribution to the project, even a small one, is very welcome and valuable. When you contribute regularly, your proficiency and judgement in the related area are increasing fast and, along with this, the importance of your presence in the project.
 
-Regular contribution makes you a member of the community and leads to respect of other community members. Do you respect people who give good to others? Do you respect people who help you as a user whose feature request was implemented or who help you as a programmer to finish your pull request?
+Regular contribution makes you a member of the community and leads to respect of other community members.
 
 Be persistent and act gradually. Great result is just a product of time and effort. Here's how to get started.
 
