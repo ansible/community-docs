@@ -10,7 +10,7 @@ This document describes many different ways you can contribute to the Open Sourc
 Finding the right contribution type for you
 -------------------------------------------
 
-A contribution to an Open Source project is any good given by an individual or a company to the project.
+A contribution to an Open Source project is any addition or positive change given by an individual or a company to the project.
 
 There are some ideas on how you can contribute:
 
