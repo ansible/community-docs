@@ -307,3 +307,19 @@ Inclusion in Ansible
 ====================
 
 If a collection is not included in Ansible (not shipped with Ansible package), maintainers can submit the collection for inclusion by creating a discussion under `ansible-collections/ansible-inclusion repository <https://github.com/ansible-collections/ansible-inclusion>`_. For more information, refer to the `repository's README <https://github.com/ansible-collections/ansible-inclusion/blob/main/README.md>`_.
+
+Stepping down
+=============
+
+Maintainers should not step down silently. This is especially important when the collection has one or few active maintainer.
+
+If you feel you don't have time to maintain your collection any more or for a long period of time, to prevent negative consequences for the collection and its community:
+
+  - Inform other maintainers about it.
+  - If the collection is under the ``ansible-collections`` organization, also inform the community team in the ``ansible-community`` `Libera.Chat IRC channel <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`_ or by email to ``ansible-community-team@redhat.com``.
+  - Look at active contributors in the collection to find new maintainers among them. Discuss the potential candidates with other maintainers or with the community team.
+  - If you failed to find a replacement, create a pinned issue in the collection which announces that the collection needs new maintainers.
+  - Make the same announcement through the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
+  - Be around to discuss potential candidates found by other maintainers or by the community team.
+
+You can come back at any moment.
