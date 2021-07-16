@@ -320,6 +320,6 @@ If you feel you don't have time to maintain your collection any more or for a lo
   - Look at active contributors in the collection to find new maintainers among them. Discuss the potential candidates with other maintainers or with the community team.
   - If you failed to find a replacement, create a pinned issue in the collection which announces that the collection needs new maintainers.
   - Make the same announcement through the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
-  - Be around to discuss potential candidates found by other maintainers or by the community team.
+  - Please be around to discuss potential candidates found by other maintainers or by the community team.
 
 You can come back at any moment.
