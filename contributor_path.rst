@@ -83,7 +83,7 @@ Project-specific guidelines
 
   You don't have to read the documentation mentioned below from cover to cover and memorize everything. It would be good to have general understanding of the workflow and what the documentation consists of to find information you need later when needed.
 
-If you feel confident with the fundamentals above, you should also be familiar with the guidelines specific to the project you chose.
+If you feel confident with the fundamentals above, you should also be familiar with the guidelines specific to the project you choose.
 
 For example, for Ansible Core it is `Ansible development guidelines <https://docs.ansible.com/ansible/latest/dev_guide/index.html>`_.
 
