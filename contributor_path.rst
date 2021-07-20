@@ -44,7 +44,7 @@ There are some ideas about how you can contribute to the project listed in the `
 Determine the project
 =====================
 
-The Ansible ecosystem consists of the following projects:
+These are some of the community projects in the Ansible ecosystem you could contribute to:
 
   - `Ansible Core <https://docs.ansible.com/ansible-core/devel/index.html>`_
   - `Collections <https://docs.ansible.com/ansible/latest/user_guide/collections_using.html>`_
@@ -52,8 +52,6 @@ The Ansible ecosystem consists of the following projects:
   - `Galaxy <https://galaxy.ansible.com/>`_
   - `Lint <https://ansible-lint.readthedocs.io/en/latest/>`_
   - `Molecule <https://molecule.readthedocs.io/en/latest/>`_
-
-You can contribute to any of them.
 
 Learn
 =====
