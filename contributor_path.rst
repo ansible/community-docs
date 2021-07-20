@@ -70,7 +70,7 @@ The area that requires technical knowledge the most is programming. Let's sort o
 Fundamentals
 ~~~~~~~~~~~~
 
-If you'd like to code Ansible, it would be good to understand at least *basics* of the following tools:
+If you'd like to write code for the Ansible project, it would be good to understand at least *basics* of the following tools:
 
   - `Python programming language <https://docs.python.org/3/tutorial/>`_.
   - `Git <https://git-scm.com/docs/gittutorial>`_.
