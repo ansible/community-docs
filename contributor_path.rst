@@ -60,8 +60,6 @@ Learn
 
 The required skillset depends on the area of interest and the project chosen previously.
 
-Some of the `ways <contribution_to_project.rst>`_ to contribute do not require technical skills and some of them imply that you will invest time in learning.
-
 Knowledge required for programming
 ----------------------------------
 
