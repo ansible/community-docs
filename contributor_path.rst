@@ -107,7 +107,7 @@ Also to look for issues labeled with the ``easyfix``, ``good_first_issue``, and 
 Continue to contribute
 ======================
 
-As was said, when you contribute regularly, your proficiency and judgement in the related area are increasing fast and, along with this, the importance of your presence in the project.
+When you contribute regularly, your proficiency and judgment in the related area will improve quickly and, along with this, the importance of your presence in the project.
 
 Communicate
 ===========
