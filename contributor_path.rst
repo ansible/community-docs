@@ -31,7 +31,7 @@ What is a contribution to an Open Source project
 
 First, we should understand what a contribution to an Open Source project is.
 
-Contributing to an Open Source project can be any positive addition, change or feedback given by an individual (or company) to the project. It includes increasing its functionality, improving the codebase as well as developer experience and user experience, promoting the project and participating in the community, providing infrastructure, and any kind of active social or material support.
+The contribution to an Open Source project is any positive addition, change or feedback given by an individual (or company) to the project. It includes increasing its functionality, improving the codebase as well as developer experience and user experience, promoting the project and participating in the community, providing infrastructure, and any kind of active social or material support.
 
 Note that, according to the classification given in the `Contribution to an Open Source project guide <contribution_to_project.rst>`_, most types of contribution do not require programming skills.
 
