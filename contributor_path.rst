@@ -58,7 +58,7 @@ You can contribute to any of them.
 Learn
 =====
 
-The required skillset depends on the area of interest and the project chosen previously.
+The required skillset depends on the area of interest and the project you'll be working on.
 
 Knowledge required for programming
 ----------------------------------
