@@ -116,12 +116,19 @@ You can find available communication channels in the `Communication guide <https
 
 The most interactive one is on Libera.Chat IRC where many Ansible projects and working groups have dedicated `channels <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`.
 
-Weekly community IRC meetings
------------------------------
+IRC meetings
+------------
 
-The important project-scale decisions are made by the community and the Steering Committee at weekly IRC meetings in the ``#ansible-community`` Libera.Chat IRC channel. See the `meeting schedule <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_.
+The important project-scale decisions are made by the community and the Steering Committee at weekly IRC meetings in the ``#ansible-community`` Libera.Chat IRC channel.
 
 If you want to see what is on the agenda, refer to the issues in the `community-topics repository <https://github.com/ansible-community/community-topics>`_. If you want to submit a topic, create an issue in the repository.
+
+The other important Libera.Chat IRC meetings impacting the whole project which you can join are:
+
+  - the Ansible Core IRC meeting in the ``ansible-core`` channel.
+  - the Documentation working group IRC meeting in the ``ansible-docs`` channel.
+
+See the `meeting schedule <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_.
 
 The Bullhorn newsletter
 -----------------------
