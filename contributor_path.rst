@@ -195,7 +195,7 @@ Become a steering committee member
 
 The steering committee member status reflects the highest level of trust which allows contributors to lead the project through making very important `decisions <https://github.com/ansible-community/community-topics/issues>`_ of the Ansible project scope.
 
-The committee members are the community leaders who, as was said, shape the project's future and the future of automation in the IT world in general.
+The committee members are the community leaders who shape the project's future and the future of automation in the IT world in general.
 
 For more information about the steering committee, its mission, responsibilities, members, agenda, and meeting schedule, refer to the `Steering committee declaration <https://hackmd.io/nAHJNmBbSYm90KZM1RPK6w>`_.
 
