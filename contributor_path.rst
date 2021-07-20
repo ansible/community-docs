@@ -39,7 +39,7 @@ Determine areas of your interests
 =================================
 
 First, determine areas that are interesting to you taking into consideration your current experience and experience you'd like to gain.
-There are some ideas about how you can contribute to the project listed in the `Contribution guide <contribution_to_project.rst>`.
+There are some ideas about how you can contribute to the project listed in the `Contribution guide <contribution_to_project.rst>`_.
 
 Determine the project
 =====================
