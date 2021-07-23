@@ -14,28 +14,30 @@ Since no release branches are used, the manual does not distinguish between rele
 
 3. Announce your intention to release the collection in a corresponding pinned release issue / community pinboard of the collection and in the ``#ansible-community`` IRC channel.
 
-4. Be sure you are in a default branch in your local fork (we use ``main`` in the following examples):
+4. If there are new modules / plugins that will be released and you have a list of modules / plugins in ``README.md``, update ``README.md`` adding them to the list so that they will appear on the collection's Galaxy page after the release.
+
+5. Be sure you are in a default branch in your local fork (we use ``main`` in the following examples):
 
 .. code:: bash
 
     git status
     git checkout main     # if needed
 
-5. Update your local fork:
+6. Update your local fork:
 
 .. code:: bash
 
    git pull --rebase upstream main
 
-6. Checkout a new release branch from the default branch:
+7. Checkout a new release branch from the default branch:
 
 .. code:: bash
 
    git checkout -b release_branch
 
-7. Make sure that ``galaxy.yml`` contains the correct release version number. If not, update it!
+8. Make sure that ``galaxy.yml`` contains the correct release version number. If not, update it!
 
-8. Add a changelog fragment ``changelogs/fragments/X.Y.Z.yml`` with content:
+9. Add a changelog fragment ``changelogs/fragments/X.Y.Z.yml`` with content:
 
 .. code:: yaml
 
@@ -54,29 +56,29 @@ For example:
      that have been made after the previous release.
 
 
-9. If the content was recently moved from another collection, be sure you have all related changelog fragments in the ``changelogs/fragments`` directory. If not, copy them previously.
+10. If the content was recently moved from another collection, be sure you have all related changelog fragments in the ``changelogs/fragments`` directory. If not, copy them previously.
 
-10. Run ``antsibull-changelog release --reload-plugins`` (should previously be installed with ``pip install antsibull-changelog``).
+11. Run ``antsibull-changelog release --reload-plugins`` (should previously be installed with ``pip install antsibull-changelog``).
 
-11. Verify that the ``CHANGELOG.rst`` looks as expected.
+12. Verify that the ``CHANGELOG.rst`` looks as expected.
 
-12. Commit and push changes to the ``CHANGELOG.rst`` and ``changelogs/changelog.yaml``, and potentially deleted/archived fragments to the ``origin`` repository's ``release_branch``.
+13. Commit and push changes to the ``CHANGELOG.rst`` and ``changelogs/changelog.yaml``, and potentially deleted/archived fragments to the ``origin`` repository's ``release_branch``.
 
 .. code:: bash
 
    git commit -a -m "Release VERSION commit"
    git push origin release_branch
 
-13. Create a pull request in the collection repository. If CI tests pass, merge it.
+14. Create a pull request in the collection repository. If CI tests pass, merge it.
 
-14. Checkout the default branch and pull the changes:
+15. Checkout the default branch and pull the changes:
 
 .. code:: bash
 
    git checkout main
    git pull --rebase upstream main
 
-15. Add an annotated tag to the release commit with the collection version. Pushing this tag to the ``upstream`` repository will make Zuul publish the collection on `Ansible Galaxy <https://galaxy.ansible.com/>`_.
+16. Add an annotated tag to the release commit with the collection version. Pushing this tag to the ``upstream`` repository will make Zuul publish the collection on `Ansible Galaxy <https://galaxy.ansible.com/>`_.
 
 .. code:: bash
 
@@ -84,12 +86,12 @@ For example:
    git tag -a NEW_VERSION -m "comment here"    # the comment can be, for example, "community.postgresql: 1.2.0"
    git push upstream NEW_VERSION
 
-16. Update the version in the ``galaxy.yml`` file to the next **expected** version. Add, commit, and push to the ``upstream``'s default branch.
-
 17. Wait until the new version is published on the collection's `Ansible Galaxy <https://galaxy.ansible.com/>`_ page (it will appear in a list of tarballs available to download).
 
-18. Add a GitHub release for the new tag. Title should be the version and content ``See https://github.com/ansible-collections/community.xxx/blob/main/CHANGELOG.rst for all changes``.
+18. Update the version in the ``galaxy.yml`` file to the next **expected** version. Add, commit, and push to the ``upstream``'s default branch.
 
-19. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
+19. Add a GitHub release for the new tag. Title should be the version and content ``See https://github.com/ansible-collections/community.xxx/blob/main/CHANGELOG.rst for all changes``.
 
-20. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel.
+20. Put a note about the release in the `Bullhorn Newsletter issue <https://github.com/ansible/community/issues/546>`_ to have it published later.
+
+21. Announce that the release has been made in the pinned release issue / community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` IRC channel.
