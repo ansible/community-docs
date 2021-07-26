@@ -17,6 +17,8 @@ Planning
 
 2. Be sure that all the other repository maintainers are informed about the time of the following release.
 
+3. If there are new modules / plugins that will be released and you have a list of modules / plugins in ``README.md``, update ``README.md`` adding them to the list so that they will appear on the collection's Galaxy page after the release.
+
 Releasing major versions
 ========================
 
