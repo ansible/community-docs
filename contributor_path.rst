@@ -50,7 +50,7 @@ These are some of the community projects in the Ansible ecosystem you could cont
   - `Collections <https://docs.ansible.com/ansible/latest/user_guide/collections_using.html>`_
   - `AWX <https://github.com/ansible/awx>`_
   - `Galaxy <https://galaxy.ansible.com/>`_
-  - `Lint <https://ansible-lint.readthedocs.io/en/latest/>`_
+  - `ansible-lint <https://ansible-lint.readthedocs.io/en/latest/>`_
   - `Molecule <https://molecule.readthedocs.io/en/latest/>`_
 
 Learn
