@@ -46,12 +46,12 @@ Determine the project
 
 These are some of the community projects in the Ansible ecosystem you could contribute to:
 
-  - `Ansible Core <https://docs.ansible.com/ansible-core/devel/index.html>`_
-  - `Collections <https://docs.ansible.com/ansible/latest/user_guide/collections_using.html>`_
-  - `AWX <https://github.com/ansible/awx>`_
-  - `Galaxy <https://galaxy.ansible.com/>`_
-  - `ansible-lint <https://ansible-lint.readthedocs.io/en/latest/>`_
-  - `Molecule <https://molecule.readthedocs.io/en/latest/>`_
+- `Ansible Core <https://docs.ansible.com/ansible-core/devel/index.html>`_
+- `Collections <https://docs.ansible.com/ansible/latest/user_guide/collections_using.html>`_
+- `AWX <https://github.com/ansible/awx>`_
+- `Galaxy <https://galaxy.ansible.com/>`_
+- `ansible-lint <https://ansible-lint.readthedocs.io/en/latest/>`_
+- `Molecule <https://molecule.readthedocs.io/en/latest/>`_
 
 Learn
 =====
@@ -203,11 +203,11 @@ For more information about the steering committee, its mission, responsibilities
 
 To reach the status, as the current committee members did before getting it, along with the things mentioned in this document before:
 
-  - Become a regular attendee in the `community meetings <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_.
-  - Track the `community topics <https://github.com/ansible-community/community-topics/issues>`_.
-  - Try to think out and give a good judgement on the topics in comments and during the meetings.
-  - Vote on the topics. Even if only members votes are counted to make final decisions, your voice is very important and appreciated for the committee.
-  - Feel free to propose your topics.
+- Become a regular attendee in the `community meetings <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_.
+- Track the `community topics <https://github.com/ansible-community/community-topics/issues>`_.
+- Try to think out and give a good judgement on the topics in comments and during the meetings.
+- Vote on the topics. Even if only members votes are counted to make final decisions, your voice is very important and appreciated for the committee.
+- Feel free to propose your topics.
 
 Good judgement and regularity is all that you need.
 
