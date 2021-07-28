@@ -97,7 +97,7 @@ For example, for collections, you can use the `Quick-start development guide <cr
 
 To make your first experience as smooth as possible, read the repository documentation carefully, then ask the repository maintainers for guidance if you have any questions.
 
-Looking for issues labeled with the ``easyfix``, ``good_first_issue``, and ``docs`` labels can help find good issues to start with.
+Looking for GitHub issues labeled with the ``easyfix``, ``good_first_issue``, and ``docs`` labels can help find good issues to start with. Add a comment on the GitHub issue to say you are looking at it, and to ask for help if you need it.
 
 Continue to contribute
 ======================
