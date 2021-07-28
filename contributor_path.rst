@@ -68,9 +68,9 @@ Fundamentals
 
 If you'd like to write code for the Ansible project, it would be good to understand at least *basics* of the following tools:
 
-  - `Python programming language <https://docs.python.org/3/tutorial/>`_.
-  - `Git <https://git-scm.com/docs/gittutorial>`_.
-  - `GitHub collaborative development model through forks and pull requests <https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models>`_.
+- `Python programming language <https://docs.python.org/3/tutorial/>`_
+- `Git <https://git-scm.com/docs/gittutorial>`_
+- `GitHub collaborative development model through forks and pull requests <https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models>`_
 
 Project-specific guidelines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
