@@ -125,8 +125,8 @@ If you want to see what is on the agenda, refer to the issues in the `community-
 
 The other important Libera.Chat IRC meetings impacting the whole project which you can join are:
 
-  - the Ansible Core IRC meeting in the ``ansible-meeting`` channel.
-  - the Documentation working group IRC meeting in the ``ansible-docs`` channel.
+- the Ansible Core IRC meeting in the ``ansible-meeting`` channel.
+- the Documentation working group IRC meeting in the ``ansible-docs`` channel.
 
 See the `meeting schedule <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_.
 
