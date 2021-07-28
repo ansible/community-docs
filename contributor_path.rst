@@ -8,17 +8,14 @@ Contributor path
 
   -- Seneca
 
-This guide describes a contributor path in scope of the Ansible project from the early beginning, through all the stages, to becoming a leader shaping the project's future and the future of automation in the IT world in general.
-
-This path is not a policy but rather a suite of recommendations based on experience of successful contributors.
-
-The goal of the path, first of all, is to make your activity more determined and efficient through understanding of what you can achieve and how. You can use this path as a roadmap for your long-term participation.
-
-Any contribution to the project, even a small one, is very welcome and valuable. When you contribute regularly, your proficiency and judgement in the related area are increasing fast and, along with this, the importance of your presence in the project.
-
-Regular contribution makes you a member of the community and leads to respect of other community members.
-
-Be persistent and act gradually. Great result is just a product of time and effort. Here's how to get started.
+- This guide describes a contributor path in scope of the Ansible project from the early beginning, through all the stages, to becoming a leader shaping the project's future and the future of automation in the IT world in general.
+- This path is not a policy but rather a suite of recommendations based on experience of successful contributors.
+- The goal of the path, first of all, is to make your activity more determined and efficient through understanding of what you can achieve and how.
+- You can use this path as a roadmap for your long-term participation.
+- Any contribution to the project, even a small one, is very welcome and valuable.
+- When you contribute regularly, your proficiency and judgement in the related area are increasing fast and, along with this, the importance of your presence in the project.
+- Regular contribution makes you a member of the community and leads to respect of other community members.
+- Be persistent and act gradually. Great result is just a product of time and effort. Here's how to get started.
 
 .. note::
 
