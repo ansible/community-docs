@@ -91,7 +91,7 @@ Making your first contribution
 
 You can find some ideas how you can contribute in the `Contribution guide <contribution_to_project.rst>`_ and the ``README`` / ``CONTRIBUTING`` files of `corresponding repositories <https://github.com/ansible-collections/>`_.
 
-If the contribution you'd like to give implies technical skills, there can be also quick-start guides which can help.
+If the contribution you'd like to give requires technical skills, there can be also quick-start guides that can help.
 
 For example, for collections, you can use the `Quick-start development guide <create_pr_quick_start_guide.rst>`_ to learn how to set up everything you need quickly, test your changes, and submit a pull request.
 
