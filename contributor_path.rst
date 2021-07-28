@@ -85,8 +85,8 @@ For example, for Ansible Core it is `Ansible development guidelines <https://doc
 
 If you'd like to develop a collection, you should be also familiar with the `Ansible collection development guidelines <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections.html>`_ and development documentation for a particular collection (references can usually be found in the ``README`` or ``CONTRIBUTING`` files in the `collection's repository <https://github.com/ansible-collections/>`_).
 
-Doing your first contribution
-=============================
+Making your first contribution
+==============================
 
 
 You can find some ideas how you can contribute in the `Contribution guide <contribution_to_project.rst>`_ and the ``README`` / ``CONTRIBUTING`` files of `corresponding repositories <https://github.com/ansible-collections/>`_.
