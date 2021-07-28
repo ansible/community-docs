@@ -39,6 +39,9 @@ Determine areas of your interests
 =================================
 
 First, determine areas that are interesting to you taking into consideration your current experience and experience you'd like to gain.
+
+It can be a good idea to start with what you already know. For example, if you use a certain collection, have a look there.
+
 There are some ideas about how you can contribute to the project listed in the `Contribution guide <contribution_to_project.rst>`_.
 
 Determine the project
@@ -58,6 +61,8 @@ Learn
 
 The required skillset depends on the area of interest and the project you'll be working on.
 
+Remember that the best way to learn is by doing.
+
 Knowledge required for programming
 ----------------------------------
 
@@ -71,6 +76,8 @@ If you'd like to write code for the Ansible project, it would be good to underst
 - `Python programming language <https://docs.python.org/3/tutorial/>`_
 - `Git <https://git-scm.com/docs/gittutorial>`_
 - `GitHub collaborative development model through forks and pull requests <https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models>`_
+
+You can learn these tools when working on your first contributions.
 
 Project-specific guidelines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
