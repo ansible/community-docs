@@ -60,8 +60,8 @@ Releasing without release branches
 
 Use releasing without release branches when:
 
-  * there have not been major releases of the collection before
-  * there have not been breaking changes introduced since the ``1.0.0`` release of the collection
+* there have not been major releases of the collection before
+* there have not been breaking changes introduced since the ``1.0.0`` release of the collection
 
 To perform a release this way, refer to the `Releasing without release branches <releasing_collections_without_release_branches.rst>`_ manual.
 

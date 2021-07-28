@@ -18,10 +18,10 @@ What is the collection maintenance
 
 Ansible collections community can be logically divided into four major groups:
 
-  1. Steering committee members (make decisions in scope of all the collections included in Ansible package and related areas).
-  2. Maintainers.
-  3. Contributors.
-  4. Users.
+1. Steering committee members (make decisions in scope of all the collections included in Ansible package and related areas).
+2. Maintainers.
+3. Contributors.
+4. Users.
 
 Maintainers are people who are responsible for collection maintenance.
 
@@ -29,15 +29,15 @@ The collection maintenance consists of the regular activities listed in these gu
 
 In particular, collection maintainers:
 
-  - keep README, development guidelines, and other general collection :ref:`documentation<Documentation>` relevant,
-  - :ref:`review<Reviewing>` and :ref:`commit<Committing>` changes made by other contributors,
-  - :ref:`backport<Backporting>` changes to stable branches,
-  - address issues discovered to appropriate contributors,
-  - :ref:`release<Releasing>` collections,
-  - watch that collections adhere the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_,
-  - keep tracking changes announced in ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and timely update a collection in accordance with them,
-  - increase a number of active contributors and maintainers by :ref:`building healthy community<Expanding community>` around collections,
-  - revise this document regularly for updates and sharing their experience through changing it.
+- keep README, development guidelines, and other general collection :ref:`documentation<Documentation>` relevant,
+- :ref:`review<Reviewing>` and :ref:`commit<Committing>` changes made by other contributors,
+- :ref:`backport<Backporting>` changes to stable branches,
+- address issues discovered to appropriate contributors,
+- :ref:`release<Releasing>` collections,
+- watch that collections adhere the `Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_,
+- keep tracking changes announced in ``Changes impacting collection contributors and maintainers`` `GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_ and timely update a collection in accordance with them,
+- increase a number of active contributors and maintainers by :ref:`building healthy community<Expanding community>` around collections,
+- revise this document regularly for updates and sharing their experience through changing it.
 
 Who is a collection maintainer
 ------------------------------
@@ -57,17 +57,17 @@ Maintainers act in accordance with `Ansible Code of Conduct <https://docs.ansibl
 
 Maintainers (including candidates) have:
 
-  - History of multiple contributions to a collection.
-  - Excellent technical judgement in collection-related areas.
-  - Responsiveness to mentions in issues and pull requests.
-  - Responsiveness to issues and pull requests assigned to them.
-  - Read these guidelines and the linked documents.
-  - Subscribed to:
+- History of multiple contributions to a collection.
+- Excellent technical judgement in collection-related areas.
+- Responsiveness to mentions in issues and pull requests.
+- Responsiveness to issues and pull requests assigned to them.
+- Read these guidelines and the linked documents.
+- Subscribed to:
 
-    + the collection repository they maintain (the ``Watch`` button → ``All activity``),
-    + the `"Changes impacting collection contributors and maintainers" GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_,
-    + the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
-  - Knowledge and intention to manage a collection performing the tasks listed in these guidelines. Maintainers can divide responsibilities between each other.
+  + the collection repository they maintain (the ``Watch`` button → ``All activity``),
+  + the `"Changes impacting collection contributors and maintainers" GitHub issue <https://github.com/ansible-collections/overview/issues/45>`_,
+  + the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
+- Knowledge and intention to manage a collection performing the tasks listed in these guidelines. Maintainers can divide responsibilities between each other.
 
 How to become a maintainer
 --------------------------
@@ -97,15 +97,15 @@ Communication channels
 
 Collection contributors and maintainers communicate through:
 
-  * the Bullhorn newsletter:
+* the Bullhorn newsletter:
 
-    + use the link in this `issue <https://github.com/ansible/community/issues/546>`_ to subscribe to the newsletter
-    + if you have something important to announce (for example, releases made recently), put a comment in the issue
-  * IRC channels such as ``#ansible-community``, ``#ansible-devel``, and dedicated ones
-  * mailing lists such as `ansible-announce <https://groups.google.com/d/forum/ansible-announce>`_ and `ansible-devel <https://groups.google.com/d/forum/ansible-devel>`_
-  * collection pinboards, issues, and GitHub discussions in corresponding repositories
-  * quarterly Contributor Summits
-  * Ansible fests and local meetups
+  + use the link in this `issue <https://github.com/ansible/community/issues/546>`_ to subscribe to the newsletter
+  + if you have something important to announce (for example, releases made recently), put a comment in the issue
+* IRC channels such as ``#ansible-community``, ``#ansible-devel``, and dedicated ones
+* mailing lists such as `ansible-announce <https://groups.google.com/d/forum/ansible-announce>`_ and `ansible-devel <https://groups.google.com/d/forum/ansible-devel>`_
+* collection pinboards, issues, and GitHub discussions in corresponding repositories
+* quarterly Contributor Summits
+* Ansible fests and local meetups
 
 For more information about available IRC channels and mailing lists, refer to the `Ansible community documentation <https://docs.ansible.com/ansible/devel/community/communication.html>`_.
 
@@ -201,11 +201,11 @@ provided that there have been enough changes merged to release.
 
 Generally, releasing in the collections consists of:
 
-  1. Planning and announcement.
-  2. Generating a changelog.
-  3. Creating a release git tag and pushing it.
-  4. Automatic publishing the release tarball on `Ansible Galaxy <https://galaxy.ansible.com/>`_ by `Zuul <https://dashboard.zuul.ansible.com/t/ansible/builds?pipeline=release>`_.
-  5. Final announcement.
+1. Planning and announcement.
+2. Generating a changelog.
+3. Creating a release git tag and pushing it.
+4. Automatic publishing the release tarball on `Ansible Galaxy <https://galaxy.ansible.com/>`_ by `Zuul <https://dashboard.zuul.ansible.com/t/ansible/builds?pipeline=release>`_.
+5. Final announcement.
 
 For more information about the process, refer to the `Releasing guidelines <releasing.rst>`_.
 
@@ -270,22 +270,22 @@ Checklist
 
 In addition to the paragraph above, here is a checklist:
 
-  * Give newcomers first positive experience.
-  * Have good documentation containing sections / guidelines for newbies. 
-  * Make people feel welcome impersonally and individually.
-  * Use labels to show easy wins.
-  * Leave non-critical easy fixes to newcomers. Mentor them.
-  * Be quickly responsive.
-  * Conduct PR days regularly.
-  * Zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_.
-  * Put information how people can complain in your ``README`` and ``CONTRIBUTING`` file.
-  * Links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`, and other documentation in ``README``.
-  * Add and keep updated the ``CONTRIBUTORS`` and ``MAINTAINERS`` files.
-  * If the collection is a part of Ansible, mention it in ``README``.
-  * Create a pinned issue that the collection needs new maintainers and contributors.
-  * Look for new maintainers among active contributors.
-  * Announce that your collection needs maintainers.
-  * Take part and congratulate new maintainers in Contributor Summits.
+* Give newcomers first positive experience.
+* Have good documentation containing sections / guidelines for newbies. 
+* Make people feel welcome impersonally and individually.
+* Use labels to show easy wins.
+* Leave non-critical easy fixes to newcomers. Mentor them.
+* Be quickly responsive.
+* Conduct PR days regularly.
+* Zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_.
+* Put information how people can complain in your ``README`` and ``CONTRIBUTING`` file.
+* Links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`, and other documentation in ``README``.
+* Add and keep updated the ``CONTRIBUTORS`` and ``MAINTAINERS`` files.
+* If the collection is a part of Ansible, mention it in ``README``.
+* Create a pinned issue that the collection needs new maintainers and contributors.
+* Look for new maintainers among active contributors.
+* Announce that your collection needs maintainers.
+* Take part and congratulate new maintainers in Contributor Summits.
 
 Documentation
 =============
@@ -315,11 +315,11 @@ Maintainers should not step down silently. This is especially important when the
 
 If you feel you don't have time to maintain your collection any more or for a long period of time, to prevent negative consequences for the collection and its community:
 
-  - Inform other maintainers about it.
-  - If the collection is under the ``ansible-collections`` organization, also inform the community team in the ``ansible-community`` `Libera.Chat IRC channel <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`_ or by email ``ansible-community@redhat.com``.
-  - Look at active contributors in the collection to find new maintainers among them. Discuss the potential candidates with other maintainers or with the community team.
-  - If you failed to find a replacement, create a pinned issue in the collection which announces that the collection needs new maintainers.
-  - Make the same announcement through the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
-  - Please be around to discuss potential candidates found by other maintainers or by the community team.
+- Inform other maintainers about it.
+- If the collection is under the ``ansible-collections`` organization, also inform the community team in the ``ansible-community`` `Libera.Chat IRC channel <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`_ or by email ``ansible-community@redhat.com``.
+- Look at active contributors in the collection to find new maintainers among them. Discuss the potential candidates with other maintainers or with the community team.
+- If you failed to find a replacement, create a pinned issue in the collection which announces that the collection needs new maintainers.
+- Make the same announcement through the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
+- Please be around to discuss potential candidates found by other maintainers or by the community team.
 
 You can come back at any moment.

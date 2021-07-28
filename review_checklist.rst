@@ -6,15 +6,15 @@ When reviewing, keep in mind that we follow the `Ansible Code of Conduct <https:
 
 Social aspects:
 
-  - Try to create a culture of collaboration when reviewing.
-  - Welcome the author and thank them for the issue or pull request.
-  - If there is a non-crucial easy-fix bug reported, politely ask the author to fix it themselves providing a link to the `Quick-start guide <create_pr_quick_start_guide.rst>`_.
-  - When suggesting changes, try to use questions, not statements.
-  - When suggesting mandatory changes, do it as politely as possible providing documentation references.
-  - If your suggestion is optional or a matter of personal preferences, please say it explicitly.
-  - When asking for adding tests or for complex code refactoring, say that the author is welcome to ask for clarifications and help if they need.
-  - If somebody suggests a good idea, mention it or put a thumbs up.
-  - After merging, thank the author and reviewers for their time and effort.
+- Try to create a culture of collaboration when reviewing.
+- Welcome the author and thank them for the issue or pull request.
+- If there is a non-crucial easy-fix bug reported, politely ask the author to fix it themselves providing a link to the `Quick-start guide <create_pr_quick_start_guide.rst>`_.
+- When suggesting changes, try to use questions, not statements.
+- When suggesting mandatory changes, do it as politely as possible providing documentation references.
+- If your suggestion is optional or a matter of personal preferences, please say it explicitly.
+- When asking for adding tests or for complex code refactoring, say that the author is welcome to ask for clarifications and help if they need.
+- If somebody suggests a good idea, mention it or put a thumbs up.
+- After merging, thank the author and reviewers for their time and effort.
 
 If you are a committer, also refer to the `Ansible committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
 
