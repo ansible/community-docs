@@ -114,7 +114,7 @@ Interact and share your ideas with other folks from the community following `Ans
 
 You can find available communication channels in the `Communication guide <https://docs.ansible.com/ansible/devel/community/communication.html>`_.
 
-The most interactive one is on Libera.Chat IRC where many Ansible projects and working groups have dedicated `channels <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`.
+The most interactive one is on Libera.Chat IRC where many Ansible projects and working groups have dedicated `channels <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`_.
 
 IRC meetings
 ------------
