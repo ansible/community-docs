@@ -116,8 +116,8 @@ You can find available communication channels in the `Communication guide <https
 
 The most interactive one is on Libera.Chat IRC where many Ansible projects and working groups have dedicated `channels <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`_.
 
-IRC meetings
-------------
+Community Meetings
+------------------
 
 The important project-scale decisions are made by the community and the Steering Committee at weekly IRC meetings in the ``#ansible-community`` Libera.Chat IRC channel.
 
