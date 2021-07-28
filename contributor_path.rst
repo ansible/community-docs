@@ -92,7 +92,6 @@ If you'd like to develop a collection, you should be also familiar with the `Ans
 Making your first contribution
 ==============================
 
-
 You can find some ideas how you can contribute in the `Contribution guide <contribution_to_project.rst>`_ and the ``README`` / ``CONTRIBUTING`` files of `corresponding repositories <https://github.com/ansible-collections/>`_.
 
 If the contribution you'd like to give requires technical skills, there can be also quick-start guides that can help.
