@@ -77,7 +77,7 @@ If you'd like to write code for the Ansible project, it would be good to underst
 - `Git <https://git-scm.com/docs/gittutorial>`_
 - `GitHub collaborative development model through forks and pull requests <https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models>`_
 
-You can learn these tools when working on your first contributions.
+You can learn these when working on your first contributions.
 
 Project-specific guidelines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -145,7 +145,7 @@ Subscribe to `The Bullhorn newsletter <https://docs.ansible.com/ansible/devel/co
 Contributor summit
 ------------------
 
-Take part and meet other contributors in the global quarterly `Ansible Contributor Summit <https://github.com/ansible/community/wiki/Contributor-Summit>`_ virtually or in-person.
+Take part and meet other contributors in the global quarterly `Ansible Contributor Summit <https://github.com/ansible/community/wiki/Contributor-Summit>`_ virtually or in-person. Subscribe to `The Bullhorn newsletter <https://docs.ansible.com/ansible/devel/community/communication.html#the-bullhorn>`_ to know when these take place.
 
 Teach others
 ============
