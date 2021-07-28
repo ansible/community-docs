@@ -102,7 +102,7 @@ Looking for GitHub issues labeled with the ``easyfix``, ``good_first_issue``, an
 Continue to contribute
 ======================
 
-When you contribute regularly, your proficiency and judgment in the related area will improve quickly and, along with this, the importance of your presence in the project.
+We don't expect everybody to know everything. Start small, think big. When you contribute regularly, your proficiency and judgment in the related area will improve quickly and, along with this, the importance of your presence in the project.
 
 Communicate
 ===========
