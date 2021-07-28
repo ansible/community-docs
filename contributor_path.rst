@@ -157,6 +157,12 @@ Become a maintainer
 
 If you are a code contributor, you can get extended permissions in the repository and become a maintainer.
 
+A collection maintainer is a contributor trusted by the community who makes significant and regular contributions to the project and showed themselves as a specialist in the related area.
+
+Maintainers are very valuable contributors because they allow development of the projects keep going.
+
+In particular, among other important things, they accept contributions made by other contributors merging their pull requests - people can submit great proposals but without the approval of the maintainer, they are unlikely to become a part of the project. Maintainers look after CI testing needed for the project's stability, release, promote other contributors to maintainers, represent the project inside and outside the community.
+
 For more information about the collection maintenance, requirements, and nomination process, refer to the `Maintainer guidelines <maintaining.rst>`_.
 
 Become a file maintainer
