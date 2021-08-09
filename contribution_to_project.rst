@@ -36,7 +36,7 @@ Contribution to software itself (its codebase) includes:
 - Reviewing code.
 - Refactoring code.
 - Improving stability of an existing codebase through improving a `unit <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_testing.html#adding-unit-tests>`_ and `integration <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_testing.html#adding-integration-tests>`_ testing codebase and infrastructure.
-- Maintaining repositories (for example, backporting merged pull requests and releasing).
+- Maintaining repositories (for example, `backporting merged pull requests <https://docs.ansible.com/ansible/latest/community/development_process.html#backporting-merged-prs-in-ansible-core>`_ and releasing).
 
 You can contribute to a codebase even if you do not have programming skills. For example, you can review proposals, test pull requests locally, add integration tests, file bug reports, create feature requests, or provide feedback to programmers in issues and pull requests.
 
