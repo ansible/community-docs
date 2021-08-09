@@ -14,15 +14,15 @@ A contribution to an Open Source project is any positive addition, change, or fe
 
 These are some ideas on how you can contribute:
 
-- :ref:`Contributing to the codebase<Contributing_to_codebase>`.
-- :ref:`Contributing to the code developer experience<Contributing to dev exp>`.
-- :ref:`Contributing to the user experience<Contributing to user exp>`.
-- :ref:`Contributing to the community<Contributing to community>`.
-- :ref:`Other kinds of contributions<Other kinds of contributions>`.
+- :ref:`Contributing to the codebase<Contributing-to-codebase>`.
+- :ref:`Contributing to the code developer experience<Contributing-to-dev-exp>`.
+- :ref:`Contributing to the user experience<Contributing-to-user-exp>`.
+- :ref:`Contributing to the community<Contributing-to-community>`.
+- :ref:`Other kinds of contributions<Other-kinds-of-contributions>`.
 
 Most types of contributions do not require programming skills.
 
-.. _Contributing to codebase:
+.. _Contributing-to-codebase:
 
 Contributing to the codebase
 ----------------------------
@@ -49,14 +49,14 @@ See also:
 - `Collection maintainer guidelines <maintaining.rst>`_.
 - `Collection releasing guidelines <releasing_collections.rst>`_.
 
-.. _Contributing to dev exp:
+.. _Contributing-to-dev-exp:
 
 Contributing to the code developer experience
 ---------------------------------------------
 
 Contribution to code developer experience includes sharing experience through `improving code development documentation <https://docs.ansible.com/ansible/latest/community/documentation_contributions.html>`_, writing development guidelines, mentoring and training code contributors.
 
-.. _Contributing to user exp:
+.. _Contributing-to-user-exp:
 
 Contributing to the user experience
 -----------------------------------
@@ -68,7 +68,7 @@ Examples:
 - `Clarification and updating user documentation <https://docs.ansible.com/ansible/latest/community/documentation_contributions.html>`_.
 - Making a presentation for a local `meetup <https://www.meetup.com/topics/ansible/>`_ covering not well-known but useful usage aspects.
 
-.. _Contributing to community:
+.. _Contributing-to-community:
 
 Contributing to the community
 -----------------------------
@@ -94,7 +94,7 @@ Examples:
 - Leading a blog or a website dedicated to the project.
 - `Proposing and discussing ideas in the community meetings <https://github.com/ansible-community/community-topics/>`_, voting on proposals.
 
-.. _Other kinds of contributions:
+.. _Other-kinds-of-contributions:
 
 Other kinds of contributions
 ---------------------------
