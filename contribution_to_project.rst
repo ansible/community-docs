@@ -20,7 +20,7 @@ These are some ideas on how you can contribute:
 - :ref:`Contributing to the community<Contributing to community>`.
 - :ref:`Other kinds of contributions<Other kinds of contributions>`.
 
-Most types of contribution do not require programming skills.
+Most types of contributions do not require programming skills.
 
 .. _Contributing to codebase:
 
