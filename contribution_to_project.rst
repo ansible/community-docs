@@ -14,7 +14,7 @@ A contribution to an Open Source project is any positive addition, change, or fe
 
 These are some ideas on how you can contribute:
 
-- :ref:`Contributing to the codebase<Contributing to codebase>`.
+- :ref:`Contributing to the codebase<Contributing_to_codebase>`.
 - :ref:`Contributing to the code developer experience<Contributing to dev exp>`.
 - :ref:`Contributing to the user experience<Contributing to user exp>`.
 - :ref:`Contributing to the community<Contributing to community>`.
