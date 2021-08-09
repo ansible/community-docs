@@ -96,7 +96,7 @@ Examples:
 
 .. _Other kinds of contributions:
 
-Other kinds of contribution
+Other kinds of contributions
 ---------------------------
 
 Any other kinds of active social or material support are considered contributions to the project.
