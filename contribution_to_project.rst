@@ -12,7 +12,7 @@ Finding the right contribution type for you
 
 A contribution to an Open Source project is any positive addition, change, or feedback given by an individual or company to the project.
 
-There are some ideas on how you can contribute:
+These are some ideas on how you can contribute:
 
 - :ref:`Contributing to the codebase<Contributing to codebase>`.
 - :ref:`Contributing to the code developer experience<Contributing to dev exp>`.
