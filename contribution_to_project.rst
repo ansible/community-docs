@@ -44,7 +44,7 @@ See also:
 
 - `Contributing to a codebase guide <contributing.rst>`_ to learn how to contribute to collection codebases.
 - `Create a pull request quick-start guide <create_pr_quick_start_guide.rst>`_.
-- `Review checklist <review_checklist.rst>_`.
+- `Review checklist <review_checklist.rst>`_.
 - `Test a pull request locally guide <test_pr_locally_guide.rst>`_.
 - `Collection maintainer guidelines <maintaining.rst>`_.
 - `Collection releasing guidelines <releasing_collections.rst>`_.
