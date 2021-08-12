@@ -2,12 +2,18 @@
 Quick-start integration testing guide
 *************************************
 
-This guide describes all steps needed to add integration tests for your changes.
+This guide describes all steps needed to add integration tests for your changes to a collection.
 
 .. contents:: Topics
 
 Basics
 ======
+
+[DRAFT POINTS NEED TO BE EXPLAINED BRIEFLY:]
+- Brief notion of integration tests.
+- Mention ``ansible-test``.
+- How they basically works within Ansible (e.g. these are roles with tasks checked by assert statement on expected outcome, blah blah).
+- Don't put references to the ansible integration testing doc here to NOT distruct and to NOT terrify newbies. 
 
 Note: If there are any difficulties with writing / running integration tests or you are not sure if the case can be covered, feel free to submit your pull request without the tests.
 If needed, other contributors can help you with them later.
@@ -26,6 +32,7 @@ Determine if integration tests exist
 
 Provided that integration tests for a collection exist, they are stored in ``tests/integration/targets`` subdirectories in the collection repository.
 
+[DRAFT] Mention below that you must have your environment prepared and be in the collection root directory.
 You can use the following command to list all the available targets:
 
 .. bash::
@@ -33,7 +40,11 @@ You can use the following command to list all the available targets:
   ansible-test integration --list-targets
 
 Bash users
-If you use bash with argcomplete, obtain a full list by doing: ansible-test integration <tab><tab>
+If you use ``bash`` and the ``argcomplete`` package is installed on your system, you can also get a full target list by doing: ``ansible-test integration <tab><tab>``.
+
+
+[DRAFT POINTS NEED TO BE EXPLAINED BRIEFLY:]
+- See the module / plugin you're interested in adding tests to in the output.
 
 [DRAFT BELOW]
 Go to the subdirectory containing the name of the module you are going to change.
