@@ -15,10 +15,26 @@ Basics
 - How they basically works within Ansible (e.g. these are roles with tasks checked by assert statement on expected outcome, blah blah).
 - Don't put references to the ansible integration testing doc here to NOT distruct and to NOT terrify newbies. 
 
+Integration tests are functional tests of modules and plugins.
+
+The basic entity of Ansible integration tests is a ``target``.
+
+The target is an `Ansible role <https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html>`_ stored in the ``tests/integration/targets`` directory of a collection repository file tree.
+
+The target role contains all needed to test a module or plugin.
+
+Names of targets contain a module or plugin name they test.
+
+Target names that start with ``setup_`` are usually run as dependencies before module and plugin targets start execution. We will describe this kind of targets later in detail in the `Writing tests from scratch<Writing-tests-from-scratch>`_ section.
+
+[DRAFT] Mention ansible-test here. 
+
 Note: If there are any difficulties with writing / running integration tests or you are not sure if the case can be covered, feel free to submit your pull request without the tests.
 If needed, other contributors can help you with them later.
 
 Note: Some collections do not have integration tests.
+
+.. _Prepare-local-environment:
 
 Prepare local environment
 =========================
@@ -32,14 +48,12 @@ Determine if integration tests exist
 
 Provided that integration tests for a collection exist, they are stored in ``tests/integration/targets`` subdirectories in the collection repository.
 
-[DRAFT] Mention below that you must have your environment prepared and be in the collection root directory.
-You can use the following command to list all the available targets:
+If you already have your local envoronment `prepared<Prepare-local-environment>`_, you can run the following command being in the collection's root directory to list all the available targets:
 
 .. bash::
 
   ansible-test integration --list-targets
 
-Bash users
 If you use ``bash`` and the ``argcomplete`` package is installed on your system, you can also get a full target list by doing: ``ansible-test integration <tab><tab>``.
 
 
@@ -61,6 +75,8 @@ Adding your tests to existing ones
 
 When adding a new module
 ========================
+
+.. _Writing-tests-from-scratch:
 
 Writing tests from scratch
 ==========================
