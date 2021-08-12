@@ -14,10 +14,26 @@ If needed, other contributors can help you with them later.
 
 Note: Some collections do not have integration tests.
 
+Prepare local environment
+=========================
+
+Before starting working on integration tests, to be able to run them locally, you need to prepare your environment.
+
+To learn how to do it quickly, refer to the `Quick-start development guide <https://github.com/ansible/community-docs/blob/main/create_pr_quick_start_guide.rst#prepare-your-environment>`_.
+
 Determine if integration tests exist
 ====================================
 
-Provided that integration tests for a collection exist, they are stored in ``tests/integration/targets`` subdirectories in collection repositories.
+Provided that integration tests for a collection exist, they are stored in ``tests/integration/targets`` subdirectories in the collection repository.
+
+You can use the following command to list all the available targets:
+
+.. bash::
+
+  ansible-test integration --list-targets
+
+Bash users
+If you use bash with argcomplete, obtain a full list by doing: ansible-test integration <tab><tab>
 
 [DRAFT BELOW]
 Go to the subdirectory containing the name of the module you are going to change.
