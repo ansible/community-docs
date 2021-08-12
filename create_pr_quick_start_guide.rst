@@ -91,10 +91,13 @@ Change the code
 
 12. We recommend you start with writing integration tests if applicable.
 
-Note: If there are any difficulties with writing / running the tests or you are not sure if the case can be covered, feel free to skip this step.
-If needed, other contributors can help you with it later.
+.. note::
 
-Note: Some collections do not have integration tests.
+  If there are any difficulties with writing / running the tests or you are not sure if the case can be covered, feel free to skip this step. Other contributors can help you with it later if needed.
+
+.. note::
+
+  Some collections do not have integration tests.
 
 All integration tests are stored in ``tests/integration/targets`` subdirectories.
 Go to the subdirectory containing the name of the module you are going to change.
@@ -130,8 +133,9 @@ If you need to run the tests against a specific distribution, see the `list of s
 
   ansible-test integration name_of_test_subdirectory --docker centos8 -v
 
-Note: If you are not sure whether you should use the default image for testing or a specific one, skip the entire step - the community will help you later.
-You can also try to use the collection repository's CI to figure out which containers are used.
+.. note::
+
+  If you are not sure whether you should use the default image for testing or a specific one, skip the entire step - the community will help you later. You can also try to use the collection repository's CI to figure out which containers are used.
 
 If the tests ran successfully, there are usually two possible outcomes:
 
