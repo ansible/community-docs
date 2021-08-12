@@ -9,6 +9,14 @@ This guide describes all steps needed to add integration tests for your changes 
 Basics
 ======
 
+.. note::
+
+  Some collections do not have integration tests.
+
+.. note::
+
+  If there are any difficulties with writing / running integration tests or you are not sure if the case can be covered, feel free to submit your pull request without the tests. Other contributors can help you with them later if needed.
+
 [DRAFT POINTS NEED TO BE EXPLAINED BRIEFLY:]
 - Brief notion of integration tests.
 - Mention ``ansible-test``.
@@ -28,11 +36,6 @@ Names of targets contain a module or plugin name they test.
 Target names that start with ``setup_`` are usually run as dependencies before module and plugin targets start execution. We will describe this kind of targets later in detail in the `Writing tests from scratch<Writing-tests-from-scratch>`_ section.
 
 [DRAFT] Mention ansible-test here. 
-
-Note: If there are any difficulties with writing / running integration tests or you are not sure if the case can be covered, feel free to submit your pull request without the tests.
-If needed, other contributors can help you with them later.
-
-Note: Some collections do not have integration tests.
 
 .. _Prepare-local-environment:
 
