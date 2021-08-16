@@ -17,25 +17,53 @@ Basics
 
   If there are any difficulties with writing / running integration tests or you are not sure if the case can be covered, feel free to submit your pull request without the tests. Other contributors can help you with them later if needed.
 
-[DRAFT POINTS NEED TO BE EXPLAINED BRIEFLY:]
-- Brief notion of integration tests.
-- Mention ``ansible-test``.
-- How they basically works within Ansible (e.g. these are roles with tasks checked by assert statement on expected outcome, blah blah).
-- Don't put references to the ansible integration testing doc here to NOT distruct and to NOT terrify newbies. 
+This section provides only brief explanation of what integration tests are. You will learn details and will see examples in the following sections.
 
-Integration tests are functional tests of modules and plugins.
+Integration tests are functional tests of modules and plugins. We will use the word ``module`` throughout the document implying both modules and plugins.
+
+With this kind of tests, we check if a module as a whole satisfies its functional requirements. Simply put, we check that features work and work as expected. In other words, users will get the outcome described in the module's documentation.
+
+We check modules with playbooks that invoke those modules. We pass standalone parameters and their combinations, and check what the module reports with the ``assert`` module and the actual state of the system after each task.
+
+Here's an example.
+
+Let's say we want to test the ``postgresql_user`` module invoked with the ``name`` option. We expect that after its invocation the module will create a user that we are passing through the ``name`` option and will report that the system state has changed. We cannot rely on only what the module reports. To be sure that the user has been actually created, we will query our database with another module to see if the user exists.
+
+.. bash::
+
+  - name: Create PostgreSQL user and store module's output to the result variable
+    postgresql_user:
+      name: test_user
+    register: result
+
+  - name: Check the module returns what we expect
+    assert:
+      that:
+        - result is changed
+
+  - name: Check actual system state with another module, in other words, that the user exists
+    postgresql_query:
+      query: SELECT * FROM pg_authid WHERE rolename = 'test_user'
+    register: query_result
+
+  - name: We expect it returns one row, check it
+    assert:
+      that:
+        - query_result.rowcount == 1
+
+You will learn details in the following sections.
 
 The basic entity of Ansible integration tests is a ``target``.
 
 The target is an `Ansible role <https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html>`_ stored in the ``tests/integration/targets`` directory of a collection repository file tree.
 
-The target role contains all needed to test a module or plugin.
+The target role contains all needed to test a module.
 
-Names of targets contain a module or plugin name they test.
+Names of targets contain a module name they test.
 
 Target names that start with ``setup_`` are usually run as dependencies before module and plugin targets start execution. We will describe this kind of targets later in detail in the `Writing tests from scratch<Writing-tests-from-scratch>`_ section.
 
-[DRAFT] Mention ansible-test here. 
+To run integration tests, we use the ``ansible-test`` utility shipped with the ``ansible-core`` and ``ansible`` packages. This is described in the `Run integration tests<Run-integration-tests>`_.
 
 .. _Prepare-local-environment:
 
@@ -51,21 +79,26 @@ Determine if integration tests exist
 
 Provided that integration tests for a collection exist, they are stored in ``tests/integration/targets`` subdirectories in the collection repository.
 
-If you already have your local envoronment `prepared<Prepare-local-environment>`_, you can run the following command being in the collection's root directory to list all the available targets:
+If you already have your local environment `prepared<Prepare-local-environment>`_, you can run the following command being in the collection's root directory to list all the available targets:
 
 .. bash::
 
   ansible-test integration --list-targets
 
 If you use ``bash`` and the ``argcomplete`` package is installed on your system, you can also get a full target list by doing: ``ansible-test integration <tab><tab>``.
+Alternatively, you can check if the ``tests/integration/targets`` contains a corresponding directory named as the module.
 
+For example, the tests for the ``postgresql_user`` module of the ``community.postgresql`` collection are stored in the ``tests/integration/targets/postgresql_user`` directory of the collection's source tree.
 
-[DRAFT POINTS NEED TO BE EXPLAINED BRIEFLY:]
-- See the module / plugin you're interested in adding tests to in the output.
+If there is no corresponding target there, it means that the module does not have integration tests. In this case, think of adding integration tests for the module. Refer to the `Writing tests from scratch<Writing-tests-from-scratch>`_ section for details.
 
-[DRAFT BELOW]
-Go to the subdirectory containing the name of the module you are going to change.
-For example, if you are fixing the ``mysql_user`` module in the ``community.mysql`` collection, its tests are in ``tests/integration/targets/test_mysql_user/tasks``.
+.. _Adding-tests-to-existing-ones:
+
+Adding your tests to existing ones
+==================================
+
+[DRAFT]
+The test tasks are stored in the ``tests/integration/targets/<target_name>/tasks`` directory.
 
 The ``main.yml`` file holds test tasks and includes other test files.
 Look for a suitable test file to integrate your tests or create and include a dedicated test file.
@@ -73,19 +106,29 @@ You can use one of the existing test files as a draft.
 
 When fixing a bug, write a task which reproduces the bug from the issue.
 
-Adding your tests to existing ones
-==================================
-
-When adding a new module
-========================
+[ELABORATE]
 
 .. _Writing-tests-from-scratch:
 
 Writing tests from scratch
 ==========================
 
+This section covers cases when:
+
+- There are no integration tests for a collection / group of modules in a collection at all.
+- You are adding a new module and you want to cover it.
+- You want to cover a module that already exists but integration tests for the module are missed.
+
+In other words, there are currently no tests for a module regardless of whether the module exists or not.
+
+If the module already has tests, refer to the `Adding test to existing ones<Adding-tests-to-existing-ones>`_ section.
+
+[ELABORATE]
+
 Cover properly
 ==============
+
+.. _Run-integration-tests:
 
 Run integration tests
 =====================
