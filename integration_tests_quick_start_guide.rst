@@ -97,16 +97,173 @@ If there is no corresponding target there, it means that the module does not hav
 Adding your tests to existing ones
 ==================================
 
-[DRAFT]
 The test tasks are stored in the ``tests/integration/targets/<target_name>/tasks`` directory.
 
 The ``main.yml`` file holds test tasks and includes other test files.
-Look for a suitable test file to integrate your tests or create and include a dedicated test file.
+Look for a suitable test file to integrate your tests or create and include / import a separate test file.
 You can use one of the existing test files as a draft.
 
-When fixing a bug, write a task which reproduces the bug from the issue.
+When fixing a bug
+-----------------
 
-[ELABORATE]
+When fixing a bug, the process of adding tests looks basically like the following:
+
+1. `Determine if integration tests for the module exists<Determine if integration tests exist>`_.
+2. Add a task which reproduces it to an appropriate file within the ``tests/integration/targets/<target_name>/tasks`` directory.
+3. `Run the tests<Run-integration-tests>`_, they should fail.
+4. If they do not fail, re-check if your environment / test task satisfies the steps-to-reproduce section of the issue.
+5. If you reproduce the bug and tests fail, change the code. 
+6. `Run the tests<Run-integration-tests>`_ again.
+7. Repeat steps 5-6 until the tests pass.
+
+Here's an example.
+
+Let's say we got an issue in the ``community.postgresql`` collection. When users pass a name containing underscores to the ``postgresql_user`` module, the module fails.
+
+We cloned the collection repository to ``~/ansible_collections/community/postgresql``. Being there, we run ``ansible-test integration --list-targets`` and it shows a target called ``postgresql_user``. It means that we already have tests for the module.
+
+We start with reproducing the bug.
+
+First, we look into ``tests/integration/targets/<target_name>/tasks/main.yml``. In case of the ``community.postgresql``, it imports other files from the ``tasks`` directory. We looked through the files - ``postgresql_user_general.yml`` looks like an appropriate one to add our tests.
+
+.. yaml::
+
+  # General tests:
+  - import_tasks: postgresql_user_general.yml
+    when: postgres_version_resp.stdout is version('9.4', '>=')
+
+We will add the following code to the file.
+
+.. bash::
+
+  # https://github.com/ansible-collections/community.postgresql/issues/NUM
+  - name: Test user name containing underscore
+    postgresql_user:
+      name: underscored_user
+    register: result
+
+  - name: Check the module returns what we expect
+    assert:
+      that:
+        - result is changed
+
+  - name: Query the database if the user exists
+    postgresql_query:
+      query: SELECT * FROM pg_authid WHERE rolename = 'underscored_user'
+    register: result
+
+  - name: Check the database returns one row
+    assert:
+      that:
+        - query_result.rowcount == 1
+
+When we `run the tests<Run-integration-tests>`_ passing ``postgresql_user`` as a test target, this task must fail.
+
+Then we will fix the bug and run the same test again. If they pass, we will consider the bug fixed and will submit a pull request.
+
+When adding a new feature
+-------------------------
+
+.. note::
+
+  The process described in this section is also applicable when the feature already exists but does not have integration tests and you want to cover it.
+
+.. note::
+
+  If you don not implement the feature you want yet, you can start with writing integration tests for it. Of course they will not work as the code does not exist at the moment but it can help you design better implementation before writing the code.
+
+When adding new features, the process of adding tests consists of the following steps:
+
+1. `Determine if integration tests for the module exists<Determine if integration tests exist>`_.
+2. Find an appropriate file for your tests within the ``tests/integration/targets/<target_name>/tasks`` directory.
+3. Cover your option. Refer to the `Cover properly<Cover-properly>`_ section for details.
+4. `Run the tests<Run-integration-tests>`_.
+5. If they fail, see the test output for details. Fix your code or tests and run the tests again.
+6. Repeat steps 4-5 until the tests pass.
+
+Here's an example.
+
+Let's say we decided to add a new option called ``add_attribute`` to the ``postgresql_user`` module of the ``community.postgresql`` collection.
+
+The option is boolean. If set to ``yes``, it adds an additional attribute to a database user.
+
+We cloned the collection repository to ``~/ansible_collections/community/postgresql``. Being there, we run ``ansible-test integration --list-targets`` and it shows a target called ``postgresql_user``. It means that we already have tests for the module.
+
+First, we look into ``tests/integration/targets/<target_name>/tasks/main.yml``. In case of the ``community.postgresql``, it imports other files from the ``tasks`` directory. We looked through the files - ``postgresql_user_general.yml`` looks like an appropriate one to add our tests.
+
+.. yaml::
+
+  # General tests:
+  - import_tasks: postgresql_user_general.yml
+    when: postgres_version_resp.stdout is version('9.4', '>=')
+
+We will add the following code to the file.
+
+.. bash::
+
+  # https://github.com/ansible-collections/community.postgresql/issues/NUM
+  - name: Test for new_option, create new user WITHOUT the attribute
+    postgresql_user:
+      name: test
+      add_attribute: no
+    register: result
+
+  - name: Check the module returns what we expect
+    assert:
+      that:
+        - result is changed
+
+  - name: Query the database if the user does not have the attribute (it is NULL)
+    postgresql_query:
+      query: SELECT * FROM pg_authid WHERE rolename = 'underscored_user' AND attribute = NULL
+    register: result
+
+  - name: Check the database returns one row
+    assert:
+      that:
+        - query_result.rowcount == 1
+
+  - name: Test for new_option, create new user WITH the attribute
+    postgresql_user:
+      name: test
+      add_attribute: yes
+    register: result
+
+  - name: Check the module returns what we expect
+    assert:
+      that:
+        - result is changed
+
+  - name: Query the database if the user has the attribute (it is TRUE)
+    postgresql_query:
+      query: SELECT * FROM pg_authid WHERE rolename = 'underscored_user' AND attribute = 't'
+    register: result
+
+  - name: Check the database returns one row
+    assert:
+      that:
+        - query_result.rowcount == 1
+
+When we `run the tests<Run-integration-tests>`_ passing ``postgresql_user`` as a test target.
+
+We also put the same tasks with the ``check_mode: yes`` option to be sure our option works as expected in check mode as well.
+
+If we expect a task to fail, we use the ``ignore_errors: yes`` option and check that the task actually failed and the message like below:
+
+.. yaml::
+
+  - name: Test for fail_when_true option
+    postgresql_user:
+      name: test
+      fail_when_true: yes
+    register: result
+    ignore_errors: yes
+
+  - name: Check the module fails and returns message we expect
+    assert:
+      that:
+        - result is failed
+        - result.msg == 'The message we expect'
 
 .. _Writing-tests-from-scratch:
 
@@ -124,6 +281,8 @@ In other words, there are currently no tests for a module regardless of whether 
 If the module already has tests, refer to the `Adding test to existing ones<Adding-tests-to-existing-ones>`_ section.
 
 [ELABORATE]
+
+.. _Cover-properly:
 
 Cover properly
 ==============
