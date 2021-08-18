@@ -11,6 +11,10 @@ Basics
 
 .. note::
 
+  If you find any inconsistencies or places in this document which can be improved / clarified, please raise an issue or pull request to fix it.
+
+.. note::
+
   Some collections do not have integration tests.
 
 .. note::
@@ -280,7 +284,96 @@ In other words, there are currently no tests for a module regardless of whether 
 
 If the module already has tests, refer to the `Adding test to existing ones<Adding-tests-to-existing-ones>`_ section.
 
-[ELABORATE]
+Here is a simplified example.
+
+Let's say we are going to cover a new module in the ``community.abstract`` collection which interacts with some service.
+
+We `checked<Determine if integration tests exist>`_ and figure out that there are no integration tests at all.
+
+We should basically do the following:
+
+1. Install and run the service.
+2. `Cover our module with tests<Cover-properly>`_.
+3. Create a test target.
+4. `Run the tests<Run-integration-tests>`_.
+5. Fix the code / tests if needed, run the tests again, and repeat the cycle until they pass.
+
+If we expect that there are several targets that will require the service, we will create a special ``setup`` target that will be used by all the targets where needed.
+
+[DRAFT maybe change it to a real example?]
+1. Clone the collection to the ``~/ansble_collections/community.abstract`` directory on our local machine.
+
+2. Being in ``~/ansble_collections/community.abstract``, create directories for the ``setup_`` target:
+
+.. bash::
+
+  mkdir -p tests/integration/targets/setup_abstract_service/tasks
+
+3. Write all the tasks needed to prepare the environment, install, and run the service.
+
+For simplicity, let's imagine that the service is available in the native distribution repositories and no sophisticated environment configuration is required.
+
+Add the following tasks to the ``tests/integration/targets/setup_abstract_service/tasks/main.yml`` file to install and run the service:
+
+.. yaml::
+
+  - name: Install abstract service
+    package:
+      name: abstract_service
+
+  - name: Run the service
+    systemd:
+      name: abstract_service
+      state: started
+
+This is a very simplified example. In real world, use all the best practices available to write this role.
+
+4. Add the target for the module you test.
+
+Let's say the module is called ``abstact_service_info``. Create a directory structure for the module:
+
+.. bash::
+
+  mkdir -p tests/integration/targets/abstract_service_info/tasks
+  mkdir -p tests/integration/targets/abstract_service_info/meta
+
+Add all subdirectories needed. For example, if you are going to use defaults and files, add the ``defaults`` and ``files`` directories, and so on. The approach is the same as you are creating a role.
+
+5. To make the ``setup_abstract_service`` target running before the module's target, add the following lines to the ``tests/integration/targets/abstract_service_info/meta/main.yml`` file.
+
+.. yaml::
+
+  dependencies:
+    - setup_abstract_service
+
+6. Start with writing a single standalone task to check that your module can interact with the service.
+
+We assume that the ``anstract_service_info`` module fetches some information from the ``abstract_service`` and it has two connection parameters.
+
+Among other fields, it returns a field called ``version`` containing a service version.
+
+Add the following to ``tests/integration/targets/abstract_service_info/tasks/main.yml``:
+
+.. yaml::
+
+  - name: Fetch info from abstract service
+    anstract_service_info:
+      host: 127.0.0.1  # We assume the service accepts local connection by default
+      port: 1234       # We assume that the service is listening this port by default
+    register: result   # This variable will contain the returned JSON including the server version
+
+  - name: Test the output
+    assert:
+      that:
+        - result.version == '1.0.0'  # Check version field contains what we expect
+
+7. `Run the tests<Run-integration-tests>`_ with the ``-vvv`` argument.
+
+If there are any issues with connectivity (for example, the service does not listening / accepting connections or anything else) or with the code, the play will fail.
+
+Examine the output to see at which step the failure occurred. Investigate why, fix, and run again. Repeat the cycle until the test passes.
+
+8. If the test succeeds, write more tests covering as many possible scenarios as possible. Refer to the `Cover properly<Cover-properly>`_ section for details.
 
 .. _Cover-properly:
 
