@@ -29,11 +29,11 @@ With this kind of tests, we check if a module as a whole satisfies its functiona
 
 We check modules with playbooks that invoke those modules. We pass standalone parameters and their combinations, and check what the module reports with the ``assert`` module and the actual state of the system after each task.
 
-Here's an example.
+Here is an example.
 
 Let's say we want to test the ``postgresql_user`` module invoked with the ``name`` option. We expect that after its invocation the module will create a user that we are passing through the ``name`` option and will report that the system state has changed. We cannot rely on only what the module reports. To be sure that the user has been actually created, we will query our database with another module to see if the user exists.
 
-.. bash::
+.. code:: bash
 
   - name: Create PostgreSQL user and store module's output to the result variable
     postgresql_user:
@@ -85,7 +85,7 @@ Provided that integration tests for a collection exist, they are stored in ``tes
 
 If you already have your local environment `prepared<Prepare-local-environment>`_, you can run the following command being in the collection's root directory to list all the available targets:
 
-.. bash::
+.. code:: bash
 
   ansible-test integration --list-targets
 
@@ -120,7 +120,7 @@ When fixing a bug, the process of adding tests looks basically like the followin
 6. `Run the tests<Run-integration-tests>`_ again.
 7. Repeat steps 5-6 until the tests pass.
 
-Here's an example.
+Here is an example.
 
 Let's say we got an issue in the ``community.postgresql`` collection. When users pass a name containing underscores to the ``postgresql_user`` module, the module fails.
 
@@ -130,7 +130,7 @@ We start with reproducing the bug.
 
 First, we look into ``tests/integration/targets/<target_name>/tasks/main.yml``. In case of the ``community.postgresql``, it imports other files from the ``tasks`` directory. We looked through the files - ``postgresql_user_general.yml`` looks like an appropriate one to add our tests.
 
-.. yaml::
+.. code:: yaml
 
   # General tests:
   - import_tasks: postgresql_user_general.yml
@@ -138,7 +138,7 @@ First, we look into ``tests/integration/targets/<target_name>/tasks/main.yml``. 
 
 We will add the following code to the file.
 
-.. bash::
+.. code:: yaml
 
   # https://github.com/ansible-collections/community.postgresql/issues/NUM
   - name: Test user name containing underscore
@@ -185,7 +185,7 @@ When adding new features, the process of adding tests consists of the following 
 5. If they fail, see the test output for details. Fix your code or tests and run the tests again.
 6. Repeat steps 4-5 until the tests pass.
 
-Here's an example.
+Here is an example.
 
 Let's say we decided to add a new option called ``add_attribute`` to the ``postgresql_user`` module of the ``community.postgresql`` collection.
 
@@ -195,7 +195,7 @@ We cloned the collection repository to ``~/ansible_collections/community/postgre
 
 First, we look into ``tests/integration/targets/<target_name>/tasks/main.yml``. In case of the ``community.postgresql``, it imports other files from the ``tasks`` directory. We looked through the files - ``postgresql_user_general.yml`` looks like an appropriate one to add our tests.
 
-.. yaml::
+.. code:: yaml
 
   # General tests:
   - import_tasks: postgresql_user_general.yml
@@ -203,7 +203,7 @@ First, we look into ``tests/integration/targets/<target_name>/tasks/main.yml``. 
 
 We will add the following code to the file.
 
-.. bash::
+.. code:: bash
 
   # https://github.com/ansible-collections/community.postgresql/issues/NUM
   - name: Test for new_option, create new user WITHOUT the attribute
@@ -254,7 +254,7 @@ We also put the same tasks with the ``check_mode: yes`` option to be sure our op
 
 If we expect a task to fail, we use the ``ignore_errors: yes`` option and check that the task actually failed and the message like below:
 
-.. yaml::
+.. code:: yaml
 
   - name: Test for fail_when_true option
     postgresql_user:
@@ -284,7 +284,10 @@ In other words, there are currently no tests for a module regardless of whether 
 
 If the module already has tests, refer to the `Adding test to existing ones<Adding-tests-to-existing-ones>`_ section.
 
-Here is a simplified example.
+Abstract example
+----------------
+
+Here is a simplified abstract example.
 
 Let's say we are going to cover a new module in the ``community.abstract`` collection which interacts with some service.
 
@@ -305,7 +308,7 @@ If we expect that there are several targets that will require the service, we wi
 
 2. Being in ``~/ansble_collections/community.abstract``, create directories for the ``setup_`` target:
 
-.. bash::
+.. code:: bash
 
   mkdir -p tests/integration/targets/setup_abstract_service/tasks
 
@@ -315,7 +318,7 @@ For simplicity, let's imagine that the service is available in the native distri
 
 Add the following tasks to the ``tests/integration/targets/setup_abstract_service/tasks/main.yml`` file to install and run the service:
 
-.. yaml::
+.. code:: yaml
 
   - name: Install abstract service
     package:
@@ -332,7 +335,7 @@ This is a very simplified example. In real world, use all the best practices ava
 
 Let's say the module is called ``abstact_service_info``. Create a directory structure for the module:
 
-.. bash::
+.. code:: bash
 
   mkdir -p tests/integration/targets/abstract_service_info/tasks
   mkdir -p tests/integration/targets/abstract_service_info/meta
@@ -341,7 +344,7 @@ Add all subdirectories needed. For example, if you are going to use defaults and
 
 5. To make the ``setup_abstract_service`` target running before the module's target, add the following lines to the ``tests/integration/targets/abstract_service_info/meta/main.yml`` file.
 
-.. yaml::
+.. code:: yaml
 
   dependencies:
     - setup_abstract_service
@@ -354,7 +357,7 @@ Among other fields, it returns a field called ``version`` containing a service v
 
 Add the following to ``tests/integration/targets/abstract_service_info/tasks/main.yml``:
 
-.. yaml::
+.. code:: yaml
 
   - name: Fetch info from abstract service
     anstract_service_info:
@@ -374,6 +377,148 @@ If there are any issues with connectivity (for example, the service does not lis
 Examine the output to see at which step the failure occurred. Investigate why, fix, and run again. Repeat the cycle until the test passes.
 
 8. If the test succeeds, write more tests covering as many possible scenarios as possible. Refer to the `Cover properly<Cover-properly>`_ section for details.
+
+Real-world example
+------------------
+
+Here is a real-world example of writing integration tests from scratch for the ``community.postgresql.postgresql_info`` module.
+
+For the sake of simplicity, we will create very basic tests which we will run using the Ubuntu 20.04 test container.
+
+For this we use Linux as a work environment and have ``git`` and ``docker`` installed and running.
+
+We also `installed <https://docs.ansible.com/ansible/devel/installation_guide/intro_installation.html>`_ ``ansible-core``.
+
+1. Create the following directories in your home directory:
+
+.. code:: bash
+
+  mkdir -p ~/ansible_collections/community
+
+2. Fork the `collection repository <https://github.com/ansible-collections/community.postgresql>`_ through the GitHub web interface.
+
+3. Clone the forked repository from your profile to the created path:
+
+.. code:: bash
+
+  git clone https://github.com/YOURACC/community.postgresql.git ~/ansible_collections/community/postgresql
+
+If you prefer to use the SSH protocol:
+
+.. code:: bash
+
+  git clone git@github.com:YOURACC/community.postgresql.git ~/ansible_collections/community/postgresql
+
+4. Go to the cloned repository:
+
+.. code:: bash
+
+  cd ~/ansible_collections/community/postgresql
+
+5. Be sure you are in the default branch (it is usually ``main``):
+
+.. code:: bash
+
+  git status
+
+6. Checkout a test branch:
+
+.. code:: bash
+
+  git checkout -b postgresql_info_tests
+
+
+7. Because we already have tests for ``postgresql_info`` module, run the following command:
+
+.. code:: bash
+
+  rm -rf tests/integration/targets/*
+
+The state now is like we do not have integration tests for the ``community.postgresql`` collection at all. So we can start writing integration tests from scratch.
+
+8. We will start with creating a ``setup`` target that will install all required packages and will run PostgreSQL. Create the following directories:
+
+.. code:: bash
+
+  mkdir -p tests/integration/targets/setup_postgresql_db/tasks
+
+9. Create the ``tests/integration/targets/setup_postgresql_db/tasks/main.yml`` file and add the following tasks to it:
+
+.. code:: yaml
+
+  - name: Install required packages
+    package:
+      name:
+        - apt-utils
+        - postgresql
+        - postgresql-common
+        - python3-psycopg2
+
+  - name: Initialize PostgreSQL
+    shell: . /usr/share/postgresql-common/maintscripts-functions && set_system_locale && /usr/bin/pg_createcluster -u postgres 12 main
+    args:
+      creates: /etc/postgresql/12/
+
+  - name: Start PostgreSQL service
+    service:
+      name: postgresql
+      state: started
+
+That is enough for our very basic example.
+
+10. Then, create the following directories for the ``postgresql_info`` target:
+
+.. code:: bash
+
+  mkdir -p tests/integration/targets/postgresql_info/tasks tests/integration/targets/postgresql_info/meta
+
+11. To make the ``setup_postgresql_db`` target running before the ``postgresql_info`` target as a dependency, create the ``tests/integration/targets/postgresql_info/meta/main.yml`` and add the following code to it:
+
+.. code:: yaml
+
+  dependencies:
+    - setup_postgresql_db
+
+12. Now we are ready to add our first test task for the ``postgresql_info`` module. Create the ``tests/integration/targets/postgresql_info/tasks/main.yml`` file and add the following code to it:
+
+.. code:: yaml
+
+  - name: Test postgresql_info module
+    become: yes
+    become_user: postgres
+    postgresql_info:
+      login_user: postgres
+      login_db: postgres
+    register: result
+
+  - name: Check the module returns what we expect
+    assert:
+      that:
+        - result is not changed
+        - result.version.major == 12
+        - result.version.minor == 8
+
+In the first task, we run the ``postgresql_info`` module to fetch information from the database we installed and ran with the ``setup_postgresql_db`` target. We save values returned by the module into the ``result`` variable.
+
+In the second task, we check with the ``assert`` module what our task returns. We expect that, among other things, it returns the server version and reports that the system state has not been changed.
+
+13. Run the tests in the Ubuntu 20.04 docker container:
+
+.. code:: bash
+
+  ansible-test integration postgresql_info --docker ubuntu2004 -vvv
+
+The tests should pass. If we look at the output, we should see something like the following:
+
+.. code:: bash
+
+  TASK [postgresql_info : Check the module returns what we expect] ***************
+  ok: [testhost] => {
+    "changed": false,
+    "msg": "All assertions passed"
+  }
+
+If your tests fail when you are working on your project. Examine the output to see at which step the failure occurred. Investigate why, fix, and run again. Repeat the cycle until the test passes. If the test succeeds, write more tests covering as many possible scenarios as possible. Refer to the `Cover properly<Cover-properly>`_ section for details.
 
 .. _Cover-properly:
 
