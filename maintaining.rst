@@ -279,7 +279,7 @@ In addition to the paragraph above, here is a checklist:
 * Conduct PR days regularly.
 * Zero-tolerance policy towards behavior violating `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_.
 * Put information how people can complain in your ``README`` and ``CONTRIBUTING`` file.
-* Links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`, and other documentation in ``README``.
+* Links to the `contributing.rst <contributing.rst>`_ and `Quick-start guide <create_pr_quick_start_guide.rst>`_, and other documentation in ``README``.
 * Add and keep updated the ``CONTRIBUTORS`` and ``MAINTAINERS`` files.
 * If the collection is a part of Ansible, mention it in ``README``.
 * Create a pinned issue that the collection needs new maintainers and contributors.
