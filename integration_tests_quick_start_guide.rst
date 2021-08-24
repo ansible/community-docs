@@ -2,7 +2,7 @@
 Quick-start integration testing guide
 *************************************
 
-This guide describes all steps needed to add integration tests for your changes to a collection.
+This guide describes all steps needed to add integration tests for your changes to a collection and run them locally using the ``ansible-test`` command.
 
 .. contents:: Topics
 
@@ -11,7 +11,7 @@ Basics
 
 .. note::
 
-  If you find any inconsistencies or places in this document which can be improved / clarified, please raise an issue or pull request to fix it.
+  If you find any inconsistencies or places in this document that can be improved / clarified, please raise an issue or pull request to fix it.
 
 .. note::
 
@@ -25,7 +25,7 @@ This section provides only brief explanation of what integration tests are. You 
 
 Integration tests are functional tests of modules and plugins. We will use the word ``module`` throughout the document implying both modules and plugins.
 
-With this kind of tests, we check if a module as a whole satisfies its functional requirements. Simply put, we check that features work and work as expected. In other words, users will get the outcome described in the module's documentation.
+With this kind of tests, we check if a module as a whole satisfies its functional requirements. Simply put, we check that features work as expected and users will get the outcome described in the module's documentation.
 
 We check modules with playbooks that invoke those modules. We pass standalone parameters and their combinations, and check what the module reports with the ``assert`` module and the actual state of the system after each task.
 
@@ -67,7 +67,7 @@ Names of targets contain a module name they test.
 
 Target names that start with ``setup_`` are usually run as dependencies before module and plugin targets start execution. We will describe this kind of targets later in detail in the `Writing tests from scratch<Writing-tests-from-scratch>`_ section.
 
-To run integration tests, we use the ``ansible-test`` utility shipped with the ``ansible-core`` and ``ansible`` packages. This is described in the `Run integration tests<Run-integration-tests>`_.
+To run integration tests, we use the ``ansible-test`` utility shipped with the ``ansible-core`` and ``ansible`` packages. This is described in the `Run integration tests<Run-integration-tests>`_ section.
 
 .. _Prepare-local-environment:
 
@@ -180,7 +180,7 @@ When adding new features, the process of adding tests consists of the following 
 
 1. `Determine if integration tests for the module exists<Determine if integration tests exist>`_.
 2. Find an appropriate file for your tests within the ``tests/integration/targets/<target_name>/tasks`` directory.
-3. Cover your option. Refer to the `Cover properly<Cover-properly>`_ section for details.
+3. Cover your option. Refer to the `Recommendations on coverage<Recommendations-on-coverage>`_ section for details.
 4. `Run the tests<Run-integration-tests>`_.
 5. If they fail, see the test output for details. Fix your code or tests and run the tests again.
 6. Repeat steps 4-5 until the tests pass.
@@ -296,14 +296,13 @@ We `checked<Determine if integration tests exist>`_ and figure out that there ar
 We should basically do the following:
 
 1. Install and run the service.
-2. `Cover our module with tests<Cover-properly>`_.
+2. `Cover our module with tests<Recommendations-on-coverage>`_.
 3. Create a test target.
 4. `Run the tests<Run-integration-tests>`_.
 5. Fix the code / tests if needed, run the tests again, and repeat the cycle until they pass.
 
 If we expect that there are several targets that will require the service, we will create a special ``setup`` target that will be used by all the targets where needed.
 
-[DRAFT maybe change it to a real example?]
 1. Clone the collection to the ``~/ansble_collections/community.abstract`` directory on our local machine.
 
 2. Being in ``~/ansble_collections/community.abstract``, create directories for the ``setup_`` target:
@@ -376,7 +375,7 @@ If there are any issues with connectivity (for example, the service does not lis
 
 Examine the output to see at which step the failure occurred. Investigate why, fix, and run again. Repeat the cycle until the test passes.
 
-8. If the test succeeds, write more tests covering as many possible scenarios as possible. Refer to the `Cover properly<Cover-properly>`_ section for details.
+8. If the test succeeds, write more tests covering as many possible scenarios as possible. Refer to the `Recommendations on coverage<Recommendations-on-coverage>`_ section for details.
 
 Real-world example
 ------------------
@@ -518,41 +517,107 @@ The tests should pass. If we look at the output, we should see something like th
     "msg": "All assertions passed"
   }
 
-If your tests fail when you are working on your project. Examine the output to see at which step the failure occurred. Investigate why, fix, and run again. Repeat the cycle until the test passes. If the test succeeds, write more tests covering as many possible scenarios as possible. Refer to the `Cover properly<Cover-properly>`_ section for details.
+If your tests fail when you are working on your project. Examine the output to see at which step the failure occurred. Investigate why, fix, and run again. Repeat the cycle until the test passes. If the test succeeds, write more tests covering as many possible scenarios as possible. Refer to the `Recommendations on coverage<Recommendations-on-coverage>`_ section for details.
 
-.. _Cover-properly:
+.. _Recommendations-on-coverage:
 
-Cover properly
-==============
+Recommendations on coverage
+===========================
+
+Bugfixes
+--------
+
+Before fixing code, create a test case in an `appropriate test target<Determine if integration tests exist>`_ reproducing the bug provided by the issue reporter and described in the ``Steps to Reproduce`` issue section. `Run<Run-integration-tests>`_ the tests.
+
+If you failed to reproduce the bug, ask the reporter to provide additional information. Maybe the cause is just wrong environment settings.
+
+In very environment specific cases, manual testing by issue reporter or other interested users is required.
+
+Refactoring code
+----------------
+
+When refactoring code, always check that related options are covered in a `corresponding test target<Determine if integration tests exist>`_. Do not assume if the test target exists, everything is covered.
+
+Covering modules / new features
+-------------------------------
+
+These are important recommendations:
+
+- When covering a module, cover all its options separately and their meaningful combinations.
+- Register the outcome of the tasks as variables, for example, ``register: result``. With the ``assert`` module, check:
+
+    + If ``result is changed`` or not.
+    + Expected return values (all that can be returned should be checked at least once within the test tasks).
+- If the module change a system, check the actual system state using other modules. For example, if the module changes a file, we can check that the file has been changed by checking its checksum with the ``ansible.builtin.stat`` module before and after the test tasks.
+- Additionally, run the test tasks with ``check_mode: yes`` (if the check mode is supported by the module). Check with other modules that the actual system state has not been changed.
+- Cover cases when the module must fail. Use the ``ignore_errors: yes`` option and check the returned message with the ``assert`` module.
+
+Example:
+
+.. code:: yaml
+
+  - name: Task to fail
+    abstract_module:
+        ...
+    register: result
+    ignore_errors: yes
+
+  - name: Check the task fails and its error message
+    assert:
+      that:
+        - result is failed
+        - result.msg == 'Message we expect'
+
+Here is a summary:
+
+- Cover options and their sensible combinations.
+- Check returned values.
+- Cover the check mode if supported.
+- Check a system state using other modules.
+- Check when a module must fail and error messages.
 
 .. _Run-integration-tests:
 
 Run integration tests
 =====================
 
-[DRAFT IS ALL BELOW]
-When fixing a bug, write a task which reproduces the bug from the issue.
+In the following examples, we will use ``Docker`` to run integration tests locally.
 
-Put the reported case in the tests, then run integration tests with the following command:
+Be sure, you `prepared your local environment<Prepare-local-environment>`_ first.
 
-.. code:: bash
+We assume that you are in the ``~/ansible_collections/NAMESPACE/COLLECTION`` directory.
 
-  ansible-test integration name_of_test_subdirectory --docker -v
-
-For example, if the tests files you changed are stored in ``tests/integration/targets/test_mysql_user/``, the command will be:
+After you change the tests, you can run them with the following command:
 
 .. code:: bash
 
-  ansible-test integration test_mysql_user --docker -v
+  ansible-test integration <target_name> --docker <distro>
 
-You can use the ``-vv`` or ``-vvv`` argument, if you need more detailed output.
+The ``target_name`` is a test role directory containing the tests. For example, if the test files you changed are stored in ``tests/integration/targets/postgresql_info/``, the command will be:
 
-In the examples above, the default test image will be automatically downloaded and used to create and run a test container.
-Use the default test image for platform independent integration tests such as those for cloud modules.
+.. code:: bash
 
-If you need to run the tests against a specific distribution, see the `list of supported container images <https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html#container-images>`_. In this case, the command can look like:
+  ansible-test integration postgresql_info --docker fedora34
+
+You can use the ``-vv`` or ``-vvv`` argument if you need more detailed output.
+
+In the examples above, the ``fedora34`` test image will be automatically downloaded and used to create and run a test container.
+
+See the `list of supported container images <https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html#container-images>`_.
+
+In some cases, for example, for platform independent tests, the ``default`` test image is required. Use the ``--docker default`` or just ``--docker`` option without specifying a distribution.
+
+If you are not sure which image you should use, ask collection maintainers for clarification.
+
+For details about running integration tests with ``Docker``, refer to the `Ansible documentation <https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html#tests-in-docker-containers>`_.
 
 Going deeper
 ============
 
-[DRAFT] Doc references here
+To scrutinize the topic, refer to the following documents:
+
+- `Testing guide <https://docs.ansible.com/ansible/latest/dev_guide/testing.html>`_.
+- `Integration tests guide <https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html>`_.
+- `Testing collections <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_testing.html#testing-collections>`_.
+- `Resource module integration tests <https://docs.ansible.com/ansible/latest/network/dev_guide/developing_resource_modules_network.html#resource-module-integration-tests>`_.
+- `How to test a pull request locally <https://github.com/ansible/community-docs/blob/main/test_pr_locally_guide.rst>`_.
