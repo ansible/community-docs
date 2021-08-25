@@ -427,7 +427,7 @@ If you prefer to use the SSH protocol:
   git checkout -b postgresql_info_tests
 
 
-7. Because we already have tests for ``postgresql_info`` module, run the following command:
+7. Because we already have tests for the ``postgresql_info`` module, run the following command:
 
 .. code:: bash
 
@@ -435,7 +435,7 @@ If you prefer to use the SSH protocol:
 
 The state now is like we do not have integration tests for the ``community.postgresql`` collection at all. So we can start writing integration tests from scratch.
 
-8. We will start with creating a ``setup`` target that will install all required packages and will run PostgreSQL. Create the following directories:
+8. We will start with creating a ``setup`` target that will install all required packages and will launch PostgreSQL. Create the following directories:
 
 .. code:: bash
 
@@ -471,7 +471,7 @@ That is enough for our very basic example.
 
   mkdir -p tests/integration/targets/postgresql_info/tasks tests/integration/targets/postgresql_info/meta
 
-11. To make the ``setup_postgresql_db`` target running before the ``postgresql_info`` target as a dependency, create the ``tests/integration/targets/postgresql_info/meta/main.yml`` and add the following code to it:
+11. To make the ``setup_postgresql_db`` target running before the ``postgresql_info`` target as a dependency, create the ``tests/integration/targets/postgresql_info/meta/main.yml`` file and add the following code to it:
 
 .. code:: yaml
 
