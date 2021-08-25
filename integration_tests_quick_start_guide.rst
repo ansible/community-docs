@@ -33,7 +33,7 @@ Here is an example.
 
 Let's say we want to test the ``postgresql_user`` module invoked with the ``name`` option. We expect that the module will create a user that we are passing through the ``name`` option and will report that the system state has changed. We cannot rely on only what the module reports. To be sure that the user has been actually created, we will query our database with another module to see if the user exists.
 
-.. code:: bash
+.. code:: yaml
 
   - name: Create PostgreSQL user and store module's output to the result variable
     postgresql_user:
@@ -205,7 +205,7 @@ First, we look into ``tests/integration/targets/<target_name>/tasks/main.yml``. 
 
 We will add the following code to the file.
 
-.. code:: bash
+.. code:: yaml
 
   # https://github.com/ansible-collections/community.postgresql/issues/NUM
   # We should also run the same tasks with check_mode: yes. We omit it here for simplicity.
