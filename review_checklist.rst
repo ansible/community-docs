@@ -45,6 +45,7 @@ When reviewing, first, try to figure out that the suggested changes (including m
 Standards and documentation
 ===========================
 
+* [ ] A pull request does not contain a mix of bugfixes / new features that are not tightly related. If yes, ask the author to split the pull request into separate ones.
 * [ ] If the pull request is not a documentation fix, it must include a `changelog fragment <https://docs.ansible.com/ansible/devel/community/development_process.html#creating-a-changelog-fragment>`_ - please check the format carefully.
 
   * The only exception are new modules and plugins (that are not jinja2 filter and test plugins).
@@ -59,6 +60,7 @@ Standards and documentation
 
   * This usually is the next minor release, sometimes the next major release (example: if 2.7.5 is the current release, the next minor release will be 2.8.0, and the next major release will be 3.0.0).
 * [ ] FQCNs are used for ``extends_documentation_fragment:``, unless the author is referring to doc_fragments from ansible-core.
+* [ ] New features have corresponding examples in the ``EXAMPLES`` block.
 
 Tests (if applicable and technically possible to implement)
 ===========================================================

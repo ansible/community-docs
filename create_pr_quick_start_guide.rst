@@ -89,6 +89,10 @@ This is the repository where you forked from.
 Change the code
 ===============
 
+.. note::
+
+  Do NOT mix several bugfixes or features that are not tightly-related in one pull request. Use separate pull requests for different changes.
+
 12. We recommend you start with writing integration tests if applicable.
 
 .. note::
