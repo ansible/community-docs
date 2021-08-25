@@ -27,11 +27,11 @@ Integration tests are functional tests of modules and plugins. We will use the w
 
 With this kind of tests, we check if a module as a whole satisfies its functional requirements. Simply put, we check that features work as expected and users will get the outcome described in the module's documentation.
 
-We check modules with playbooks that invoke those modules. We pass standalone parameters and their combinations, and check what the module reports with the ``assert`` module and the actual state of the system after each task.
+We check modules with playbooks that invoke those modules. We pass standalone parameters and their combinations, and check what the module reports with the `assert <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/assert_module.html>` module and the actual state of the system after each task.
 
 Here is an example.
 
-Let's say we want to test the ``postgresql_user`` module invoked with the ``name`` option. We expect that after its invocation the module will create a user that we are passing through the ``name`` option and will report that the system state has changed. We cannot rely on only what the module reports. To be sure that the user has been actually created, we will query our database with another module to see if the user exists.
+Let's say we want to test the ``postgresql_user`` module invoked with the ``name`` option. We expect that the module will create a user that we are passing through the ``name`` option and will report that the system state has changed. We cannot rely on only what the module reports. To be sure that the user has been actually created, we will query our database with another module to see if the user exists.
 
 .. code:: bash
 
@@ -65,9 +65,11 @@ The target role contains all needed to test a module.
 
 Names of targets contain a module name they test.
 
-Target names that start with ``setup_`` are usually run as dependencies before module and plugin targets start execution. We will describe this kind of targets later in detail in the `Writing tests from scratch<Writing-tests-from-scratch>`_ section.
+Target names that start with ``setup_`` are executed as dependencies before module and plugin targets start execution. We will describe this kind of targets later in detail in the `Writing tests from scratch<Writing-tests-from-scratch>`_ section.
 
 To run integration tests, we use the ``ansible-test`` utility shipped with the ``ansible-core`` and ``ansible`` packages. This is described in the `Run integration tests<Run-integration-tests>`_ section.
+
+After you finish your integration tests, refert to the `Create a PR quick-start guide <https://github.com/ansible/community-docs/blob/main/create_pr_quick_start_guide.rst>`_ to learn how to submit a pull request.
 
 .. _Prepare-local-environment:
 
@@ -89,7 +91,7 @@ If you already have your local environment `prepared<Prepare-local-environment>`
 
   ansible-test integration --list-targets
 
-If you use ``bash`` and the ``argcomplete`` package is installed on your system, you can also get a full target list by doing: ``ansible-test integration <tab><tab>``.
+If you use ``bash`` and the ``argcomplete`` package is installed via ``pip`` on your system, you can also get a full target list by doing: ``ansible-test integration <tab><tab>``.
 Alternatively, you can check if the ``tests/integration/targets`` contains a corresponding directory named as the module.
 
 For example, the tests for the ``postgresql_user`` module of the ``community.postgresql`` collection are stored in the ``tests/integration/targets/postgresql_user`` directory of the collection's source tree.
@@ -110,25 +112,25 @@ You can use one of the existing test files as a draft.
 When fixing a bug
 -----------------
 
-When fixing a bug, the process of adding tests looks basically like the following:
+When fixing a bug:
 
-1. `Determine if integration tests for the module exists<Determine if integration tests exist>`_.
-2. Add a task which reproduces it to an appropriate file within the ``tests/integration/targets/<target_name>/tasks`` directory.
+1. `Determine if integration tests for the module exist<Determine if integration tests exist>`_. If they do not, refer to the `Writing tests from scratch<Writing-tests-from-scratch>`_ section.
+2. Add a task which reproduces the to an appropriate file within the ``tests/integration/targets/<target_name>/tasks`` directory.
 3. `Run the tests<Run-integration-tests>`_, they should fail.
-4. If they do not fail, re-check if your environment / test task satisfies the steps-to-reproduce section of the issue.
+4. If they do not fail, re-check if your environment / test task satisfies the conditions described in the ``Steps to Reproduce`` section of the issue.
 5. If you reproduce the bug and tests fail, change the code. 
 6. `Run the tests<Run-integration-tests>`_ again.
-7. Repeat steps 5-6 until the tests pass.
+7. If they fail, repeat steps 5-6 until the tests pass.
 
 Here is an example.
 
 Let's say we got an issue in the ``community.postgresql`` collection. When users pass a name containing underscores to the ``postgresql_user`` module, the module fails.
 
-We cloned the collection repository to ``~/ansible_collections/community/postgresql``. Being there, we run ``ansible-test integration --list-targets`` and it shows a target called ``postgresql_user``. It means that we already have tests for the module.
+We cloned the collection repository to the ``~/ansible_collections/community/postgresql`` directory and `prepared our environment<Prepare-local-environment>`_. Being there, we run ``ansible-test integration --list-targets`` and it shows a target called ``postgresql_user``. It means that we already have tests for the module.
 
 We start with reproducing the bug.
 
-First, we look into ``tests/integration/targets/<target_name>/tasks/main.yml``. In case of the ``community.postgresql``, it imports other files from the ``tasks`` directory. We looked through the files - ``postgresql_user_general.yml`` looks like an appropriate one to add our tests.
+First, we look into the ``tests/integration/targets/<target_name>/tasks/main.yml`` file. In case of the ``community.postgresql``, it imports other files from the ``tasks`` directory. We looked through the files - ``postgresql_user_general.yml`` looks like an appropriate one to add our tests.
 
 .. code:: yaml
 
@@ -163,14 +165,14 @@ We will add the following code to the file.
 
 When we `run the tests<Run-integration-tests>`_ passing ``postgresql_user`` as a test target, this task must fail.
 
-Then we will fix the bug and run the same test again. If they pass, we will consider the bug fixed and will submit a pull request.
+Then we will fix the bug and run the same tests again. If they pass, we will consider the bug fixed and will submit a pull request.
 
 When adding a new feature
 -------------------------
 
 .. note::
 
-  The process described in this section is also applicable when the feature already exists but does not have integration tests and you want to cover it.
+  The process described in this section is also applicable when a feature already exists but does not have integration tests and you want to cover it.
 
 .. note::
 
@@ -178,7 +180,7 @@ When adding a new feature
 
 When adding new features, the process of adding tests consists of the following steps:
 
-1. `Determine if integration tests for the module exists<Determine if integration tests exist>`_.
+1. `Determine if integration tests for the module exists<Determine if integration tests exist>`_. If they do not, refer to the `Writing tests from scratch<Writing-tests-from-scratch>`_ section.
 2. Find an appropriate file for your tests within the ``tests/integration/targets/<target_name>/tasks`` directory.
 3. Cover your option. Refer to the `Recommendations on coverage<Recommendations-on-coverage>`_ section for details.
 4. `Run the tests<Run-integration-tests>`_.
@@ -191,7 +193,7 @@ Let's say we decided to add a new option called ``add_attribute`` to the ``postg
 
 The option is boolean. If set to ``yes``, it adds an additional attribute to a database user.
 
-We cloned the collection repository to ``~/ansible_collections/community/postgresql``. Being there, we run ``ansible-test integration --list-targets`` and it shows a target called ``postgresql_user``. It means that we already have tests for the module.
+We cloned the collection repository to the ``~/ansible_collections/community/postgresql`` directory and `prepared our environment<Prepare-local-environment>`_. Being there, we run ``ansible-test integration --list-targets`` and it shows a target called ``postgresql_user``. It means that we already have tests for the module.
 
 First, we look into ``tests/integration/targets/<target_name>/tasks/main.yml``. In case of the ``community.postgresql``, it imports other files from the ``tasks`` directory. We looked through the files - ``postgresql_user_general.yml`` looks like an appropriate one to add our tests.
 
@@ -206,9 +208,10 @@ We will add the following code to the file.
 .. code:: bash
 
   # https://github.com/ansible-collections/community.postgresql/issues/NUM
+  # We should also run the same tasks with check_mode: yes. We omit it here for simplicity.
   - name: Test for new_option, create new user WITHOUT the attribute
     postgresql_user:
-      name: test
+      name: test_user
       add_attribute: no
     register: result
 
@@ -217,9 +220,9 @@ We will add the following code to the file.
       that:
         - result is changed
 
-  - name: Query the database if the user does not have the attribute (it is NULL)
+  - name: Query the database if the user exists but does not have the attribute (it is NULL)
     postgresql_query:
-      query: SELECT * FROM pg_authid WHERE rolename = 'underscored_user' AND attribute = NULL
+      query: SELECT * FROM pg_authid WHERE rolename = 'test_user' AND attribute = NULL
     register: result
 
   - name: Check the database returns one row
@@ -229,7 +232,7 @@ We will add the following code to the file.
 
   - name: Test for new_option, create new user WITH the attribute
     postgresql_user:
-      name: test
+      name: test_user
       add_attribute: yes
     register: result
 
@@ -240,7 +243,7 @@ We will add the following code to the file.
 
   - name: Query the database if the user has the attribute (it is TRUE)
     postgresql_query:
-      query: SELECT * FROM pg_authid WHERE rolename = 'underscored_user' AND attribute = 't'
+      query: SELECT * FROM pg_authid WHERE rolename = 'test_user' AND attribute = 't'
     register: result
 
   - name: Check the database returns one row
@@ -248,17 +251,17 @@ We will add the following code to the file.
       that:
         - query_result.rowcount == 1
 
-When we `run the tests<Run-integration-tests>`_ passing ``postgresql_user`` as a test target.
+When we `run the tests<Run-integration-tests>`_ with ``postgresql_user`` passed as a test target.
 
-We also put the same tasks with the ``check_mode: yes`` option to be sure our option works as expected in check mode as well.
+In real world, we would alternate the tasks above with the same tasks run with the ``check_mode: yes`` option to be sure our option works as expected in check-mode as well. Refer to the `Recommendations on coverage<Recommendations-on-coverage>`_ section for details.
 
-If we expect a task to fail, we use the ``ignore_errors: yes`` option and check that the task actually failed and the message like below:
+If we expect a task to fail, we use the ``ignore_errors: yes`` option and check that the task actually failed and returned the message we expect:
 
 .. code:: yaml
 
   - name: Test for fail_when_true option
     postgresql_user:
-      name: test
+      name: test_user
       fail_when_true: yes
     register: result
     ignore_errors: yes
@@ -295,17 +298,17 @@ We `checked<Determine if integration tests exist>`_ and figure out that there ar
 
 We should basically do the following:
 
-1. Install and run the service.
-2. `Cover our module with tests<Recommendations-on-coverage>`_.
-3. Create a test target.
+1. Install and run the service with a ``setup`` target.
+2. Create a test target.
+3. `Cover our module with tests<Recommendations-on-coverage>`_.
 4. `Run the tests<Run-integration-tests>`_.
 5. Fix the code / tests if needed, run the tests again, and repeat the cycle until they pass.
 
-If we expect that there are several targets that will require the service, we will create a special ``setup`` target that will be used by all the targets where needed.
+You can reuse the ``setup`` target when implementing targets for other modules for the service later.
 
-1. Clone the collection to the ``~/ansble_collections/community.abstract`` directory on our local machine.
+1. Clone the collection to the ``~/ansble_collections/community.abstract`` directory on your local machine.
 
-2. Being in ``~/ansble_collections/community.abstract``, create directories for the ``setup_`` target:
+2. Being in ``~/ansble_collections/community.abstract``, create directories for the ``setup`` target:
 
 .. code:: bash
 
@@ -328,18 +331,18 @@ Add the following tasks to the ``tests/integration/targets/setup_abstract_servic
       name: abstract_service
       state: started
 
-This is a very simplified example. In real world, use all the best practices available to write this role.
+This is a very simplified example.
 
 4. Add the target for the module you test.
 
-Let's say the module is called ``abstact_service_info``. Create a directory structure for the module:
+Let's say the module is called ``abstact_service_info``. Create the following directory structure in the target:
 
 .. code:: bash
 
   mkdir -p tests/integration/targets/abstract_service_info/tasks
   mkdir -p tests/integration/targets/abstract_service_info/meta
 
-Add all subdirectories needed. For example, if you are going to use defaults and files, add the ``defaults`` and ``files`` directories, and so on. The approach is the same as you are creating a role.
+Add all subdirectories needed. For example, if you are going to use defaults and files, add the ``defaults`` and ``files`` directories, and so on. The approach is the same as when you are creating a role.
 
 5. To make the ``setup_abstract_service`` target running before the module's target, add the following lines to the ``tests/integration/targets/abstract_service_info/meta/main.yml`` file.
 
@@ -373,18 +376,18 @@ Add the following to ``tests/integration/targets/abstract_service_info/tasks/mai
 
 If there are any issues with connectivity (for example, the service does not listening / accepting connections or anything else) or with the code, the play will fail.
 
-Examine the output to see at which step the failure occurred. Investigate why, fix, and run again. Repeat the cycle until the test passes.
+Examine the output to see at which step the failure occurred. Investigate the reason, fix, and run again. Repeat the cycle until the test passes.
 
-8. If the test succeeds, write more tests covering as many possible scenarios as possible. Refer to the `Recommendations on coverage<Recommendations-on-coverage>`_ section for details.
+8. If the test succeeds, write more tests. Refer to the `Recommendations on coverage<Recommendations-on-coverage>`_ section for details.
 
-Real-world example
-------------------
+Real example
+------------
 
-Here is a real-world example of writing integration tests from scratch for the ``community.postgresql.postgresql_info`` module.
+Here is a real example of writing integration tests from scratch for the ``community.postgresql.postgresql_info`` module.
 
 For the sake of simplicity, we will create very basic tests which we will run using the Ubuntu 20.04 test container.
 
-For this we use Linux as a work environment and have ``git`` and ``docker`` installed and running.
+We use ``Linux`` as a work environment and have ``git`` and ``docker`` installed and running.
 
 We also `installed <https://docs.ansible.com/ansible/devel/installation_guide/intro_installation.html>`_ ``ansible-core``.
 
@@ -414,7 +417,7 @@ If you prefer to use the SSH protocol:
 
   cd ~/ansible_collections/community/postgresql
 
-5. Be sure you are in the default branch (it is usually ``main``):
+5. Be sure you are in the default branch:
 
 .. code:: bash
 
@@ -497,7 +500,7 @@ That is enough for our very basic example.
         - result.version.major == 12
         - result.version.minor == 8
 
-In the first task, we run the ``postgresql_info`` module to fetch information from the database we installed and ran with the ``setup_postgresql_db`` target. We save values returned by the module into the ``result`` variable.
+In the first task, we run the ``postgresql_info`` module to fetch information from the database we installed and launched with the ``setup_postgresql_db`` target. We are saving values returned by the module into the ``result`` variable.
 
 In the second task, we check with the ``assert`` module what our task returns. We expect that, among other things, it returns the server version and reports that the system state has not been changed.
 
@@ -517,7 +520,7 @@ The tests should pass. If we look at the output, we should see something like th
     "msg": "All assertions passed"
   }
 
-If your tests fail when you are working on your project. Examine the output to see at which step the failure occurred. Investigate why, fix, and run again. Repeat the cycle until the test passes. If the test succeeds, write more tests covering as many possible scenarios as possible. Refer to the `Recommendations on coverage<Recommendations-on-coverage>`_ section for details.
+If your tests fail when you are working on your project, examine the output to see at which step the failure occurred. Investigate the reason, fix, and run again. Repeat the cycle until the test passes. If the test succeeds, write more tests. Refer to the `Recommendations on coverage<Recommendations-on-coverage>`_ section for details.
 
 .. _Recommendations-on-coverage:
 
@@ -531,25 +534,43 @@ Before fixing code, create a test case in an `appropriate test target<Determine 
 
 If you failed to reproduce the bug, ask the reporter to provide additional information. Maybe the cause is just wrong environment settings.
 
-In very environment specific cases, manual testing by issue reporter or other interested users is required.
+In very environment specific cases that cannot be reproduced in integration tests, manual testing by issue reporter or other interested users is required.
 
 Refactoring code
 ----------------
 
-When refactoring code, always check that related options are covered in a `corresponding test target<Determine if integration tests exist>`_. Do not assume if the test target exists, everything is covered.
+When refactoring code, always check that related options are covered in a `corresponding test target<Determine if integration tests exist>`_. Do not assume if the test target exists, everything is (well) covered.
+
+For more information on how features should be tested, refer to `this section<Covering-modules-new-features>`_. 
+
+.. _Covering-modules-new-features:
 
 Covering modules / new features
 -------------------------------
 
-These are important recommendations:
+When covering a module, cover all its options separately and their meaningful combinations. Every possible use of the module should be tested against:
 
-- When covering a module, cover all its options separately and their meaningful combinations.
-- Register the outcome of the tasks as variables, for example, ``register: result``. With the ``assert`` module, check:
+- Idepmotency (Does re-running a task report no changes?)
+- Check-mode (Does dry-running a task behaves the same as a real run? Does it not make any changes?)
+- Return values (Does the module return values consistently under different conditions?)
 
-    + If ``result is changed`` or not.
-    + Expected return values (all that can be returned should be checked at least once within the test tasks).
-- If the module change a system, check the actual system state using other modules. For example, if the module changes a file, we can check that the file has been changed by checking its checksum with the ``ansible.builtin.stat`` module before and after the test tasks.
-- Additionally, run the test tasks with ``check_mode: yes`` (if the check mode is supported by the module). Check with other modules that the actual system state has not been changed.
+Each of test actions will have to be tested at least six times:
+
+- Perform an action in check-mode if supported (this should indicate a change).
+- Check with another module that the changes have ``not`` been actually made.
+- Perform the action for real (this should indicate a change).
+- Check with another module that the changes have been actually made.
+- Perform the action again in check-mode (this should indicate ``no`` change).
+- Perform the action again for real (this should indicate ``no`` change).
+
+To check a task:
+
+- Register the outcome of the task as a variable, for example, ``register: result``. Using the `assert <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/assert_module.html>`_ module, check:
+
+  + If ``- result is changed`` or not.
+  + Expected return values.
+- If the module changes a system, check the actual system state using other modules. For example, if the module changes a file, we can check that the file has been changed by checking its checksum with the ``ansible.builtin.stat`` module before and after the test tasks.
+- Run the same task with ``check_mode: yes`` (if check-mode is supported by the module). Check with other modules that the actual system state has not been changed.
 - Cover cases when the module must fail. Use the ``ignore_errors: yes`` option and check the returned message with the ``assert`` module.
 
 Example:
@@ -572,7 +593,7 @@ Here is a summary:
 
 - Cover options and their sensible combinations.
 - Check returned values.
-- Cover the check mode if supported.
+- Cover check-mode if supported.
 - Check a system state using other modules.
 - Check when a module must fail and error messages.
 
@@ -593,7 +614,7 @@ After you change the tests, you can run them with the following command:
 
   ansible-test integration <target_name> --docker <distro>
 
-The ``target_name`` is a test role directory containing the tests. For example, if the test files you changed are stored in ``tests/integration/targets/postgresql_info/``, the command will be:
+The ``target_name`` is a test role directory containing the tests. For example, if the test files you changed are stored in the ``tests/integration/targets/postgresql_info/`` directory, the command will be:
 
 .. code:: bash
 
@@ -605,7 +626,7 @@ In the examples above, the ``fedora34`` test image will be automatically downloa
 
 See the `list of supported container images <https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html#container-images>`_.
 
-In some cases, for example, for platform independent tests, the ``default`` test image is required. Use the ``--docker default`` or just ``--docker`` option without specifying a distribution.
+In some cases, for example, for platform independent tests, the ``default`` test image is required. Use the ``--docker default`` or just ``--docker`` option without specifying a distribution in this case.
 
 If you are not sure which image you should use, ask collection maintainers for clarification.
 
