@@ -65,9 +65,9 @@ The target role contains all needed to test a module.
 
 Names of targets contain a module name they test.
 
-Target names that start with ``setup_`` are executed as dependencies before module and plugin targets start execution. We will describe this kind of targets later in detail in the :ref:`Writing tests from scratch <Writing-tests-from-scratch>` section.
+Target names that start with ``setup_`` are executed as dependencies before module and plugin targets start execution. We will describe this kind of targets later in detail in the :ref:`Writing tests from scratch<Writing-tests-from-scratch>` section.
 
-To run integration tests, we use the ``ansible-test`` utility shipped with the ``ansible-core`` and ``ansible`` packages. This is described in the :ref:`Run integration tests <Run-integration-tests>` section.
+To run integration tests, we use the ``ansible-test`` utility shipped with the ``ansible-core`` and ``ansible`` packages. This is described in the :ref:`Run integration tests<Run-integration-tests>` section.
 
 After you finish your integration tests, refert to the `Create a PR quick-start guide <https://github.com/ansible/community-docs/blob/main/create_pr_quick_start_guide.rst>`_ to learn how to submit a pull request.
 
@@ -87,7 +87,7 @@ Determine if integration tests exist
 
 Provided that integration tests for a collection exist, they are stored in ``tests/integration/targets`` subdirectories in the collection repository.
 
-If you already have your local environment :ref:`prepared <Prepare-local-environment>`, you can run the following command being in the collection's root directory to list all the available targets:
+If you already have your local environment :ref:`prepared<Prepare-local-environment>`, you can run the following command being in the collection's root directory to list all the available targets:
 
 .. code:: bash
 
@@ -98,7 +98,7 @@ Alternatively, you can check if the ``tests/integration/targets`` contains a cor
 
 For example, the tests for the ``postgresql_user`` module of the ``community.postgresql`` collection are stored in the ``tests/integration/targets/postgresql_user`` directory of the collection's source tree.
 
-If there is no corresponding target there, it means that the module does not have integration tests. In this case, think of adding integration tests for the module. Refer to the :ref:`Writing tests from scratch <Writing-tests-from-scratch>` section for details.
+If there is no corresponding target there, it means that the module does not have integration tests. In this case, think of adding integration tests for the module. Refer to the :ref:`Writing tests from scratch<Writing-tests-from-scratch>` section for details.
 
 .. _Adding-tests-to-existing-ones:
 
@@ -116,12 +116,12 @@ When fixing a bug
 
 When fixing a bug:
 
-1. :ref:`Determine if integration tests for the module exist <Determine-if-integration-tests-exist>`. If they do not, refer to the :ref:`Writing tests from scratch <Writing-tests-from-scratch>` section.
+1. :ref:`Determine if integration tests for the module exist<Determine-if-integration-tests-exist>`. If they do not, refer to the :ref:`Writing tests from scratch <Writing-tests-from-scratch>` section.
 2. Add a task which reproduces the to an appropriate file within the ``tests/integration/targets/<target_name>/tasks`` directory.
-3. :ref:`Run the tests <Run-integration-tests>`, they should fail.
+3. :ref:`Run the tests<Run-integration-tests>`, they should fail.
 4. If they do not fail, re-check if your environment / test task satisfies the conditions described in the ``Steps to Reproduce`` section of the issue.
 5. If you reproduce the bug and tests fail, change the code. 
-6. :ref:`Run the tests <Run-integration-tests>` again.
+6. :ref:`Run the tests<Run-integration-tests>` again.
 7. If they fail, repeat steps 5-6 until the tests pass.
 
 Here is an example.
@@ -165,7 +165,7 @@ We will add the following code to the file.
       that:
         - query_result.rowcount == 1
 
-When we :ref:`run the tests <Run-integration-tests>` passing ``postgresql_user`` as a test target, this task must fail.
+When we :ref:`run the tests<Run-integration-tests>` passing ``postgresql_user`` as a test target, this task must fail.
 
 Then we will fix the bug and run the same tests again. If they pass, we will consider the bug fixed and will submit a pull request.
 
@@ -182,10 +182,10 @@ When adding a new feature
 
 When adding new features, the process of adding tests consists of the following steps:
 
-1. :ref:`Determine if integration tests for the module exists <Determine-if-integration-tests-exist>`. If they do not, refer to the :ref:`Writing tests from scratch <Writing-tests-from-scratch>` section.
+1. :ref:`Determine if integration tests for the module exists<Determine-if-integration-tests-exist>`. If they do not, refer to the :ref:`Writing tests from scratch<Writing-tests-from-scratch>` section.
 2. Find an appropriate file for your tests within the ``tests/integration/targets/<target_name>/tasks`` directory.
-3. Cover your option. Refer to the :ref:`Recommendations on coverage <Recommendations-on-coverage>` section for details.
-4. :ref:`Run the tests <Run-integration-tests>`.
+3. Cover your option. Refer to the :ref:`Recommendations on coverage<Recommendations-on-coverage>` section for details.
+4. :ref:`Run the tests<Run-integration-tests>`.
 5. If they fail, see the test output for details. Fix your code or tests and run the tests again.
 6. Repeat steps 4-5 until the tests pass.
 
@@ -195,7 +195,7 @@ Let's say we decided to add a new option called ``add_attribute`` to the ``postg
 
 The option is boolean. If set to ``yes``, it adds an additional attribute to a database user.
 
-We cloned the collection repository to the ``~/ansible_collections/community/postgresql`` directory and :ref:`prepared our environment <Prepare-local-environment>`. Being there, we run ``ansible-test integration --list-targets`` and it shows a target called ``postgresql_user``. It means that we already have tests for the module.
+We cloned the collection repository to the ``~/ansible_collections/community/postgresql`` directory and :ref:`prepared our environment<Prepare-local-environment>`. Being there, we run ``ansible-test integration --list-targets`` and it shows a target called ``postgresql_user``. It means that we already have tests for the module.
 
 First, we look into ``tests/integration/targets/<target_name>/tasks/main.yml``. In case of the ``community.postgresql``, it imports other files from the ``tasks`` directory. We looked through the files - ``postgresql_user_general.yml`` looks like an appropriate one to add our tests.
 
@@ -253,9 +253,9 @@ We will add the following code to the file.
       that:
         - query_result.rowcount == 1
 
-When we :ref:`run the tests <Run-integration-tests>` with ``postgresql_user`` passed as a test target.
+When we :ref:`run the tests<Run-integration-tests>` with ``postgresql_user`` passed as a test target.
 
-In real world, we would alternate the tasks above with the same tasks run with the ``check_mode: yes`` option to be sure our option works as expected in check-mode as well. Refer to the :ref:`Recommendations on coverage <Recommendations-on-coverage>` section for details.
+In real world, we would alternate the tasks above with the same tasks run with the ``check_mode: yes`` option to be sure our option works as expected in check-mode as well. Refer to the :ref:`Recommendations on coverage<Recommendations-on-coverage>` section for details.
 
 If we expect a task to fail, we use the ``ignore_errors: yes`` option and check that the task actually failed and returned the message we expect:
 
@@ -287,7 +287,7 @@ This section covers cases when:
 
 In other words, there are currently no tests for a module regardless of whether the module exists or not.
 
-If the module already has tests, refer to the :ref:`Adding test to existing ones <Adding-tests-to-existing-ones>` section.
+If the module already has tests, refer to the :ref:`Adding test to existing ones<Adding-tests-to-existing-ones>` section.
 
 Abstract example
 ----------------
@@ -296,14 +296,14 @@ Here is a simplified abstract example.
 
 Let's say we are going to cover a new module in the ``community.abstract`` collection which interacts with some service.
 
-We :ref:`checked <Determine-if-integration-tests-exist>` and figure out that there are no integration tests at all.
+We :ref:`checked<Determine-if-integration-tests-exist>` and figure out that there are no integration tests at all.
 
 We should basically do the following:
 
 1. Install and run the service with a ``setup`` target.
 2. Create a test target.
-3. :ref:`Cover our module with tests <Recommendations-on-coverage>`.
-4. :ref:`Run the tests <Run-integration-tests>`.
+3. :ref:`Cover our module with tests<Recommendations-on-coverage>`.
+4. :ref:`Run the tests<Run-integration-tests>`.
 5. Fix the code / tests if needed, run the tests again, and repeat the cycle until they pass.
 
 You can reuse the ``setup`` target when implementing targets for other modules for the service later.
@@ -374,13 +374,13 @@ Add the following to ``tests/integration/targets/abstract_service_info/tasks/mai
       that:
         - result.version == '1.0.0'  # Check version field contains what we expect
 
-7. :ref:`Run the tests <Run-integration-tests>` with the ``-vvv`` argument.
+7. :ref:`Run the tests<Run-integration-tests>` with the ``-vvv`` argument.
 
 If there are any issues with connectivity (for example, the service does not listening / accepting connections or anything else) or with the code, the play will fail.
 
 Examine the output to see at which step the failure occurred. Investigate the reason, fix, and run again. Repeat the cycle until the test passes.
 
-8. If the test succeeds, write more tests. Refer to the :ref:`Recommendations on coverage <Recommendations-on-coverage>` section for details.
+8. If the test succeeds, write more tests. Refer to the :ref:`Recommendations on coverage<Recommendations-on-coverage>` section for details.
 
 Real example
 ------------
@@ -522,7 +522,7 @@ The tests should pass. If we look at the output, we should see something like th
     "msg": "All assertions passed"
   }
 
-If your tests fail when you are working on your project, examine the output to see at which step the failure occurred. Investigate the reason, fix, and run again. Repeat the cycle until the test passes. If the test succeeds, write more tests. Refer to the :ref:`Recommendations on coverage <Recommendations-on-coverage>` section for details.
+If your tests fail when you are working on your project, examine the output to see at which step the failure occurred. Investigate the reason, fix, and run again. Repeat the cycle until the test passes. If the test succeeds, write more tests. Refer to the :ref:`Recommendations on coverage<Recommendations-on-coverage>` section for details.
 
 .. _Recommendations-on-coverage:
 
@@ -532,7 +532,7 @@ Recommendations on coverage
 Bugfixes
 --------
 
-Before fixing code, create a test case in an :ref:`appropriate test target <Determine-if-integration-tests-exist>` reproducing the bug provided by the issue reporter and described in the ``Steps to Reproduce`` issue section. :ref:`Run <Run-integration-tests>` the tests.
+Before fixing code, create a test case in an :ref:`appropriate test target<Determine-if-integration-tests-exist>` reproducing the bug provided by the issue reporter and described in the ``Steps to Reproduce`` issue section. :ref:`Run<Run-integration-tests>` the tests.
 
 If you failed to reproduce the bug, ask the reporter to provide additional information. Maybe the cause is just wrong environment settings.
 
@@ -541,9 +541,9 @@ In very environment specific cases that cannot be reproduced in integration test
 Refactoring code
 ----------------
 
-When refactoring code, always check that related options are covered in a :ref:`corresponding test target <Determine-if-integration-tests-exist>`. Do not assume if the test target exists, everything is (well) covered.
+When refactoring code, always check that related options are covered in a :ref:`corresponding test target<Determine-if-integration-tests-exist>`. Do not assume if the test target exists, everything is (well) covered.
 
-For more information on how features should be tested, refer to :ref:`this section <Covering-modules-new-features>`. 
+For more information on how features should be tested, refer to :ref:`this section<Covering-modules-new-features>`. 
 
 .. _Covering-modules-new-features:
 
@@ -606,7 +606,7 @@ Run integration tests
 
 In the following examples, we will use ``Docker`` to run integration tests locally.
 
-Be sure, you :ref:`prepared your local environment <Prepare-local-environment>` first.
+Be sure, you :ref:`prepared your local environment<Prepare-local-environment>` first.
 
 We assume that you are in the ``~/ansible_collections/NAMESPACE/COLLECTION`` directory.
 
