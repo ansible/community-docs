@@ -27,7 +27,7 @@ Integration tests are functional tests of modules and plugins. We will use the w
 
 With this kind of tests, we check if a module as a whole satisfies its functional requirements. Simply put, we check that features work as expected and users will get the outcome described in the module's documentation.
 
-We check modules with playbooks that invoke those modules. We pass standalone parameters and their combinations, and check what the module reports with the `assert <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/assert_module.html>` module and the actual state of the system after each task.
+We check modules with playbooks that invoke those modules. We pass standalone parameters and their combinations, and check what the module reports with the `assert <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/assert_module.html>`_ module and the actual state of the system after each task.
 
 Here is an example.
 
