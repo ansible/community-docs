@@ -207,7 +207,7 @@ Generally, releasing in the collections consists of:
 4. Automatic publishing the release tarball on `Ansible Galaxy <https://galaxy.ansible.com/>`_ by `Zuul <https://dashboard.zuul.ansible.com/t/ansible/builds?pipeline=release>`_.
 5. Final announcement.
 
-For more information about the process, refer to the `Releasing guidelines <releasing.rst>`_.
+For more information about the process, refer to the `Releasing guidelines <releasing_collections.rst>`_.
 
 .. _Expanding community:
 
