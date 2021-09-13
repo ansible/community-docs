@@ -80,7 +80,7 @@ Before starting working on integration tests, to be able to run them locally, yo
 
 To learn how to do it quickly, refer to the `Quick-start development guide <https://github.com/ansible/community-docs/blob/main/create_pr_quick_start_guide.rst#prepare-your-environment>`_.
 
-.. _Determine-if-integration-tests-exists
+.. _Determine-if-integration-tests-exists:
 
 Determine if integration tests exist
 ====================================
