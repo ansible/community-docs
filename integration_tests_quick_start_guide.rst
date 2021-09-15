@@ -27,6 +27,8 @@ Integration tests are functional tests of modules and plugins. We will use the w
 
 With this kind of tests, we check if a module as a whole satisfies its functional requirements. Simply put, we check that features work as expected and users will get the outcome described in the module's documentation.
 
+You can see `two kinds <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_testing.html#adding-integration-tests>`_ of integration tests used in the collections: using Ansible roles and using ``runme.sh``. In this guide we will describe the first one.
+
 We check modules with playbooks that invoke those modules. We pass standalone parameters and their combinations, and check what the module reports with the `assert <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/assert_module.html>`_ module and the actual state of the system after each task.
 
 Here is an example.
