@@ -100,3 +100,8 @@ Other kinds of contributions
 ---------------------------
 
 Any other kinds of active social or material support are considered contributions to the project.
+
+Contributor Path
+----------------
+
+The `Contributor Path <contributor_path.rst>`_ is a document describing what and how you can achieve contributing to the project. Use the ideas from the `document <contributor_path.rst>`_ to make your own contributor path more determined.
