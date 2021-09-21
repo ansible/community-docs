@@ -104,4 +104,4 @@ Any other kinds of active social or material support are considered contribution
 Contributor Path
 ----------------
 
-The `Contributor Path <contributor_path.rst>`_ is a document describing what and how you can achieve contributing to the project. Use the ideas from the `document <contributor_path.rst>`_ to make your own contributor path more determined.
+The `Contributor Path <contributor_path.rst>`_ document shows you the various ways you contribute to the project. It details how your journey can evolve over time.
