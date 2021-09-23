@@ -25,7 +25,7 @@ This section provides only brief explanation of what integration tests are. You 
 
 Integration tests are functional tests of modules and plugins. We will use the word ``module`` throughout this document implying both modules and plugins.
 
-With this kind of tests, we check if a module as a whole satisfies its functional requirements. Simply put, we check that features work as expected and users will get the outcome described in the module's documentation.
+With integration tests, we check if a module as a whole satisfies its functional requirements. Simply put, we check that features work as expected and users will get the outcome described in the module's documentation.
 
 You can see `two kinds <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_testing.html#adding-integration-tests>`_ of integration tests used in the collections: using Ansible roles and using ``runme.sh``. In this guide we will describe the first one.
 
