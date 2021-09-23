@@ -100,7 +100,7 @@ Alternatively, you can check if the ``tests/integration/targets`` directory cont
 
 For example, the tests for the ``postgresql_user`` module of the ``community.postgresql`` collection are stored in the ``tests/integration/targets/postgresql_user`` directory of the collection repository.
 
-If there is no corresponding target there, it means that the module does not have integration tests. In this case, think of adding integration tests for the module. Refer to the :ref:`Writing tests from scratch<Writing-tests-from-scratch>` section for details.
+If there is no corresponding target there, then that module does not have integration tests. In this case, think of adding integration tests for the module. Refer to the :ref:`Writing tests from scratch<Writing-tests-from-scratch>` section for details.
 
 .. _Adding-tests-to-existing-ones:
 
