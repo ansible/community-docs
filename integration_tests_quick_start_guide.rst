@@ -96,7 +96,7 @@ If you already have your local environment prepared :ref:`prepared<Prepare-local
   ansible-test integration --list-targets
 
 If you use ``bash`` and the ``argcomplete`` package is installed via ``pip`` on your system, you can also get a full target list by doing: ``ansible-test integration <tab><tab>``.
-Alternatively, you can check if the ``tests/integration/targets`` contains a corresponding directory named as the module.
+Alternatively, you can check if the ``tests/integration/targets`` directory contains a corresponding directory with the same name as the module.
 
 For example, the tests for the ``postgresql_user`` module of the ``community.postgresql`` collection are stored in the ``tests/integration/targets/postgresql_user`` directory of the collection's source tree.
 
