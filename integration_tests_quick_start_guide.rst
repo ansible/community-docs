@@ -176,7 +176,7 @@ When adding a new feature
 
 .. note::
 
-  The process described in this section is also applicable when a feature already exists but does not have integration tests and you want to cover it.
+  The process described in this section also applies when you want to add integration tests to a feature that already exists, but is missing integration tests.
 
 .. note::
 
