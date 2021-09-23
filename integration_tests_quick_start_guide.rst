@@ -61,7 +61,7 @@ You will learn details in the following sections.
 
 The basic entity of an Ansible integration test is a ``target``.
 
-The target is an `Ansible role <https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html>`_ stored in the ``tests/integration/targets`` directory of a collection repository file tree.
+The target is an `Ansible role <https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html>`_ stored in the ``tests/integration/targets`` directory of the collection repository.
 
 The target role contains all needed to test a module.
 
