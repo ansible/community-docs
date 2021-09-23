@@ -59,7 +59,7 @@ Let's say we want to test the ``postgresql_user`` module invoked with the ``name
 
 You will learn details in the following sections.
 
-The basic entity of Ansible integration tests is a ``target``.
+The basic entity of an Ansible integration test is a ``target``.
 
 The target is an `Ansible role <https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html>`_ stored in the ``tests/integration/targets`` directory of a collection repository file tree.
 
