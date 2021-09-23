@@ -119,7 +119,7 @@ When fixing a bug
 When fixing a bug:
 
 1. :ref:`Determine if integration tests for the module exist<Determine-if-integration-tests-exist>`. If they do not, refer to the :ref:`Writing tests from scratch <Writing-tests-from-scratch>` section.
-2. Add a task which reproduces the to an appropriate file within the ``tests/integration/targets/<target_name>/tasks`` directory.
+2. Add a task which reproduces the bug to an appropriate file within the ``tests/integration/targets/<target_name>/tasks`` directory.
 3. :ref:`Run the tests<Run-integration-tests>`, the newly added task should fail.
 4. If they do not fail, re-check if your environment / test task satisfies the conditions described in the ``Steps to Reproduce`` section of the issue.
 5. If you reproduce the bug and tests fail, change the code. 
