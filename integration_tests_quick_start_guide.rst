@@ -255,7 +255,7 @@ We will add the following code to the file.
       that:
         - query_result.rowcount == 1
 
-When we :ref:`run the tests<Run-integration-tests>` with ``postgresql_user`` passed as a test target.
+Then we :ref:`run the tests<Run-integration-tests>` with ``postgresql_user`` passed as a test target.
 
 In reality, we would alternate the tasks above with the same tasks run with the ``check_mode: yes`` option to be sure our option works as expected in check-mode as well. Refer to the :ref:`Recommendations on coverage<Recommendations-on-coverage>` section for details.
 
