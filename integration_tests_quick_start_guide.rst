@@ -2,7 +2,7 @@
 Quick-start integration testing guide
 *************************************
 
-This guide describes all steps needed to add integration tests for your changes to a collection and run them locally using the ``ansible-test`` command.
+This guide describes all of the steps needed to add integration tests to a collection and how to run them locally using the ``ansible-test`` command.
 
 .. contents:: Topics
 
