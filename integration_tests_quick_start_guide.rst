@@ -573,7 +573,7 @@ To check a task:
 
   + If ``- result is changed`` or not.
   + Expected return values.
-- If the module changes a system, check the actual system state using other modules. For example, if the module changes a file, we can check that the file has been changed by checking its checksum with the ``ansible.builtin.stat`` module before and after the test tasks.
+- If the module changes the system state, check the actual system state using at least one other module. For example, if the module changes a file, we can check that the file has been changed by checking its checksum with the ``ansible.builtin.stat`` module before and after the test tasks.
 - Run the same task with ``check_mode: yes`` (if check-mode is supported by the module). Check with other modules that the actual system state has not been changed.
 - Cover cases when the module must fail. Use the ``ignore_errors: yes`` option and check the returned message with the ``assert`` module.
 
