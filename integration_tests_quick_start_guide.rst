@@ -197,7 +197,7 @@ Let's say we decided to add a new option called ``add_attribute`` to the ``postg
 
 The option is boolean. If set to ``yes``, it adds an additional attribute to a database user.
 
-We cloned the collection repository to the ``~/ansible_collections/community/postgresql`` directory and :ref:`prepared our environment<Prepare-local-environment>`. Being there, we run ``ansible-test integration --list-targets`` and it shows a target called ``postgresql_user``. It means that we already have tests for the module.
+We cloned the collection repository to the ``~/ansible_collections/community/postgresql`` directory and :ref:`prepared our environment<Prepare-local-environment>`. From the collection's root directory, we run ``ansible-test integration --list-targets`` and it shows a target called ``postgresql_user``. Therefore, we already have some tests for the module.
 
 First, we look into ``tests/integration/targets/<target_name>/tasks/main.yml``. In case of the ``community.postgresql``, it imports other files from the ``tasks`` directory. We looked through the files - ``postgresql_user_general.yml`` looks like an appropriate one to add our tests.
 
