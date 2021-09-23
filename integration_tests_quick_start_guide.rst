@@ -128,7 +128,7 @@ When fixing a bug:
 
 Here is an example.
 
-Let's say we got an issue in the ``community.postgresql`` collection. When users pass a name containing underscores to the ``postgresql_user`` module, the module fails.
+Let's say someone reported an issue in the ``community.postgresql`` collection that when users pass a name containing underscores to the ``postgresql_user`` module, the module fails.
 
 We cloned the collection repository to the ``~/ansible_collections/community/postgresql`` directory and :ref:`prepared our environment <Prepare-local-environment>`. From the collection's root directory, we run ``ansible-test integration --list-targets`` and it shows a target called ``postgresql_user``. It means that we already have tests for the module.
 
