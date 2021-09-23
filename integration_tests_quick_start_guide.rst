@@ -67,7 +67,7 @@ The target role contains everything that is needed to test a module.
 
 Names of targets contain a module name they test.
 
-Target names that start with ``setup_`` are usually executed as dependencies before module and plugin targets start execution. We will describe this kind of targets later in detail in the :ref:`Writing tests from scratch<Writing-tests-from-scratch>` section.
+Target names that start with ``setup_`` are usually executed as dependencies before module and plugin targets start execution. We will describe this kind of target later, in detail, in the :ref:`Writing tests from scratch<Writing-tests-from-scratch>` section.
 
 To run integration tests, we use the ``ansible-test`` utility shipped with the ``ansible-core`` and ``ansible`` packages. This is described in the :ref:`Run integration tests<Run-integration-tests>` section.
 
