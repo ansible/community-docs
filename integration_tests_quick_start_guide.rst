@@ -284,8 +284,8 @@ Writing tests from scratch
 This section covers the following cases:
 
 - There are no integration tests for a collection / group of modules in a collection at all.
-- You are adding a new module and you want to cover it.
-- You want to cover a module that already exists but integration tests for the module are missed.
+- You are adding a new module and you want to include integration tests.
+- You want to add integration tests for a module that already exists without integration tests.
 
 In other words, there are currently no tests for a module regardless of whether the module exists or not.
 
@@ -296,23 +296,25 @@ Abstract example
 
 Here is a simplified abstract example.
 
-Let's say we are going to cover a new module in the ``community.abstract`` collection which interacts with some service.
+Let's say we are going to add integration tests to a new module in the ``community.abstract`` collection which interacts with some service.
 
-We :ref:`checked<Determine-if-integration-tests-exist>` and figure out that there are no integration tests at all.
+We :ref:`checked<Determine-if-integration-tests-exist>` and determined that there are no integration tests at all.
 
 We should basically do the following:
 
 1. Install and run the service with a ``setup`` target.
 2. Create a test target.
-3. :ref:`Cover our module with tests<Recommendations-on-coverage>`.
+3. :ref:`Add integration tests for the module<Recommendations-on-coverage>`.
 4. :ref:`Run the tests<Run-integration-tests>`.
 5. Fix the code / tests if needed, run the tests again, and repeat the cycle until they pass.
 
-You can reuse the ``setup`` target when implementing targets for other modules for the service later.
+.. note::
+
+  You can reuse the ``setup`` target when implementing other targets that also use the same service.
 
 1. Clone the collection to the ``~/ansble_collections/community.abstract`` directory on your local machine.
 
-2. Being in ``~/ansble_collections/community.abstract``, create directories for the ``setup`` target:
+2. From the ``~/ansble_collections/community.abstract`` directory, create directories for the ``setup`` target:
 
 .. code:: bash
 
@@ -337,7 +339,7 @@ Add the following tasks to the ``tests/integration/targets/setup_abstract_servic
 
 This is a very simplified example.
 
-4. Add the target for the module you test.
+4. Add the target for the module you are testing.
 
 Let's say the module is called ``abstact_service_info``. Create the following directory structure in the target:
 
@@ -346,9 +348,9 @@ Let's say the module is called ``abstact_service_info``. Create the following di
   mkdir -p tests/integration/targets/abstract_service_info/tasks
   mkdir -p tests/integration/targets/abstract_service_info/meta
 
-Add all subdirectories needed. For example, if you are going to use defaults and files, add the ``defaults`` and ``files`` directories, and so on. The approach is the same as when you are creating a role.
+Add all of the needed subdirectories. For example, if you are going to use defaults and files, add the ``defaults`` and ``files`` directories, and so on. The approach is the same as when you are creating a role.
 
-5. To make the ``setup_abstract_service`` target running before the module's target, add the following lines to the ``tests/integration/targets/abstract_service_info/meta/main.yml`` file.
+5. To make the ``setup_abstract_service`` target run before the module's target, add the following lines to the ``tests/integration/targets/abstract_service_info/meta/main.yml`` file.
 
 .. code:: yaml
 
@@ -357,7 +359,7 @@ Add all subdirectories needed. For example, if you are going to use defaults and
 
 6. Start with writing a single standalone task to check that your module can interact with the service.
 
-We assume that the ``anstract_service_info`` module fetches some information from the ``abstract_service`` and it has two connection parameters.
+We assume that the ``abstract_service_info`` module fetches some information from the ``abstract_service`` and that it has two connection parameters.
 
 Among other fields, it returns a field called ``version`` containing a service version.
 
@@ -378,7 +380,7 @@ Add the following to ``tests/integration/targets/abstract_service_info/tasks/mai
 
 7. :ref:`Run the tests<Run-integration-tests>` with the ``-vvv`` argument.
 
-If there are any issues with connectivity (for example, the service does not listening / accepting connections or anything else) or with the code, the play will fail.
+If there are any issues with connectivity (for example, the service is not listening / accepting connections) or with the code, the play will fail.
 
 Examine the output to see at which step the failure occurred. Investigate the reason, fix, and run again. Repeat the cycle until the test passes.
 
@@ -433,14 +435,13 @@ If you prefer to use the SSH protocol:
 
   git checkout -b postgresql_info_tests
 
-
-7. Because we already have tests for the ``postgresql_info`` module, run the following command:
+7. Since we already have tests for the ``postgresql_info`` module, we will run the following command:
 
 .. code:: bash
 
   rm -rf tests/integration/targets/*
 
-The state now is like we do not have integration tests for the ``community.postgresql`` collection at all. So we can start writing integration tests from scratch.
+With all of the targets now removed, the current state is as if we do not have any integration tests for the ``community.postgresql`` collection at all. We can now start writing integration tests from scratch.
 
 8. We will start with creating a ``setup`` target that will install all required packages and will launch PostgreSQL. Create the following directories:
 
@@ -504,9 +505,9 @@ That is enough for our very basic example.
         - result.version.major == 12
         - result.version.minor == 8
 
-In the first task, we run the ``postgresql_info`` module to fetch information from the database we installed and launched with the ``setup_postgresql_db`` target. We are saving values returned by the module into the ``result`` variable.
+In the first task, we run the ``postgresql_info`` module to fetch information from the database we installed and launched with the ``setup_postgresql_db`` target. We are saving the values returned by the module into the ``result`` variable.
 
-In the second task, we check with the ``assert`` module what our task returns. We expect that, among other things, it returns the server version and reports that the system state has not been changed.
+In the second task, we check the ``result`` variable (what the first task returned) with the ``assert`` module. We expect that, among other things, the result has the version and reports that the system state has not been changed.
 
 13. Run the tests in the Ubuntu 20.04 docker container:
 
@@ -536,9 +537,9 @@ Bugfixes
 
 Before fixing code, create a test case in an :ref:`appropriate test target<Determine-if-integration-tests-exist>` reproducing the bug provided by the issue reporter and described in the ``Steps to Reproduce`` issue section. :ref:`Run<Run-integration-tests>` the tests.
 
-If you failed to reproduce the bug, ask the reporter to provide additional information. Maybe the cause is just wrong environment settings.
+If you failed to reproduce the bug, ask the reporter to provide additional information. The issue may be related to environment settings.
 
-In very environment specific cases that cannot be reproduced in integration tests, manual testing by issue reporter or other interested users is required.
+Sometimes specific environment issues cannot be reproduced in integration tests, in that case, manual testing by issue reporter or other interested users is required.
 
 Refactoring code
 ----------------
@@ -554,8 +555,8 @@ Covering modules / new features
 
 When covering a module, cover all its options separately and their meaningful combinations. Every possible use of the module should be tested against:
 
-- Idepmotency (Does re-running a task report no changes?)
-- Check-mode (Does dry-running a task behaves the same as a real run? Does it not make any changes?)
+- Idempotency (Does re-running a task report no changes?)
+- Check-mode (Does dry-run'ing a task behave the same as a real run? Does it not make any changes?)
 - Return values (Does the module return values consistently under different conditions?)
 
 Each of test actions will have to be tested at least six times:
