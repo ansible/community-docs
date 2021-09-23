@@ -134,7 +134,7 @@ We cloned the collection repository to the ``~/ansible_collections/community/pos
 
 We start with reproducing the bug.
 
-First, we look into the ``tests/integration/targets/<target_name>/tasks/main.yml`` file. In case of the ``community.postgresql``, it imports other files from the ``tasks`` directory. We looked through the files - ``postgresql_user_general.yml`` looks like an appropriate one to add our tests.
+First, we look into the ``tests/integration/targets/postgresql_user/tasks/main.yml`` file. In this particular case, the file imports other files from the ``tasks`` directory.  The ``postgresql_user_general.yml`` looks like an appropriate one to add our tests.
 
 .. code:: yaml
 
