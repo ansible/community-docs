@@ -65,7 +65,7 @@ The target is an `Ansible role <https://docs.ansible.com/ansible/latest/user_gui
 
 The target role contains everything that is needed to test a module.
 
-Names of targets contain a module name they test.
+The names of targets contain the module name that they test.
 
 Target names that start with ``setup_`` are usually executed as dependencies before module and plugin targets start execution. We will describe this kind of target later, in detail, in the :ref:`Writing tests from scratch<Writing-tests-from-scratch>` section.
 
