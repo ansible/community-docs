@@ -608,7 +608,7 @@ Run integration tests
 
 In the following examples, we will use ``Docker`` to run integration tests locally.
 
-Be sure, you :ref:`prepared your local environment<Prepare-local-environment>` first.
+Be sure that you have :ref:`prepared your local environment<Prepare-local-environment>` first.
 
 We assume that you are in the ``~/ansible_collections/NAMESPACE/COLLECTION`` directory.
 
