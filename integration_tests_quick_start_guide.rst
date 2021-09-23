@@ -639,7 +639,7 @@ For details about running integration tests with ``Docker``, refer to the `Ansib
 Going deeper
 ============
 
-To scrutinize the topic, refer to the following documents:
+For further review, refer to the following documents:
 
 - `Testing guide <https://docs.ansible.com/ansible/latest/dev_guide/testing.html>`_.
 - `Integration tests guide <https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html>`_.
