@@ -89,7 +89,7 @@ Determine if integration tests exist
 
 Provided that integration tests for a collection exist, they are stored in ``tests/integration/targets`` subdirectories in the collection repository.
 
-If you already have your local environment :ref:`prepared<Prepare-local-environment>`, you can run the following command being in the collection's root directory to list all the available targets:
+If you already have your local environment prepared :ref:`prepared<Prepare-local-environment>`, you can run the following command from the collection's root directory to list all the available targets:
 
 .. code:: bash
 
