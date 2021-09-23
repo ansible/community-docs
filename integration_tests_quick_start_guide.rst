@@ -165,7 +165,7 @@ We will add the following code to the file.
   - name: Check the database returns one row
     assert:
       that:
-        - query_result.rowcount == 1
+        - result.query_result.rowcount == 1
 
 When we :ref:`run the tests<Run-integration-tests>` passing ``postgresql_user`` as a test target, this task must fail.
 
@@ -232,7 +232,7 @@ We will add the following code to the file.
   - name: Check the database returns one row
     assert:
       that:
-        - query_result.rowcount == 1
+        - result.query_result.rowcount == 1
 
   - name: Test for new_option, create new user WITH the attribute
     postgresql_user:
@@ -253,7 +253,7 @@ We will add the following code to the file.
   - name: Check the database returns one row
     assert:
       that:
-        - query_result.rowcount == 1
+        - result.query_result.rowcount == 1
 
 Then we :ref:`run the tests<Run-integration-tests>` with ``postgresql_user`` passed as a test target.
 
