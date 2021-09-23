@@ -78,7 +78,7 @@ After you finish your integration tests, refer to the `Create a PR quick-start g
 Prepare local environment
 =========================
 
-Before starting working on integration tests, to be able to run them locally, you need to prepare your environment.
+Before starting on the integration tests themselves, in order to run them locally, you will need to prepare your environment.
 
 To learn how to prepare your environment quickly, refer to the `Quick-start development guide <https://github.com/ansible/community-docs/blob/main/create_pr_quick_start_guide.rst#prepare-your-environment>`_.
 
