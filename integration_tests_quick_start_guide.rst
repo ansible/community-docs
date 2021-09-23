@@ -618,7 +618,7 @@ After you change the tests, you can run them with the following command:
 
   ansible-test integration <target_name> --docker <distro>
 
-The ``target_name`` is a test role directory containing the tests. For example, if the test files you changed are stored in the ``tests/integration/targets/postgresql_info/`` directory, the command will be:
+The ``target_name`` is a test role directory containing the tests. For example, if the test files you changed are stored in the ``tests/integration/targets/postgresql_info/`` directory and you want to use the ``fedora34`` container image, then the command will be:
 
 .. code:: bash
 
