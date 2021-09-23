@@ -180,7 +180,7 @@ When adding a new feature
 
 .. note::
 
-  If you do not implement the feature you want yet, you can start with writing integration tests for it. Of course they will not work as the code does not exist at the moment but it can help you design better implementation before writing the code.
+  If you have not already implemented the new feature, you can start with writing the integration tests for it. Of course they will not work as the code does not yet exist, but it can help you improve your implementation design before you start writing any code.
 
 When adding new features, the process of adding tests consists of the following steps:
 
