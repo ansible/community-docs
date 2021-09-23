@@ -21,7 +21,7 @@ Basics
 
   If there are any difficulties with writing / running integration tests or you are not sure if the case can be covered, feel free to submit your pull request without the tests. Other contributors can help you with them later if needed.
 
-This section provides only brief explanation of what integration tests are. You will learn details and will see examples in the following sections.
+This section provides only a brief explanation of what integration tests are. The following sections will provide details and examples.
 
 Integration tests are functional tests of modules and plugins. We will use the word ``module`` throughout this document implying both modules and plugins.
 
