@@ -69,7 +69,7 @@ The names of targets contain the module name that they test.
 
 Target names that start with ``setup_`` are usually executed as dependencies before module and plugin targets start execution. We will describe this kind of target later, in detail, in the :ref:`Writing tests from scratch<Writing-tests-from-scratch>` section.
 
-To run integration tests, we use the ``ansible-test`` utility shipped with the ``ansible-core`` and ``ansible`` packages. This is described in the :ref:`Run integration tests<Run-integration-tests>` section.
+To run integration tests, we will use the ``ansible-test`` utility that is included in the ``ansible-core`` and ``ansible`` packages. This is further described in the :ref:`Run integration tests<Run-integration-tests>` section.
 
 After you finish your integration tests, refer to the `Create a PR quick-start guide <https://github.com/ansible/community-docs/blob/main/create_pr_quick_start_guide.rst>`_ to learn how to submit a pull request.
 
