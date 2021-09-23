@@ -257,7 +257,7 @@ We will add the following code to the file.
 
 When we :ref:`run the tests<Run-integration-tests>` with ``postgresql_user`` passed as a test target.
 
-In real world, we would alternate the tasks above with the same tasks run with the ``check_mode: yes`` option to be sure our option works as expected in check-mode as well. Refer to the :ref:`Recommendations on coverage<Recommendations-on-coverage>` section for details.
+In reality, we would alternate the tasks above with the same tasks run with the ``check_mode: yes`` option to be sure our option works as expected in check-mode as well. Refer to the :ref:`Recommendations on coverage<Recommendations-on-coverage>` section for details.
 
 If we expect a task to fail, we use the ``ignore_errors: yes`` option and check that the task actually failed and returned the message we expect:
 
