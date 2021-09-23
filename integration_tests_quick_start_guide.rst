@@ -169,7 +169,7 @@ We will add the following code to the file.
 
 When we :ref:`run the tests<Run-integration-tests>` passing ``postgresql_user`` as a test target, this task must fail.
 
-Then we will fix the bug and run the same tests again. If they pass, we will consider the bug fixed and will submit a pull request.
+Now that we have our failing test; we will fix the bug and run the same tests again. Once the tests pass, we will consider the bug fixed and will submit a pull request.
 
 When adding a new feature
 -------------------------
