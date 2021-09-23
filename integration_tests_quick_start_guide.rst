@@ -186,7 +186,7 @@ When adding new features, the process of adding tests consists of the following 
 
 1. :ref:`Determine if integration tests for the module exists<Determine-if-integration-tests-exist>`. If they do not, refer to the :ref:`Writing tests from scratch<Writing-tests-from-scratch>` section.
 2. Find an appropriate file for your tests within the ``tests/integration/targets/<target_name>/tasks`` directory.
-3. Cover your option. Refer to the :ref:`Recommendations on coverage<Recommendations-on-coverage>` section for details.
+3. Cover your feature with tests. Refer to the :ref:`Recommendations on coverage<Recommendations-on-coverage>` section for details.
 4. :ref:`Run the tests<Run-integration-tests>`.
 5. If they fail, see the test output for details. Fix your code or tests and run the tests again.
 6. Repeat steps 4-5 until the tests pass.
