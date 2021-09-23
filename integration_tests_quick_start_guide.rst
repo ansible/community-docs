@@ -33,7 +33,7 @@ We check modules with playbooks that invoke those modules. We pass standalone pa
 
 Here is an example.
 
-Let's say we want to test the ``postgresql_user`` module invoked with the ``name`` option. We expect that the module will create a user that we are passing through the ``name`` option and will report that the system state has changed. We cannot rely on only what the module reports. To be sure that the user has been actually created, we will query our database with another module to see if the user exists.
+Let's say we want to test the ``postgresql_user`` module invoked with the ``name`` parameter. We expect that the module will both create a user based on the provided value of the ``name`` parameter and will report that the system state has changed. We cannot rely on only what the module reports. To be sure that the user has been actually created, we will query our database with another module to see if the user exists.
 
 .. code:: yaml
 
