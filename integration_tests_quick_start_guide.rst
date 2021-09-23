@@ -281,7 +281,7 @@ If we expect a task to fail, we use the ``ignore_errors: yes`` option and check 
 Writing tests from scratch
 ==========================
 
-This section covers cases when:
+This section covers the following cases:
 
 - There are no integration tests for a collection / group of modules in a collection at all.
 - You are adding a new module and you want to cover it.
