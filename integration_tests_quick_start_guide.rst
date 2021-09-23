@@ -71,7 +71,7 @@ Target names that start with ``setup_`` are usually executed as dependencies bef
 
 To run integration tests, we use the ``ansible-test`` utility shipped with the ``ansible-core`` and ``ansible`` packages. This is described in the :ref:`Run integration tests<Run-integration-tests>` section.
 
-After you finish your integration tests, refert to the `Create a PR quick-start guide <https://github.com/ansible/community-docs/blob/main/create_pr_quick_start_guide.rst>`_ to learn how to submit a pull request.
+After you finish your integration tests, refer to the `Create a PR quick-start guide <https://github.com/ansible/community-docs/blob/main/create_pr_quick_start_guide.rst>`_ to learn how to submit a pull request.
 
 .. _Prepare-local-environment:
 
