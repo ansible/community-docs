@@ -226,7 +226,14 @@ Click ``Create pull request``.
 
 21. Add a `changelog fragment <https://docs.ansible.com/ansible/devel/community/development_process.html#changelogs>`_ to the ``changelog/fragments`` directory. It will be published in release notes, so users will know about the fix.
 
-Commit and push it:
+Run sanity test for the fragment:
+
+.. code:: bash
+
+  ansible-test sanity changelog/fragments/ --docker -v
+
+
+If the tests passed, commit, and push the changes:
 
 .. code:: bash
 
