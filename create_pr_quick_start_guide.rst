@@ -230,7 +230,7 @@ Run sanity test for the fragment:
 
 .. code:: bash
 
-  ansible-test sanity changelog/fragments/myfragment.yml --docker -v
+  ansible-test sanity changelog/fragments/ --docker -v
 
 
 If the tests passed, commit, and push the changes:
