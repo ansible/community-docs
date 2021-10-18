@@ -224,20 +224,20 @@ Put ``[WIP] + short description`` in the pull request's title. It's often a good
 
 Click ``Create pull request``.
 
-21. Add a `changelog fragment <https://docs.ansible.com/ansible/devel/community/development_process.html#changelogs>`_ to the ``changelog/fragments`` directory. It will be published in release notes, so users will know about the fix.
+21. Add a `changelog fragment <https://docs.ansible.com/ansible/devel/community/development_process.html#changelogs>`_ to the ``changelogs/fragments`` directory. It will be published in release notes, so users will know about the fix.
 
 Run sanity test for the fragment:
 
 .. code:: bash
 
-  ansible-test sanity changelog/fragments/ --docker -v
+  ansible-test sanity changelogs/fragments/ --docker -v
 
 
 If the tests passed, commit, and push the changes:
 
 .. code:: bash
 
-  git add changelog/fragments/myfragment.yml
+  git add changelogs/fragments/myfragment.yml
   git commit -m "Add changelog fragment"
   git push origin name_of_my_branch
 
