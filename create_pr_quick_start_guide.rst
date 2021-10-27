@@ -191,7 +191,7 @@ There are two possible outcomes:
 - They have failed. Look at the output of the command. Fix the problem place in the code and run again. Repeat the cycle until the tests pass.
 - They have passed. Remember they failed originally? Our congratulations! You have fixed the bug.
 
-17. In addition to the integration tests, you can also cover your changes with unit tests. Moreover, this is required when integration tests are not applicable to the collection.
+17. In addition to the integration tests, you can also cover your changes with unit tests. Moreover, this is often required when integration tests are not applicable to the collection.
 
 We use `pytest <https://docs.pytest.org/en/latest/>`_ as a testing framework.
 
