@@ -52,7 +52,7 @@ Create your first pull request
 
 When working on your patch, please take into consideration the following points:
 
-- Try committing your changes with an informative but short commit message.
+- Use short, informative commit messages.
 - Do not squash your commits and force-push to your branch if not needed. Reviews of your pull request are much easier with individual commits to comprehend the pull request history. All commits of your pull request branch will be squashed into one commit by GitHub upon merge.
 - Do not add merge commits. You will have to `rebase <https://docs.ansible.com/ansible/latest/dev_guide/developing_rebasing.html>`_ your pull request to remove them before your work can be merged. To avoid that git automatically does merges during pulls, you can configure it to do rebases instead by running ``git config pull.rebase true`` inside the respository checkout.
 - Make sure your pull request includes a `changelog fragment <https://docs.ansible.com/ansible/devel/community/development_process.html#changelogs-how-to>`_. You must not include a fragment for new modules or new plugins, except for test and filter plugins. Also you should not include one for docs-only changes. If you are not sure, simply do not include a fragment, we will tell you whether this is needed or not.
