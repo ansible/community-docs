@@ -223,7 +223,7 @@ Submit a pull request
 
   git push origin name_of_my_branch
 
-20. Go to the ``upstream`` (http://github.com/ansible-collections/COLLECTION_REPO).
+20. In a browser, navigate to the ``upstream`` repository (http://github.com/ansible-collections/COLLECTION_REPO).
 
 21. Go to ``Pull requests`` tab and create a pull request.
 
