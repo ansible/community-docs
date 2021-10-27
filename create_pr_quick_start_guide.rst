@@ -93,7 +93,7 @@ Change the code
 
   Do NOT mix several bugfixes or features that are not tightly-related in one pull request. Use separate pull requests for different changes.
 
-12. We recommend you start with writing integration tests if applicable.
+12. We recommend you start with writing integration and / or unit tests if applicable.
 
 .. note::
 
@@ -101,7 +101,7 @@ Change the code
 
 .. note::
 
-  Some collections do not have integration tests.
+  Some collections do not have integration tests. In this case, unit tests are required.
 
 All integration tests are stored in ``tests/integration/targets`` subdirectories.
 Go to the subdirectory containing the name of the module you are going to change.
@@ -191,25 +191,41 @@ There are two possible outcomes:
 - They have failed. Look at the output of the command. Fix the problem place in the code and run again. Repeat the cycle until the tests pass.
 - They have passed. Remember they failed originally? Our congratulations! You have fixed the bug.
 
+17. In addition to the integration tests, you can also cover your changes with unit tests. Moreover, this is often required when integration tests are not applicable to the collection.
+
+We use `pytest <https://docs.pytest.org/en/latest/>`_ as a testing framework.
+
+Files with unit tests are stored in the ``tests/unit/plugins/`` directory. If you want to run unit tests, say, for ``tests/unit/plugins/test_myclass.py``, the command will be:
+
+.. code:: bash
+
+  ansible-test units tests/unit/plugins/test_myclass.py --docker
+
+If you want to run all unit tests available in the collection, run:
+
+.. code:: bash
+
+  ansible-test units --docker
+
 Submit a pull request
 =====================
 
-17. Commit your changes with an informative but short commit message:
+18. Commit your changes with an informative but short commit message:
 
 .. code:: bash
 
   git add /path/to/changed/file
   git commit -m "module_name_you_fixed: fix crash when ..."
 
-18. Push the branch to the ``origin`` (your fork):
+19. Push the branch to the ``origin`` (your fork):
 
 .. code:: bash
 
   git push origin name_of_my_branch
 
-19. Go to the ``upstream`` (http://github.com/ansible-collections/COLLECTION_REPO).
+20. In a browser, navigate to the ``upstream`` repository (http://github.com/ansible-collections/COLLECTION_REPO).
 
-20. Go to ``Pull requests`` tab and create a pull request.
+21. Click the ``Pull requests`` tab.
 
 GitHub is tracking your fork, so it should see the new branch in it and automatically offer
 to create a pull request. Sometimes GitHub does not do it, and you should click the ``New pull request`` button yourself.
@@ -224,7 +240,7 @@ Put ``[WIP] + short description`` in the pull request's title. It's often a good
 
 Click ``Create pull request``.
 
-21. Add a `changelog fragment <https://docs.ansible.com/ansible/devel/community/development_process.html#changelogs>`_ to the ``changelogs/fragments`` directory. It will be published in release notes, so users will know about the fix.
+22. Add a `changelog fragment <https://docs.ansible.com/ansible/devel/community/development_process.html#changelogs>`_ to the ``changelogs/fragments`` directory. It will be published in release notes, so users will know about the fix.
 
 Run sanity test for the fragment:
 
@@ -241,13 +257,13 @@ If the tests passed, commit, and push the changes:
   git commit -m "Add changelog fragment"
   git push origin name_of_my_branch
 
-22. The CI tests will run automatically on Red Hat infrastructure after every commit.
+23. The CI tests will run automatically on Red Hat infrastructure after every commit.
 
 You will see the CI status in the bottom of your pull request.
 If they are green and you think that you do not want to add more commits before someone should take a closer look at it, remove ``[WIP]`` from the title. Mention the issue reporter in a comment and let contributors know that the pull request is "Ready for review".
 
-23. Wait for reviews. You can also ask for review on IRC in the ``#ansible-community`` channel.
+24. Wait for reviews. You can also ask for review on IRC in the ``#ansible-community`` channel.
 
-24. If the pull request looks good to the community, committers will merge it.
+25. If the pull request looks good to the community, committers will merge it.
 
 For details, refer to the `Ansible developer guide <https://docs.ansible.com/ansible/latest/dev_guide/index.html>`_.
