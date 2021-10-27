@@ -50,7 +50,7 @@ If you are going to implement the feature yourself, say it in the issue explicit
 Create your first pull request
 ==============================
 
-When working on your patch, please take into consideration the following points:
+When working on your patch, follow these guidelines:
 
 - Use short, informative commit messages.
 - Do not squash your commits and force-push to your branch if not needed. Reviews of your pull request are much easier with individual commits to comprehend the pull request history. All commits of your pull request branch will be squashed into one commit by GitHub upon merge.
