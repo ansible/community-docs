@@ -225,7 +225,7 @@ Submit a pull request
 
 20. In a browser, navigate to the ``upstream`` repository (http://github.com/ansible-collections/COLLECTION_REPO).
 
-21. Go to ``Pull requests`` tab and create a pull request.
+21. Click the ``Pull requests`` tab.
 
 GitHub is tracking your fork, so it should see the new branch in it and automatically offer
 to create a pull request. Sometimes GitHub does not do it, and you should click the ``New pull request`` button yourself.
