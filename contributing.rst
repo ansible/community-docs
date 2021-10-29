@@ -50,12 +50,11 @@ If you are going to implement the feature yourself, say it in the issue explicit
 Create your first pull request
 ==============================
 
-When working on your patch, follow these guidelines:
+When working on your patch, please follow these recommendations:
 
 - Use short, informative commit messages.
 - Do not squash your commits and force-push to your branch if not needed. Reviews of your pull request are much easier with individual commits to comprehend the pull request history. All commits of your pull request branch will be squashed into one commit by GitHub upon merge.
-- Do not add merge commits. You will have to `rebase <https://docs.ansible.com/ansible/latest/dev_guide/developing_rebasing.html>`_ your pull request to remove them before your work can be merged. You can prevent git from automatically creating merges during pulls by configuring it to do rebases instead: run ``git config pull.rebase true`` inside the respository checkout.
-- Make sure your pull request includes a `changelog fragment <https://docs.ansible.com/ansible/devel/community/development_process.html#changelogs-how-to>`_. You must not include a fragment for new modules or new plugins, except for test and filter plugins. Also you should not include one for docs-only changes. If you are not sure, simply do not include a fragment, we will tell you whether this is needed or not.
+- Avoid merge commits. Maintainers will not merge pull requests that contain merge commits. To update a stale pull request, `rebase <https://docs.ansible.com/ansible/latest/dev_guide/developing_rebasing.html>`_ it instead of merging. You can prevent git from automatically creating merges during pulls by configuring it to do rebases instead: run ``git config pull.rebase true`` inside the respository checkout.
 - Make sure your changes all focus on a single topic. If you fix, change, or reformat unrelated parts of the codebase in your pull request, you create additional work for reviewers. Maintainers might ask you to revert unrelated changes, which will delay review and approval of your pull request.
 - Please do not add more than one plugin/module in one pull request. That makes it easier for reviewers and increases the chance that your pull request will get merged.
 
