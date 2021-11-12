@@ -55,7 +55,7 @@ If the collection is ``ansible.posix``, it will be:
 Test the Pull Request
 =====================
 
-6. Include `~/ansible-collections` in `COLLECTIONS_PATHS`.
+6. Include `~/ansible_collections` in `COLLECTIONS_PATHS`.
 
 Refer to the `Ansible documentation <https://docs.ansible.com/ansible/devel/reference_appendices/config.html#collections-paths>`_ for details.
 
