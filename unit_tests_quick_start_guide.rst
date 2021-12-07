@@ -53,9 +53,11 @@ To learn how to prepare your environment quickly, refer to the `Quick-start deve
 Determine if unit tests exist
 =============================
 
-# Point to where they live.
+Ansible collection unit tests are located in the ``tests/units`` directory.
 
-.. _Run-unit-tests:
+The structure of the unit tests matches the structure of the code base, so the tests can reside in the ``tests/units/modules/`` and ``tests/units/module_utils`` directories. There can be sub-directories, if, for example, modules are organized by module groups.
+
+When you are thinking of adding unit tests for the module called, say, ``my_module``, to check if they already exist, see if there is a file in the collection's source tree with the path ``tests/units/modules/test_my_module.py``. If there is not, create it.
 
 Example of unit tests
 =====================
@@ -70,6 +72,8 @@ Example of unit tests
 # This mustn't be a novel. We should just show how it works.
 
 # Add a reference to pytest official doc here.
+
+.. _Run-unit-tests:
 
 Run unit tests
 ==============
