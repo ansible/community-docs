@@ -2,14 +2,9 @@
 Quick-start unit testing guide
 ******************************
 
-# TODO: re-read Ansible unit testing docs once more
-# TODO: mention collection requirements here
-# TODO: mention that even if a collection has integration tests, it's not a requirement but a good idea
-        to have things covered by unit tests and vice versa
-# TODO: briefly explain why they are important
-# TODO: Add refs to Ansible unit testing doc pages to the end of this doc
-
 This guide describes all of the steps needed to add unit tests to a collection and how to run them locally using the ``ansible-test`` command.
+
+After getting started with this guide, refer to the `Unit testing Ansible modules <https://docs.ansible.com/ansible/devel/dev_guide/testing_units_modules.html>`_ documentation page to learn details.
 
 .. contents:: Topics
 
@@ -39,6 +34,10 @@ With unit testing, we check if a function when it gets a certain input, returns 
 If a function raises / handles exceptions, this should also be checked.
 
 Ansible uses `pytest <https://docs.pytest.org/en/latest/>`_ as a testing framework.
+
+To learn why use unit tests, refer to the `Unit testing Ansible modules <https://docs.ansible.com/ansible/devel/dev_guide/testing_units_modules.html#why-use-unit-tests>`_ documentation page.
+
+It is a `requirement <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst#requirements-for-collections-to-be-included-in-the-ansible-package>`_ for inclusion of a collection to the Ansible package to have integration and / or unit tests. However, even if your collection already has / is going to have integration tests, it will probably make your code more reliable and bug-introduction sensitive if your modules are also covered by unit tests and vice versa. To learn how to get started with integration tests, see the `Quick-start integration testing guide <integration_tests_quick_start_guide.rst>`_.
 
 .. _Prepare-local-environment:
 
@@ -88,4 +87,12 @@ Recommendations on coverage
 Going deeper
 ============
 
-# Add refs to Ansible docs here
+For further review, refer to the following documents:
+
+- `Unit testing Ansible modules <https://docs.ansible.com/ansible/devel/dev_guide/testing_units_modules.html>`_.
+- `Testing guide <https://docs.ansible.com/ansible/latest/dev_guide/testing.html>`_.
+- `Quick-start integration testing guide <https://github.com/ansible/community-docs/blob/main/integration_tests_quick_start_guide.rst>`_.
+- `Integration tests guide <https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html>`_.
+- `Testing collections <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_testing.html#testing-collections>`_.
+- `Resource module integration tests <https://docs.ansible.com/ansible/latest/network/dev_guide/developing_resource_modules_network.html#resource-module-integration-tests>`_.
+- `How to test a pull request locally <https://github.com/ansible/community-docs/blob/main/test_pr_locally_guide.rst>`_.
