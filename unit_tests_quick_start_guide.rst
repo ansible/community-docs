@@ -23,8 +23,6 @@ Basics
 
   If there are any difficulties with writing / running unit tests or you are not sure if the case can be covered, feel free to submit your pull request without the tests. Other contributors can help you with them later if needed.
 
-This section provides only a brief explanation of what unit tests are. The following sections will provide details and examples.
-
 Unit tests are tests written to ensure that a section of code (known as ``unit``) meets its design and behaves as intended.
 
 When we say ``unit``, we usually imply a function or method of a class used in a module or plugin.
