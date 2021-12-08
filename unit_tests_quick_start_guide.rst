@@ -51,9 +51,9 @@ Determine if unit tests exist
 
 Ansible collection unit tests are located in the ``tests/units`` directory.
 
-The structure of the unit tests matches the structure of the code base, so the tests can reside in the ``tests/units/modules/`` and ``tests/units/module_utils`` directories. There can be sub-directories, if, for example, modules are organized by module groups.
+The structure of the unit tests matches the structure of the code base, so the tests can reside in the ``tests/units/plugins/modules/`` and ``tests/units/plugins/module_utils`` directories. There can be sub-directories, if, for example, modules are organized by module groups.
 
-When you are thinking of adding unit tests for the module called, say, ``my_module``, to check if they already exist, see if there is a file in the collection's source tree with the path ``tests/units/modules/test_my_module.py``.
+When you are thinking of adding unit tests for the module called, say, ``my_module``, to check if they already exist, see if there is a file in the collection's source tree with the path ``tests/units/plugins/modules/test_my_module.py``.
 
 Example of unit tests
 =====================
@@ -92,7 +92,7 @@ Assuming that our collection is called ``community.mycollection``:
 
 .. code:: bash
 
-    touch ~/ansible_collection/community/mycollection/plugins/modules/test_my_module.py
+    touch tests/units/plugins/modules/test_my_module.py
 
 3. Add the following code:
 
@@ -137,7 +137,7 @@ You can find examples of how to mock ``AnsibleModule`` objects, monkeypatch meth
 
 .. code:: bash
 
-  ansible-test units tests/unit/plugins/test_myclass.py --docker
+  ansible-test units tests/unit/plugins/modules/test_my_module.py --docker
 
 .. _Recommendations-on-coverage:
 
