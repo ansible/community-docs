@@ -44,9 +44,7 @@ It is a `requirement <https://github.com/ansible-collections/overview/blob/main/
 Prepare local environment
 =========================
 
-Before starting on the unit tests themselves, in order to run them locally, you will need to prepare your environment.
-
-To learn how to prepare your environment quickly, refer to the `Quick-start development guide <https://github.com/ansible/community-docs/blob/main/create_pr_quick_start_guide.rst#prepare-your-environment>`_.
+Before starting on the unit tests themselves, in order to run them locally, you will need to prepare your environment. To learn how to do it quickly, refer to the `Quick-start development guide <https://github.com/ansible/community-docs/blob/main/create_pr_quick_start_guide.rst#prepare-your-environment>`_.
 
 .. _Determine-if-unit-tests-exists:
 
@@ -61,6 +59,80 @@ When you are thinking of adding unit tests for the module called, say, ``my_modu
 
 Example of unit tests
 =====================
+
+Let's assume that there is the following function in ``my_module``:
+
+.. code:: python
+
+  def convert_to_supported(val):
+      """Convert unsupported types to appropriate."""
+      if isinstance(val, decimal.Decimal):
+          return float(val)
+
+      elif isinstance(val, datetime.timedelta):
+          return str(val)
+
+      return val
+
+To test this function, we should, at least, check:
+
+* If the function gets a ``Decimal`` argument, it returns a corresponding ``float`` value.
+* If the function gets a ``timedelta`` argument, it returns a corresponding ``str`` value.
+* If the function gets an argument of any other type, it does nothing and returns the same value.
+
+Let's write a simple test.
+
+Assuming that our collection is called ``community.mycollection``:
+
+1. If you already have your local environment `prepared <https://github.com/ansible/community-docs/blob/main/create_pr_quick_start_guide.rst#prepare-your-environment>`_, go to the collection's root directory:
+
+.. code:: bash
+
+   cd ~/ansible_collection/community/mycollection
+
+2. Create a test file for ``my_module`` (if the following path does not exist, create it):
+
+.. code:: bash
+
+    touch ~/ansible_collection/community/mycollection/plugins/modules/test_my_module.py
+
+3. Add the following code:
+
+.. code:: python
+
+  # -*- coding: utf-8 -*-
+
+  from __future__ import (absolute_import, division, print_function)
+  __metaclass__ = type
+
+  from datetime import timedelta
+  from decimal import Decimal
+
+  import pytest
+
+  from ansible_collections.community.mycollection.plugins.modules.my_module import (
+      convert_to_supported,
+  )
+
+  # We use the @pytest.mark.parametrize decorator to parametrize the function
+  # https://docs.pytest.org/en/latest/how-to/parametrize.html
+  # Simply put, the first element of each tuple will be passed to
+  # the test_convert_to_supported function as the test_input argument
+  # and the second element of each tuple will be passed as
+  # the expected argument.
+  # In the function's body, we use the assert statement to check
+  # if the convert_to_supported function given the test_input,
+  # returns what we expect.
+  @pytest.mark.parametrize('test_input, expected', [
+      (timedelta(0, 43200), '12:00:00'),
+      (Decimal('1.01'), 1.01),
+      ('string', 'string'),
+      (None, None),
+      (1, 1),
+  ])
+  def test_convert_to_supported(test_input, expected):
+      assert convert_to_supported(test_input) == expected
+
 
 # Add note that this is not a full guide but just a couple of examples.
 
