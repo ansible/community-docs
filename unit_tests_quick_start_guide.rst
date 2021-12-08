@@ -94,7 +94,7 @@ Assuming that our collection is called ``community.mycollection``:
 
     touch tests/units/plugins/modules/test_my_module.py
 
-3. Add the following code:
+3. Add the following code to the file:
 
 .. code:: python
 
