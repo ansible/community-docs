@@ -133,32 +133,24 @@ Assuming that our collection is called ``community.mycollection``:
   def test_convert_to_supported(test_input, expected):
       assert convert_to_supported(test_input) == expected
 
+You can find examples of how to mock ``AnsibleModule`` objects, monkeypatch methods (``module.fail_json``, ``module.exit_json``), emulate API responses, and more on the `Unit testing Ansible modules <https://docs.ansible.com/ansible/devel/dev_guide/testing_units_modules.html>`_ documentation page.
 
-# Add note that this is not a full guide but just a couple of examples.
+4. Run the tests using docker:
 
-# It should cover
-# - @pytest.mark_parametrized
-# - simple example of using monkey patching
-# - check exceptions
+.. code:: bash
 
-# This mustn't be a novel. We should just show how it works.
-
-# Add a reference to pytest official doc here.
-
-.. _Run-unit-tests:
-
-Run unit tests
-==============
-
-.. _Recommendations-on-writing-code:
-
-Recommendations on writing code
-===============================
+  ansible-test units tests/unit/plugins/test_myclass.py --docker
 
 .. _Recommendations-on-coverage:
 
 Recommendations on coverage
 ===========================
+
+There are several tips related to organizing your code and test coverage:
+
+* Small, doing one thing functions with no or minimum side effects are easier to test, so try to make your functions simple.
+* Test all possible behaviors of a function including exception related ones like raising, catching and handling exceptions.
+* When a function invokes the ``module.fail_json`` method, passed messages should also be checked.
 
 Going deeper
 ============
@@ -166,6 +158,7 @@ Going deeper
 For further review, refer to the following documents:
 
 - `Unit testing Ansible modules <https://docs.ansible.com/ansible/devel/dev_guide/testing_units_modules.html>`_.
+- `Pytest framework documentation <https://docs.pytest.org/en/latest/>`_.
 - `Testing guide <https://docs.ansible.com/ansible/latest/dev_guide/testing.html>`_.
 - `Quick-start integration testing guide <https://github.com/ansible/community-docs/blob/main/integration_tests_quick_start_guide.rst>`_.
 - `Integration tests guide <https://docs.ansible.com/ansible/latest/dev_guide/testing_integration.html>`_.
