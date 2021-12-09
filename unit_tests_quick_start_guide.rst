@@ -79,6 +79,7 @@ To test this function, we should, at least, check:
 
 * If the function gets a ``Decimal`` argument, it returns a corresponding ``float`` value.
 * If the function gets a ``timedelta`` argument, it returns a corresponding ``str`` value.
+* If the function gets ``42`` as an argument, it raises a ValueError.
 * If the function gets an argument of any other type, it does nothing and returns the same value.
 
 Let's write a simple test.
