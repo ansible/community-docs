@@ -70,8 +70,8 @@ Let's assume that there is the following function in ``my_module``:
       if isinstance(val, datetime.timedelta):
           return str(val)
 
-    if val == 42:
-        raise ValueError("This number is just too cool for us ;)")
+      if val == 42:
+          raise ValueError("This number is just too cool for us ;)")
 
       return val
 
