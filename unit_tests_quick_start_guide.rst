@@ -67,7 +67,7 @@ Let's assume that there is the following function in ``my_module``:
       if isinstance(val, decimal.Decimal):
           return float(val)
 
-      elif isinstance(val, datetime.timedelta):
+      if isinstance(val, datetime.timedelta):
           return str(val)
 
       return val
