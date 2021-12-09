@@ -135,6 +135,10 @@ Assuming that our collection is called ``community.mycollection``:
   def test_convert_to_supported(test_input, expected):
       assert convert_to_supported(test_input) == expected
 
+  def test_convert_to_supported_exception():
+      with pytest.raises(ValueError, match=r"too cool"):
+          convert_to_supported(42)
+
 You can find examples of how to mock ``AnsibleModule`` objects, monkeypatch methods (``module.fail_json``, ``module.exit_json``), emulate API responses, and more on the `Unit testing Ansible modules <https://docs.ansible.com/ansible/devel/dev_guide/testing_units_modules.html>`_ documentation page.
 
 4. Run the tests using docker:
