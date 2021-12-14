@@ -30,17 +30,16 @@ The members in the committee handle the below:
 Members:
 ========
 
-1.  Toshio Kuratomi (abadger1999)
-2.  Felix Fontein (felixfontein)
-3.  Tadej Borovšak (tadeboro)
-4.  James Cassell (cyberpear)
-5.  John Barker (gundalow)
-6.  Andrew Klychkov (andersson007_)
-7.  Alicia Cozine (acozine)
-8.  Sorin Sbarnea (zbr)
-9.  Jill Rouleau (jillr)
-10. Brad Thornton (cidrblock)
-11. Dylan Silva (thaumos)
+1.  Felix Fontein (felixfontein)
+2.  Tadej Borovšak (tadeboro)
+3.  James Cassell (cyberpear)
+4.  John Barker (gundalow)
+5.  Andrew Klychkov (andersson007_)
+6.  Alicia Cozine (acozine)
+7.  Sorin Sbarnea (zbr)
+8.  Jill Rouleau (jillr)
+9. Brad Thornton (cidrblock)
+10. Dylan Silva (thaumos)
 
 *Key: Full name (IRC Nickname)*
 
