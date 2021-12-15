@@ -41,8 +41,6 @@ Members:
 9. Brad Thornton (cidrblock)
 10. Dylan Silva (thaumos)
 
-*Key: Full name (IRC Nickname)*
-
 -  Currently, all the Steering Committee members are selected based on
    their active contribution to the Ansible Project.
 -  In future, the selection process will be based on the election model
