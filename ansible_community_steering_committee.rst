@@ -88,9 +88,11 @@ UTC <https://raw.githubusercontent.com/ansible/community/main/meetings/ical/comm
 Agenda
 ~~~~~~
 
-You can find the Ansible Community Meeting agenda at `Community Working
-Group Meeting
-Agenda. <https://github.com/ansible/community/issues/539>`__
+You can find the discussion topics in the `community-topics <https://github.com/ansible-community/community-topics>`_ repository.
+
+For topics that are going to be discussed in the next meeting, see `here <https://github.com/ansible-community/community-topics/labels/next_meeting>`_.
+
+For a short summary on the past topics already discussed in the Community Meeting, see the `Meeting Agenda issue <https://github.com/ansible/community/issues/539>`_.
 
 Minutes of Meeting
 ~~~~~~~~~~~~~~~~~~
