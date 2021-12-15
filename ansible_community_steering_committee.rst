@@ -22,7 +22,7 @@ Committee Member Responsibilities:
 The members in the committee handle the below:
 
 - Design policy and procedure for the collection world.
-- Review things (collections fornow) for compliance with the policies. 
+- Review things (collections for now) for compliance with the policies. 
 - Help create our deliverables (community.general, community.network, the ansible-tarball, docs website).
 - Ballot on approval changes to policy and new proposals.
 - Identify and train individuals from the community who are interested in contributing to Ansible.
