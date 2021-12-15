@@ -97,11 +97,7 @@ For a short summary on the past topics already discussed in the Community Meetin
 Minutes of Meeting
 ~~~~~~~~~~~~~~~~~~
 
-Ansible Community weekly meeting minutes can be found at the `fedora
-meetbot
-site <https://meetbot.fedoraproject.org/sresults/?group_id=ansible-community&type=channel>`__
-and the same will be posted to `Ansible Devel Mailing
-List <https://groups.google.com/g/ansible-devel>`__ after every meeting.
+Ansible Community weekly meeting minutes can be found at the `fedora meetbot site <https://meetbot.fedoraproject.org/sresults/?group_id=ansible-community&type=channel>`_ and the same will be posted to `Ansible Devel Mailing List <https://groups.google.com/g/ansible-devel>`_ after every meeting.
 
 Mailing List:
 -------------
