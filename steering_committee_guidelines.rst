@@ -1,24 +1,3 @@
-***********************
-Steering Committee Doc
-***********************
-
-The Steering Committee’s role is to provide continuity, guidance, and
-suggestions to the Ansible, and to ensure delivery of the Ansible
-Community package. The Steering Committee should reflect the scope and
-breadth of the Ansible Community.
-
-Committee Member Responsibilities:
-==================================
-
-1. Design policies and procedures for the collections ecosystem.
-2. Review content (collections for now) for compliance with the
-   policies.
-3. Help create the community deliverables (community.general collection,
-   community.network collection, the ansible-tarball, community
-   documentation website).
-4. Ballot on approval of new proposals and changes to policies.
-5. Identify and train individuals from the community who are interested
-   in contributing to Ansible.
 
 Expectations of a Committee Member:
 ===================================
