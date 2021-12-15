@@ -30,14 +30,14 @@ The members in the committee handle the below:
 Members:
 ========
 
-1.  Felix Fontein (felixfontein)
-2.  Tadej Borovšak (tadeboro)
-3.  James Cassell (cyberpear)
-4.  John Barker (gundalow)
-5.  Andrew Klychkov (andersson007_)
-6.  Alicia Cozine (acozine)
-7.  Sorin Sbarnea (zbr)
-8.  Jill Rouleau (jillr)
+1. Felix Fontein (felixfontein)
+2. Tadej Borovšak (tadeboro)
+3. James Cassell (cyberpear)
+4. John Barker (gundalow)
+5. Andrew Klychkov (andersson007_)
+6. Alicia Cozine (acozine)
+7. Sorin Sbarnea (zbr)
+8. Jill Rouleau (jillr)
 9. Brad Thornton (cidrblock)
 10. Dylan Silva (thaumos)
 
