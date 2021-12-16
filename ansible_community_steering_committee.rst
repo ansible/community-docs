@@ -72,7 +72,7 @@ After every meeting, the meeting minutes/summaries and meeting logs will
 be posted to the `original
 issue <https://github.com/ansible/community/issues/539>`__.
 
-If you cannot join the meeting or from another time zone then you can
+If you cannot join the meeting or you are in another time zone then you can
 directly use GitHub Discussions feature to discuss your new
 proposals/collection inclusion requests and the steering committee will
 discuss the final conclusions during the weekly IRC meeting and then
