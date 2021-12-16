@@ -50,12 +50,9 @@ New Policy/Proposals & Inclusion Requests:
 ==========================================
 
 Requests regarding new collection inclusion requests should be submitted
-to this `GitHub
-discussion <https://github.com/ansible-collections/ansible-inclusion/discussions/new>`__
-and requests regarding new policy/proposals should be submitted through
-a new pull request to
-`ansible-collections/overview <https://github.com/ansible-collections/overview>`__
-GitHub repo.
+via this `GitHub discussion <https://github.com/ansible-collections/ansible-inclusion/discussions/new>`_.
+
+Requests regarding new inclusion policy/proposals should be submitted through a new pull request to `ansible-collections/overview <https://github.com/ansible-collections/overview>`_ GitHub repository.
 
 Also, we earlier used a `Community Working Group Meeting
 Agenda <https://github.com/ansible/community/issues/539>`__ to track
