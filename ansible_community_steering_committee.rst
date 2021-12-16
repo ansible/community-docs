@@ -72,9 +72,7 @@ will vote on them.
 Meetings:
 =========
 
-Ansible Community meeting happens on a weekly basis on
-#ansible-community IRC channel every Wednesday `at 18:00
-UTC <https://raw.githubusercontent.com/ansible/community/main/meetings/ical/community.ics>`__.
+See the Community Working Group meeting `schedule <https://github.com/ansible/community/blob/main/meetings/README.md#wednesdays.>`.
 
 Agenda
 ~~~~~~
