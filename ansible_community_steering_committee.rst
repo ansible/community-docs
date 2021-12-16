@@ -59,14 +59,9 @@ Agenda <https://github.com/ansible/community/issues/539>`_ to track
 agenda topics that needed to be discussed in the weekly Ansible
 Community IRC meetings. Now, to categorize each topic separately we’ve
 created a new GitHub repo `community-topics <https://github.com/ansible-community/community-topics>`_.
-If you want to discuss an idea, improvements or submitted new
-Policy/Proposals & New Collection Inclusion Requests then create a `new
-issue <https://github.com/ansible-community/community-topics/issues/new>`__
-in the `repo <https://github.com/ansible-community/community-topics>`__
-as a topic, and it’ll be discussed publicly in the weekly IRC meeting.
-After every meeting, the meeting minutes/summaries and meeting logs will
-be posted to the `original
-issue <https://github.com/ansible/community/issues/539>`__.
+If you want to discuss an idea that can impact the community, collection best practices, inclusion policy, submitted new Policy/Proposals & New Collection Inclusion Requests or other topics the steering committee is responsible for, create a new issue in the `community-topics repository <https://github.com/ansible-community/community-topics>`_ as a discussion topic, and it’ll be discussed publicly in the weekly community IRC meeting and/or asynchronously in the issue itself.
+
+After every meeting, the meeting minutes/summary and meeting logs are posted to the `original issue <https://github.com/ansible/community/issues/539>`_.
 
 If you cannot join the meeting or you are in another time zone then you can
 directly use GitHub Discussions feature to discuss your new
