@@ -30,6 +30,8 @@ The members in the committee handle the below:
 Members:
 ========
 
+*Key: Full name (IRC/Matrix Nickname)*
+
 1. Felix Fontein (``felixfontein``)
 2. Tadej Borovšak (``tadeboro``)
 3. James Cassell (``cyberpear``)
