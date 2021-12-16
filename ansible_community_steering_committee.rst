@@ -3,7 +3,7 @@ Ansible Community Steering Committee
 ************************************
 
 The Steering Committee’s role is to provide continuity, guidance, and
-suggestions to the Ansible, and to ensure delivery of the Ansible
+suggestions to the Ansible community, and to ensure delivery of the Ansible
 Community package. The Steering Committee should reflect the scope and
 breadth of the Ansible Community.
 
