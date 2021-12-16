@@ -58,8 +58,7 @@ Also, we earlier used a `Community Working Group Meeting
 Agenda <https://github.com/ansible/community/issues/539>`_ to track
 agenda topics that needed to be discussed in the weekly Ansible
 Community IRC meetings. Now, to categorize each topic separately we’ve
-created a new GitHub repo
-“`community-topics <https://github.com/ansible-community/community-topics>`__”.
+created a new GitHub repo `community-topics <https://github.com/ansible-community/community-topics>`_.
 If you want to discuss an idea, improvements or submitted new
 Policy/Proposals & New Collection Inclusion Requests then create a `new
 issue <https://github.com/ansible-community/community-topics/issues/new>`__
