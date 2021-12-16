@@ -55,7 +55,7 @@ via this `GitHub discussion <https://github.com/ansible-collections/ansible-incl
 Requests regarding new inclusion policy/proposals should be submitted through a new pull request to `ansible-collections/overview <https://github.com/ansible-collections/overview>`_ GitHub repository.
 
 Also, we earlier used a `Community Working Group Meeting
-Agenda <https://github.com/ansible/community/issues/539>`__ to track
+Agenda <https://github.com/ansible/community/issues/539>`_ to track
 agenda topics that needed to be discussed in the weekly Ansible
 Community IRC meetings. Now, to categorize each topic separately we’ve
 created a new GitHub repo
