@@ -52,7 +52,7 @@ rejoin the Steering Committee by following the process for joining the Steering 
 
 In case of resignation, the member should create an issue in the
 community-topics repository to inform the community that they plan to
-step down, and when.
+step down and when.
 
 Involuntarily Leaving the Steering Committee:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
