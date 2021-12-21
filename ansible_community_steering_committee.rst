@@ -26,6 +26,7 @@ The members in the committee handle the below:
 - Help create our deliverables (community.general, community.network, the ansible-tarball, docs website).
 - Ballot on approval changes to policy and new proposals.
 - Identify and train individuals from the community who are interested in contributing to Ansible.
+- Review collections submitted for inclusion in the Ansible package and decide whether include them or not.
 
 Members:
 ========
