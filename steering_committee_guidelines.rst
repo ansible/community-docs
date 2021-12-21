@@ -48,8 +48,7 @@ participate fully for any reason, they can notify the other members and
 step down.
 
 Steering Committee members who resign and later become active again can
-rejoin the Steering Committee the following year by following the
-process for joining the Steering Committee.
+rejoin the Steering Committee by following the process for joining the Steering Committee.
 
 In case of resignation, the member should create an issue in the
 community-topics repository to inform the community that they plan to
