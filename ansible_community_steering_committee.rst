@@ -67,8 +67,7 @@ After every meeting, the meeting minutes/summary and meeting logs are posted to 
 If you cannot join the meeting or you are in another time zone then you can
 directly use GitHub Discussions feature to discuss your new
 proposals/collection inclusion requests and the steering committee will
-discuss the final conclusions during the weekly IRC meeting and then
-will vote on them.
+discuss the final conclusions during the weekly `IRC/Matrix <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ meeting and then will vote on them.
 
 Meetings:
 =========
