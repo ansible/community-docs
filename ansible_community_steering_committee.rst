@@ -73,7 +73,7 @@ will vote on them.
 Meetings:
 =========
 
-See the Community Working Group meeting `schedule <https://github.com/ansible/community/blob/main/meetings/README.md#wednesdays.>`.
+See the Community Working Group meeting `schedule <https://github.com/ansible/community/blob/main/meetings/README.md#wednesdays>`_.
 
 Agenda
 ~~~~~~
