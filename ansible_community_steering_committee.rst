@@ -58,8 +58,7 @@ Requests regarding new inclusion policy/proposals should be submitted through a 
 
 Also, we earlier used a `Community Working Group Meeting
 Agenda <https://github.com/ansible/community/issues/539>`_ to track
-agenda topics that needed to be discussed in the weekly Ansible
-Community IRC meetings. Now, to categorize each topic separately we’ve
+agenda topics that needed to be discussed in the weekly Ansible Community `IRC/Matrix <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ meetings. Now, to categorize each topic separately we’ve
 created a new GitHub repo `community-topics <https://github.com/ansible-community/community-topics>`_.
 If you want to discuss an idea that can impact the community, collection best practices, inclusion policy, submitted new Policy/Proposals & New Collection Inclusion Requests or other topics the steering committee is responsible for, create a new issue in the `community-topics repository <https://github.com/ansible-community/community-topics>`_ as a discussion topic, and it’ll be discussed publicly in the weekly community `IRC/Matrix <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ meeting and/or asynchronously in the issue itself.
 
