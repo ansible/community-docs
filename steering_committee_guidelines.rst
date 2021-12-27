@@ -28,7 +28,7 @@ Process:
 
 1. Any community member may nominate someone/themselves for committee
    membership at any time.
-2. Only the present Steering committee members may vote on selecting a
+2. Only the Steering committee members may vote on selecting a
    new member.
 3. Nominees must receive a majority vote from the present members to be
    added to the Steering Committee.
