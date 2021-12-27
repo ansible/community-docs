@@ -80,7 +80,7 @@ Ansible fest. In case when the current chairperson stepped down, the election ha
 
 The process of the election consist of the following steps:
 
--  Interested members who wouldn’t mind to be a chairman will inform a
+-  Interested members who wouldn’t mind to be a chairperson will inform a
    person responsible for arranging the election about that.
 -  Conduct impersonalized voting somewhere.
 -  Announcement the result internally.
