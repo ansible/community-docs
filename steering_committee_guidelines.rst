@@ -66,8 +66,8 @@ A Steering Committee member will be removed from the Committee if they:
 The removal process (in all cases except resignation) consists of the
 following steps:
 
-1. Another committee member creates an issue under the community-topics repository.
-2. The issue will be discussed in a community meeting.
+1. Another committee member creates an issue topic under the community-topics repository.
+2. The topic  will be discussed in the issue itself.
 3. The committee members vote on the issue.
 
 Chairperson:

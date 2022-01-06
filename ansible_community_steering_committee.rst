@@ -60,14 +60,12 @@ Requests regarding new inclusion policy/proposals should be submitted through a 
 Also, we earlier used a `Community Working Group Meeting Agenda <https://github.com/ansible/community/issues/539>`_ to track
 agenda topics that needed to be discussed in the weekly Ansible Community `IRC/Matrix <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ meetings. Now, to categorize each topic separately we’ve
 created a new GitHub repository `community-topics <https://github.com/ansible-community/community-topics>`_.
-If you want to discuss an idea that can impact the community, collection best practices, inclusion policy, submitted new Policy/Proposals & New Collection Inclusion Requests or other topics the steering committee is responsible for, create a new issue in the `community-topics repository <https://github.com/ansible-community/community-topics>`_ as a discussion topic, and it’ll be discussed publicly in the weekly community `IRC/Matrix <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ meeting and/or asynchronously in the issue itself.
+If you want to discuss an idea that can impact the community, collection best practices, inclusion policy, submitted new Policy/Proposals & New Collection Inclusion Requests or other topics the steering committee is responsible for, create a new issue in the `community-topics repository <https://github.com/ansible-community/community-topics>`_ as a discussion topic, and it’ll be discussed asynchronously in the issue itself.
 
-After every meeting, the meeting minutes/summary and meeting logs are posted to the `original issue <https://github.com/ansible/community/issues/539>`_.
+Once the filed issue topic is thorough, the Steering Committee will
+discuss the final conclusions and then will vote directly on the issue
 
-If you cannot join the meeting or you are in another time zone then you can
-directly use GitHub Discussions feature to discuss your new
-proposals/collection inclusion requests and the steering committee will
-discuss the final conclusions during the weekly `IRC/Matrix <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ meeting and then will vote on them.
+Depending on the policy/collection inclusion requests/ideas you propose, as you prepare your proposal you may need to consider requirements pertaining to research involving [Ansible Community Code of Conduct](https://docs.ansible.com/ansible/latest/community/code_of_conduct.html#code-of-conduct), [Ansible Collection Inclusion Checklist](https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst) and [Ansible Community Guide](https://docs.ansible.com/ansible/latest/community/index.html).
 
 Meetings:
 =========
