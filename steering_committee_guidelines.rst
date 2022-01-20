@@ -1,4 +1,6 @@
-
+**********************************************************
+Ansible Community Steering Committee Membership Guidelines
+**********************************************************
 Expectations of a Committee Member:
 ===================================
 
