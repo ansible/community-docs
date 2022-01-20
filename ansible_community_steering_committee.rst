@@ -11,7 +11,7 @@ Mission:
 ========
 
 The Steering Committee helps decide the technical direction of the
-Ansible Upstream project and is also responsible for avowal of new
+Ansible project and is also responsible for avowal of new
 proposals (feature idea, new policy in collection world), new collection
 requests, empower contributors, maintainers & reviewers and other
 technical aspects regarding inclusion and packaging.
