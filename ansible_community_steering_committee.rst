@@ -65,7 +65,7 @@ If you want to discuss an idea that can impact the community, collection best pr
 Once the filed issue topic is thorough, the Steering Committee will
 discuss the final conclusions and then will vote directly on the issue
 
-Depending on the policy/collection inclusion requests/ideas you propose, as you prepare your proposal you may need to consider requirements pertaining to research involving [Ansible Community Code of Conduct](https://docs.ansible.com/ansible/latest/community/code_of_conduct.html#code-of-conduct), [Ansible Collection Inclusion Checklist](https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst) and [Ansible Community Guide](https://docs.ansible.com/ansible/latest/community/index.html).
+Depending on the policy/collection inclusion requests/ideas you propose, as you prepare your proposal you may need to consider requirements pertaining to research involving `Ansible Community Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html#code-of-conduct>`_, `Ansible Collection Inclusion Checklist <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_ and `Ansible Community Guide <https://docs.ansible.com/ansible/latest/community/index.html>`_.
 
 Meetings:
 =========
