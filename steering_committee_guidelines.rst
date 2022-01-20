@@ -85,4 +85,4 @@ The process of the election consist of the following steps:
 -  Interested members who wouldn’t mind to be a chairperson will inform a
    person responsible for arranging the election about that.
 -  Conduct anonymous voting somewhere.
--  Announcement the result internally and publicly announce the elected candidate.
+-  Internally and publicly announce the elected candidate.
