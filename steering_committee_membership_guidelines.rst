@@ -39,8 +39,8 @@ A person is eligible to become a Committee member if they have:
 Process:
 ~~~~~~~~
 
-1. Any community member may nominate someone/themselves for committee
-   membership at any time by contacting one or more of the current members (see the list `here <https://github.com/ansible/community-docs/blob/main/ansible_community_steering_committee.rst#members>`_) or by sending an email to ``ansible-community@redhat.com``.
+1. Any community member may nominate someone or themselves for committee
+   membership by contacting one of the `current members <https://github.com/ansible/community-docs/blob/main/ansible_community_steering_committee.rst#members>`_) or by sending an email to ``ansible-community@redhat.com``.
 2. A person who received the nomination must inform the Committee about it by forwarding the full message.
 3. Only the current Committee members may vote on selecting a new member.
 4. Nominees must receive a majority of votes from the present members to be
