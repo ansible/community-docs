@@ -50,6 +50,8 @@ Members:
 -  In future, the selection process will be based on the election model
    through community.
 
+Refer to the `Steering Committee Membership Guidelines <https://github.com/ansible/community-docs/blob/main/steering_committee_membership_guidelines.rst>`_ to learn details.
+
 New Policy/Proposals & Inclusion Requests:
 ==========================================
 
