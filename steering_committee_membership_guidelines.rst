@@ -53,17 +53,16 @@ Steering Committee members can resign voluntarily or be removed by the
 rest of the Steering Committee under certain circumstances, see the details
 below.
 
+.. _Voluntarily leaving process:
+
 Voluntarily Leaving the Steering Committee:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Committee member can resign. If they are not able to
-participate fully for any reason, they can notify the other members and
-step down.
+A Committee member can voluntarily leave the Committee.
+In this case, they notify the other members, create an issue in the `Community Topics <https://github.com/ansible-community/community-topics/issues>`_ repository announcing the resignation, and after that they are considered stepped down.
 
-Committee members who resign and later become active again can
-rejoin the Committee by following the :ref:`process for joining the Steering Committee<Joining the committee>`.
-
-In case of resignation, the Committee member should inform other members by email that they plan to step down.
+Committee members who resign and later change their mind can
+rejoin the Committee by following the :ref:`Process for joining the Steering Committee<Joining the committee>`.
 
 Involuntarily Leaving the Steering Committee:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -74,11 +73,41 @@ A Committee member will be removed from the Committee if they:
 2. Participate unreasonably irregularly (for example, once a month for several months). Unreasonability is defined by other Committee members considering circumstances in each particular case.
 3. Violate the `Ansible Community Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_.
 
-The removal process (in all cases except resignation) consists of the
-following steps:
+.. _Absence or irregular participation removal process:
 
-1. Another Committee member initiates the process by starting a dedicated email thread. It must be sent to all the current Committee members including the person that can be removed.
-2. The Committee members discuss the removal and vote in the email thread.
+Absence or irregular participation in discussing topics and votes:
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+In case of absence or irregular participation, the involuntarily removal process consists of the following steps:
+
+1. Another Committee member (hereinafter the initiator) contacts the person by email asking if they are still interested in fulfilling their Committee member's duties.
+2. If they respond that they are not interested, the initiator asks the person to step down on their own following the :ref:`Voluntarily leaving process<Voluntarily leaving process>`.
+3. If there has been no response / stepping down issue created by the person within a reasonable time, the initiator notifies other Committee members about the situation.
+4. In case of agreement among the Committee about the need for removal, the initiator provides a draft of a corresponding topic's description to the Committee via email for discussion and approval.
+
+  - The topic's title is ``Steering Committee member audit.``. It must not contain the person's name/information.
+  - The description must not contain or imply any forms of condemnation.
+  - It must mention that the person has been inactive for an unknown reason for the last N months and that, in accordance to the Steering Committee policies, their place should be freed for another person who can continue their great job.
+  - The description must mention person's achievements and thanks for their time and effort they spent serving for the Community, Committee, and the Project, and a hope that one day they will come back.
+5. The initiator creates the topic in the `Community Topics <https://github.com/ansible-community/community-topics/issues>`_ repository containing the description and the title from the draft.
+6. The Committee members vote on the topic.
+
+Ansible Community Code of Conduct violations:
++++++++++++++++++++++++++++++++++++++++++++++
+
+In case of the `Ansible Community Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_ violations, the process is the same as above except steps 1-2. Instead:
+
+1. The initiator reports the case to the Committee via email.
+2. The Committee discusses the case internally, evaluates its severity, and possible solutions.
+3. If the committee concludes that the violation is not severe, it develops a proposal to the person on how the situation can be corrected and further interactions with the Community improved.
+4. A Committee representative reaches out to the person with the proposal.
+5. The removal process starts if:
+
+  - The Committee decided that the severity of the violation excludes a possibility of further membership.
+  - The person does not respond to the proposal.
+  - The person explicitly rejects the proposal.
+
+In case of starting the removal process, the topic's description in the reason's part changes correspondingly.
 
 Chairperson:
 ============
@@ -94,5 +123,3 @@ The process of the election consist of the following steps:
    person responsible for arranging the election about that.
 -  Conduct anonymous voting somewhere.
 -  Internally and publicly announce the elected candidate.
-
-[TODO: Elaborate on the Chairperson rights / responsibilities]
