@@ -85,10 +85,10 @@ In case of absence or irregular participation, the involuntarily removal process
 3. If there has been no response / stepping down issue created by the person within a reasonable time, the initiator notifies other Committee members about the situation.
 4. In case of agreement among the Committee about the need for removal, the initiator provides a draft of a corresponding topic's description to the Committee via email for discussion and approval.
 
-  - The topic's title is ``Steering Committee member audit.``. It must not contain the person's name/information.
-  - The description must not contain or imply any forms of condemnation.
-  - It must mention that the person has been inactive for an unknown reason for the last N months and that, in accordance to the Steering Committee policies, their place should be freed for another person who can continue their great job.
-  - The description must mention person's achievements and thanks for their time and effort they spent serving for the Community, Committee, and the Project, and a hope that one day they will come back.
+- The topic's title is ``Steering Committee member audit.``. It must not contain the person's name/information.
+- The description must not contain or imply any forms of condemnation.
+- It must mention that the person has been inactive for an unknown reason for the last N months and that, in accordance to the Steering Committee policies, their place should be freed for another person who can continue their great job.
+- The description must mention person's achievements and thanks for their time and effort they spent serving for the Community, Committee, and the Project, and a hope that one day they will come back.
 5. The initiator creates the topic in the `Community Topics <https://github.com/ansible-community/community-topics/issues>`_ repository containing the description and the title from the draft.
 6. The Committee members vote on the topic.
 
@@ -103,9 +103,9 @@ In case of the `Ansible Community Code of Conduct <https://docs.ansible.com/ansi
 4. A Committee representative reaches out to the person with the proposal.
 5. The removal process starts if:
 
-  - The Committee decided that the severity of the violation excludes a possibility of further membership.
-  - The person does not respond to the proposal.
-  - The person explicitly rejects the proposal.
+- The Committee decided that the severity of the violation excludes a possibility of further membership.
+- The person does not respond to the proposal.
+- The person explicitly rejects the proposal.
 
 In case of starting the removal process, the topic's description in the reason's part changes correspondingly.
 
