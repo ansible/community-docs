@@ -8,8 +8,8 @@ This document describes the expectations and policies related to a membership in
 
 .. _Expectations for members:
 
-Expectations of a Steering Committee Member:
-============================================
+Expectations of a Steering Committee Member
+===========================================
 
 The membership in the Committee implies the following expectations from its members.
 
@@ -24,11 +24,11 @@ As a Committee member, you agree to:
 
 .. _Joining the committee:
 
-Joining the Steering Committee:
-===============================
+Joining the Steering Committee
+==============================
 
-Eligibility:
-~~~~~~~~~~~~
+Eligibility
+~~~~~~~~~~~
 
 A person is eligible to become a Committee member if they have:
 
@@ -36,8 +36,8 @@ A person is eligible to become a Committee member if they have:
 2. Active contributions to the Ansible and / or related projects in any form described in the `Ansible Contributing Guidelines <https://github.com/ansible/community-docs/blob/main/contribution_to_project.rst>`_.
 3. A consent to follow the :ref:`Expectations for the Committee members<Expectations for members>`.
 
-Process:
-~~~~~~~~
+Process
+~~~~~~~
 
 1. Any community member may nominate someone or themselves for committee
    membership by contacting one of the `current members <https://github.com/ansible/community-docs/blob/main/ansible_community_steering_committee.rst#members>`_) or by sending an email to ``ansible-community@redhat.com``.
@@ -46,8 +46,8 @@ Process:
 4. Nominees must receive a majority of votes from the present members to be
    added to the Committee.
 
-Leaving the Steering Committee:
-===============================
+Leaving the Steering Committee
+==============================
 
 Steering Committee members can resign voluntarily or be removed by the
 rest of the Steering Committee under certain circumstances, see the details
@@ -55,8 +55,8 @@ below.
 
 .. _Voluntarily leaving process:
 
-Voluntarily Leaving the Steering Committee:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Voluntarily Leaving the Steering Committee
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A Committee member can voluntarily leave the Committee.
 In this case, they notify the other members, create an issue in the `Community Topics <https://github.com/ansible-community/community-topics/issues>`_ repository announcing the resignation, and after that they are considered stepped down.
@@ -64,8 +64,8 @@ In this case, they notify the other members, create an issue in the `Community T
 Committee members who resign and later change their mind can
 rejoin the Committee by following the :ref:`Process for joining the Steering Committee<Joining the committee>`.
 
-Involuntarily Leaving the Steering Committee:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Involuntarily Leaving the Steering Committee
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A Committee member will be removed from the Committee if they:
 
@@ -75,8 +75,8 @@ A Committee member will be removed from the Committee if they:
 
 .. _Absence or irregular participation removal process:
 
-Absence or irregular participation in discussing topics and votes:
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Absence or irregular participation in discussing topics and votes
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 In case of absence or irregular participation, the involuntarily removal process consists of the following steps:
 
@@ -92,8 +92,8 @@ In case of absence or irregular participation, the involuntarily removal process
 5. The initiator creates the topic in the `Community Topics <https://github.com/ansible-community/community-topics/issues>`_ repository containing the description and the title from the draft.
 6. The Committee members vote on the topic.
 
-Ansible Community Code of Conduct violations:
-+++++++++++++++++++++++++++++++++++++++++++++
+Ansible Community Code of Conduct violations
+++++++++++++++++++++++++++++++++++++++++++++
 
 In case of the `Ansible Community Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_ violations, the process is the same as above except steps 1-2. Instead:
 
@@ -109,8 +109,8 @@ In case of the `Ansible Community Code of Conduct <https://docs.ansible.com/ansi
 
 In case of starting the removal process, the topic's description in the reason's part changes correspondingly.
 
-Chairperson:
-============
+Chairperson
+===========
 
 Tadej Borovšak is elected as the chairperson for the year 2021-2022.
 
