@@ -124,7 +124,7 @@ Chairperson
 Tadej Borovšak has been elected as the chairperson for the year 2021-2022.
 
 The chairperson election will happen once a year around the time of
-Ansible Fest. In case when the current chairperson stepped down, the election happens immediately.
+Ansible Fest. If the current chairperson has to step down early, the election happens immediately.
 
 The process of the election consist of the following steps:
 
