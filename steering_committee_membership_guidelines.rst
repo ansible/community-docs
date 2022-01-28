@@ -38,7 +38,7 @@ A person is eligible to become a Committee member if they have:
 Process
 ~~~~~~~
 
-The process of joining the Steering Committee consists of the following steps:
+The process to join the Steering Committee consists of the following steps:
 
 #. Any community member may nominate someone or themselves for Committee membership by contacting one of the `current members <https://github.com/ansible/community-docs/blob/main/ansible_community_steering_committee.rst#members>`_) or by sending an email to ``ansible-community@redhat.com``.
 #. A person who received the nomination must inform the Committee about it by forwarding the full message.
