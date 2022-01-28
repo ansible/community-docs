@@ -32,7 +32,7 @@ Eligibility
 A person is eligible to become a Committee member if they have:
 
 #. A wide knowledge of Ansible and/or its related projects.
-#. Active contributions to the Ansible and / or related projects in any form described in the `Ansible Contributing Guidelines <https://github.com/ansible/community-docs/blob/main/contribution_to_project.rst>`_.
+#. Active contributions to  Ansible and/or related projects in any form described in the `Ansible Contributing Guidelines <https://github.com/ansible/community-docs/blob/main/contribution_to_project.rst>`_.
 #. A consent to follow the :ref:`Expectations for the Committee members<Expectations for members>`.
 
 Process
