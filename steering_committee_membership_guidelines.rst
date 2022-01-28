@@ -58,7 +58,7 @@ Voluntarily Leaving the Steering Committee
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A Committee member can voluntarily leave the Committee.
-In this case, they notify the other members, create an issue in the `Community Topics <https://github.com/ansible-community/community-topics/issues>`_ repository announcing the resignation, and after that they are considered stepped down.
+In this case, they notify the other members, create an issue in the `Community Topics <https://github.com/ansible-community/community-topics/issues>`_ repository announcing the resignation, and after that they are no longer considered Committee members.
 
 Committee members who resign and later change their mind can
 rejoin the Committee by following the :ref:`Process for joining the Steering Committee<Joining the committee>`.
