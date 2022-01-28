@@ -11,7 +11,6 @@ This document describes the expectations and policies related to membership in t
 Expectations of a Steering Committee Member
 ===========================================
 
-The membership in the Committee implies the following expectations from its members.
 
 As a Committee member, you agree to:
 
