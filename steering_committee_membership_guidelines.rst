@@ -81,7 +81,7 @@ In case of absence or irregular participation, the involuntarily removal process
 
 #. Another Committee member (hereinafter the initiator) contacts the person by email asking if they are still interested in fulfilling their Committee member's duties.
 #. If they respond that they are not interested, the initiator asks the person to step down on their own following the :ref:`Voluntarily leaving process<Voluntarily leaving process>`.
-#. If there has been no response / stepping down issue created by the person within a reasonable time, the initiator notifies other Committee members about the situation.
+#. If there has been no response or stepping down issue created by the person within a reasonable time, the initiator notifies other Committee members about the situation.
 #. In case of agreement among the Committee about the need for removal, the initiator provides a draft of a corresponding topic's description to the Committee via email for discussion and approval.
 
   * The topic's title is ``Steering Committee member audit.``. It must not contain the person's name/information.
