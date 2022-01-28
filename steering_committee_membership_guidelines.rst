@@ -88,7 +88,7 @@ In case of absence or irregular participation, the involuntarily removal process
 
   * The description must not contain or imply any forms of condemnation.
 
-  * It must mention that the person has been inactive for an unknown reason for the last N months and that, in accordance to the Steering Committee policies, their place should be freed for another person who can continue their great job.
+  * It must mention that the person has been inactive for an unknown reason for the last N months and that, in accordance with the Steering Committee policies, their place should be freed for another person who can continue their great job.
 
   * The description must mention person's achievements and thanks for their time and effort they spent serving for the Community, Committee, and the Project, and a hope that one day they will come back.
 
