@@ -17,7 +17,7 @@ As a Committee member, you agree to:
 #. Abide by the `Ansible Community Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_ in all your interactions with the Community.
 #. Be a Community ambassador by representing its needs within the Committee and throughout the decision making process.
 #. Asynchronously participate in discussions and voting on the `Community Topics <https://github.com/ansible-community/community-topics/issues>`_.
-#. Review other proposals which importance needs the Committee's attention and provide feedback.
+#. Review other proposals of importance that need the Committee's attention and provide feedback.
 #. Act for the sake of the Community not promoting corporate or individual agenda during the decision making process.
 #. Engage with the Community in a professional and positive manner, encourage community members to express their opinion.
 
