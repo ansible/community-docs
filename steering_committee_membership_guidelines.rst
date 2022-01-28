@@ -49,7 +49,7 @@ Leaving the Steering Committee
 ==============================
 
 Steering Committee members can resign voluntarily or be removed by the
-rest of the Steering Committee under certain circumstances, see the details
+rest of the Steering Committee under certain circumstances. See the details
 below.
 
 .. _Voluntarily leaving process:
