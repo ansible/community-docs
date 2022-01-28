@@ -84,7 +84,7 @@ In case of absence or irregular participation, the involuntarily removal process
 #. If there has been no response or stepping down issue created by the person within a reasonable time, the initiator notifies other Committee members about the situation.
 #. In case of agreement among the Committee about the need for removal, the initiator provides a draft of a corresponding topic's description to the Committee via email for discussion and approval.
 
-  * The topic's title is ``Steering Committee member audit.``. It must not contain the person's name/information.
+  * The topic's title is ``Steering Committee member audit.``. It must not contain the person's name or other identifying information.
 
   * The description must not contain or imply any forms of condemnation.
 
