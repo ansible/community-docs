@@ -121,7 +121,7 @@ In case of starting the removal process, the topic's description in the reason's
 Chairperson
 ===========
 
-Tadej Borovšak is elected as the chairperson for the year 2021-2022.
+Tadej Borovšak has been elected as the chairperson for the year 2021-2022.
 
 The chairperson election will happen once a year around the time of
 Ansible Fest. In case when the current chairperson stepped down, the election happens immediately.
