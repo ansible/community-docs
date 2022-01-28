@@ -104,7 +104,7 @@ In case of the `Ansible Community Code of Conduct <https://docs.ansible.com/ansi
 
 #. The Committee discusses the case internally, evaluates its severity, and possible solutions.
 
-#. If the committee concludes that the violation is not severe, it develops a proposal to the person on how the situation can be corrected and further interactions with the Community improved.
+#. If the Committee concludes that the violation is not severe, it develops a proposal to the person on how the situation can be corrected and further interactions with the Community improved.
 
 #. A Committee representative reaches out to the person with the proposal.
 
