@@ -8,12 +8,9 @@ Mission:
 The Steering Committee’s mission (hereinafter the Committee) is to provide continuity, guidance, and
 suggestions to the Ansible community, to ensure delivery and high quality of the Ansible package.
 
-The Committee helps decide the technical direction of the Ansible project. Its primary focus is to ensure that:
-* proposals
-* policies
-* new collection inclusion requests
-* (add other items here)
-are adequately reviewed and progressed.
+The Committee helps decide the technical direction of the Ansible project and is responsible for approval of new
+proposals and policies in the community, package, and collections' world, new collection-inclusion requests,
+and other technical aspects regarding inclusion and packaging.
 
 The Committee should reflect the scope and breadth of the Ansible Community.
 
