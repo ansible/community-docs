@@ -44,6 +44,7 @@ Members:
 9. Brad Thornton (``cidrblock``)
 10. Dylan Silva (``thaumos``)
 11. Brian Scholer (``briantist``)
+12. Markus Bergholz (``markuman``)
 
 -  Currently, all the Steering Committee members are selected based on
    their active contribution to the Ansible Project.
