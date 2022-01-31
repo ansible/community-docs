@@ -68,7 +68,7 @@ Meetings:
 
 See the Community Working Group meeting `schedule <https://github.com/ansible/community/blob/main/meetings/README.md#wednesdays>`_.
 
-Meeting summaries are posted in the `Community Working Group Meeting Agenda <https://github.com/ansible/community/issues/539>`_ issue.
+Meeting summaries are posted in the `Community Working Group Meeting Agenda <https://github.com/ansible/community/issues?q=is%3Aopen+label%3Ameeting_agenda+label%3Acommunity+>`_ issue.
 
 .. note::
 
