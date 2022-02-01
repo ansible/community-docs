@@ -51,7 +51,13 @@ New Policy/Proposals & Inclusion Requests
 
 * The Committee uses the `community-topics repository <https://github.com/ansible-community/community-topics/issues>`_ to asynchronously discuss with the Community and vote on Community topics in corresponding issues.
 
-* If you want to discuss an idea that can impact the community, collection best practices, inclusion policy, submitted new policy/proposals & new collection inclusion requests or other topics the Committee is responsible for, create a new issue in the `community-topics repository <https://github.com/ansible-community/community-topics/issues>`_ as a discussion topic, and it’ll be discussed asynchronously in the issue itself.
+* Create a new issue in the `community-topics repository <https://github.com/ansible-community/community-topics/issues>`_ as a discussion topic if you want to discuss an idea that impacts any of the following:
+
+  * Ansible Community
+  * Community collection best practices and requirements
+  * Community collection inclusion policy
+  * The Community governance
+  * Other proposals of importance that need the Committee's attention
 
 * Changes to the inclusion policy and collection requirements are submitted through a new pull request to the `ansible-collections/overview <https://github.com/ansible-collections/overview>`_ repository and a corresponding issue containing their rationale is created in the `community-topics repository <https://github.com/ansible-community/community-topics/issues>`_ repository.
 
