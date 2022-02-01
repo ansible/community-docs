@@ -22,7 +22,7 @@ The committee:
 * Designs policies and procedures for the collection world; vote on approval changes to established policies and procedures.
 * Reviews collections for compliance with the policies. 
 * Helps create and define roadmaps for our deliverables such as the ``ansible`` package, major collections, and documentation.
-* Reviews collections submitted for inclusion in the Ansible package and decides whether include them or not.
+* Reviews collections submitted for inclusion in the Ansible package and decides whether to include them or not.
 * Review other proposals of importance that need the Committee's attention and provide feedback.
 
 Members:
