@@ -9,7 +9,7 @@ The Steering Committee’s mission (hereinafter the Committee) is to provide con
 suggestions to the Ansible community, to ensure delivery and high quality of the Ansible package.
 
 The Committee helps decide the technical direction of the Ansible project and is responsible for approval of new
-proposals and policies in the community, package, and collections world, new collection-inclusion requests,
+proposals and policies in the community, package, and community collections world, new community collection-inclusion requests,
 and other technical aspects regarding inclusion and packaging.
 
 The Committee should reflect the scope and breadth of the Ansible Community.
@@ -19,10 +19,10 @@ The Committee Responsibilities
 
 The committee
 
-* Designs policies and procedures for the collection world; vote on approval changes to established policies and procedures.
-* Reviews collections for compliance with the policies. 
-* Helps create and define roadmaps for our deliverables such as the ``ansible`` package, major collections, and documentation.
-* Reviews collections submitted for inclusion in the Ansible package and decides whether to include them or not.
+* Designs policies and procedures for the community collections world; vote on approval changes to established policies and procedures.
+* Reviews community collections for compliance with the policies. 
+* Helps create and define roadmaps for our deliverables such as the ``ansible`` package, major community collections, and documentation.
+* Reviews community collections submitted for inclusion in the Ansible package and decides whether to include them or not.
 * Review other proposals of importance that need the Committee's attention and provide feedback.
 
 Members
