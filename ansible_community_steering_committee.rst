@@ -2,8 +2,8 @@
 Ansible Community Steering Committee
 ************************************
 
-Mission:
-========
+Mission
+=======
 
 The Steering Committee’s mission (hereinafter the Committee) is to provide continuity, guidance, and
 suggestions to the Ansible community, to ensure delivery and high quality of the Ansible package.
@@ -14,10 +14,10 @@ and other technical aspects regarding inclusion and packaging.
 
 The Committee should reflect the scope and breadth of the Ansible Community.
 
-The Committee Responsibilities:
-===============================
+The Committee Responsibilities
+==============================
 
-The committee:
+The committee
 
 * Designs policies and procedures for the collection world; vote on approval changes to established policies and procedures.
 * Reviews collections for compliance with the policies. 
@@ -25,8 +25,8 @@ The committee:
 * Reviews collections submitted for inclusion in the Ansible package and decides whether to include them or not.
 * Review other proposals of importance that need the Committee's attention and provide feedback.
 
-Members:
-========
+Members
+=======
 
 *Key: Full name (IRC/Matrix Nickname)*
 
@@ -46,8 +46,8 @@ Committee members are selected based on their active contribution to the Ansible
 
 See the `Steering Committee Membership Guidelines <https://github.com/ansible/community-docs/blob/main/steering_committee_membership_guidelines.rst>`_ to learn details.
 
-New Policy/Proposals & Inclusion Requests:
-==========================================
+New Policy/Proposals & Inclusion Requests
+=========================================
 
 * The Committee uses the `community-topics repository <https://github.com/ansible-community/community-topics/issues>`_ to asynchronously discuss with the Community and vote on Community topics in corresponding issues.
 
@@ -63,8 +63,8 @@ Depending on a topic you want to discuss with the Community and the Committee, a
 * `Ansible Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_.
 * `Ansible Collection Inclusion Checklist <https://github.com/ansible-collections/overview/blob/main/collection_checklist.md>`_.
 
-Meetings:
-=========
+Meetings
+========
 
 See the Community Working Group meeting `schedule <https://github.com/ansible/community/blob/main/meetings/README.md#wednesdays>`_.
 
