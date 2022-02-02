@@ -2,34 +2,31 @@
 Ansible Community Steering Committee
 ************************************
 
-The Steering Committee’s role is to provide continuity, guidance, and
-suggestions to the Ansible community, and to ensure delivery of the Ansible
-Community package. The Steering Committee should reflect the scope and
-breadth of the Ansible Community.
+Mission
+=======
 
-Mission:
-========
+The Steering Committee’s mission (hereinafter the Committee) is to provide continuity, guidance, and
+suggestions to the Ansible community, to ensure delivery and high quality of the Ansible package.
 
-The Steering Committee helps decide the technical direction of the
-Ansible project and is also responsible for avowal of new
-proposals (feature idea, new policy in collection world), new collection
-requests, empower contributors, maintainers & reviewers and other
-technical aspects regarding inclusion and packaging.
+The Committee helps decide the technical direction of the Ansible project and is responsible for approval of new
+proposals and policies in the community, package, and community collections world, new community collection-inclusion requests,
+and other technical aspects regarding inclusion and packaging.
 
-Committee Member Responsibilities:
-==================================
+The Committee should reflect the scope and breadth of the Ansible Community.
 
-The members in the committee handle the below:
+The Committee Responsibilities
+==============================
 
-- Design policy and procedure for the collection world.
-- Review collections for compliance with the policies. 
-- Help create our deliverables (community.general, community.network, the ``ansible`` tarball, docs website).
-- Ballot on approval changes to policy and new proposals.
-- Identify and train individuals from the community who are interested in contributing to Ansible.
-- Review collections submitted for inclusion in the Ansible package and decide whether include them or not.
+The committee
 
-Members:
-========
+* Designs policies and procedures for the community collections world; vote on approval changes to established policies and procedures.
+* Reviews community collections for compliance with the policies. 
+* Helps create and define roadmaps for our deliverables such as the ``ansible`` package, major community collections, and documentation.
+* Reviews community collections submitted for inclusion in the Ansible package and decides whether to include them or not.
+* Review other proposals of importance that need the Committee's attention and provide feedback.
+
+Members
+=======
 
 *Key: Full name (IRC/Matrix Nickname)*
 
@@ -46,50 +43,42 @@ Members:
 11. Brian Scholer (``briantist``)
 12. Markus Bergholz (``markuman``)
 
--  Currently, all the Steering Committee members are selected based on
-   their active contribution to the Ansible Project.
--  In future, the selection process will be based on the election model
-   through community.
+Committee members are selected based on their active contribution to the Ansible Project and its Community.
 
 See the `Steering Committee Membership Guidelines <https://github.com/ansible/community-docs/blob/main/steering_committee_membership_guidelines.rst>`_ to learn details.
 
-New Policy/Proposals & Inclusion Requests:
-==========================================
+New Policy/Proposals & Inclusion Requests
+=========================================
 
-Requests regarding new collection inclusion requests should be submitted
-via this `GitHub discussion <https://github.com/ansible-collections/ansible-inclusion/discussions/new>`_.
+* The Committee uses the `community-topics repository <https://github.com/ansible-community/community-topics/issues>`_ to asynchronously discuss with the Community and vote on Community topics in corresponding issues.
 
-Requests regarding new inclusion policy/proposals should be submitted through a new pull request to `ansible-collections/overview <https://github.com/ansible-collections/overview>`_ GitHub repository.
+* Create a new issue in the `community-topics repository <https://github.com/ansible-community/community-topics/issues>`_ as a discussion topic if you want to discuss an idea that impacts any of the following:
 
-For topics that need to be discussed, the Steering Committee uses the `community-topics repository <https://github.com/ansible-community/community-topics>`_. `IRC/Matrix <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ meeting summaries are posted in the `Community Working Group Meeting Agenda <https://github.com/ansible/community/issues/539>`_ issue.
-If you want to discuss an idea that can impact the community, collection best practices, inclusion policy, submitted new Policy/Proposals & New Collection Inclusion Requests or other topics the steering committee is responsible for, create a new issue in the `community-topics repository <https://github.com/ansible-community/community-topics>`_ as a discussion topic, and it’ll be discussed asynchronously in the issue itself.
+  * Ansible Community
+  * Community collection best practices and requirements
+  * Community collection inclusion policy
+  * The Community governance
+  * Other proposals of importance that need the Committee's attention
 
-Once the filed issue topic is thorough, the Steering Committee will
-discuss the final conclusions and then will vote directly on the issue
+* Changes to the inclusion policy and collection requirements are submitted through a new pull request to the `ansible-collections/overview <https://github.com/ansible-collections/overview>`_ repository and a corresponding issue containing their rationale is created in the `community-topics repository <https://github.com/ansible-community/community-topics/issues>`_ repository.
 
-Depending on the policy/collection inclusion requests/ideas you propose, as you prepare your proposal you may need to consider requirements pertaining to research involving `Ansible Community Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html#code-of-conduct>`_, `Ansible Collection Inclusion Checklist <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_ and `Ansible Community Guide <https://docs.ansible.com/ansible/latest/community/index.html>`_.
+* New collection inclusion requests are submitted through a new discussion in the `ansible-inclusion <https://github.com/ansible-collections/ansible-inclusion/discussions/new>`_ repository.
 
-Meetings:
-=========
+Depending on a topic you want to discuss with the Community and the Committee, as you prepare your proposal, please consider the requirements established by:
+
+* `Ansible Community Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html#code-of-conduct>`_.
+* `Ansible Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_.
+* `Ansible Collection Inclusion Checklist <https://github.com/ansible-collections/overview/blob/main/collection_checklist.md>`_.
+
+Meetings
+========
 
 See the Community Working Group meeting `schedule <https://github.com/ansible/community/blob/main/meetings/README.md#wednesdays>`_.
 
-Agenda
-~~~~~~
+Meeting summaries are posted in the `Community Working Group Meeting Agenda <https://github.com/ansible/community/issues?q=is%3Aopen+label%3Ameeting_agenda+label%3Acommunity+>`_ issue.
 
-You can find the discussion topics in the `community-topics <https://github.com/ansible-community/community-topics>`_ repository.
+.. note::
 
-For topics that are going to be discussed in the next meeting, see `here <https://github.com/ansible-community/community-topics/labels/next_meeting>`_.
+  Participation in the Community Working Group meetings is optional for Committee members. Decisions on community topics are made asynchronously in the `community-topics <https://github.com/ansible-community/community-topics/issues>`_ repository.
 
-For a short summary on the past topics already discussed in the Community Meeting, see the `Meeting Agenda issue <https://github.com/ansible/community/issues/539>`_.
-
-Minutes of Meeting
-~~~~~~~~~~~~~~~~~~
-
-Ansible Community weekly meeting minutes can be found at the `fedora meetbot site <https://meetbot.fedoraproject.org/sresults/?group_id=ansible-community&type=channel>`_ and the same will be posted to `Ansible Devel Mailing List <https://groups.google.com/g/ansible-devel>`_ after every meeting.
-
-Mailing List:
--------------
-
-Any important announcements regarding Ansible Community Project will be
-posted to ``ansible-devel@googlegroups.com``.
+The meeting minutes can be found at the `fedora meetbot site <https://meetbot.fedoraproject.org/sresults/?group_id=ansible-community&type=channel>`_ and the same is posted to `Ansible Devel Mailing List <https://groups.google.com/g/ansible-devel>`_ after every meeting.
