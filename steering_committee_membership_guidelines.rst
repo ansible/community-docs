@@ -41,7 +41,7 @@ Process
 The process to join the Steering Committee consists of the following steps:
 
 #. Any community member may nominate someone or themselves for Committee membership by contacting one of the `current Committee members <https://github.com/ansible/community-docs/blob/main/ansible_community_steering_committee.rst#members>`_) or by sending an email to ``ansible-community@redhat.com``.
-#. A Committe member who receives the nomination must inform the Committee about it by forwarding the full message.
+#. A Committee member who receives the nomination must inform the Committee about it by forwarding the full message.
 #. The vote is conducted by email. Nominees must receive a majority of votes from the present Committee members to be added to the Committee.
 #. Provided that the vote result is positive, it is announced via the `Bullhorn <https://github.com/ansible/community/wiki/News#the-bullhorn>`_ newsletter and the new member is added to the `Committee Member List <https://github.com/ansible/community-docs/blob/main/ansible_community_steering_committee.rst#members>`_.
 
