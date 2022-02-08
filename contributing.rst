@@ -2,15 +2,17 @@
 Contributing to a codebase
 **************************
 
+.. note::
+
+  You can link to this document from your collection's ``CONTRIBUTING.md`` file instead of writing its content on your own.
+
 We follow the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_ in all our contributions and interactions within the project.
 
-This document explains how to contribute to a codebase. If you are interested to know all ways how you can help the project, refer to the Ansible's `Contribution guidelines <contribution_to_project.rst>`_.
+This document explains how to contribute to a collection's codebase. If you are interested to know all ways how you can help the project, refer to the Ansible's `Contribution guidelines <contribution_to_project.rst>`_.
 
 If you find any inconsistencies or places in this document which can be improved, please raise an issue or pull request to fix it.
 
 If you are a committer, also refer to the `Ansible committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
-
-Feel free to link to this document from your ``CONTRIBUTING.md`` file.
 
 Issue tracker
 =============

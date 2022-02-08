@@ -31,7 +31,7 @@ Contribution to software itself (its codebase) includes:
 
 - `Proposing new features <https://docs.ansible.com/ansible/latest/community/reporting_bugs_and_features.html#requesting-a-feature>`_.
 - `Reporting bugs <https://docs.ansible.com/ansible/latest/community/reporting_bugs_and_features.html#reporting-a-bug>`_.
-- Participating in design and implementation of new components in dedicated issues, pull requests, GitHub discussions, and `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_ channels.
+- Participating in design and implementation of new components in dedicated issues, pull requests, GitHub discussions, and `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ channels.
 - Fixing bugs.
 - Reviewing code.
 - Refactoring code.
@@ -44,6 +44,8 @@ See also:
 
 - `Contributing to a codebase guide <contributing.rst>`_ to learn how to contribute to collection codebases.
 - `Create a pull request quick-start guide <create_pr_quick_start_guide.rst>`_.
+- `Integration testing quick-start guide <integration_tests_quick_start_guide.rst>`_.
+- `Unit testing quick-start guide <unit_tests_quick_start_guide.rst>`_.
 - `Review checklist <review_checklist.rst>`_.
 - `Test a pull request locally guide <test_pr_locally_guide.rst>`_.
 - `Collection maintainer guidelines <maintaining.rst>`_.
@@ -61,7 +63,7 @@ Contribution to code developer experience includes sharing experience through `i
 Contributing to the user experience
 -----------------------------------
 
-Contribution to user experience includes sharing experience about how to use software more efficiently through improving user documentation, writing manuals and books, making videos, courses, and so on.
+Contribution to user experience includes sharing experience about how to use software more efficiently through improving user documentation, writing manuals and books, making videos, creating learning courses, and so on.
 
 Examples:
 
@@ -89,8 +91,8 @@ In a broader sense, contribution to a community includes the activities mentione
 
 Examples:
 
-- If you write a guide which significantly reduces a threshold of the first patch, it can lead to increase of a number of code contributors, which is definitely a contribution to the community.
-- Active participation in `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_, mailing lists, or other discussions. See the `Communication guide <https://docs.ansible.com/ansible/devel/community/communication.html>`_ for details.
+- If you write a guide which significantly reduces a threshold of creating and submitting the first patch, it can lead to increase of a number of code contributors, which is definitely a contribution to the community.
+- Active participation in discussions happening in `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ channels, mailing lists, or in other places. See the `Communication guide <https://docs.ansible.com/ansible/devel/community/communication.html>`_ for details.
 - Leading a blog or a website dedicated to the project.
 - Discussing and voting on the `Community Topics <https://github.com/ansible-community/community-topics/>`_.
 - Taking part in the Community Working Group meetings (see the `schedule <https://github.com/ansible/community/blob/main/meetings/README.md#wednesdays>`_).

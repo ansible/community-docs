@@ -13,13 +13,13 @@ Contributor path
 - The goal of the path, first of all, is to make your activity more determined and efficient through understanding of what you can achieve and how.
 - You can use this path as a roadmap for your long-term participation.
 - Any contribution to the project, even a small one, is very welcome and valuable.
-- When you contribute regularly, your proficiency and judgement in the related area are increasing fast and, along with this, the importance of your presence in the project.
+- When you contribute regularly, your proficiency and judgment in the related area are increasing fast and, along with this, the importance of your presence in the project.
 - Regular contribution makes you a member of the community and leads to respect of other community members.
 - Be persistent and act gradually. Great result is just a product of time and effort. Here's how to get started.
 
 .. note::
 
-   If you have any questions, feel free to reach out to the community in the ``#ansible-community`` `Matrix/Libera.Chat IRC channel <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_. If you have ideas on how this document can be improved, please, share them through creating an issue or a pull request.
+   If you have any questions, feel free to reach out to the community in the ``#ansible-community`` `Matrix/Libera.Chat IRC channel <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_. If you have ideas on how this document can be improved, please, share them through creating an issue or a pull request.
 
 .. contents::
 
@@ -92,7 +92,7 @@ If you'd like to develop a collection, you should be also familiar with the `Ans
 Making your first contribution
 ==============================
 
-You can find some ideas how you can contribute in the `Contribution guide <contribution_to_project.rst>`_ and the ``README`` / ``CONTRIBUTING`` files of `corresponding repositories <https://github.com/ansible-collections/>`_.
+You can find some ideas how you can contribute in the `Contribution guide <contribution_to_project.rst>`_ and the ``README``/``CONTRIBUTING`` files of `corresponding repositories <https://github.com/ansible-collections/>`_.
 
 If the contribution you'd like to give requires technical skills, there can be also quick-start guides that can help.
 
@@ -117,12 +117,12 @@ Interact and share your ideas with other folks from the community following `Ans
 
 You can find available communication channels in the `Communication guide <https://docs.ansible.com/ansible/devel/community/communication.html>`_.
 
-The most interactive one is on `Matrix/Libera.Chat IRC` where many Ansible projects and working groups have dedicated `channels <https://docs.ansible.com/ansible/latest/community/communication.html#general-channels>`_.
+The most interactive one is on `Matrix/Libera.Chat IRC` where many Ansible projects and working groups have dedicated `channels <https://docs.ansible.com/ansible/devel/community/communication.html#general-channels>`_.
 
 Community Meetings
 ------------------
 
-The important `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_ meetings impacting the whole project which you can join are:
+The important `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ meetings impacting the whole project which you can join are:
 
 - Ansible Community meeting in the ``#ansible-community`` channel.
 - Ansible Core meeting in the ``#ansible-meeting`` channel.
@@ -133,7 +133,7 @@ See the `meeting schedule <https://github.com/ansible/community/blob/main/meetin
 The Bullhorn newsletter
 -----------------------
 
-Subscribe to `The Bullhorn newsletter <https://docs.ansible.com/ansible/devel/community/communication.html#the-bullhorn>`_ which is released biweekly and contains brief news important for the Ansible developer community.
+Subscribe to `The Bullhorn newsletter <https://docs.ansible.com/ansible/devel/community/communication.html#the-bullhorn>`_ which is released weekly and contains brief news important for the Ansible developer community.
 
 Contributor summit
 ------------------
@@ -143,7 +143,7 @@ Take part and meet other contributors in the global quarterly `Ansible Contribut
 Teach others
 ============
 
-Share your experience with other contributors through `improving documentation <https://docs.ansible.com/ansible/latest/community/documentation_contributions.html>`_ on the doc site and in repositories, answering question from them on `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_, giving advice in issues and pull requests, and discussing the `Community Topics <https://github.com/ansible-community/community-topics>`_.
+Share your experience with other contributors through `improving documentation <https://docs.ansible.com/ansible/latest/community/documentation_contributions.html>`_ on the doc site and in repositories, answering question from them on `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_, giving advice in issues and pull requests, and discussing the `Community Topics <https://github.com/ansible-community/community-topics>`_.
 
 Become a maintainer
 ===================
@@ -210,11 +210,11 @@ For more information about the Committee, its mission, responsibilities, members
 To reach the status, as the current Committee members did before getting it, along with the things mentioned in this document before:
 
 - Subscribe to and track the `Community Topics <https://github.com/ansible-community/community-topics/issues>`_.
-- Try to think out and give a good judgement on the topics in comments.
+- Try to think out and give a good judgment on the topics in comments.
 - Vote on the topics. Even if only Committee members votes are counted to make final decisions, your voice is very important and appreciated for the Committee.
 - Feel free to propose your topics.
-- Regular attendence in the `Community meetings <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_ would be a plus (though it is **NOT** a requirement).
+- Regular presence at the `Community meetings <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_ would be a plus (though it is **NOT** a requirement).
 
-Good judgement and regularity is all that you need.
+Good judgment and regularity is all that you need.
 
-If you have any questions, feel free to reach out to the current members directly in the ``ansible-community`` `Libera.Chat IRC channel <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`_.
+If you have any questions, feel free to reach out to the current members directly in the ``ansible-community`` `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ channel.

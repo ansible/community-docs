@@ -2,7 +2,7 @@
 Releasing collections without Release Branches
 **********************************************
 
-If you have any question when reading this manual, ask the community in the ``#ansible-community`` `Matrix/IRC channel <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_ or create an issue in the `community-docs <https://github.com/ansible/community-docs>`_ repository.
+If you have any question when reading this manual, ask the community in the ``#ansible-community`` `Matrix/IRC channel <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ or create an issue in the `community-docs <https://github.com/ansible/community-docs>`_ repository.
 
 This manual assumes that publishing the collection is done via `Zuul <https://github.com/ansible/project-config>`_ and that `antsibull-changelog <https://github.com/ansible-community/antsibull-changelog>`_ is used for the changelog.
 
@@ -12,7 +12,7 @@ Since no release branches are used, the manual does not distinguish between rele
 
 2. According to the changes made, choose an appropriate release version number. Keep in mind that the collections must follow the `semantic versioning <https://semver.org/>`_ rules. Refer to the `Releasing collections <releasing_collections.rst>`_ guide for details.
 
-3. Announce your intention to release the collection in a corresponding pinned release issue/community pinboard of the collection and in the ``#ansible-community`` `Matrix/Libera.Chat IRC channel <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_.
+3. Announce your intention to release the collection in a corresponding pinned release issue/community pinboard of the collection and in the ``#ansible-community`` `Matrix/Libera.Chat IRC channel <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_.
 
 4. If there are new modules / plugins that will be released and you have a list of modules / plugins in ``README.md``, update ``README.md`` adding them to the list so that they will appear on the collection's Galaxy page after the release.
 
@@ -94,4 +94,4 @@ For example:
 
 20. Announce the release through the `Bullhorn Newsletter issue <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
 
-21. Announce the release in the pinned release issue/community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` `Matrix/IRC channel <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_.
+21. Announce the release in the pinned release issue/community pinboard of the collection mentioned in step 3 and in the ``#ansible-community`` `Matrix/IRC channel <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_.

@@ -58,7 +58,7 @@ Maintainers act in accordance with `Ansible Code of Conduct <https://docs.ansibl
 Maintainers (including candidates) have:
 
 - History of multiple contributions to a collection.
-- Excellent technical judgement in collection-related areas.
+- Excellent technical judgment in collection-related areas.
 - Responsiveness to mentions in issues and pull requests.
 - Responsiveness to issues and pull requests assigned to them.
 - Read these guidelines and the linked documents.
@@ -101,7 +101,7 @@ Collection contributors and maintainers communicate through:
 
   + use the `subscription page <http://eepurl.com/gZmiEP>`_ to subscribe to the newsletter
   + if you have something important to announce through the newsletter (for example, releases made recently), see the `Bullhorn's wiki page <https://github.com/ansible/community/wiki/News#the-bullhorn>`_ to learn how
-* `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_ channels such as ``#ansible-community``, ``#ansible-devel``, and dedicated ones
+* `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ channels such as ``#ansible-community``, ``#ansible-devel``, and dedicated ones
 * mailing lists such as `ansible-announce <https://groups.google.com/d/forum/ansible-announce>`_ and `ansible-devel <https://groups.google.com/d/forum/ansible-devel>`_
 * collection pinboards, issues, and GitHub discussions in corresponding repositories
 * quarterly Contributor Summits
@@ -128,14 +128,14 @@ To make the community more robust, keep tracking the `Bullhorn newsletter <https
 Weekly community Matrix/IRC meetings
 ------------------------------------
 
-The Community and the Steering Committee come together at weekly meetings in the ``#ansible-community`` `Matrix/Libera.Chat <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_ channel to discuss important project-scale questions. See the `schedule <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_ and join.
+The Community and the Steering Committee come together at weekly meetings in the ``#ansible-community`` `Matrix/Libera.Chat <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ channel to discuss important project-scale questions. See the `schedule <https://github.com/ansible/community/blob/main/meetings/README.md#schedule>`_ and join.
 
 .. _Committing:
 
 Committing
 ==========
 
-Maintainers review and merge pull requests following the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_, `Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html#general-rules>`_.
+Maintainers review and merge pull requests following the `Ansible Code of Conduct <https://docs.ansible.com/ansible/devel/community/code_of_conduct.html>`_, `Review checklist <review_checklist.rst>`_, and the `Committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html#general-rules>`_.
 
 There can be two kinds of maintainers: :ref:`collection maintainers<Collection maintainers>` and :ref:`module maintainers<Module maintainers>`.
 
@@ -321,7 +321,7 @@ Maintainers should not step down silently. This is especially important when the
 If you feel you don't have time to maintain your collection any more or for a long period of time, to prevent negative consequences for the collection and its community:
 
 - Inform other maintainers about it.
-- If the collection is under the ``ansible-collections`` organization, also inform the community team in the ``#ansible-community`` `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_ channel or by email ``ansible-community@redhat.com``.
+- If the collection is under the ``ansible-collections`` organization, also inform the community team in the ``#ansible-community`` `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_ channel or by email ``ansible-community@redhat.com``.
 - Look at active contributors in the collection to find new maintainers among them. Discuss the potential candidates with other maintainers or with the community team.
 - If you failed to find a replacement, create a pinned issue in the collection which announces that the collection needs new maintainers.
 - Make the same announcement through the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
