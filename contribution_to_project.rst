@@ -31,7 +31,7 @@ Contribution to software itself (its codebase) includes:
 
 - `Proposing new features <https://docs.ansible.com/ansible/latest/community/reporting_bugs_and_features.html#requesting-a-feature>`_.
 - `Reporting bugs <https://docs.ansible.com/ansible/latest/community/reporting_bugs_and_features.html#reporting-a-bug>`_.
-- Participating in design and implementation of new components in dedicated issues, pull requests, GitHub discussions, and `IRC channels <https://docs.ansible.com/ansible/devel/community/communication.html#irc-channels>`_.
+- Participating in design and implementation of new components in dedicated issues, pull requests, GitHub discussions, and `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_ channels.
 - Fixing bugs.
 - Reviewing code.
 - Refactoring code.
@@ -70,10 +70,10 @@ Examples:
 
 .. _Contributing-to-community:
 
-Contributing to the community
+Contributing to the Community
 -----------------------------
 
-In a narrow sense, contribution to a community includes:
+In a narrow sense, contribution to a Community includes:
 
 - Promoting the project among people.
 - Thinking of and `proposing ideas <https://github.com/ansible-community/community-topics/>`_ about how community processes can be improved.
@@ -90,9 +90,10 @@ In a broader sense, contribution to a community includes the activities mentione
 Examples:
 
 - If you write a guide which significantly reduces a threshold of the first patch, it can lead to increase of a number of code contributors, which is definitely a contribution to the community.
-- `Active participation in IRC / mailing lists / other discussions <https://docs.ansible.com/ansible/devel/community/communication.html>`_.
+- Active participation in `Matrix/Libera.Chat IRC <https://docs.ansible.com/ansible/latest/community/communication.html#real-time-chat>`_, mailing lists, or other discussions. See the `Communication guide <https://docs.ansible.com/ansible/devel/community/communication.html>`_ for details.
 - Leading a blog or a website dedicated to the project.
-- `Proposing and discussing ideas in the community meetings <https://github.com/ansible-community/community-topics/>`_, voting on proposals.
+- Discussing and voting on the `Community Topics <https://github.com/ansible-community/community-topics/>`_.
+- Taking part in the Community Working Group meetings (see the `schedule <https://github.com/ansible/community/blob/main/meetings/README.md#wednesdays>`_).
 
 .. _Other-kinds-of-contributions:
 
