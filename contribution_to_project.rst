@@ -72,10 +72,10 @@ Examples:
 
 .. _Contributing-to-community:
 
-Contributing to the Community
+Contributing to the community
 -----------------------------
 
-In a narrow sense, contribution to a Community includes:
+In a narrow sense, contribution to a community includes:
 
 - Promoting the project among people.
 - Thinking of and `proposing ideas <https://github.com/ansible-community/community-topics/>`_ about how community processes can be improved.
