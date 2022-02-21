@@ -2,15 +2,17 @@
 Contributing to a codebase
 **************************
 
+.. note::
+
+  You can link to this document from your collection's ``CONTRIBUTING.md`` file instead of writing its content on your own.
+
 We follow the `Ansible Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html>`_ in all our contributions and interactions within the project.
 
-This document explains how to contribute to a codebase. If you are interested to know all ways how you can help the project, refer to the Ansible's `Contribution guidelines <contribution_to_project.rst>`_.
+This document explains how to contribute to a collection's codebase. If you are interested to know all ways how you can help the project, refer to the Ansible's `Contribution guidelines <contribution_to_project.rst>`_.
 
 If you find any inconsistencies or places in this document which can be improved, please raise an issue or pull request to fix it.
 
 If you are a committer, also refer to the `Ansible committer guidelines <https://docs.ansible.com/ansible/devel/community/committer_guidelines.html>`_.
-
-Feel free to link to this document from your ``CONTRIBUTING.md`` file.
 
 Issue tracker
 =============
@@ -54,7 +56,7 @@ When working on your patch, please follow these recommendations:
 
 - Use short, informative commit messages.
 - Do not squash your commits and force-push to your branch if not needed. Reviews of your pull request are much easier with individual commits to comprehend the pull request history. All commits of your pull request branch will be squashed into one commit by GitHub upon merge.
-- Avoid merge commits. Maintainers will not merge pull requests that contain merge commits. To update a stale pull request, `rebase <https://docs.ansible.com/ansible/latest/dev_guide/developing_rebasing.html>`_ it instead of merging. You can prevent git from automatically creating merges during pulls by configuring it to do rebases instead: run ``git config pull.rebase true`` inside the respository checkout.
+- Avoid merge commits. Maintainers will not merge pull requests that contain merge commits. To update a stale pull request, `rebase <https://docs.ansible.com/ansible/latest/dev_guide/developing_rebasing.html>`_ it instead of merging. You can prevent git from automatically creating merges during pulls by configuring it to do rebases instead: run ``git config pull.rebase true`` inside the repository checkout.
 - Make sure your changes all focus on a single topic. If you fix, change, or reformat unrelated parts of the codebase in your pull request, you create additional work for reviewers. Maintainers might ask you to revert unrelated changes, which will delay review and approval of your pull request.
 - Please do not add more than one plugin/module in one pull request. That makes it easier for reviewers and increases the chance that your pull request will get merged.
 

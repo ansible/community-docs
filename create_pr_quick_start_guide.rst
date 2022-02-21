@@ -262,7 +262,7 @@ If the tests passed, commit, and push the changes:
 You will see the CI status in the bottom of your pull request.
 If they are green and you think that you do not want to add more commits before someone should take a closer look at it, remove ``[WIP]`` from the title. Mention the issue reporter in a comment and let contributors know that the pull request is "Ready for review".
 
-24. Wait for reviews. You can also ask for review on IRC in the ``#ansible-community`` channel.
+24. Wait for reviews. You can also ask for review in the ``#ansible-community`` `Matrix/Libera.Chat IRC channel <https://docs.ansible.com/ansible/devel/community/communication.html#real-time-chat>`_.
 
 25. If the pull request looks good to the community, committers will merge it.
 

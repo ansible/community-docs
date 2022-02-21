@@ -77,4 +77,4 @@ Releasing with release branches
 
 Use releasing with release branches when breaking changes have been introduced. This approach is usually only used by the large community collections, ``community.general`` and ``community.network``.
 
-To peform a release this way, refer to the `Releasing with release branches <releasing_collections_with_release_branches.rst>`_ manual.
+To perform a release this way, refer to the `Releasing with release branches <releasing_collections_with_release_branches.rst>`_ manual.
