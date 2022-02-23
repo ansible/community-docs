@@ -135,5 +135,5 @@ The process of the election consist of the following steps:
 
 The chairperson has the following powers unlike regular members:
 
-* The chairperson has a casting vote when vote deadlocks happen in `community topics <https://github.com/ansible-community/community-topics/issues>`_ happen (equal numbers of votes for and against a topic.
+* The chairperson has a casting vote when vote deadlocks in `community topics <https://github.com/ansible-community/community-topics/issues>`_ happen (equal numbers of votes for and against a topic.
 * Has a power of veto - the power to unilaterally reject a decision made by the Committee. In this case, the chairperson must explain their motives in a corresponding `community topic <https://github.com/ansible-community/community-topics/issues>`_.
