@@ -84,7 +84,7 @@ In case of equal numbers of votes for and against a topic, the chairperson's vot
 Collection Inclusion Requests Workflow
 --------------------------------------
 
-When reviewing community collection `inclusion requests <https://github.com/ansible-collections/ansible-inclusion/discussions>`_, the Committee members check if a collection adheres the `Community collection requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_.
+When reviewing community collection `inclusion requests <https://github.com/ansible-collections/ansible-inclusion/discussions>`_, the Committee members check if a collection adheres to the `Community collection requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_.
 
 #. A Committee member who conducts the inclusion review copies the `Ansible community collection checklist <https://github.com/ansible-collections/overview/blob/main/collection_checklist.md>`_ into a corresponding `discussion <https://github.com/ansible-collections/ansible-inclusion/discussions>`_.
 
