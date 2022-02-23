@@ -92,7 +92,7 @@ When reviewing community collection `inclusion requests <https://github.com/ansi
 
 #. For a collection to be included in the Ansible community package, the collection must be reviewed and approved by, at least, two Committee members.
 
-#. After the collection gets two or more Committee member approvals, a Committee member creates a `community topic <https://github.com/ansible-community/community-topics/issues>`_ linked to the corresponding inclusion request. The issue's description says that the collection has been approved by two or more Committee members and establishes a date (a week by default) when the inclusion decision will be considered made. This term can be used to raise the concerns.
+#. After the collection gets two or more Committee member approvals, a Committee member creates a `community topic <https://github.com/ansible-community/community-topics/issues>`_ linked to the corresponding inclusion request. The issue's description says that the collection has been approved by two or more Committee members and establishes a date (a week by default) when the inclusion decision will be considered made. This time period can be used to raise concerns.
 
 #. If no objections are raised up to the established date, the inclusion request is considered successfully resolved. In this case, a Committee member:
 
