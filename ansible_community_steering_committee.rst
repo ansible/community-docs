@@ -86,19 +86,21 @@ Collection Inclusion Requests Workflow
 
 When reviewing community collection `inclusion requests <https://github.com/ansible-collections/ansible-inclusion/discussions>`_, the Committee members check if a collection adheres the `Community collection requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_.
 
-* A Committee member who conducts the inclusion review copies the `Ansible community collection checklist <https://github.com/ansible-collections/overview/blob/main/collection_checklist.md>`_ into a corresponding `discussion <https://github.com/ansible-collections/ansible-inclusion/discussions>`_ and, in the course of the review, marks items as completed or leaves a comment saying whether the reviewer expects an issue to be addressed or whether it is optional (for example, it could be **MUST FIX:** <what> or **SHOULD FIX:** <what> under an item).
+#. A Committee member who conducts the inclusion review copies the `Ansible community collection checklist <https://github.com/ansible-collections/overview/blob/main/collection_checklist.md>`_ into a corresponding `discussion <https://github.com/ansible-collections/ansible-inclusion/discussions>`_.
 
-* For a collection to be included in the Ansible community package, the collection must be reviewed and approved by, at least, two Committee members.
+#. In the course of the review, the Committee member marks items as completed or leaves a comment saying whether the reviewer expects an issue to be addressed or whether it is optional (for example, it could be **MUST FIX:** <what> or **SHOULD FIX:** <what> under an item).
 
-* After the collection gets two or more Committee member approvals, a Committee member creates a `community topic <https://github.com/ansible-community/community-topics/issues>` linked to the corresponding inclusion request. The issue's description says that the collection has been approved by two or more Committee members and establishes a date (a week by default) when the inclusion decision will be considered made. This term can be used to raise the concerns.
+#. For a collection to be included in the Ansible community package, the collection must be reviewed and approved by, at least, two Committee members.
 
-* If no objections are raised up to the established date, the inclusion request is considered successfully resolved. In this case, a Committee member:
+#. After the collection gets two or more Committee member approvals, a Committee member creates a `community topic <https://github.com/ansible-community/community-topics/issues>`_ linked to the corresponding inclusion request. The issue's description says that the collection has been approved by two or more Committee members and establishes a date (a week by default) when the inclusion decision will be considered made. This term can be used to raise the concerns.
 
-  * Declares the decision in the topic and in the inclusion request.
-  * Moves the request to the ``Resolved reviews`` category.
-  * Adds the collection to the ``ansible.in`` file in a corresponding directory of the `ansible-build-data repository <https://github.com/ansible-community/ansible-build-data>`_.
-  * Announces the inclusion through the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
-  * Closes the topic.
+#. If no objections are raised up to the established date, the inclusion request is considered successfully resolved. In this case, a Committee member:
+
+  #. Declares the decision in the topic and in the inclusion request.
+  #. Moves the request to the ``Resolved reviews`` category.
+  #. Adds the collection to the ``ansible.in`` file in a corresponding directory of the `ansible-build-data repository <https://github.com/ansible-community/ansible-build-data>`_.
+  #. Announces the inclusion through the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
+  #. Closes the topic.
 
 Meetings
 ========
