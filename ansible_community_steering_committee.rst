@@ -75,7 +75,7 @@ Community Topics Workflow
 
 The Committee uses the `Community-topics workflow <https://github.com/ansible-community/community-topics/blob/main/community_topics_workflow.md>`_ to asynchronously discuss and vote on the `community-topics <https://github.com/ansible-community/community-topics/issues>`_.
 
-The quorum, the minimum number of Committee members who must vote on a topic in order for a decision to be officially made, is one-second of the whole number of the Committee members. 
+The quorum, the minimum number of Committee members who must vote on a topic in order for a decision to be officially made, is half of the whole number of the Committee members. 
 
 If the quorum number contains a fractional part, it is rounded using standard rules for rounding whole numbers. For example, if there are thirteen members currently in the committee, the quorum will be seven.
 
