@@ -58,7 +58,7 @@ New Policy/Proposals & Inclusion Requests
   * Community collection best practices and requirements
   * Community collection inclusion policy
   * The Community governance
-  * Other proposals of importance that need the Committee's attention
+  * Other proposals of importance that need the Committee's or overall Ansible community attention
 
 * Changes to the inclusion policy and collection requirements are submitted through a new pull request to the `ansible-collections/overview <https://github.com/ansible-collections/overview>`_ repository and a corresponding issue containing their rationale is created in the `community-topics repository <https://github.com/ansible-community/community-topics/issues>`_ repository.
 
