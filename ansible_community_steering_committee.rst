@@ -77,7 +77,7 @@ The Committee uses the `Community-topics workflow <https://github.com/ansible-co
 
 The quorum, the minimum number of Committee members who must vote on a topic in order for a decision to be officially made, is half of the whole number of the Committee members. 
 
-If the quorum number contains a fractional part, it is rounded using standard rules for rounding whole numbers. For example, if there are thirteen members currently in the committee, the quorum will be seven.
+If the quorum number contains a fractional part, it is rounded up to the next whole number. For example, if there are thirteen members currently in the committee, the quorum will be seven.
 
 In case of equal numbers of votes for and against a topic, the chairperson's vote will be used as a casting vote to resolve the deadlock. For example, if there are six votes for and six votes against a topic, and the chairperson's vote is among those six which are for the topic, the final decision will be positive. If the chairperson has not voted yet, other members ask them to vote.
 
