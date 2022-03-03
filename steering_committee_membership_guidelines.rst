@@ -137,3 +137,5 @@ The chairperson has the following powers unlike regular members:
 
 * The chairperson has a casting vote when vote deadlocks in `community topics <https://github.com/ansible-community/community-topics/issues>`_ happen (equal numbers of votes for and against a topic).
 * Has a power of veto - the power to unilaterally reject a decision made by the Committee. In this case, the chairperson must explain their motives in a corresponding `community topic <https://github.com/ansible-community/community-topics/issues>`_.
+
+  * The veto can be overridden by votes of three-quarters of the current Committee members. If three-quarters contains a fractional part, it is rounded up to the next whole number.
