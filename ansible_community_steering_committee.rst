@@ -79,7 +79,11 @@ The quorum, the minimum number of Committee members who must vote on a topic in 
 
 If the quorum number contains a fractional part, it is rounded up to the next whole number. For example, if there are thirteen members currently in the committee, the quorum will be seven.
 
+Votes must always have "no change" as an option.
+
 In case of equal numbers of votes for and against a topic, the chairperson's vote will be used as a casting vote to resolve the deadlock. For example, if there are six votes for and six votes against a topic, and the chairperson's vote is among those six which are for the topic, the final decision will be positive. If the chairperson has not voted yet, other members ask them to vote.
+
+For votes with more than two options, one choice must have at least half of the votes. If two choices happen to both have half of the votes, the chairperson's vote will be used as a casting vote. If no choice has at least half of the votes, the vote choices have to be adjusted so that a majority can be found for a choice in a new vote.
 
 Collection Inclusion Requests Workflow
 --------------------------------------
