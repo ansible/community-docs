@@ -30,18 +30,17 @@ Members
 
 *Key: Full name (IRC/Matrix Nickname)*
 
-1. Felix Fontein (``felixfontein``)
-2. Tadej Borovšak (``tadeboro``)
-3. James Cassell (``cyberpear``)
-4. John Barker (``gundalow``)
-5. Andrew Klychkov (``andersson007_``)
-6. Alicia Cozine (``acozine``)
-7. Sorin Sbarnea (``zbr``)
-8. Jill Rouleau (``jillr``)
-9. Brad Thornton (``cidrblock``)
-10. Dylan Silva (``thaumos``)
-11. Brian Scholer (``briantist``)
-12. Markus Bergholz (``markuman``)
+#. Felix Fontein (``felixfontein``)
+#. James Cassell (``cyberpear``)
+#. John Barker (``gundalow``)
+#. Andrew Klychkov (``andersson007_``)
+#. Alicia Cozine (``acozine``)
+#. Sorin Sbarnea (``zbr``)
+#. Jill Rouleau (``jillr``)
+#. Brad Thornton (``cidrblock``)
+#. Dylan Silva (``thaumos``)
+#. Brian Scholer (``briantist``)
+#. Markus Bergholz (``markuman``)
 
 Committee members are selected based on their active contribution to the Ansible Project and its Community.
 
