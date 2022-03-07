@@ -42,6 +42,8 @@ Members
 #. Brian Scholer (``briantist``)
 #. Markus Bergholz (``markuman``)
 
+See also the `list of past Committee members and chairpersons <https://github.com/ansible/community-docs/blob/main/steering_committee_past_members.rst>`_.
+
 Committee members are selected based on their active contribution to the Ansible Project and its Community.
 
 See the `Steering Committee Membership Guidelines <https://github.com/ansible/community-docs/blob/main/steering_committee_membership_guidelines.rst>`_ to learn details.
