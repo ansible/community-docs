@@ -28,19 +28,31 @@ The committee
 Members
 =======
 
-*Key: Full name (IRC/Matrix Nickname)*
-
-#. Felix Fontein (``felixfontein``)
-#. James Cassell (``cyberpear``)
-#. John Barker (``gundalow``)
-#. Andrew Klychkov (``andersson007_``)
-#. Alicia Cozine (``acozine``)
-#. Sorin Sbarnea (``zbr``)
-#. Jill Rouleau (``jillr``)
-#. Brad Thornton (``cidrblock``)
-#. Dylan Silva (``thaumos``)
-#. Brian Scholer (``briantist``)
-#. Markus Bergholz (``markuman``)
++-----+------------------+---------------+-------------+
+|     | Name             | GitHub        | Start year  |
++=====+==================+===============+=============+
+| 1   | Alicia Cozine    | acozine       | 2021        |
++-----+------------------+---------------+-------------+
+| 2   | Andrew Klychkov  | Andersson007  | 2021        |
++-----+------------------+---------------+-------------+
+| 3   | Brad Thornton    | cidrblock     | 2021        |
++-----+------------------+---------------+-------------+
+| 4   | Brian Scholer    | briantist     | 2022        |
++-----+------------------+---------------+-------------+
+| 5   | Dylan Silva      | thaumos       | 2021        |
++-----+------------------+---------------+-------------+
+| 6   | Felix Fontein    | felixfontein  | 2021        |
++-----+------------------+---------------+-------------+
+| 7   | James Cassell    | jamescassell  | 2021        |
++-----+------------------+---------------+-------------+
+| 8   | Jill Rouleau     | jillr         | 2021        |
++-----+------------------+---------------+-------------+
+| 9   | John Barker      | gundalow      | 2021        |
++-----+------------------+---------------+-------------+
+| 10  | Markus Bergholz  | markuman      | 2022        |
++-----+------------------+---------------+-------------+
+| 11  | Sorin Sbarnea    | ssbarnea      | 2021        |
++-----+------------------+---------------+-------------+
 
 See also the `list of past Committee members and chairpersons <https://github.com/ansible/community-docs/blob/main/steering_committee_past_members.rst>`_.
 
