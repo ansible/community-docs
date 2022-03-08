@@ -28,19 +28,31 @@ The committee
 Members
 =======
 
-*Key: Full name (IRC/Matrix Nickname)*
-
-#. Felix Fontein (``felixfontein``)
-#. James Cassell (``cyberpear``)
-#. John Barker (``gundalow``)
-#. Andrew Klychkov (``andersson007_``)
-#. Alicia Cozine (``acozine``)
-#. Sorin Sbarnea (``zbr``)
-#. Jill Rouleau (``jillr``)
-#. Brad Thornton (``cidrblock``)
-#. Dylan Silva (``thaumos``)
-#. Brian Scholer (``briantist``)
-#. Markus Bergholz (``markuman``)
++------------------+---------------+-------------+
+| Name             | GitHub        | Start year  |
++==================+===============+=============+
+| Alicia Cozine    | acozine       | 2021        |
++------------------+---------------+-------------+
+| Andrew Klychkov  | Andersson007  | 2021        |
++------------------+---------------+-------------+
+| Brad Thornton    | cidrblock     | 2021        |
++------------------+---------------+-------------+
+| Brian Scholer    | briantist     | 2022        |
++------------------+---------------+-------------+
+| Dylan Silva      | thaumos       | 2021        |
++------------------+---------------+-------------+
+| Felix Fontein    | felixfontein  | 2021        |
++------------------+---------------+-------------+
+| James Cassell    | jamescassell  | 2021        |
++------------------+---------------+-------------+
+| Jill Rouleau     | jillr         | 2021        |
++------------------+---------------+-------------+
+| John Barker      | gundalow      | 2021        |
++------------------+---------------+-------------+
+| Markus Bergholz  | markuman      | 2022        |
++------------------+---------------+-------------+
+| Sorin Sbarnea    | ssbarnea      | 2021        |
++------------------+---------------+-------------+
 
 See also the `list of past Committee members and chairpersons <https://github.com/ansible/community-docs/blob/main/steering_committee_past_members.rst>`_.
 
