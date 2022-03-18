@@ -135,4 +135,4 @@ The process of the election consist of the following steps:
 
 The chairperson has the following powers unlike regular members:
 
-* The chairperson has a casting vote when vote deadlocks in `community topics <https://github.com/ansible-community/community-topics/issues>`_ happen (equal numbers of votes for and against a topic).
+* The chairperson's vote breaks ties to resolve deadlocks when equal numbers of steering committee members vote for and against a `community topic <https://github.com/ansible-community/community-topics/issues>`_.
