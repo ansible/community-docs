@@ -71,7 +71,7 @@ New Policy/Proposals & Inclusion Requests
   * Community collection best practices and requirements
   * Community collection inclusion policy
   * The Community governance
-  * Other proposals of importance that need the Committee's attention
+  * Other proposals of importance that need the Committee's or overall Ansible community attention
 
 * Changes to the inclusion policy and collection requirements are submitted through a new pull request to the `ansible-collections/overview <https://github.com/ansible-collections/overview>`_ repository and a corresponding issue containing their rationale is created in the `community-topics repository <https://github.com/ansible-community/community-topics/issues>`_ repository.
 
@@ -82,6 +82,40 @@ Depending on a topic you want to discuss with the Community and the Committee, a
 * `Ansible Community Code of Conduct <https://docs.ansible.com/ansible/latest/community/code_of_conduct.html#code-of-conduct>`_.
 * `Ansible Collection Requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_.
 * `Ansible Collection Inclusion Checklist <https://github.com/ansible-collections/overview/blob/main/collection_checklist.md>`_.
+
+Community Topics Workflow
+-------------------------
+
+The Committee uses the `Community-topics workflow <https://github.com/ansible-community/community-topics/blob/main/community_topics_workflow.md>`_ to asynchronously discuss and vote on the `community-topics <https://github.com/ansible-community/community-topics/issues>`_.
+
+The quorum, the minimum number of Committee members who must vote on a topic in order for a decision to be officially made, is half of the whole number of the Committee members. If the quorum number contains a fractional part, it is rounded up to the next whole number. For example, if there are thirteen members currently in the committee, the quorum will be seven.
+
+Votes must always have "no change" as an option.
+
+In case of equal numbers of votes for and against a topic, the chairperson's vote will break the tie. For example, if there are six votes for and six votes against a topic, and the chairperson's vote is among those six which are for the topic, the final decision will be positive. If the chairperson has not voted yet, other members ask them to vote.
+
+For votes with more than two options, one choice must have at least half of the votes. If two choices happen to both have half of the votes, the chairperson's vote will break the tie. If no choice has at least half of the votes, the vote choices have to be adjusted so that a majority can be found for a choice in a new vote.
+
+Collection Inclusion Requests Workflow
+--------------------------------------
+
+When reviewing community collection `inclusion requests <https://github.com/ansible-collections/ansible-inclusion/discussions>`_, the Committee members check if a collection adheres to the `Community collection requirements <https://github.com/ansible-collections/overview/blob/main/collection_requirements.rst>`_.
+
+#. A Committee member who conducts the inclusion review copies the `Ansible community collection checklist <https://github.com/ansible-collections/overview/blob/main/collection_checklist.md>`_ into a corresponding `discussion <https://github.com/ansible-collections/ansible-inclusion/discussions>`_.
+
+#. In the course of the review, the Committee member marks items as completed or leaves a comment saying whether the reviewer expects an issue to be addressed or whether it is optional (for example, it could be **MUST FIX:** <what> or **SHOULD FIX:** <what> under an item).
+
+#. For a collection to be included in the Ansible community package, the collection must be reviewed and approved by, at least, two Committee members.
+
+#. After the collection gets two or more Committee member approvals, a Committee member creates a `community topic <https://github.com/ansible-community/community-topics/issues>`_ linked to the corresponding inclusion request. The issue's description says that the collection has been approved by two or more Committee members and establishes a date (a week by default) when the inclusion decision will be considered made. This time period can be used to raise concerns.
+
+#. If no objections are raised up to the established date, the inclusion request is considered successfully resolved. In this case, a Committee member:
+
+  #. Declares the decision in the topic and in the inclusion request.
+  #. Moves the request to the ``Resolved reviews`` category.
+  #. Adds the collection to the ``ansible.in`` file in a corresponding directory of the `ansible-build-data repository <https://github.com/ansible-community/ansible-build-data>`_.
+  #. Announces the inclusion through the `Bullhorn newsletter <https://github.com/ansible/community/wiki/News#the-bullhorn>`_.
+  #. Closes the topic.
 
 Meetings
 ========

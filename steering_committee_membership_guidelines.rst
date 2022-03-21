@@ -130,3 +130,7 @@ The process of the election consist of the following steps:
    person responsible for arranging the election about that.
 #. Conduct anonymous voting somewhere.
 #. Internally and publicly announce the elected candidate.
+
+The chairperson has the following powers unlike regular members:
+
+* The chairperson's vote breaks ties to resolve deadlocks when equal numbers of steering committee members vote for and against a `community topic <https://github.com/ansible-community/community-topics/issues>`_.
