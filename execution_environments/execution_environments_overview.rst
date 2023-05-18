@@ -39,12 +39,13 @@ At present, there are more than a hundred collections included in the Ansible pa
 hundreds more are available on Ansible Galaxy and Automation Hub for manual installation.
 Many of them have dependencies.
 
-The collections can depend on:
+The Ansible collections can depend on the following pieces of software and their versions:
 
-* Python versions
+* ansible-core 
+* Python
 * Python packages
 * system packages
-* other collections
+* other Ansible collections
 
 The dependencies have to be installed and sometimes can conflict with each other.
 
