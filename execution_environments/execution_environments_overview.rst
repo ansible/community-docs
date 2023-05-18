@@ -12,13 +12,15 @@ Terminology
 
 (TDB)
 
-#Containerization-related applicable things (very briefly, minimum required)
-
 #Ansible control node
 
 #ansible-core
 
 #ansible-collections
+
+#Ansible package
+
+#Containerization-related applicable things (very briefly, minimum required)
 
 Rationale
 =========
