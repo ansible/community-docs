@@ -10,27 +10,31 @@ Ansible Execution Environments Overview
 Terminology
 ===========
 
-(TDB)
+Notions used in this document:
 
-#Ansible control node
+* **ansible-core**: you install it using ``pip install ansible-core``; includes command-line tools such as ``ansible-playbook`` and ``ansible-galaxy``, the Ansible language and a set of `builtin modules and plugins <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html>`_.
+* **ansible-collections**: a format in which Ansible content is distributed that can contain playbooks, roles, modules and plugins.
+* **Ansible package**: you install it using ``pip install ansible`` or an OS distribution package manager; it includes ansible-core plus a set of collections.
+* **Ansible control node**: the machine from which you run the Ansible.
+* **Containerization**: it's what you typically use ``podman`` or ``docker`` for.
 
-#ansible-core
+.. _ee_rationale:
 
-#ansible-collections
+Why Execution Environments were introduced
+==========================================
 
-#Ansible package
+The Ansible automation execution environments were introduced to resolve the following issues
+and provide all benefits you can get from using containerization.
 
-#Containerization-related applicable things (very briefly, minimum required)
-
-Rationale
-=========
+Dependencies
+------------
 
 Software applications typically have dependencies.
 It can be software libraries, configuration files or other services, to name a few, and Ansible,
-generally being an exceptional automation tool, is not an exception in terms of the mentioned.
+being an exceptional automation tool, is not an exception in terms of the mentioned.
 
-Traditionally, application dependencies are installed by administrator on top of
-an operating system using packaging systems like RPM or Python-pip.
+Traditionally, application dependencies are installed by administrators on top of
+an operating system using packaging management tools like RPM or Python-pip.
 
 The major drawback of such approach is that an application might require versions
 of dependencies different from those provided by default.
@@ -51,44 +55,51 @@ The Ansible collections can depend on the following pieces of software and their
 
 The dependencies have to be installed and sometimes can conflict with each other.
 
-Moreover, typically an administrator doesn't really need the whole Ansible package
-with those hundred collections.
-In most cases, and it's considered a good practice, we need to install only ``ansible-core``
-plus a set of collections for specific tasks if needed, no more.
-
-For example, if you are a database administrator having only PostgreSQL RDBMS instances in your infrastructure,
-you are probably interested in only ``ansible-core``, the ``community.postgresql`` Ansible collection
-and a database driver (if you want to connect to servers from the control node) because
-it's all what your actually need, nothing more.
-
-Meanwhile, your colleagues responsible for other services and using the same Ansible control node or
-tools like Ansible AWX/Controller can be interested in other collections
-which can bring their own dependencies into play.
-Moreover, if you want, say, to preserve, redeploy or share your Ansible controller runtime environment,
-you might not be interested in having someone else's content there you don't need.
-
-One way to **partly** resolve dependency and deploy issues is
+One way to **partly** resolve dependency issue is
 to use Python virtual environments on Ansible controle node.
 However, applied to Ansible, it has drawbacks and natural limitations.
 
-That's why Ansible automation execution environments were introduced
-to resolve all the mentioned issues and provide all benefits you can get from using containerization.
+Content separation
+------------------
 
-Section 2
-=========
+Typically users don't really need the whole Ansible package with that hundred collections.
+In most cases, and it's considered a good practice, you need to install only ``ansible-core``
+plus a set of collections for specific tasks, nothing more.
 
-As described in the <SECTION ABOVE LINK HERE>, Python virtual environments have need replaced with Ansible execution environments.
+Let's say, there's an Ansible control node or a tool like Ansible AWX/Controller used by several users.
 
-Ansible, as a software application, can run in a container, thus, it can benefit from containerization the same as most other applications (see the <SECTION ABOVE LINK HERE> for Ansible-specific details).
+Each user works with a limited set of services and wants to use only ``ansible-core``
+and a corresponding set of Ansible collections automating those services.
+
+Each user is not interested in having someone else's content the users don't need including dependencies
+which can potentially brake their pipelines.
+They might also want to preserve their installation clean from unnecessary packages
+and files belonging their colleagues.
+
+Simply put, users might want their content be separated.
+
+Portability
+-----------
+
+An Ansible user writes content for Ansible locally and wants to leverage the container technology to make your automation runtimes portable, shareable and easily deployable to testing and production environments.
+
+
+What is Execution Environment
+=============================
+
+Ansible, as a software application, can run in a container, thus, it can benefit from containerization the same as most other applications.
 
 The Ansible automation execution environment (hereinafter, execution environment or EE) is a container image serving as Ansible control node.
 
 The EE image contains:
 
 * ansible-core
-* one of more Ansible collections
+* none or more Ansible collections
 * Python
-* set of dependencies required to run the collections
+* dependencies
+* custom user needs
+
+#Tools EEs can be used with
 
 (To go on)
 
