@@ -15,7 +15,8 @@ Notions used in this document:
 * **ansible-core**: you install it using ``pip install ansible-core``; includes command-line tools such as ``ansible-playbook`` and ``ansible-galaxy``, the Ansible language and a set of `builtin modules and plugins <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html>`_.
 * **Ansible collections**: a format in which Ansible content is distributed that can contain playbooks, roles, modules and plugins.
 * **Ansible package**: you install it using ``pip install ansible`` or an OS distribution package manager; it provides ansible-core and a big set of Ansible collections in the *batteries included* manner.
-* **Ansible control node**: the machine from which you run the Ansible.
+* **Ansible**: in the context of this document, is the Ansible package or ansible-core plus a set of collections installed on the Ansible control node.
+* **Ansible control node**: the machine from which you run Ansible.
 * **Containerization**: it's what you typically use ``podman`` or ``docker`` for.
 
 .. _ee_rationale:
