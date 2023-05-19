@@ -102,6 +102,8 @@ The EE image contains:
 
 #Tools EEs can be used with
 
+#How to install everything you need?
+
 (To go on)
 
 
