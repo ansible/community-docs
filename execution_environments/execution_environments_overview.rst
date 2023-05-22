@@ -100,19 +100,36 @@ The EE image contains:
 * dependencies
 * custom user needs
 
-#Tools EEs can be used with
+Tools you can use EEs with
+-------------------------
 
-#How to install everything you need?
+You can use EEs with:
 
-(To go on)
+* ansible-runner
+* Ansible AWX
+* Automation controller
+* ansible-navigator
+
+What you need to build and test EEs
+-----------------------------------
+
+Use Python-pip to install the following packages:
+
+* ansible-builder: to build EEs
+* ansible-runner: to test EEs
+
+.. code-block:: bash
+
+  pip install ansible-builder ansible-runner
 
 
-Section 2
-=========
+What to read next
+=================
 
-TBD
+TODO: paste links to docs when written
 
-Section N
-=========
+To read next:
 
-TBD
+* `How to build and test EE <ADD LINK WHEN WRITTEN>`_ guide
+* `Ansible Builder overview <ADD LINK WHEN WRITTEN>`_
+* `Ansible Runner EE-specific overview <ADD LINK WHEN WRITTEN>`_
