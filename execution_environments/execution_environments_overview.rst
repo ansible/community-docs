@@ -110,13 +110,23 @@ You can use EEs with:
 * Automation controller
 * ansible-navigator
 
+.. _
+
 What you need to build and test EEs
 -----------------------------------
 
-Use Python-pip to install the following packages:
+Install the following packages:
 
+* podman or docker
+* python-pip: to install the tools
 * ansible-builder: to build EEs
-* ansible-runner: to test EEs
+* ansible-runner: to run EEs
+
+On distributions using DNF as a package manager:
+
+.. code-block:: bash
+
+  dnf install -y podman python3-pip
 
 .. code-block:: bash
 
