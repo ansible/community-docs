@@ -110,10 +110,10 @@ You can use EEs with:
 * Automation controller
 * ansible-navigator
 
-.. _
+.. _how_to_prepare_environment:
 
-What you need to build and test EEs
------------------------------------
+How to prepare you environment to build and test EEs
+====================================================
 
 Install the following packages:
 
