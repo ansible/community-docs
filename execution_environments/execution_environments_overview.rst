@@ -7,6 +7,8 @@ Ansible Execution Environments Overview
 .. contents::
    :local:
 
+.. _terminology:
+
 Terminology
 ===========
 
@@ -84,7 +86,6 @@ Portability
 
 An Ansible user writes content for Ansible locally and wants to leverage the container technology
 to make your automation runtimes portable, shareable and easily deployable to testing and production environments.
-
 
 What is Execution Environment
 =============================
