@@ -42,7 +42,7 @@ In this how-to, you want the ``psycopg2-binary`` package:
 
   psycopg2-binary
 
-4. Create the ``execution_environment.yml`` definition file that specifies which content you want to include.
+4. Create the ``execution-environment.yml`` definition file that specifies which content you want to include.
 List the files with you created at previous steps:
 
 .. code-block:: yaml
@@ -80,7 +80,7 @@ in the :ref:`Running your EE in command line<run_firt_ee>` section.
 
   localhost/postgresql_ee          latest      2e866777269b  6 minutes ago  1.11 GB
 
-8. Inspect the ``Containerfile`` file in the ``demo`` directory to see the EE container image configuration.
+8. Inspect the ``Containerfile`` file (``Dockerfile`` if you use docker) in the ``demo`` directory to see the EE container image configuration.
 
 The created image which can be used as an :ref:`Ansible control node<terminology>` now contains:
 
@@ -107,17 +107,19 @@ Here, we will test the EE you created in the :ref:`Building your first EE<build_
 
 You are still in the ``postgresql_ee`` directory.
 
-#If you use docker, add the ``--container-runtime docker`` argument to the command
-
 Create two other directories for our inventories and Ansible content:
 
 .. code-block:: bash
 
   $ mkdir demo/inventory demo/project
 
+If you use ``docker``:
 
-Run against localhost
----------------------
+* add the ``--process-isolation-executable docker`` argument to the ``ansible-runner`` commands below
+* the EE image name used in the commands can differ
+
+Run against the EE itself
+-------------------------
 
 1. Create the ``test_localhost.yml`` playbook file in the ``demo/project`` directory with the following content:
 
@@ -132,7 +134,7 @@ Run against localhost
       ansible.builtin.debug:
         msg: '{{ ansible_facts }}'
 
-2. Run the playbook inside the EE with ``ansible-runner`` (if you use docker, add the ``--container-runtime docker`` argument to the command below):
+2. Run the playbook inside the EE with ``ansible-runner``:
 
 .. code-block:: bash
 
@@ -162,7 +164,7 @@ Run against a remote target
       ansible.builtin.debug:
         msg: '{{ ansible_facts }}'
 
-3. Run the playbook inside the EE with ``ansible-runner`` (if you use docker, add the ``--container-runtime docker`` argument to the command below):
+3. Run the playbook inside the EE with ``ansible-runner``:
 
 .. code-block:: bash
 

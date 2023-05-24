@@ -128,11 +128,11 @@ On distributions using DNF as a package manager:
 
 .. code-block:: bash
 
-  dnf install -y podman python3-pip
+  $ sudo dnf install -y podman python3-pip
 
 .. code-block:: bash
 
-  pip install ansible-builder ansible-runner
+  $ pip install ansible-builder ansible-runner
 
 
 What to read next
