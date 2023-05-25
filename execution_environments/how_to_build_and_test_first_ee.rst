@@ -1,3 +1,5 @@
+.. _how_to_build_and_test_first_ee:
+
 ******************************************************
 How To Build and Test Your First Execution Environment
 ******************************************************
