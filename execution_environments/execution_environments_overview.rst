@@ -114,8 +114,8 @@ You can use EEs with:
 
 .. _how_to_prepare_environment:
 
-How to prepare you environment to build and test EEs
-====================================================
+How to prepare your environment to build and test EEs
+=====================================================
 
 Install the following packages:
 
