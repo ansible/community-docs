@@ -97,9 +97,10 @@ The Ansible automation execution environment (hereinafter, execution environment
 The EE image contains:
 
 * ansible-core
+* ansible-runner
 * none or more Ansible collections
 * Python
-* dependencies
+* Python and system dependencies
 * custom user needs
 
 Tools you can use EEs with

@@ -46,7 +46,7 @@ List the files you created at previous steps:
 .. code-block:: yaml
 
   ---
-  version: 1
+  version: 3    # EE definition format version
 
   dependencies:
     galaxy: requirements.yml
@@ -106,7 +106,7 @@ Create two other directories for our inventories and playbooks:
 
 .. code-block:: bash
 
-  $ mkdir demo/inventory demo/project
+  $ mkdir demo/{inventory,project}
 
 If you use ``docker``:
 
