@@ -46,7 +46,7 @@ List the files you created at previous steps:
 .. code-block:: yaml
 
   ---
-  version: 3    # EE definition format version
+  version: 3
 
   dependencies:
     galaxy: requirements.yml
