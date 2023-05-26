@@ -59,7 +59,7 @@ The Ansible collections can depend on the following pieces of software and their
 The dependencies have to be installed and sometimes can conflict with each other.
 
 One way to **partly** resolve dependency issue is
-to use Python virtual environments on Ansible controle node.
+to use Python virtual environments on Ansible control node.
 However, applied to Ansible, it has drawbacks and natural limitations.
 
 Content separation
