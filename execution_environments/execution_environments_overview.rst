@@ -19,7 +19,7 @@ Notions used in this document:
 * **Ansible package**: you install it using ``pip install ansible`` or an OS distribution package manager; it provides ansible-core and a big set of Ansible collections in the *batteries included* manner.
 * **Ansible**: in the context of this document, is the Ansible package or ``ansible-core`` plus a set of collections installed on the Ansible control node.
 * **Ansible control node**: the machine from which you run Ansible.
-* **Containerization**: it's what you typically use ``podman`` or ``docker`` for.
+* **Container Runtime**: it is what you typically use ``podman`` or ``docker`` for running containers.
 
 .. _ee_rationale:
 
