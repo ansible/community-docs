@@ -26,7 +26,7 @@ Notions used in this document:
 Why Execution Environments were introduced
 ==========================================
 
-The Ansible automation execution environments were introduced to resolve the following issues
+The Ansible Execution Environments were introduced to resolve the following issues
 and provide all benefits you can get from using containerization.
 
 Dependencies
