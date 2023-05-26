@@ -74,7 +74,7 @@ Let's say, there's an Ansible control node or a tool like Ansible AWX/Controller
 Each user works with a limited set of services and wants to use only ``ansible-core``
 and a corresponding set of Ansible collections automating those services.
 
-Each user is not interested in having someone else's content the users don't need including dependencies
+Each user is not interested in having someone else's content the users do not need including dependencies
 which can potentially brake their pipelines.
 They might also want to preserve their installation clean from unnecessary packages
 and files belonging their colleagues.
