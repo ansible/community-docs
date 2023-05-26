@@ -81,6 +81,7 @@ The created image represents an :ref:`Ansible control node<terminology>` which n
 
 * Python
 * ansible-core
+* ansible-runner
 * the community.postgresql collection
 * the psycopg2-binary Python package
 
