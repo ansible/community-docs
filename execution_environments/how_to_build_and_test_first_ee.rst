@@ -31,7 +31,7 @@ Tell it that you want the ``community.postgresql`` collection:
 
   ---
   collections:
-    - name: community.postgresql 
+    - name: community.postgresql
 
 3. Create the ``requirements.txt`` file which will list Python dependencies you want to include.
 In this how-to, you want the ``psycopg2-binary`` package:
