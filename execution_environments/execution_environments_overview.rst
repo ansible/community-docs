@@ -46,7 +46,7 @@ In case of Ansible, a typical installation consists of ansible-core and a set of
 
 At present, there are more than a hundred collections included in the Ansible package and
 hundreds more are available on Ansible Galaxy and Automation Hub for manual installation.
-Many of them have dependencies.
+Many of them have dependencies for their plugins, modules, roles and playbooks they provide.
 
 The Ansible collections can depend on the following pieces of software and their versions:
 
@@ -65,11 +65,11 @@ However, applied to Ansible, it has drawbacks and natural limitations.
 Content separation
 ------------------
 
-Typically users don't really need the whole Ansible package with that hundred collections.
-In most cases, and it's considered a good practice, you need to install only ``ansible-core``
+Typically users do not really need the whole Ansible package with that hundred collections.
+In most cases, and it is considered a good practice, you need to install only ``ansible-core``
 plus a set of collections for specific tasks, nothing more.
 
-Let's say, there's an Ansible control node or a tool like Ansible AWX/Controller used by several users.
+Let's say, there is an Ansible control node or a tool like Ansible AWX/Controller used by several users.
 
 Each user works with a limited set of services and wants to use only ``ansible-core``
 and a corresponding set of Ansible collections automating those services.
