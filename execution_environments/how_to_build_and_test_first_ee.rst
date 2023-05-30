@@ -46,7 +46,7 @@ List the files you created at previous steps:
 .. code-block:: yaml
 
   ---
-  version: 1
+  version: 3
 
   dependencies:
     galaxy: requirements.yml
@@ -92,6 +92,8 @@ Running your EE in command line
 
 Here, we will test the EE you created in the :ref:`Building your first EE<build_first_ee>` section against the localhost and a remote target.
 
+You can now proceed being in your home (or any other arbitrary) directory.
+
 Run against localhost
 ---------------------
 
@@ -106,6 +108,7 @@ Run against localhost
     tasks:
     - name: Print facts
       ansible.builtin.debug:
+        msg: '{{ ansible_facts }}'
 
 2. Run the playbook inside the EE container with ``ansible-navigator``:
 
