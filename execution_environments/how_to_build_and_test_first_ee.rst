@@ -128,7 +128,7 @@ Run against a remote target
   [dbservers]
   192.168.0.4  # Replace with IP of your test target machine
 
-2. Create the ``test_remote.yml`` playbook file in the ``datadir/project`` directory containing:
+2. Create the ``test_remote.yml`` playbook file containing:
 
 .. code-block:: yaml
 
