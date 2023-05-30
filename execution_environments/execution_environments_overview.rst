@@ -108,10 +108,10 @@ Tools you can use EEs with
 
 You can use EEs with:
 
-* ansible-runner
+* ansible-navigator
 * Ansible AWX
 * Automation controller
-* ansible-navigator
+* ansible-runner
 
 .. _how_to_prepare_environment:
 
@@ -123,7 +123,7 @@ Install the following packages:
 * podman or docker
 * python-pip: to install the tools
 * ansible-builder: to build EEs
-* ansible-runner: to run EEs
+* ansible-navigator: to run EEs
 
 On distributions using DNF as a package manager:
 
@@ -133,7 +133,7 @@ On distributions using DNF as a package manager:
 
 .. code-block:: bash
 
-  $ pip install ansible-builder ansible-runner
+  $ pip3 install ansible-builder ansible-navigator
 
 
 What to read next
@@ -145,4 +145,4 @@ To read next:
 
 * `How to build and test EE <ADD LINK WHEN WRITTEN>`_ guide
 * `Ansible Builder overview <ADD LINK WHEN WRITTEN>`_
-* `Ansible Runner EE-specific overview <ADD LINK WHEN WRITTEN>`_
+* `Ansible Navigator EE-specific overview <ADD LINK WHEN WRITTEN>`_

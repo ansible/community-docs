@@ -92,24 +92,10 @@ Running your EE in command line
 
 Here, we will test the EE you created in the :ref:`Building your first EE<build_first_ee>` section against the localhost and a remote target.
 
-You are in your home directory.
-
-Create the following directories for our Ansible content (the location and the top-level directory name can be arbitrary):
-
-.. code-block:: bash
-
-  $ mkdir -p datadir/{inventory,project}
-
-If you use ``docker``:
-
-* add the ``--process-isolation-executable docker`` argument to the ``ansible-runner`` commands below
-* the EE image name used in the commands can differ
-
-
 Run against localhost
 ---------------------
 
-1. Create the ``test_localhost.yml`` playbook file in the ``data/project`` directory with the following content:
+1. Create the ``test_localhost.yml`` playbook file with the following content:
 
 .. code-block:: yaml
 
@@ -120,21 +106,19 @@ Run against localhost
     tasks:
     - name: Print facts
       ansible.builtin.debug:
-        msg: '{{ ansible_facts }}'
 
-2. Run the playbook inside the EE container with ``ansible-runner``:
+2. Run the playbook inside the EE container with ``ansible-navigator``:
 
 .. code-block:: bash
 
-  $ ansible-runner run datadir --playbook test_localhost.yml --container-image localhost/postgresql_ee --process-isolation
+  $ ansible-navigator run test_localhost.yml --execution-environment-image postgresql_ee --mode stdout --pull-policy missing
 
 The run will return facts gathered inside the container.
-
 
 Run against a remote target
 ---------------------------
 
-1. Create the ``hosts`` file under the ``datadir/inventory`` directory containing:
+1. Create the ``hosts`` file containing:
 
 .. code-block:: bash
 
@@ -154,20 +138,18 @@ Run against a remote target
       ansible.builtin.debug:
         msg: '{{ ansible_facts }}'
 
-3. Run the playbook inside the EE container with ``ansible-runner``:
+3. Run the playbook inside the EE container with ``ansible-navigator``:
 
 .. code-block:: bash
 
-  $ ansible-runner run datadir --playbook test_remote.yml --container-image localhost/postgresql_ee --process-isolation --cmdline '--extra-vars "ansible_user=student ansible_password=student ansible_host_key_checking=False ansible_become_password=student"'
+  $ ansible-navigator run test_remote.yml --inventory hosts --execution-environment-image postgresql_ee:latest --mode stdout --pull-policy missing --enable-prompts -u student -k -K
 
 This example assumes that you have the ``student`` user using ``student`` as password
 and having permissions to run commands as a superuser on your target machine.
-The ``--cmdline`` argument might be omitted depending on your actual connection and target system configuration.
 
+More about Ansible Navigator
+----------------------------
 
-More about Ansible Runner
--------------------------
+**TBD: Add a link to the Ansible Navigator overview page when created.**
 
-**TBD: Add a link to the runner's EE-specific overview page when created.**
-
-For more information about Ansible Runner, see the :ref:`Ansible Runner EE-specific overview<ADD_LINK_WHEN_WRITTEN>` document.
+For more information about Ansible Runner, see the :ref:`Ansible Navigator overview<ADD_LINK_WHEN_WRITTEN>` document.
