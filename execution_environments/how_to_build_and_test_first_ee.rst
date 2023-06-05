@@ -52,6 +52,8 @@ List the files you created at previous steps:
     galaxy: requirements.yml
     python: requirements.txt
 
+Read more about the EE definition file format in the `Ansible Builder documentation <https://ansible-builder.readthedocs.io/en/stable/definition/>`_.
+
 5. Build the EE container image called ``postgresql_ee`` (if you use docker, add the ``--container-runtime docker`` argument to the command):
 
 .. code-block:: bash
@@ -78,11 +80,7 @@ The created image represents an :ref:`Ansible control node<terminology>` which n
 
 See the :ref:`Running your EE in command line<run_firt_ee>` section to learn how to test the EE you have just created.
 
-**TBD: Add links referring to overview pages for the files above when created.**
-
-**TBD: Add a link to the builder's overview page when created.**
-
-For more information about Ansible Builder, see the :ref:`Ansible Builder Overview<ADD_LINK_WHEN_WRITTEN>` document.
+For more information about Ansible Builder, see its :ref:`official documentation <https://ansible-builder.readthedocs.io/en/stable/>`_.
 
 
 .. _run_first_ee:

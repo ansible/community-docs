@@ -144,5 +144,5 @@ TODO: paste links to docs when written
 To read next:
 
 * `How to build and test EE <ADD LINK WHEN WRITTEN>`_ guide
-* `Ansible Builder overview <ADD LINK WHEN WRITTEN>`_
+* `Ansible Builder documentation <https://ansible-builder.readthedocs.io/en/stable/>`_
 * `Ansible Navigator EE-specific overview <ADD LINK WHEN WRITTEN>`_
