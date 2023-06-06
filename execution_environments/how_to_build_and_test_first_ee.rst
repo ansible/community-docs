@@ -100,7 +100,7 @@ Run against localhost
 
   $ ansible-navigator run test_localhost.yml --execution-environment-image postgresql_ee --mode stdout --pull-policy missing
 
-The run will return facts gathered inside the container.
+You may notice the facts being gathered are about the container and not the developer machine. This is because the ansible playbook was run inside the container.
 
 Run against a remote target
 ---------------------------
