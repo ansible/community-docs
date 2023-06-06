@@ -109,9 +109,12 @@ Tools you can use EEs with
 You can use EEs with:
 
 * ansible-navigator
-* Ansible AWX
-* Automation controller
+* `Ansible AWX <https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html#use-an-execution-environment-in-jobs>`_
+* `Automation controller <https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html#use-an-execution-environment-in-jobs>`_
 * ansible-runner
+* VS Code `Ansible <https://marketplace.visualstudio.com/items?itemName=redhat.ansible>`_ and `Dev Containers <https://code.visualstudio.com/docs/devcontainers/containers>`_ extensions
+
+TODO: Add links for the items above after we determine their permanent places to live (and move if needed)
 
 .. _how_to_prepare_environment:
 
