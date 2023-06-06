@@ -105,12 +105,14 @@ The run will return facts gathered inside the container.
 Run against a remote target
 ---------------------------
 
-1. Create the ``hosts`` file containing:
+1. Create the ``hosts.yml`` inventory file containing:
 
-.. code-block:: bash
+.. code-block:: yaml
 
-  [dbservers]
-  192.168.0.4  # Replace with IP of your test target machine
+  ---
+  all:
+    hosts:
+      192.168.0.4  # Replace with IP of your test target machine
 
 2. Create the ``test_remote.yml`` playbook file containing:
 
@@ -129,7 +131,7 @@ Run against a remote target
 
 .. code-block:: bash
 
-  $ ansible-navigator run test_remote.yml --inventory hosts --execution-environment-image postgresql_ee:latest --mode stdout --pull-policy missing --enable-prompts -u student -k -K
+  $ ansible-navigator run test_remote.yml --inventory hosts.yml --execution-environment-image postgresql_ee:latest --mode stdout --pull-policy missing --enable-prompts -u student -k -K
 
 This example assumes that you have the ``student`` user using ``student`` as password
 and having permissions to run commands as a superuser on your target machine.
@@ -137,6 +139,6 @@ and having permissions to run commands as a superuser on your target machine.
 More about Ansible Navigator
 ----------------------------
 
-**TBD: Add a link to the Ansible Navigator overview page when created.**
+**TBD: Add a link to the Ansible Navigator overview page when created/updated.**
 
-For more information about Ansible Runner, see the :ref:`Ansible Navigator overview<ADD_LINK_WHEN_WRITTEN>` document.
+For more information about Ansible Runner, see the :ref:`Ansible Navigator overview<ADD_LINK_WHEN_WRITTEN/UPDATED>` document.
