@@ -76,10 +76,19 @@ Running your EE in command line
 
 Here, we will test the EE you created in the :ref:`Building your first EE<build_first_ee>` section against the localhost and a remote target.
 
-You can now proceed being in your home (or any other arbitrary) directory.
+You can now create a project directory in your home (or in any other arbitrary) directory.
+Change your current working directory to be the project directory:
+
+.. code-block:: yaml
+
+  $ mkdir ~/my_project && cd ~/my_project
+
+You can create a custom ``ansible.cfg`` file there if needed.
 
 Run against localhost
 ---------------------
+
+We assume you are in the project directory.
 
 1. Create the ``test_localhost.yml`` playbook file with the following content:
 
@@ -105,7 +114,13 @@ You may notice the facts being gathered are about the container and not the deve
 Run against a remote target
 ---------------------------
 
-1. Create the ``hosts.yml`` inventory file containing:
+1. Being in the project directory, create a directory for inventory files:
+
+.. code-block:: yaml
+
+  $ mkdir inventory
+
+2. Create the ``hosts.yml`` inventory file in the ``inventory`` directory containing:
 
 .. code-block:: yaml
 
@@ -114,12 +129,12 @@ Run against a remote target
     hosts:
       192.168.0.4  # Replace with IP of your test target machine
 
-2. Create the ``test_remote.yml`` playbook file containing:
+3. Create the ``test_remote.yml`` playbook file containing:
 
 .. code-block:: yaml
 
   ---
-  - hosts: dbservers
+  - hosts: all
     become: yes
     gather_facts: yes
     tasks:
@@ -127,11 +142,11 @@ Run against a remote target
       ansible.builtin.debug:
         msg: '{{ ansible_facts }}'
 
-3. Run the playbook inside the EE container with ``ansible-navigator``:
+4. Run the playbook inside the EE container with ``ansible-navigator``:
 
 .. code-block:: bash
 
-  $ ansible-navigator run test_remote.yml --inventory hosts.yml --execution-environment-image postgresql_ee:latest --mode stdout --pull-policy missing --enable-prompts -u student -k -K
+  $ ansible-navigator run test_remote.yml -i inventory --execution-environment-image postgresql_ee:latest --mode stdout --pull-policy missing --enable-prompts -u student -k -K
 
 This example assumes that you have the ``student`` user using ``student`` as password
 and having permissions to run commands as a superuser on your target machine.
