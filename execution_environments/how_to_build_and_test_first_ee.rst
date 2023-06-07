@@ -36,10 +36,15 @@ The collection and the dependency can be replaced with any other package you nee
       collections:
       - name: community.postgresql
 
-Read more about the EE definition file format in the `Ansible Builder documentation <https://ansible-builder.readthedocs.io/en/stable/definition/>`_.
-
 Notice that we do not specify the ``psycopg2-binary`` Python package as a dependency in the definition file
 because ``ansible-buider`` will install it automatically based on  the collection's ``requirements.txt`` file.
+
+.. note::
+
+  If a collection you want to install does not have the ``requirements.txt`` file,
+  you need to add Python dependencies specified in the collection's documentation to your the definition file manually.
+
+Read more about the EE definition file format in the `Ansible Builder documentation <https://ansible-builder.readthedocs.io/en/stable/definition/>`_.
 
 3. Build the EE container image called ``postgresql_ee`` (if you use docker, add the ``--container-runtime docker`` argument to the command):
 
