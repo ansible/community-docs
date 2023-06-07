@@ -14,7 +14,7 @@ Building your first EE
 ======================
 
 We are going to build an EE containing, in addition to standard packages like ansible-core and Python,
-an Ansible collection (``community.postgresql``) and its dependency (the ``psycopg2`` Python connector).
+an Ansible collection (``community.postgresql``) and its dependency (the ``psycopg2-binary`` Python connector).
 
 The collection and the dependency can be replaced with any other package you need.
 
@@ -34,11 +34,12 @@ The collection and the dependency can be replaced with any other package you nee
   dependencies:
     galaxy:
       collections:
-      - community.postgresql
-    python:
-    - psycopg2-binary
+      - name: community.postgresql
 
 Read more about the EE definition file format in the `Ansible Builder documentation <https://ansible-builder.readthedocs.io/en/stable/definition/>`_.
+
+Notice that we do not specify the ``psycopg2-binary`` Python package as a dependency in the definition file
+because ``ansible-buider`` will install it automatically based on  the collection's ``requirements.txt`` file.
 
 3. Build the EE container image called ``postgresql_ee`` (if you use docker, add the ``--container-runtime docker`` argument to the command):
 
@@ -63,6 +64,8 @@ The created image represents an :ref:`Ansible control node<terminology>` which n
 * ansible-runner
 * the community.postgresql collection
 * the psycopg2-binary Python package
+
+Run ``ansible-navigator``, type ``:images`` in the TUI and choose ``postgresql_ee`` to view detailed information about the image.
 
 See the :ref:`Running your EE in command line<run_firt_ee>` section to learn how to test the EE you have just created.
 
