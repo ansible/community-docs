@@ -108,13 +108,11 @@ Tools you can use EEs with
 
 You can use EEs with:
 
-* ansible-navigator
+* `ansible-navigator <https://ansible-navigator.readthedocs.io/>`_
 * `Ansible AWX <https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html#use-an-execution-environment-in-jobs>`_
 * `Automation controller <https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html#use-an-execution-environment-in-jobs>`_
-* ansible-runner
+* `ansible-runner <https://ansible-runner.readthedocs.io/en/stable/>`_
 * VS Code `Ansible <https://marketplace.visualstudio.com/items?itemName=redhat.ansible>`_ and `Dev Containers <https://code.visualstudio.com/docs/devcontainers/containers>`_ extensions
-
-TODO: Add links for the items above after we determine their permanent places to live (and move if needed)
 
 .. _how_to_prepare_environment:
 
@@ -142,10 +140,8 @@ On distributions using DNF as a package manager:
 What to read next
 =================
 
-TODO: paste links to docs when written
-
 To read next:
 
-* `How to build and test EE <ADD LINK WHEN WRITTEN>`_ guide
+* :ref:`How to build and test EE guide<how_to_build_and_test_first_ee>`
 * `Ansible Builder documentation <https://ansible-builder.readthedocs.io/en/stable/>`_
-* `Ansible Navigator EE-specific overview <ADD LINK WHEN WRITTEN>`_
+* TBD

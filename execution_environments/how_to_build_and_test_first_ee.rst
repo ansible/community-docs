@@ -76,7 +76,6 @@ See the :ref:`Running your EE in command line<run_firt_ee>` section to learn how
 
 For more information about Ansible Builder, see its :ref:`official documentation <https://ansible-builder.readthedocs.io/en/stable/>`_.
 
-
 .. _run_first_ee:
 
 Running your EE in command line
@@ -162,6 +161,4 @@ and having permissions to run commands as a superuser on your target machine.
 More about Ansible Navigator
 ----------------------------
 
-**TBD: Add a link to the Ansible Navigator overview page when created/updated.**
-
-For more information about Ansible Runner, see the :ref:`Ansible Navigator overview<ADD_LINK_WHEN_WRITTEN/UPDATED>` document.
+For more information about Ansible Navigator, see its `official documentation<https://ansible-navigator.readthedocs.io/>`_.
