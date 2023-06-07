@@ -125,8 +125,8 @@ Install the following packages:
 
 * podman or docker
 * python-pip: to install the tools
-* ansible-builder: to build EEs
 * ansible-navigator: to run EEs
+* ansible-builder: to build EEs (will be installed by ansible-navigator)
 
 On distributions using DNF as a package manager:
 
@@ -136,7 +136,7 @@ On distributions using DNF as a package manager:
 
 .. code-block:: bash
 
-  $ pip3 install ansible-builder ansible-navigator
+  $ pip3 install ansible-navigator
 
 
 What to read next
