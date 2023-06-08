@@ -20,6 +20,7 @@ Notions used in this document:
 * **Ansible**: in the context of this document, is the Ansible package or ``ansible-core`` plus a set of collections installed on the Ansible control node.
 * **Ansible control node**: the machine from which you run Ansible.
 * **Container Runtime**: it is what you typically use ``podman`` or ``docker`` for running containers.
+* **Execution environment**: is a container image providing a runtime environment for Ansible control node.
 
 What is Execution Environment
 =============================
