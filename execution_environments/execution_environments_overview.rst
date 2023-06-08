@@ -1,7 +1,7 @@
 .. _ee_overview:
 
 ***************************************
-Ansible Execution Environments Overview
+Ansible execution environments overview
 ***************************************
 
 .. contents::
@@ -22,7 +22,7 @@ Notions used in this document:
 * **Container Runtime**: it is what you typically use ``podman`` or ``docker`` for running containers.
 * **Execution environment**: is a container image providing a runtime environment for Ansible control node.
 
-What is Execution Environment
+What is execution environment
 =============================
 
 Ansible, as a software application, can run in a container, thus, it can benefit from containerization the same as most other applications.
@@ -51,10 +51,10 @@ You can use EEs with:
 
 .. _ee_rationale:
 
-Why Execution Environments were introduced
+Why execution environments were introduced
 ==========================================
 
-The Ansible Execution Environments were introduced to resolve the following issues
+The Ansible execution environments were introduced to resolve the following issues
 and provide all benefits you can get from using containerization.
 
 Dependencies

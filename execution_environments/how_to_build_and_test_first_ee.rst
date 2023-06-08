@@ -5,7 +5,7 @@ How To Build and Test Your First Execution Environment
 ******************************************************
 
 * We assume that you installed all :ref:`required packages<how_to_prepare_environment>`.
-* For general information about Execution Environments, see the :ref:`Ansible Execution Environments Overview<ee_overview>` document.
+* For general information about execution environments, see the :ref:`Ansible execution environments overview<ee_overview>` document.
 
 
 .. _build_first_ee:
