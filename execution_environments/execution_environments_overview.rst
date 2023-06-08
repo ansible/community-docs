@@ -141,8 +141,5 @@ On distributions using DNF as a package manager:
 What to read next
 =================
 
-To read next:
-
 * :ref:`How to build and test EE guide<how_to_build_and_test_first_ee>`
 * `Ansible Builder documentation <https://ansible-builder.readthedocs.io/en/stable/>`_
-* TBD

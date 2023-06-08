@@ -46,8 +46,6 @@ because ``ansible-buider`` will install it automatically based on  the collectio
   If a collection you want to install does not have the ``requirements.txt`` file,
   you need to add Python dependencies specified in the collection's documentation to your the definition file manually.
 
-Read more about the EE definition file format in the `Ansible Builder documentation <https://ansible-builder.readthedocs.io/en/stable/definition/>`_.
-
 3. Build the EE container image called ``postgresql_ee`` (if you use docker, add the ``--container-runtime docker`` argument to the command):
 
 .. code-block:: bash
@@ -75,8 +73,6 @@ The created image represents an :ref:`Ansible control node<terminology>` which n
 Run ``ansible-navigator``, type ``:images`` in the TUI and choose ``postgresql_ee`` to view detailed information about the image.
 
 See the :ref:`Running your EE in command line<run_firt_ee>` section to learn how to test the EE you have just created.
-
-For more information about Ansible Builder, see its :ref:`official documentation <https://ansible-builder.readthedocs.io/en/stable/>`_.
 
 .. _run_first_ee:
 
@@ -160,7 +156,9 @@ Run against a remote target
 This example assumes that you have the ``student`` user using ``student`` as password
 and having permissions to run commands as a superuser on your target machine.
 
-More about Ansible Navigator
-----------------------------
+What to read next
+=================
 
-For more information about Ansible Navigator, see its `official documentation<https://ansible-navigator.readthedocs.io/>`_.
+* More about the `EE definition file <https://ansible-builder.readthedocs.io/en/stable/definition/>`_ and available options.
+* `Ansible Builder CLI usage <https://ansible-builder.readthedocs.io/en/stable/usage/>`_.
+* `Ansible Navigator official documentation<https://ansible-navigator.readthedocs.io/>`_.
