@@ -90,30 +90,16 @@ One way to **partly** resolve dependency issue is
 to use Python virtual environments on Ansible control node.
 However, applied to Ansible, it has drawbacks and natural limitations.
 
-Content separation
-------------------
-
-Typically users do not really need the whole Ansible package with that hundred collections.
-In most cases, and it is considered a good practice, you need to install only ``ansible-core``
-plus a set of collections for specific tasks, nothing more.
-
-Let's say, there is an Ansible control node or a tool like Ansible AWX/Controller used by several users.
-
-Each user works with a limited set of services and wants to use only ``ansible-core``
-and a corresponding set of Ansible collections automating those services.
-
-Each user is not interested in having someone else's content the users do not need including dependencies
-which can potentially brake their pipelines.
-They might also want to preserve their installation clean from unnecessary packages
-and files belonging their colleagues.
-
-Simply put, users might want their content be separated.
-
 Portability
 -----------
 
 An Ansible user writes content for Ansible locally and wants to leverage the container technology
 to make your automation runtimes portable, shareable and easily deployable to testing and production environments.
+
+Content separation
+------------------
+
+In situations when there is an Ansible control node or a tool like Ansible AWX/Controller used by several users, they might want their content be separated to avoid configuration and dependency conflicts.
 
 .. _how_to_prepare_environment:
 
