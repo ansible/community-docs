@@ -22,8 +22,8 @@ Notions used in this document:
 * **Container Runtime**: it is what you typically use ``podman`` or ``docker`` for running containers.
 * **Execution environment**: is a container image providing a runtime environment for Ansible control node.
 
-What is execution environment
-=============================
+What is an execution environment?
+=================================
 
 Ansible, as a software application, can run in a container, thus, it can benefit from containerization the same as most other applications.
 
@@ -43,10 +43,11 @@ Tools you can use EEs with
 
 You can use EEs with:
 
-* `ansible-navigator <https://ansible-navigator.readthedocs.io/>`_
+* `Ansible Builder <https://ansible-builder.readthedocs.io/en/stable/>`_
+* `Ansible Navigator <https://ansible-navigator.readthedocs.io/>`_
 * `Ansible AWX <https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html#use-an-execution-environment-in-jobs>`_
 * `Automation controller <https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html#use-an-execution-environment-in-jobs>`_
-* `ansible-runner <https://ansible-runner.readthedocs.io/en/stable/>`_
+* `Ansible Runner <https://ansible-runner.readthedocs.io/en/stable/>`_
 * VS Code `Ansible <https://marketplace.visualstudio.com/items?itemName=redhat.ansible>`_ and `Dev Containers <https://code.visualstudio.com/docs/devcontainers/containers>`_ extensions
 
 .. _ee_rationale:
@@ -78,7 +79,7 @@ Many of them have dependencies for their plugins, modules, roles and playbooks t
 
 The Ansible collections can depend on the following pieces of software and their versions:
 
-* ansible-core 
+* ansible-core
 * Python
 * Python packages
 * system packages
@@ -101,31 +102,7 @@ Content separation
 
 In situations when there is an Ansible control node or a tool like Ansible AWX/Controller used by several users, they might want their content be separated to avoid configuration and dependency conflicts.
 
-.. _how_to_prepare_environment:
-
-How to prepare your environment to build and test EEs
-=====================================================
-
-Install the following packages:
-
-* podman or docker
-* python-pip: to install the tools
-* ansible-navigator: to run EEs
-* ansible-builder: to build EEs (will be installed by ansible-navigator)
-
-On distributions using DNF as a package manager:
-
-.. code-block:: bash
-
-  $ sudo dnf install -y podman python3-pip
-
-.. code-block:: bash
-
-  $ pip3 install ansible-navigator
-
-
 What to read next
 =================
 
-* :ref:`How to build and test EE guide<how_to_build_and_test_first_ee>`
-* `Ansible Builder documentation <https://ansible-builder.readthedocs.io/en/stable/>`_
+* :ref:`How to build and test EE guide<build_and_test_ee>`
