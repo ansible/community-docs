@@ -1,7 +1,7 @@
 .. _how_to_build_and_test_first_ee:
 
 ******************************************************
-How To Build and Test Your First Execution Environment
+Building and testing execution environments
 ******************************************************
 
 * We assume that you installed all :ref:`required packages<how_to_prepare_environment>`.
