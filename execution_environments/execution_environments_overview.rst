@@ -21,6 +21,33 @@ Notions used in this document:
 * **Ansible control node**: the machine from which you run Ansible.
 * **Container Runtime**: it is what you typically use ``podman`` or ``docker`` for running containers.
 
+What is Execution Environment
+=============================
+
+Ansible, as a software application, can run in a container, thus, it can benefit from containerization the same as most other applications.
+
+The Ansible automation execution environment (hereinafter, execution environment or EE) is a container image serving as Ansible control node.
+
+The EE image contains:
+
+* ansible-core
+* ansible-runner
+* none or more Ansible collections
+* Python
+* Python and system dependencies
+* custom user needs
+
+Tools you can use EEs with
+-------------------------
+
+You can use EEs with:
+
+* `ansible-navigator <https://ansible-navigator.readthedocs.io/>`_
+* `Ansible AWX <https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html#use-an-execution-environment-in-jobs>`_
+* `Automation controller <https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html#use-an-execution-environment-in-jobs>`_
+* `ansible-runner <https://ansible-runner.readthedocs.io/en/stable/>`_
+* VS Code `Ansible <https://marketplace.visualstudio.com/items?itemName=redhat.ansible>`_ and `Dev Containers <https://code.visualstudio.com/docs/devcontainers/containers>`_ extensions
+
 .. _ee_rationale:
 
 Why Execution Environments were introduced
@@ -86,33 +113,6 @@ Portability
 
 An Ansible user writes content for Ansible locally and wants to leverage the container technology
 to make your automation runtimes portable, shareable and easily deployable to testing and production environments.
-
-What is Execution Environment
-=============================
-
-Ansible, as a software application, can run in a container, thus, it can benefit from containerization the same as most other applications.
-
-The Ansible automation execution environment (hereinafter, execution environment or EE) is a container image serving as Ansible control node.
-
-The EE image contains:
-
-* ansible-core
-* ansible-runner
-* none or more Ansible collections
-* Python
-* Python and system dependencies
-* custom user needs
-
-Tools you can use EEs with
--------------------------
-
-You can use EEs with:
-
-* `ansible-navigator <https://ansible-navigator.readthedocs.io/>`_
-* `Ansible AWX <https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html#use-an-execution-environment-in-jobs>`_
-* `Automation controller <https://docs.ansible.com/automation-controller/latest/html/userguide/execution_environments.html#use-an-execution-environment-in-jobs>`_
-* `ansible-runner <https://ansible-runner.readthedocs.io/en/stable/>`_
-* VS Code `Ansible <https://marketplace.visualstudio.com/items?itemName=redhat.ansible>`_ and `Dev Containers <https://code.visualstudio.com/docs/devcontainers/containers>`_ extensions
 
 .. _how_to_prepare_environment:
 
