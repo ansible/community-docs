@@ -31,19 +31,7 @@ Complete the following steps to set up a local environment for your first execut
 
   $ mkdir my_first_ee && cd my_first_ee
 
-2. Create a virtual environment.
-
-.. code-block:: bash
-
-  python3 -m venv venv
-
-3. Activate the virtual environment to start using it.
-
-.. code-block:: bash
-
-  source venv/bin/activate
-
-4. Upgrade the `pip` package manager and install `ansible-navigator`.
+2. Upgrade the `pip` package manager and install `ansible-navigator`.
 
 .. code-block:: bash
 
@@ -81,8 +69,8 @@ To build your first ee, do the following:
 
 .. code-block:: yaml
 
-  ---
   cat > execution-environment.yml<<EOF
+  ---
   version: 3
 
   dependencies:
@@ -138,6 +126,7 @@ Run against localhost
 .. code-block:: yaml
 
   cat > test_localhost.yml<<EOF
+  ---
   - hosts: localhost
     become: yes
     gather_facts: yes
@@ -177,6 +166,7 @@ Before you start, ensure you have the following:
 .. code-block:: yaml
 
   cat > inventory/hosts.yml<<EOF
+  ---
   all:
     hosts:
       192.0.2.0  # Replace with the IP of a target host.
@@ -187,6 +177,7 @@ Before you start, ensure you have the following:
 .. code-block:: yaml
 
   cat > test_remote.yml<<EOF
+  ---
   - hosts: all
     become: yes
     gather_facts: yes
