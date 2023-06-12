@@ -5,6 +5,7 @@ Building and testing execution environments
 *******************************************
 
 This tutorial shows you how to build and test a simple execution environment.
+
 For general information about execution environments, see the :ref:`Ansible execution environments overview<ee_overview>` document.
 
 .. _setting_up_environment:
@@ -25,17 +26,11 @@ If you use the DNF as a package manager, you can install them as follows:
 
 Complete the following steps to set up a local environment for your first execution environment:
 
-1. Create a project folder on your filesystem, for example:
+1. Upgrade the `pip` package manager and install `ansible-navigator`.
 
 .. code-block:: bash
 
-  $ mkdir my_first_ee && cd my_first_ee
-
-2. Upgrade the `pip` package manager and install `ansible-navigator`.
-
-.. code-block:: bash
-
-  python -m pip install --upgrade pip ansible-navigator
+  python3 -m pip install --upgrade pip ansible-navigator
 
 Installing `ansible-navigator` lets you run EEs.
 It includes the `ansible-builder` package to build EEs.
@@ -65,7 +60,13 @@ The resulting image represents an :ref:`Ansible control node<terminology>` that 
 
 To build your first ee, do the following:
 
-1. Create a ``execution-environment.yml`` file that specifies dependencies to include in the image.
+1. Create a project folder on your filesystem.
+
+.. code-block:: bash
+
+  mkdir my_first_ee && cd my_first_ee
+
+2. Create a ``execution-environment.yml`` file that specifies dependencies to include in the image.
 
 .. code-block:: yaml
 
@@ -84,13 +85,13 @@ To build your first ee, do the following:
   The ``psycopg2-binary`` Python package is included in the ``requirements.txt`` file for the collection.
   For collections that do not include ``requirements.txt`` files, you need to specify Python dependencies explicitly.
 
-2. Build a EE container image called ``postgresql_ee``. If you use docker, add the ``--container-runtime docker`` argument.
+3. Build a EE container image called ``postgresql_ee``. If you use docker, add the ``--container-runtime docker`` argument.
 
 .. code-block:: bash
 
   ansible-builder build --tag postgresql_ee
 
-3. List container images to verify that you built it successfully.
+4. List container images to verify that you built it successfully.
 
 .. code-block:: bash
 
@@ -159,7 +160,7 @@ Before you start, ensure you have the following:
 
 .. code-block:: yaml
 
-  $ mkdir inventory
+  mkdir inventory
 
 2. Create the ``hosts.yml`` inventory file in the ``inventory`` directory.
 
