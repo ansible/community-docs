@@ -74,10 +74,29 @@ Now it is time to create a collection to share your shiny work with the communit
 
 Use the `Developing collections guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections.html>`_ to learn how.
 
+We recommend you to use the `collection_template repository <https://github.com/ansible-collections/collection_template>`_ as a basis.
+
+Write good user collection documentation
+========================================
+
+Your collection's ``README.md`` file contains a quick-start installation and usage guides.
+You can use the `community.general collection README file <https://github.com/ansible-collections/community.general/blob/main/README.md>`_ as an example.
+
+If your collection contains modules or plugins, make sure their documentation is comprehensive. Use the `Module format and documentation guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_documenting.html>`_ and `Ansible documentation style guide <https://docs.ansible.com/ansible/latest/dev_guide/style_guide/index.html>`_ to learn more.
+
 Publish your collection on GitHub
 =================================
 
-TBD
+Publish your collection on a platform for software development and version control such as `GitHub <https://github.com/>`_.
+
+It can be your personal repository or your organization one.
+You can also `request <https://github.com/ansible-collections/overview/issues>`_ a repository under the `ansible-collections <https://github.com/ansible-collections/>`_ organization.
+
+Make sure your collection contains exhaustive license information.
+Ansible is an open source project, so we encourage you to license it under one of open source licenses.
+If you plan to submit your collection for inclusion in the Ansible community package, your collection must satisfy the `licensing requirements <https://docs.ansible.com/ansible/devel/community/collection_contributors/collection_requirements.html#collection-licensing-requirements>`_.
+
+If you have used the `collection_template repository <https://github.com/ansible-collections/collection_template>`_ we recommended earlier as a skeleton for your collection, it already contains the ``GNU GPL v3`` license.
 
 Understand and implement testing and CI
 =======================================
@@ -91,6 +110,11 @@ Implement CI
 ------------
 
 GHA + AZP explained
+
+Write good contributor & maintainer documentation
+=================================================
+
+TBD
 
 Publish your collection on Galaxy
 =================================
