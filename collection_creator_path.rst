@@ -82,7 +82,8 @@ Write good user collection documentation
 Your collection's ``README.md`` file contains a quick-start installation and usage guides.
 You can use the `community.general collection README file <https://github.com/ansible-collections/community.general/blob/main/README.md>`_ as an example.
 
-If your collection contains modules or plugins, make sure their documentation is comprehensive. Use the `Module format and documentation guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_documenting.html>`_ and `Ansible documentation style guide <https://docs.ansible.com/ansible/latest/dev_guide/style_guide/index.html>`_ to learn more.
+If your collection contains modules or plugins, make sure their documentation is comprehensive.
+Use the `Module format and documentation guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_documenting.html>`_ and `Ansible documentation style guide <https://docs.ansible.com/ansible/latest/dev_guide/style_guide/index.html>`_ to learn more.
 
 Publish your collection on GitHub
 =================================
