@@ -39,9 +39,10 @@ that solve your automation issue.
 
 Therefore, first examine the currently available content on the Internet including:
 
-* `Ansible Galaxy <https://galaxy.ansible.com/>`_
 * `Ansible builtin modules and plugins <https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html>`_
 * `Ansible package collection index <https://docs.ansible.com/ansible/latest/collections/index.html>`_
+* `Ansible Galaxy <https://galaxy.ansible.com/>`_
+* `Ansible Automation Hub <https://www.ansible.com/products/automation-hub>`_ if you have the Ansible Automation Platform subscription
 
 In case the solutions you found are not fully sufficient or have flaws,
 consider improving them rather than creating your own.
@@ -51,7 +52,7 @@ you could think of integrating it to the existing solutions.
 
 However, if they have significant flaws, licensing or major design issues,
 or their corresponding projects are unmaintained, you are encouraged
-to create and/or share your own one.
+to create and share your own solution.
 
 .. _create_content:
 
@@ -70,11 +71,10 @@ Put your content in a collection
 
 You :ref:`created <create_content>` new content.
 
-Now it is time to create a collection to share your shiny work with the community.
-
+Now it is time to create a collection to share your work with the community.
 Use the `Developing collections guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections.html>`_ to learn how.
 
-We recommend you to use the `collection_template repository <https://github.com/ansible-collections/collection_template>`_ as a basis.
+We recommend you to use the `collection_template repository <https://github.com/ansible-collections/collection_template>`_ as a basis for your collection.
 
 Write good user collection documentation
 ========================================
@@ -91,7 +91,7 @@ Publish your collection source code
 
 Publish your collection on a platform for software development and version control such as `GitHub <https://github.com/>`_.
 
-It can be your personal repository or your organization one.
+It can be your personal repository or your organization's one.
 You can also `request <https://github.com/ansible-collections/overview/issues>`_ a repository under the `ansible-collections <https://github.com/ansible-collections/>`_ organization.
 
 Make sure your collection contains exhaustive license information.
@@ -105,7 +105,7 @@ we recommended earlier as a skeleton for your collection, it already contains th
 Follow a versioning convention
 ==============================
 
-When releasing new versions of your collections, take the following into consideration:
+When releasing new versions of your collections, take the following recommended practices into consideration:
 
 * Follow a versioning convention. Using `SemVer <https://semver.org/>`_ is highly recommended.
 * Base your releases on `Git tags <https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases>`_.
@@ -126,7 +126,7 @@ Testing your collection ensures that your code works well and integrates with ot
 Take a look at the following documents:
 
 * `Testing Ansible guide <https://docs.ansible.com/ansible/latest/dev_guide/testing.html>`_: provides general information about testing.
-* `Testing collections guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_testing.html#testing-collections>`_: contains some collection-specific testing information.
+* `Testing collections guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_testing.html#testing-collections>`_: contains collection-specific testing information.
 
 Implement continuous integration
 --------------------------------
@@ -147,7 +147,7 @@ Publish your collection on distribution servers
 ===============================================
 
 To distribute your collection and allow others to conveniently use it,
-publish your collection on one or more distribution server.
+publish your collection on one or more distribution servers.
 See the `Distributing collections guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_distributing.html>`_ to learn how.
 
 Follow the Collection requirements
