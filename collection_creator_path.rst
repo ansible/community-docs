@@ -99,7 +99,8 @@ Ansible is an open source project, so we encourage you to license it under one o
 If you plan to submit your collection for inclusion in the Ansible community package, your collection must satisfy
 the `licensing requirements <https://docs.ansible.com/ansible/devel/community/collection_contributors/collection_requirements.html#collection-licensing-requirements>`_.
 
-If you have used the `collection_template repository <https://github.com/ansible-collections/collection_template>`_ we recommended earlier as a skeleton for your collection, it already contains the ``GNU GPL v3`` license.
+If you have used the `collection_template repository <https://github.com/ansible-collections/collection_template>`_
+we recommended earlier as a skeleton for your collection, it already contains the ``GNU GPL v3`` license.
 
 Follow a versioning convention
 ==============================
