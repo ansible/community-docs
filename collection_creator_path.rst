@@ -85,8 +85,8 @@ You can use the `community.general collection README file <https://github.com/an
 If your collection contains modules or plugins, make sure their documentation is comprehensive.
 Use the `Module format and documentation guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_documenting.html>`_ and `Ansible documentation style guide <https://docs.ansible.com/ansible/latest/dev_guide/style_guide/index.html>`_ to learn more.
 
-Publish your collection on GitHub
-=================================
+Publish your collection source code
+===================================
 
 Publish your collection on a platform for software development and version control such as `GitHub <https://github.com/>`_.
 
@@ -99,45 +99,66 @@ If you plan to submit your collection for inclusion in the Ansible community pac
 
 If you have used the `collection_template repository <https://github.com/ansible-collections/collection_template>`_ we recommended earlier as a skeleton for your collection, it already contains the ``GNU GPL v3`` license.
 
+Follow a versioning convention
+==============================
+
+When releasing new versions of your collections, take the following into consideration:
+
+* Follow a versioning convention. Using `SemVer <https://semver.org/>`_ is highly recommended.
+* Base your releases on `Git tags <https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases>`_.
+* If your collection repository is on GitHub, use `GitHub releases <https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository>`_.
+
 Understand and implement testing and CI
 =======================================
+
+This section is applicable to collections containing modules and plugins.
+
+If you have simple general solutions for role testing, please expand the section.
 
 Add tests
 ---------
 
-TBD
+Testing your collection ensures that your code works well and integrates with other components such as ``ansible-core``.
 
-Implement CI
-------------
+Take a look at the following documents:
 
-GHA + AZP explained
+* `Testing Ansible guide <https://docs.ansible.com/ansible/latest/dev_guide/testing.html>`_: provides general information about testing.
+* `Testing collections guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_testing.html#testing-collections>`_: contains some collection-specific testing information.
 
-Write good contributor & maintainer documentation
-=================================================
+Implement continuous integration
+--------------------------------
 
-TBD
+Now make sure when pull requests are created in your collection repository
+they are automatically tested using a CI tool such as GitHub Actions or Azure Pipelines.
 
-Publish your collection on Galaxy
-=================================
+The `collection_template repository <https://github.com/ansible-collections/collection_template>`_ contains GitHub Actions `templates <https://github.com/ansible-collections/collection_template/tree/main/.github/workflows>`_ you can adjust and use to enable the workflows in your repository.
 
-TBD
+Provide good contributor & maintainer documentation
+===================================================
+
+See the `collection_template/README.md <https://github.com/ansible-collections/collection_template/blob/main/README.md>`_ as an example.
+
+Publish your collection on distribution servers
+===============================================
+
+To distribute your collection and allow others to conveniently use it, publish your collection on one or more distribution server. See the `Distributing collections guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_distributing.html>`_ to learn how.
 
 Follow the Collection requirements
 ==================================
 
-Link to the requirements and a very brief explanation
+Make you collection satisfy the `Ansible community package collections requirements <https://docs.ansible.com/ansible/latest/community/collection_contributors/collection_requirements.html>`_.
 
 Submit for inclusion
 ====================
 
-Links
+After making your collection satisfy the collection requirements, you can submit it for inclusion in the Ansible community package. See the `inclusion process description <https://github.com/ansible-collections/ansible-inclusion/blob/main/README.md>`_ to learn how.
 
 Maintain
 ========
 
-Links to the Maintainer guidelines
+Maintain your collection. See the `Ansible collection maintainer guidelines <https://docs.ansible.com/ansible/latest/community/maintainers.html>`_ for details.
 
 Communication
 =============
 
-Maybe as a separate paragraph
+Engage with the community. Take a look at the `Ansible communication guide <https://docs.ansible.com/ansible/devel/community/communication.html>`_ to see available communication options.
