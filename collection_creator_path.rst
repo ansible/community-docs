@@ -83,7 +83,8 @@ Your collection's ``README.md`` file contains a quick-start installation and usa
 You can use the `community.general collection README file <https://github.com/ansible-collections/community.general/blob/main/README.md>`_ as an example.
 
 If your collection contains modules or plugins, make sure their documentation is comprehensive.
-Use the `Module format and documentation guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_documenting.html>`_ and `Ansible documentation style guide <https://docs.ansible.com/ansible/latest/dev_guide/style_guide/index.html>`_ to learn more.
+Use the `Module format and documentation guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_modules_documenting.html>`_ and
+`Ansible documentation style guide <https://docs.ansible.com/ansible/latest/dev_guide/style_guide/index.html>`_ to learn more.
 
 Publish your collection source code
 ===================================
@@ -95,7 +96,8 @@ You can also `request <https://github.com/ansible-collections/overview/issues>`_
 
 Make sure your collection contains exhaustive license information.
 Ansible is an open source project, so we encourage you to license it under one of open source licenses.
-If you plan to submit your collection for inclusion in the Ansible community package, your collection must satisfy the `licensing requirements <https://docs.ansible.com/ansible/devel/community/collection_contributors/collection_requirements.html#collection-licensing-requirements>`_.
+If you plan to submit your collection for inclusion in the Ansible community package, your collection must satisfy
+the `licensing requirements <https://docs.ansible.com/ansible/devel/community/collection_contributors/collection_requirements.html#collection-licensing-requirements>`_.
 
 If you have used the `collection_template repository <https://github.com/ansible-collections/collection_template>`_ we recommended earlier as a skeleton for your collection, it already contains the ``GNU GPL v3`` license.
 
@@ -131,7 +133,9 @@ Implement continuous integration
 Now make sure when pull requests are created in your collection repository
 they are automatically tested using a CI tool such as GitHub Actions or Azure Pipelines.
 
-The `collection_template repository <https://github.com/ansible-collections/collection_template>`_ contains GitHub Actions `templates <https://github.com/ansible-collections/collection_template/tree/main/.github/workflows>`_ you can adjust and use to enable the workflows in your repository.
+The `collection_template repository <https://github.com/ansible-collections/collection_template>`_
+contains GitHub Actions `templates <https://github.com/ansible-collections/collection_template/tree/main/.github/workflows>`_
+you can adjust and use to enable the workflows in your repository.
 
 Provide good contributor & maintainer documentation
 ===================================================
@@ -141,7 +145,9 @@ See the `collection_template/README.md <https://github.com/ansible-collections/c
 Publish your collection on distribution servers
 ===============================================
 
-To distribute your collection and allow others to conveniently use it, publish your collection on one or more distribution server. See the `Distributing collections guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_distributing.html>`_ to learn how.
+To distribute your collection and allow others to conveniently use it,
+publish your collection on one or more distribution server.
+See the `Distributing collections guide <https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_distributing.html>`_ to learn how.
 
 Follow the Collection requirements
 ==================================
@@ -151,14 +157,18 @@ Make you collection satisfy the `Ansible community package collections requireme
 Submit for inclusion
 ====================
 
-After making your collection satisfy the collection requirements, you can submit it for inclusion in the Ansible community package. See the `inclusion process description <https://github.com/ansible-collections/ansible-inclusion/blob/main/README.md>`_ to learn how.
+After making your collection satisfy the collection requirements,
+you can submit it for inclusion in the Ansible community package.
+See the `inclusion process description <https://github.com/ansible-collections/ansible-inclusion/blob/main/README.md>`_ to learn how.
 
 Maintain
 ========
 
-Maintain your collection. See the `Ansible collection maintainer guidelines <https://docs.ansible.com/ansible/latest/community/maintainers.html>`_ for details.
+Maintain your collection.
+See the `Ansible collection maintainer guidelines <https://docs.ansible.com/ansible/latest/community/maintainers.html>`_ for details.
 
 Communication
 =============
 
-Engage with the community. Take a look at the `Ansible communication guide <https://docs.ansible.com/ansible/devel/community/communication.html>`_ to see available communication options.
+Engage with the community.
+Take a look at the `Ansible communication guide <https://docs.ansible.com/ansible/devel/community/communication.html>`_ to see available communication options.
